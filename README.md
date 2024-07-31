@@ -25,6 +25,10 @@ How the data can be obtained/processsed
 * 1. Step
 * 2. Step
 
+## Data 
+
+link to data archive that can be downloaded here
+
 ## Important remarks
 
 I want to describe here information about best practices, and possible errors while working with this package
