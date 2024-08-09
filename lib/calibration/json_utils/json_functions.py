@@ -2,14 +2,16 @@ import json
 import cv2
 import os
 import numpy as np
+import sys
+sys.path.append(os.path.abspath(os.path.join('..')))
 
-from geometry_utils.geometry_functions import rotation_vector_to_matrix
-from geometry_utils.geometry_functions import create_transform_matrix
-from geometry_utils.geometry_functions import correct_to_center
-from geometry_utils.geometry_functions import closest_point_2_lines
-from geometry_utils.geometry_functions import rotmat
 
-from cv2api.detect import detect_pose
+from calibration.geometry_utils.geometry_functions import create_transform_matrix
+from calibration.geometry_utils.geometry_functions import correct_to_center
+from calibration.geometry_utils.geometry_functions import closest_point_2_lines
+from calibration.geometry_utils.geometry_functions import rotmat
+
+from calibration.cv2api.detect import detect_pose
 
 
 def update_frames_with_camera_properties(template):
@@ -65,12 +67,12 @@ def sharpness(image):
 	fm = variance_of_laplacian(gray)
 	return fm
 
-def generate_json_for_images(folder_path,output_json_path , camera_params, camera_matrix,dist_coeff,colmap = False):
+def generate_json_for_images(folder_path,output_json_path , camera_matrix,dist_coeff,colmap = False):
     """Generate JSON for a folder of images with given rvecs and tvecs."""
 
     # Example usage:
-    camera_matrix = np.load(folder_path+"camera_matrix.npy")
-    dist_coeff = np.load(folder_path+"camera_dist_coeff.npy")
+    # camera_matrix = np.load(folder_path+"camera_matrix.npy")
+    # dist_coeff = np.load(folder_path+"camera_dist_coeff.npy")
     image = cv2.imread(folder_path+"/frame0000.jpg")
     camera_params = {
         "camera_angle_x": 2 * np.arctan(image.shape[1] / (2 * camera_matrix[0,0])),

@@ -7,7 +7,7 @@ SQUARES_HORIZONTALLY = 7
 SQUARE_LENGTH = 0.03
 MARKER_LENGTH = 0.015
 # ...
-PATH_TO_YOUR_IMAGES = './images/solenoid/' # example
+#PATH_TO_YOUR_IMAGES = './images/solenoid/' # example
 # ------------------------------
 dictionary = cv2.aruco.getPredefinedDictionary(ARUCO_DICT)
 board = cv2.aruco.CharucoBoard((SQUARES_VERTICALLY, SQUARES_HORIZONTALLY), SQUARE_LENGTH, MARKER_LENGTH, dictionary)
