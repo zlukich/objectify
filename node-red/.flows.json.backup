@@ -5229,7 +5229,7 @@
         "type": "function",
         "z": "a08ae145f2d5cb38",
         "name": "function 11",
-        "func": "let folder = flow.get(\"folder\");\n\n\nmsg.payload = \"python ../scripts/calibrate.py --project_name 'test_project' --input './projects/calib' --output_folder './projects/calib' --config_file './config.json' --num_of_images 40\";\nreturn msg;",
+        "func": "let folder = flow.get(\"folder\");\n\n\nmsg.payload = \"python ../scripts/calibrate.py --project_name 'test_project' --input './projects/calib' --output_folder '../projects/calib' --config_file './config.json' --num_of_images 40\";\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
