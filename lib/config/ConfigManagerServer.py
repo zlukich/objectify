@@ -1,33 +1,81 @@
-# config_server.py
-from flask import Flask, request, jsonify
-from ConfigManager import ConfigManager  # Your ConfigManager class
+import requests
 
-app = Flask(__name__)
-config_manager = ConfigManager('scripts/config.json')
+class ConfigManagerAPI:
+    def __init__(self, base_url):
+        """
+        Initialize the ConfigManagerAPI class.
 
-@app.route('/config/<project_name>', methods=['GET', 'POST'])
-def handle_config(project_name):
-    if request.method == 'POST':
-        data = request.json
-        config_manager.update_project(project_name, data)
-        return jsonify({"status": "success"})
-    elif request.method == 'GET':
-        project_data = config_manager.get_project(project_name)
-        return jsonify(project_data)
-    
-@app.route('/config/current_work', methods=['GET', 'POST', 'DELETE'])
-def handle_current_work():
-    if request.method == 'POST':
-        data = request.json
-        config_manager.update_current_work(data)
-        return jsonify({"status": "success"})
-    elif request.method == 'GET':
-        current_work_data = config_manager.get_current_work()
-        return jsonify(current_work_data)
-    elif request.method == 'DELETE':
-        config_manager.clear_current_work()
-        return jsonify({"status": "current_work cleared"})
+        :param base_url: Base URL of the ConfigManager Flask server (e.g., "http://localhost:5001").
+        """
+        self.base_url = base_url
 
+    def get_project(self, project_name):
+        """
+        Get the configuration for a specific project.
 
-if __name__ == '__main__':
-    app.run(port=5001)
+        :param project_name: Name of the project.
+        :return: JSON response containing the project data.
+        """
+        url = f"{self.base_url}/config/{project_name}"
+        response = requests.get(url)
+        response.raise_for_status()
+        return response.json()
+
+    def update_project(self, project_name, data):
+        """
+        Update the configuration for a specific project.
+
+        :param project_name: Name of the project.
+        :param data: Dictionary containing the data to update.
+        :return: JSON response indicating success or failure.
+        """
+        url = f"{self.base_url}/config/{project_name}"
+        response = requests.post(url, json=data)
+        response.raise_for_status()
+        return response.json()
+
+    def delete_project(self, project_name):
+        """
+        Delete a specific project from the configuration.
+
+        :param project_name: Name of the project.
+        :return: JSON response indicating success or failure.
+        """
+        url = f"{self.base_url}/config/{project_name}"
+        response = requests.delete(url)
+        response.raise_for_status()
+        return response.json()
+
+    def get_current_work(self):
+        """
+        Get the current work parameters from the configuration.
+
+        :return: JSON response containing the current work parameters.
+        """
+        url = f"{self.base_url}/config/current_work"
+        response = requests.get(url)
+        response.raise_for_status()
+        return response.json()
+
+    def update_current_work(self, data):
+        """
+        Update the current work parameters in the configuration.
+
+        :param data: Dictionary containing the current work parameters to update.
+        :return: JSON response indicating success or failure.
+        """
+        url = f"{self.base_url}/config/current_work"
+        response = requests.post(url, json=data)
+        response.raise_for_status()
+        return response.json()
+
+    def clear_current_work(self):
+        """
+        Clear the current work parameters from the configuration.
+
+        :return: JSON response indicating success or failure.
+        """
+        url = f"{self.base_url}/config/current_work"
+        response = requests.delete(url)
+        response.raise_for_status()
+        return response.json()

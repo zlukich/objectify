@@ -67,12 +67,13 @@ def sharpness(image):
 	fm = variance_of_laplacian(gray)
 	return fm
 
-def generate_json_for_images(folder_path,output_json_path , camera_matrix,dist_coeff,colmap = False):
+def generate_json_for_images(folder_path,output_json_path , camera_matrix,dist_coeff,scale = 3,colmap = False):
     """Generate JSON for a folder of images with given rvecs and tvecs."""
 
     # Example usage:
     # camera_matrix = np.load(folder_path+"camera_matrix.npy")
     # dist_coeff = np.load(folder_path+"camera_dist_coeff.npy")
+    
     image = cv2.imread(folder_path+"/frame0000.jpg")
     camera_params = {
         "camera_angle_x": 2 * np.arctan(image.shape[1] / (2 * camera_matrix[0,0])),
@@ -90,7 +91,8 @@ def generate_json_for_images(folder_path,output_json_path , camera_matrix,dist_c
         "cx": camera_matrix[0,2],
         "w": image.shape[1],
         "h": image.shape[0],
-        "aabb_scale": 1
+        "aabb_scale": 1,
+        "scale": scale
     }
 
     data = {
@@ -110,16 +112,21 @@ def generate_json_for_images(folder_path,output_json_path , camera_matrix,dist_c
         "w": camera_params["w"],
         "h": camera_params["h"],
         "aabb_scale": camera_params["aabb_scale"],
+        "scale": camera_params["scale"],
         "frames": []
     }
 
+
     image_files = sorted(os.listdir(folder_path))
+    print(image_files)
     up = np.array([0.0, 0.0, 0.0])
     for i, image_file in enumerate(image_files):
         if image_file.endswith(('.png', '.jpg', '.jpeg')):
             image = cv2.imread(os.path.join(folder_path,image_file))
+            
             retval, rvec, tvec = detect_pose(image, camera_matrix, dist_coeff)
             
+
             if(retval > 3):
                 #print(retval,rvec)
                 rvec,tvec = correct_to_center(rvec,tvec)
@@ -128,7 +135,7 @@ def generate_json_for_images(folder_path,output_json_path , camera_matrix,dist_c
                     c2w = create_transform_matrix(rvec, tvec)
                     up += c2w[0:3,1]
                     frame_data = {
-                        "file_path": os.path.join(folder_path, image_file),
+                        "file_path": image_file,
                         "sharpness": sharpness(image),  # Placeholder, update as needed
                         "transform_matrix": c2w
                     }
@@ -138,6 +145,7 @@ def generate_json_for_images(folder_path,output_json_path , camera_matrix,dist_c
                     print(e)
     
     #print(data["frames"])
+
     nframes = len(data["frames"])
     #print(nframes)
     if(colmap == False):

@@ -15,6 +15,8 @@ from calibration.json_utils.json_functions import generate_json_for_images
 
 config_manager = ConfigManagerAPI("http://127.0.0.1:5001")
 
+
+
 def calibrate_and_write(project_name, output_folder, config_manager):
 
     image_files = [os.path.join(output_folder, f) for f in os.listdir(output_folder) if f.endswith(".jpg")]
@@ -38,38 +40,24 @@ def main():
     parser = argparse.ArgumentParser(description="Camera calibration and image processing script.")
     parser.add_argument('--project_name', type=str, required=True, help='Name of the project')
     parser.add_argument('--input', type=str, required=True, help='Input folder or video file path')
-    parser.add_argument('--output_folder', type=str, required=True, help='Output folder to save images or results')
-    parser.add_argument('--config_file', type=str, required=True, help='Path to the configuration file')
-    parser.add_argument('--num_of_images', type=int, default=40, help='Number of images to extract from video if input is a video file')
+    
+    parser.add_argument('--mtx', nargs=9,type = float, default = None, required=True, help='Path to the calibration camera matrix data ')
+    parser.add_argument('--dist',  nargs=14,type = float, default = None, required=True,help='Path to the calibration camera distortion coefficients')
 
     args = parser.parse_args()
 
     project_name = args.project_name
     input_path = args.input
-    output_folder = args.output_folder
-    num_of_images = args.num_of_images
-
     
+    mtx  = np.array(args.mtx).reshape(3, 3)
 
-    print(os.path.isdir(input_path))
-
-    config_manager.update_project(project_name, {"images": output_folder})
-    mtx, dist = calibrate_and_write(project_name, output_folder, config_manager)
+    dist = np.array(args.dist)
     
-    config_manager.update_current_work({"camera_matrix": mtx.tolist(), "dist_coeff": dist.tolist()})
-
-    # if os.path.isdir(input_path):
-        
-    # else:
-    #     err = os.system(f"sfextract --frame-count {num_of_images} {input_path} --output {output_folder}")  
-    #     if err:
-    #         print("Error occurred while generating images from video")
-    #         sys.exit(1)
-    #     else:
-    #         config_manager.update_project(project_name, {"images": output_folder})
-    #         mtx, dist = calibrate_and_write(project_name, output_folder, config_manager)
-
-    generate_json_for_images(output_folder, os.path.join(output_folder, "transforms_centered.json"), mtx, dist, colmap=True)
+    out_path = os.path.join(input_path, "transforms_centered.json")
+    
+    print("I am here")
+    generate_json_for_images(input_path, out_path, mtx, dist, scale = 3,colmap=True)
+    config_manager.update_project(project_name,{"transforms_path":out_path})
 
 if __name__ == "__main__":
     main()
