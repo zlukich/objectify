@@ -24,6 +24,14 @@
         "env": []
     },
     {
+        "id": "c5fc9b7a988cec09",
+        "type": "tab",
+        "label": "Charuco camera poses",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "3669868b19b1582f",
         "type": "tab",
         "label": "Colmap",
@@ -34,7 +42,15 @@
     {
         "id": "f11166a80e40d7b6",
         "type": "tab",
-        "label": "Instant-NGP + GS",
+        "label": "Instant-NGP",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "0cc33ef5972e0643",
+        "type": "tab",
+        "label": "Flow 2",
         "disabled": false,
         "info": "",
         "env": []
@@ -121,39 +137,19 @@
             "4de86a1edb0d9a2e",
             "419a9f1c1e75891e",
             "857e073fca509c2e",
-            "d23290c4262f3351"
+            "d23290c4262f3351",
+            "cb77f7a82b32bf9e",
+            "eb6ca6290bc7a968",
+            "6855f6f284c43984",
+            "f01519fbe4901cea",
+            "72ac73d5a30d357d",
+            "c12eb424d725ba51",
+            "bccd7e1f55b8fa84"
         ],
-        "x": 194,
-        "y": 399,
-        "w": 1262,
-        "h": 242
-    },
-    {
-        "id": "16e9549a3ea706bc",
-        "type": "group",
-        "z": "f11166a80e40d7b6",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "6ec4b344c84f72e8",
-            "5ae3b7b8fe108ddb",
-            "f0b90c78f5f79e71",
-            "567a4991445ed8e7",
-            "be3b2ff50c3c00d1",
-            "ca2e9a4b6955efb0",
-            "7b36c9095cf50122"
-        ],
-        "x": 694,
-        "y": 1359,
-        "w": 1132,
-        "h": 182
+        "x": 554,
+        "y": 239,
+        "w": 1512,
+        "h": 402
     },
     {
         "id": "28c003637500bb58",
@@ -243,6 +239,33 @@
         "x": 394,
         "y": 839,
         "w": 1092,
+        "h": 182
+    },
+    {
+        "id": "16e9549a3ea706bc",
+        "type": "group",
+        "z": "c5fc9b7a988cec09",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "6ec4b344c84f72e8",
+            "5ae3b7b8fe108ddb",
+            "f0b90c78f5f79e71",
+            "567a4991445ed8e7",
+            "be3b2ff50c3c00d1",
+            "ca2e9a4b6955efb0",
+            "7b36c9095cf50122"
+        ],
+        "x": 1914,
+        "y": 259,
+        "w": 1132,
         "h": 182
     },
     {
@@ -505,17 +528,6 @@
         "className": ""
     },
     {
-        "id": "421d878b677754c9",
-        "type": "ui_group",
-        "name": "Guideline",
-        "tab": "1e6c4b6a9d036b5a",
-        "order": 1,
-        "disp": true,
-        "width": "28",
-        "collapse": false,
-        "className": ""
-    },
-    {
         "id": "3fdc8d9e247e5296",
         "type": "ui_group",
         "name": "Guideline",
@@ -573,9 +585,9 @@
     {
         "id": "94b2d8d9e77fa636",
         "type": "ui_group",
-        "name": "GS Filesystem",
+        "name": "Charuco Filesystem",
         "tab": "1e6c4b6a9d036b5a",
-        "order": 3,
+        "order": 1,
         "disp": true,
         "width": "10",
         "collapse": false,
@@ -584,7 +596,7 @@
     {
         "id": "b4e511253bf4fd53",
         "type": "ui_group",
-        "name": "GS Parameters",
+        "name": "Charuco Parameters",
         "tab": "1e6c4b6a9d036b5a",
         "order": 2,
         "disp": true,
@@ -595,9 +607,9 @@
     {
         "id": "40324dcc41601167",
         "type": "ui_group",
-        "name": "GS Logging",
+        "name": "Charuco Logging",
         "tab": "1e6c4b6a9d036b5a",
-        "order": 4,
+        "order": 3,
         "disp": true,
         "width": "12",
         "collapse": false,
@@ -667,46 +679,6 @@
         "height": 1
     },
     {
-        "id": "36db9f1743b65ddd",
-        "type": "ui_spacer",
-        "z": "f11166a80e40d7b6",
-        "name": "spacer",
-        "group": "b4e511253bf4fd53",
-        "order": 4,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "c8d08b2a5faf198e",
-        "type": "ui_spacer",
-        "z": "f11166a80e40d7b6",
-        "name": "spacer",
-        "group": "b4e511253bf4fd53",
-        "order": 6,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "4be4c1380aefdb79",
-        "type": "ui_spacer",
-        "z": "f11166a80e40d7b6",
-        "name": "spacer",
-        "group": "94b2d8d9e77fa636",
-        "order": 3,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "fd6aff4da6422e50",
-        "type": "ui_spacer",
-        "z": "f11166a80e40d7b6",
-        "name": "spacer",
-        "group": "94b2d8d9e77fa636",
-        "order": 6,
-        "width": 1,
-        "height": 1
-    },
-    {
         "id": "314b9936612ff9f3",
         "type": "ui_spacer",
         "z": "c0273576f864fea6",
@@ -729,66 +701,6 @@
         "servername": "",
         "verifyservercert": false,
         "alpnprotocol": ""
-    },
-    {
-        "id": "040579c4451a96e9",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "3fdc8d9e247e5296",
-        "order": 2,
-        "width": 23,
-        "height": 1
-    },
-    {
-        "id": "8aa668f639f836be",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "3fdc8d9e247e5296",
-        "order": 6,
-        "width": 12,
-        "height": 1
-    },
-    {
-        "id": "cefbe3cbe5d21e42",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "3fdc8d9e247e5296",
-        "order": 8,
-        "width": 17,
-        "height": 1
-    },
-    {
-        "id": "2c38cf74227f1caa",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "3fdc8d9e247e5296",
-        "order": 11,
-        "width": 17,
-        "height": 1
-    },
-    {
-        "id": "b196e7213efe2738",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "40495299a6187faf",
-        "order": 3,
-        "width": 11,
-        "height": 1
-    },
-    {
-        "id": "1aa923a0a03838fb",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "40495299a6187faf",
-        "order": 5,
-        "width": 8,
-        "height": 1
     },
     {
         "id": "9c64fb15589e3e19",
@@ -951,7 +863,117 @@
         "height": 1
     },
     {
-        "id": "4a4db6abb9860a7d",
+        "id": "a72c21f0e8884bb4",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "6c2e3428a6c52ed8",
+        "order": 2,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "909479128c6439ca",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "6c2e3428a6c52ed8",
+        "order": 3,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "b09604b4787bf542",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "6c2e3428a6c52ed8",
+        "order": 5,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "2e213f322126a8c8",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "53646539ec83fa85",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8e0420aa37dd840d",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "53646539ec83fa85",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f2a5d184e192c9e9",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "53646539ec83fa85",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d8228f06b32cb732",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "53646539ec83fa85",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "7f89662d8053bfdc",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "53646539ec83fa85",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "641ab54d07b14db8",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "53646539ec83fa85",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0785c90990266f84",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "94b2d8d9e77fa636",
+        "order": 2,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "88a0645a8eb7958b",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "94b2d8d9e77fa636",
+        "order": 4,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "bf4c9d4f267722b1",
         "type": "ui_spacer",
         "z": "f11166a80e40d7b6",
         "name": "spacer",
@@ -961,7 +983,7 @@
         "height": 1
     },
     {
-        "id": "0ef9101d7a212d2c",
+        "id": "f717e0ea57b4c0a2",
         "type": "ui_spacer",
         "z": "f11166a80e40d7b6",
         "name": "spacer",
@@ -971,103 +993,93 @@
         "height": 1
     },
     {
-        "id": "06ff893f7b413795",
+        "id": "f238fdb394e9bc82",
         "type": "ui_spacer",
-        "z": "f11166a80e40d7b6",
+        "z": "cd35db7d9440e826",
         "name": "spacer",
-        "group": "919860c8b411c539",
-        "order": 6,
+        "group": "3fdc8d9e247e5296",
+        "order": 2,
+        "width": 23,
+        "height": 1
+    },
+    {
+        "id": "3ce734053c6d9240",
+        "type": "ui_spacer",
+        "z": "cd35db7d9440e826",
+        "name": "spacer",
+        "group": "3fdc8d9e247e5296",
+        "order": 4,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "a8d7dc2bf131c56e",
+        "type": "ui_spacer",
+        "z": "cd35db7d9440e826",
+        "name": "spacer",
+        "group": "3fdc8d9e247e5296",
+        "order": 8,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "bfdae5b02f08d3a8",
+        "type": "ui_spacer",
+        "z": "cd35db7d9440e826",
+        "name": "spacer",
+        "group": "3fdc8d9e247e5296",
+        "order": 9,
         "width": 12,
         "height": 1
     },
     {
-        "id": "de5bd69cf50b6ab8",
+        "id": "8b58ed4604a2c5aa",
         "type": "ui_spacer",
-        "z": "f11166a80e40d7b6",
+        "z": "cd35db7d9440e826",
         "name": "spacer",
-        "group": "919860c8b411c539",
-        "order": 8,
+        "group": "3fdc8d9e247e5296",
+        "order": 11,
         "width": 5,
         "height": 1
     },
     {
-        "id": "b820d79b02416915",
+        "id": "1e7a4eba089a3095",
         "type": "ui_spacer",
-        "z": "3669868b19b1582f",
+        "z": "cd35db7d9440e826",
         "name": "spacer",
-        "group": "53646539ec83fa85",
+        "group": "3fdc8d9e247e5296",
+        "order": 12,
+        "width": 23,
+        "height": 1
+    },
+    {
+        "id": "8438dcf26ce9b0fb",
+        "type": "ui_spacer",
+        "z": "cd35db7d9440e826",
+        "name": "spacer",
+        "group": "3fdc8d9e247e5296",
+        "order": 15,
+        "width": 19,
+        "height": 1
+    },
+    {
+        "id": "6a496a207515154b",
+        "type": "ui_spacer",
+        "z": "cd35db7d9440e826",
+        "name": "spacer",
+        "group": "40495299a6187faf",
         "order": 3,
-        "width": 1,
+        "width": 11,
         "height": 1
     },
     {
-        "id": "2d2c237a96854280",
+        "id": "8394bbd0950b5804",
         "type": "ui_spacer",
-        "z": "3669868b19b1582f",
+        "z": "cd35db7d9440e826",
         "name": "spacer",
-        "group": "53646539ec83fa85",
+        "group": "40495299a6187faf",
         "order": 5,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "6da67c9ab0cfaf83",
-        "type": "ui_spacer",
-        "z": "3669868b19b1582f",
-        "name": "spacer",
-        "group": "53646539ec83fa85",
-        "order": 7,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "8533ab0935bd48bd",
-        "type": "ui_spacer",
-        "z": "3669868b19b1582f",
-        "name": "spacer",
-        "group": "53646539ec83fa85",
-        "order": 9,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "e7d9ae3dc6c32b28",
-        "type": "ui_spacer",
-        "z": "3669868b19b1582f",
-        "name": "spacer",
-        "group": "53646539ec83fa85",
-        "order": 11,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "0fb90f87d1bbd7c9",
-        "type": "ui_spacer",
-        "z": "3669868b19b1582f",
-        "name": "spacer",
-        "group": "53646539ec83fa85",
-        "order": 13,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "3aa4261186687352",
-        "type": "ui_spacer",
-        "z": "3669868b19b1582f",
-        "name": "spacer",
-        "group": "6c2e3428a6c52ed8",
-        "order": 2,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "cc0d37a29e3b8033",
-        "type": "ui_spacer",
-        "z": "3669868b19b1582f",
-        "name": "spacer",
-        "group": "6c2e3428a6c52ed8",
-        "order": 4,
-        "width": 3,
+        "width": 8,
         "height": 1
     },
     {
@@ -2703,6 +2715,7 @@
         "id": "0e3188356bf30267",
         "type": "debug",
         "z": "fccae755c2f8e1fe",
+        "d": true,
         "name": "STDOUT of ConifgManager",
         "active": true,
         "tosidebar": true,
@@ -2712,21 +2725,22 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2300,
-        "y": 940,
+        "x": 2360,
+        "y": 920,
         "wires": []
     },
     {
         "id": "29cf2434ec8ef52d",
         "type": "pythonshell in",
         "z": "fccae755c2f8e1fe",
+        "d": true,
         "name": "Config_manager",
         "pyfile": "/home/iat/Documents/BA_Oleksandr/objectify/node-red/config_manager_server.py",
         "virtualenv": "/home/iat/miniforge3/envs/ba_oleksandr",
         "continuous": true,
         "stdInData": false,
-        "x": 2010,
-        "y": 940,
+        "x": 2020,
+        "y": 1000,
         "wires": [
             [
                 "0e3188356bf30267"
@@ -2813,6 +2827,59 @@
         "x": 1505,
         "y": 1240,
         "wires": []
+    },
+    {
+        "id": "f7749039b7b820a5",
+        "type": "inject",
+        "z": "fccae755c2f8e1fe",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.01",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1770,
+        "y": 920,
+        "wires": [
+            [
+                "2f0ed9da04dc177b"
+            ]
+        ]
+    },
+    {
+        "id": "2f0ed9da04dc177b",
+        "type": "exec",
+        "z": "fccae755c2f8e1fe",
+        "command": "python config_manager_server.py",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 2020,
+        "y": 920,
+        "wires": [
+            [
+                "0e3188356bf30267"
+            ],
+            [
+                "0e3188356bf30267"
+            ],
+            []
+        ]
     },
     {
         "id": "8071265587d0b45a",
@@ -5275,409 +5342,6 @@
         ]
     },
     {
-        "id": "05fa03480d3ebf68",
-        "type": "ui_button",
-        "z": "a08ae145f2d5cb38",
-        "name": "",
-        "group": "7c3d1ffe5de85af4",
-        "order": 12,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Calibrate",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 1180,
-        "y": 1500,
-        "wires": [
-            [
-                "f6f5f97a260d6162"
-            ]
-        ]
-    },
-    {
-        "id": "f6f5f97a260d6162",
-        "type": "function",
-        "z": "a08ae145f2d5cb38",
-        "name": "function 11",
-        "func": "let folder = flow.get(\"folder\");\n\n\nmsg.payload = \"python ../scripts/calibrate.py --project_name 'test_project' --input \" + folder +\" --output_folder \"+folder+\" --config_file './config.json' --num_of_images 40\";\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1370,
-        "y": 1500,
-        "wires": [
-            [
-                "e88cabccd7176f6a",
-                "d5f7f26bba6ca09d"
-            ]
-        ]
-    },
-    {
-        "id": "e88cabccd7176f6a",
-        "type": "exec",
-        "z": "a08ae145f2d5cb38",
-        "command": "",
-        "addpay": "payload",
-        "append": "",
-        "useSpawn": "false",
-        "timer": "",
-        "winHide": false,
-        "oldrc": false,
-        "name": "Execute calibration",
-        "x": 1630,
-        "y": 1540,
-        "wires": [
-            [
-                "e0d40c96a3882052"
-            ],
-            [
-                "abfc76e5e92ed93f"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "e0d40c96a3882052",
-        "type": "switch",
-        "z": "a08ae145f2d5cb38",
-        "name": "Success?",
-        "property": "rc.code",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "0",
-                "vt": "num"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 1880,
-        "y": 1640,
-        "wires": [
-            [
-                "91b9918325f3b1ed"
-            ],
-            [
-                "9c011f79ee6fc3b6"
-            ]
-        ]
-    },
-    {
-        "id": "91b9918325f3b1ed",
-        "type": "debug",
-        "z": "a08ae145f2d5cb38",
-        "name": "Calibration cool",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2090,
-        "y": 1600,
-        "wires": []
-    },
-    {
-        "id": "9c011f79ee6fc3b6",
-        "type": "debug",
-        "z": "a08ae145f2d5cb38",
-        "name": "Calibration failed",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2110,
-        "y": 1680,
-        "wires": []
-    },
-    {
-        "id": "d5f7f26bba6ca09d",
-        "type": "debug",
-        "z": "a08ae145f2d5cb38",
-        "name": "calibration_script",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1600,
-        "y": 1640,
-        "wires": []
-    },
-    {
-        "id": "abfc76e5e92ed93f",
-        "type": "debug",
-        "z": "a08ae145f2d5cb38",
-        "name": "debug 46",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1870,
-        "y": 1780,
-        "wires": []
-    },
-    {
-        "id": "4423ed01d98b3c60",
-        "type": "ui_button",
-        "z": "a08ae145f2d5cb38",
-        "name": "Charuco Generate Pose",
-        "group": "7c3d1ffe5de85af4",
-        "order": 12,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Generate Pose",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 1190,
-        "y": 2060,
-        "wires": [
-            [
-                "eb33b24fae8e05f7"
-            ]
-        ]
-    },
-    {
-        "id": "edf6e52453a5ebf9",
-        "type": "function",
-        "z": "a08ae145f2d5cb38",
-        "name": "function 12",
-        "func": "let folder = flow.get(\"folder\");\n\nvar camera_matrix = msg.payload[\"camera_matrix\"];\n\nvar dist_coeff = msg.payload[\"dist_coeff\"];\n\n\nconst flattened_camera_matrix = camera_matrix.flat();\n\n// Convert to a space-separated string\nconst string_camera_matrix = flattened_camera_matrix.join(' ');\n\nconst flattened_dist_coeff = dist_coeff.flat();\n\n// Convert to a space-separated string\nconst string_dist_coeff = flattened_dist_coeff.join(' ');\n\nmsg.payload = \"python ../scripts/charuco_generate_pose.py --project_name 'test_project' --input \"+ folder+\" --mtx \"+string_camera_matrix+ \" --dist \"+string_dist_coeff;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1850,
-        "y": 2080,
-        "wires": [
-            [
-                "3630aa3ca243ab6f",
-                "4cc5362f85732f6b"
-            ]
-        ]
-    },
-    {
-        "id": "3630aa3ca243ab6f",
-        "type": "exec",
-        "z": "a08ae145f2d5cb38",
-        "command": "",
-        "addpay": "payload",
-        "append": "",
-        "useSpawn": "true",
-        "timer": "",
-        "winHide": false,
-        "oldrc": false,
-        "name": "Execute generate_poses",
-        "x": 2230,
-        "y": 2120,
-        "wires": [
-            [
-                "051ab86051a380d4"
-            ],
-            [
-                "6a0ae4d11b06d733",
-                "661ef57fe39af3f8"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "051ab86051a380d4",
-        "type": "switch",
-        "z": "a08ae145f2d5cb38",
-        "name": "Success?",
-        "property": "rc.code",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "0",
-                "vt": "num"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 2460,
-        "y": 2220,
-        "wires": [
-            [
-                "e2359c634ac1d62d"
-            ],
-            [
-                "e65e75d11688a7e5"
-            ]
-        ]
-    },
-    {
-        "id": "e2359c634ac1d62d",
-        "type": "debug",
-        "z": "a08ae145f2d5cb38",
-        "name": "Generating cool",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2670,
-        "y": 2180,
-        "wires": []
-    },
-    {
-        "id": "e65e75d11688a7e5",
-        "type": "debug",
-        "z": "a08ae145f2d5cb38",
-        "name": "Generating failed",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2690,
-        "y": 2260,
-        "wires": []
-    },
-    {
-        "id": "4cc5362f85732f6b",
-        "type": "debug",
-        "z": "a08ae145f2d5cb38",
-        "name": "Generating_script",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2180,
-        "y": 2220,
-        "wires": []
-    },
-    {
-        "id": "6a0ae4d11b06d733",
-        "type": "debug",
-        "z": "a08ae145f2d5cb38",
-        "name": "debug 50",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2450,
-        "y": 2360,
-        "wires": []
-    },
-    {
-        "id": "eb33b24fae8e05f7",
-        "type": "http request",
-        "z": "a08ae145f2d5cb38",
-        "name": "get_current_work",
-        "method": "GET",
-        "ret": "obj",
-        "paytoqs": "ignore",
-        "url": "http://127.0.0.1:5001/config/current_work",
-        "tls": "c84c35e6e9992f9a",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 1530,
-        "y": 2080,
-        "wires": [
-            [
-                "6620c371f8bf918b",
-                "edf6e52453a5ebf9"
-            ]
-        ]
-    },
-    {
-        "id": "6620c371f8bf918b",
-        "type": "debug",
-        "z": "a08ae145f2d5cb38",
-        "name": "debug 51",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1720,
-        "y": 2300,
-        "wires": []
-    },
-    {
-        "id": "661ef57fe39af3f8",
-        "type": "function",
-        "z": "a08ae145f2d5cb38",
-        "name": "function 13",
-        "func": "node.warn(msg.payload);\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2180,
-        "y": 2600,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "3d6a530bee70b759",
         "type": "comment",
         "z": "a08ae145f2d5cb38",
@@ -5704,6 +5368,932 @@
         "wires": [
             [
                 "d1429e220b5dce36"
+            ]
+        ]
+    },
+    {
+        "id": "05fa03480d3ebf68",
+        "type": "ui_button",
+        "z": "c5fc9b7a988cec09",
+        "name": "",
+        "group": "b4e511253bf4fd53",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Calibrate",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 180,
+        "y": 640,
+        "wires": [
+            [
+                "f6f5f97a260d6162"
+            ]
+        ]
+    },
+    {
+        "id": "f6f5f97a260d6162",
+        "type": "function",
+        "z": "c5fc9b7a988cec09",
+        "name": "function 11",
+        "func": "let initial_folder = global.get(\"filebrowser_default_folder\");\nlet folder = global.get(\"selected_project\");\nlet full_path = initial_folder + folder;\n\nmsg.payload = \"python ../scripts/calibrate.py --project_name \"+folder +\" --input \" + full_path +\" --output_folder \"+full_path+\" --config_file './config.json' --num_of_images 40\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 640,
+        "wires": [
+            [
+                "e88cabccd7176f6a",
+                "d5f7f26bba6ca09d"
+            ]
+        ]
+    },
+    {
+        "id": "e88cabccd7176f6a",
+        "type": "exec",
+        "z": "c5fc9b7a988cec09",
+        "command": "",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Execute calibration",
+        "x": 630,
+        "y": 680,
+        "wires": [
+            [
+                "d7707fcee02fe1b8"
+            ],
+            [
+                "abfc76e5e92ed93f",
+                "d7707fcee02fe1b8"
+            ],
+            [
+                "e0d40c96a3882052"
+            ]
+        ]
+    },
+    {
+        "id": "e0d40c96a3882052",
+        "type": "switch",
+        "z": "c5fc9b7a988cec09",
+        "name": "Success?",
+        "property": "payload.code",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 920,
+        "y": 760,
+        "wires": [
+            [
+                "91b9918325f3b1ed"
+            ],
+            [
+                "9c011f79ee6fc3b6"
+            ]
+        ]
+    },
+    {
+        "id": "91b9918325f3b1ed",
+        "type": "debug",
+        "z": "c5fc9b7a988cec09",
+        "name": "Calibration cool",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "9c011f79ee6fc3b6",
+        "type": "debug",
+        "z": "c5fc9b7a988cec09",
+        "name": "Calibration failed",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1190,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "d5f7f26bba6ca09d",
+        "type": "debug",
+        "z": "c5fc9b7a988cec09",
+        "name": "calibration_script",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "abfc76e5e92ed93f",
+        "type": "debug",
+        "z": "c5fc9b7a988cec09",
+        "name": "debug 46",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 910,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "4423ed01d98b3c60",
+        "type": "ui_button",
+        "z": "c5fc9b7a988cec09",
+        "name": "Charuco Generate Pose",
+        "group": "b4e511253bf4fd53",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Generate Pose",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 180,
+        "y": 1060,
+        "wires": [
+            [
+                "eb33b24fae8e05f7"
+            ]
+        ]
+    },
+    {
+        "id": "edf6e52453a5ebf9",
+        "type": "function",
+        "z": "c5fc9b7a988cec09",
+        "name": "function 12",
+        "func": "let initial_folder = global.get(\"filebrowser_default_folder\");\nlet folder = global.get(\"selected_project\");\nlet full_path = initial_folder + folder;\nvar camera_matrix = msg.payload[\"camera_matrix\"];\n\nvar dist_coeff = msg.payload[\"dist_coeff\"];\n\n\nconst flattened_camera_matrix = camera_matrix.flat();\n\n// Convert to a space-separated string\nconst string_camera_matrix = flattened_camera_matrix.join(' ');\n\nconst flattened_dist_coeff = dist_coeff.flat();\n\n// Convert to a space-separated string\nconst string_dist_coeff = flattened_dist_coeff.join(' ');\n\nmsg.payload = \"python ../scripts/charuco_generate_pose.py --project_name \"+ folder+\" --input \"+ full_path+\" --mtx \"+string_camera_matrix+ \" --dist \"+string_dist_coeff;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 1080,
+        "wires": [
+            [
+                "3630aa3ca243ab6f",
+                "4cc5362f85732f6b"
+            ]
+        ]
+    },
+    {
+        "id": "3630aa3ca243ab6f",
+        "type": "exec",
+        "z": "c5fc9b7a988cec09",
+        "command": "",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Execute generate_poses",
+        "x": 1210,
+        "y": 1120,
+        "wires": [
+            [
+                "d7707fcee02fe1b8"
+            ],
+            [
+                "6a0ae4d11b06d733",
+                "661ef57fe39af3f8",
+                "d7707fcee02fe1b8"
+            ],
+            [
+                "051ab86051a380d4"
+            ]
+        ]
+    },
+    {
+        "id": "051ab86051a380d4",
+        "type": "switch",
+        "z": "c5fc9b7a988cec09",
+        "name": "Success?",
+        "property": "payload.code",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1500,
+        "y": 1180,
+        "wires": [
+            [
+                "e2359c634ac1d62d",
+                "700961aee6cd9454"
+            ],
+            [
+                "e65e75d11688a7e5",
+                "f5ae4e46faf911ec"
+            ]
+        ]
+    },
+    {
+        "id": "e2359c634ac1d62d",
+        "type": "debug",
+        "z": "c5fc9b7a988cec09",
+        "name": "Generating cool",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1800,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "e65e75d11688a7e5",
+        "type": "debug",
+        "z": "c5fc9b7a988cec09",
+        "name": "Generating failed",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1810,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "4cc5362f85732f6b",
+        "type": "debug",
+        "z": "c5fc9b7a988cec09",
+        "name": "Generating_script",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1170,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "6a0ae4d11b06d733",
+        "type": "debug",
+        "z": "c5fc9b7a988cec09",
+        "name": "debug 50",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1440,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "eb33b24fae8e05f7",
+        "type": "http request",
+        "z": "c5fc9b7a988cec09",
+        "name": "get_current_work",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:5001/config/current_work",
+        "tls": "c84c35e6e9992f9a",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 520,
+        "y": 1080,
+        "wires": [
+            [
+                "6620c371f8bf918b",
+                "edf6e52453a5ebf9"
+            ]
+        ]
+    },
+    {
+        "id": "6620c371f8bf918b",
+        "type": "debug",
+        "z": "c5fc9b7a988cec09",
+        "name": "debug 51",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "661ef57fe39af3f8",
+        "type": "function",
+        "z": "c5fc9b7a988cec09",
+        "name": "function 13",
+        "func": "node.warn(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1170,
+        "y": 1600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6ec4b344c84f72e8",
+        "type": "ui_dropdown",
+        "z": "c5fc9b7a988cec09",
+        "g": "16e9549a3ea706bc",
+        "name": "charuco project dropdown",
+        "label": "",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "94b2d8d9e77fa636",
+        "order": 3,
+        "width": 8,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 2710,
+        "y": 300,
+        "wires": [
+            [
+                "7b36c9095cf50122"
+            ]
+        ]
+    },
+    {
+        "id": "5ae3b7b8fe108ddb",
+        "type": "function",
+        "z": "c5fc9b7a988cec09",
+        "g": "16e9549a3ea706bc",
+        "name": "Folder handling",
+        "func": "let folder = global.get(\"filebrowser_default_folder\");\nlet project_name = global.get(\"selected_project\")\n//console.log(project_name);\n\nif (folder===undefined) {\n    folder=\"./projects/\";\n    context.set(\"folder\", folder);\n}\n\n\nmsg.project_name = project_name;\nmsg.payload = {\"start\":folder};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fs",
+                "module": "fs"
+            }
+        ],
+        "x": 2120,
+        "y": 300,
+        "wires": [
+            [
+                "f0b90c78f5f79e71"
+            ]
+        ]
+    },
+    {
+        "id": "f0b90c78f5f79e71",
+        "type": "fs-file-lister",
+        "z": "c5fc9b7a988cec09",
+        "g": "16e9549a3ea706bc",
+        "name": "Files",
+        "start": "./projects/",
+        "pattern": "*.*",
+        "folders": "*",
+        "hidden": false,
+        "lstype": "directories",
+        "path": true,
+        "single": true,
+        "depth": 0,
+        "stat": true,
+        "showWarnings": false,
+        "x": 2310,
+        "y": 300,
+        "wires": [
+            [
+                "567a4991445ed8e7"
+            ]
+        ]
+    },
+    {
+        "id": "567a4991445ed8e7",
+        "type": "function",
+        "z": "c5fc9b7a988cec09",
+        "g": "16e9549a3ea706bc",
+        "name": "Prep Data",
+        "func": "function convertDate(local) {\n    let d = new Date(local);\n    d.setTime(d.getTime()+3600*1000);\n    return d.toISOString().slice(0, 19).replace('T', ' ');\n}\n\nvar newmsg = msg;\nnewmsg.options = [];\n\nfor (var i=0; i<msg.payload.length; i++) {\n\n    msg.payload[i].fname = msg.payload[i].name.replace(/^.*(\\\\|\\/|\\:)/, '');\n    if (msg.payload[i].stat.isDirectory) {\n        msg.payload[i].ext = \"folder\";\n        newmsg.options[i] = msg.payload[i].fname;\n    }\n}\nif (global.get(\"selected_project\") !== \"\") {\n    // Find the index of the selected project\n    var project_name = global.get(\"selected_project\").split(\"/\").filter(Boolean).pop();\n    newmsg.payload = project_name\n}\nflow.set(\"currentfolder\",msg.payload);\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2460,
+        "y": 300,
+        "wires": [
+            [
+                "6ec4b344c84f72e8",
+                "be3b2ff50c3c00d1"
+            ]
+        ]
+    },
+    {
+        "id": "be3b2ff50c3c00d1",
+        "type": "debug",
+        "z": "c5fc9b7a988cec09",
+        "g": "16e9549a3ea706bc",
+        "name": "debug 41",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2530,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "ca2e9a4b6955efb0",
+        "type": "link in",
+        "z": "c5fc9b7a988cec09",
+        "g": "16e9549a3ea706bc",
+        "name": "Charuco global folder in",
+        "links": [
+            "9a67d1381a1e6960",
+            "fe0e5a3d2e1fe78b",
+            "4484b8d6a16e79f1",
+            "4819a5fb717ddca6"
+        ],
+        "x": 1955,
+        "y": 400,
+        "wires": [
+            [
+                "5ae3b7b8fe108ddb"
+            ]
+        ]
+    },
+    {
+        "id": "7b36c9095cf50122",
+        "type": "function",
+        "z": "c5fc9b7a988cec09",
+        "g": "16e9549a3ea706bc",
+        "name": "Set global_folder",
+        "func": "var folder = global.get('filebrowser_default_folder');\nvar project= msg.payload;\nmsg.payload = folder+project+\"/\";\n\nglobal.set(\"selected_project\",project)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2930,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7aa205a7c54fbf27",
+        "type": "comment",
+        "z": "c5fc9b7a988cec09",
+        "name": "Charuco Camera Poses",
+        "info": "",
+        "x": 560,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "d7707fcee02fe1b8",
+        "type": "ui_template",
+        "z": "c5fc9b7a988cec09",
+        "group": "40324dcc41601167",
+        "name": "Logging template",
+        "order": 1,
+        "width": 12,
+        "height": 16,
+        "format": "<div style=\"height: 700px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px;\" id=\"logWindow\"></div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var logWindow = document.getElementById(\"logWindow\");\n            if (payload === \"clear\") {\n                logWindow.innerHTML = \"\";  // Clear the log window\n            } else {\n                logWindow.innerHTML += payload + \"<br/>\";\n                logWindow.scrollTop = logWindow.scrollHeight;  // Auto-scroll to the bottom\n            }\n        });\n    })(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1750,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4b2ba95767605bad",
+        "type": "ui_text",
+        "z": "c5fc9b7a988cec09",
+        "group": "b4e511253bf4fd53",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "Generate button hint",
+        "label": "",
+        "format": "If camera is calibrated, you can start generation",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 160,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "4de0ac6342d8d836",
+        "type": "http request",
+        "z": "c5fc9b7a988cec09",
+        "name": "get_current_work",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:5001/config/current_work",
+        "tls": "c84c35e6e9992f9a",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 490,
+        "y": 280,
+        "wires": [
+            [
+                "3",
+                "4325551d270b89d7"
+            ]
+        ]
+    },
+    {
+        "id": "1",
+        "type": "inject",
+        "z": "c5fc9b7a988cec09",
+        "name": "Every 5 seconds",
+        "props": [],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.2",
+        "topic": "",
+        "x": 270,
+        "y": 340,
+        "wires": [
+            [
+                "4de0ac6342d8d836"
+            ]
+        ]
+    },
+    {
+        "id": "3",
+        "type": "switch",
+        "z": "c5fc9b7a988cec09",
+        "name": "Check current_work",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nempty"
+            },
+            {
+                "t": "empty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 720,
+        "y": 220,
+        "wires": [
+            [
+                "ce10213a8e5db4a7"
+            ],
+            [
+                "ac3a1a249bfe8680"
+            ]
+        ]
+    },
+    {
+        "id": "4325551d270b89d7",
+        "type": "debug",
+        "z": "c5fc9b7a988cec09",
+        "d": true,
+        "name": "Check calibration json",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "ce10213a8e5db4a7",
+        "type": "change",
+        "z": "c5fc9b7a988cec09",
+        "name": "Set Green HTML",
+        "rules": [
+            {
+                "t": "set",
+                "p": "text",
+                "pt": "msg",
+                "to": "Camera is calibrated; You can press generate poses on folder with images, that have the same camera setup",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            }
+        ],
+        "x": 1050,
+        "y": 200,
+        "wires": [
+            [
+                "81810eff6af1ce1b"
+            ]
+        ]
+    },
+    {
+        "id": "ac3a1a249bfe8680",
+        "type": "change",
+        "z": "c5fc9b7a988cec09",
+        "name": "Set Red HTML",
+        "rules": [
+            {
+                "t": "set",
+                "p": "text",
+                "pt": "msg",
+                "to": "Camera isn't calibrated; You need to first calibrate camera on calibration folder. E.g. board_4x4_freehand",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "x": 1050,
+        "y": 240,
+        "wires": [
+            [
+                "81810eff6af1ce1b"
+            ]
+        ]
+    },
+    {
+        "id": "81810eff6af1ce1b",
+        "type": "ui_template",
+        "z": "c5fc9b7a988cec09",
+        "group": "b4e511253bf4fd53",
+        "name": "Dynamic Text",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"color:{{msg.color}};font-size:20px;\">{{msg.text}}</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 1410,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "efa560f1ac899015",
+        "type": "inject",
+        "z": "c5fc9b7a988cec09",
+        "name": "Clear Log on Startup",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "clear",
+        "payloadType": "str",
+        "x": 1440,
+        "y": 640,
+        "wires": [
+            [
+                "d7707fcee02fe1b8"
+            ]
+        ]
+    },
+    {
+        "id": "5183bb1827453b30",
+        "type": "ui_text",
+        "z": "c5fc9b7a988cec09",
+        "group": "94b2d8d9e77fa636",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "name": "Select Project",
+        "label": "Select a project where to initialize charuco camera pose extraction",
+        "format": "",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 2240,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "12e6460ec3653f11",
+        "type": "ui_template",
+        "z": "c5fc9b7a988cec09",
+        "group": "b4e511253bf4fd53",
+        "name": "Generating poses result",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"color:{{msg.color}};font-size:20px;\">{{msg.text}}</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 1990,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "700961aee6cd9454",
+        "type": "change",
+        "z": "c5fc9b7a988cec09",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "text",
+                "pt": "msg",
+                "to": "Poses are generated under transforms.json",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1680,
+        "y": 1000,
+        "wires": [
+            [
+                "12e6460ec3653f11"
+            ]
+        ]
+    },
+    {
+        "id": "f5ae4e46faf911ec",
+        "type": "change",
+        "z": "c5fc9b7a988cec09",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Error occured poses are not generated",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1680,
+        "y": 1060,
+        "wires": [
+            [
+                "12e6460ec3653f11"
             ]
         ]
     },
@@ -5738,7 +6328,7 @@
         "type": "function",
         "z": "3669868b19b1582f",
         "name": "function 3",
-        "func": "//construct command\nvar cmd = \"\";\nvar ingp_root = global.get(\"ingp_root\")\ncmd = cmd +\"python \"+ingp_root+\"colmap2nerf.py \"\n\nvar folder = global.get(\"selected_project\");\n\nif(flow.get(\"video\")==true){\n cmd += \"--video_in \";\n cmd += folder +\" \";\n}else{\n    cmd+= \"--images \";\n    cmd+= folder+ \" \";\n}\nif(flow.get(\"run_colmap\")==true){\n    cmd += \"--run_colmap \";\n}\nif(flow.get(\"single_camera\")==true){\n    cmd += \"--single_camera \";\n}\nif(flow.get(\"use_gpu\")==true){\n    cmd += \"--use_gpu 1 \";\n}\nmsg.payload = cmd;\nmsg.errorcode = 0;\nreturn msg;",
+        "func": "//construct command\nvar cmd = \"\";\nvar ingp_root = global.get(\"ingp_root\")\ncmd = cmd +\"python \"+ingp_root+\"colmap2nerf.py\"\n\nvar folder = global.get(\"selected_project\");\n\nif(flow.get(\"video\")==true){\n cmd += \"--video_in \";\n cmd += folder +\" \";\n}else{\n    cmd+= \"--images \";\n    cmd+= folder+ \" \";\n}\nif(flow.get(\"run_colmap\")==true){\n    cmd += \"--run_colmap \";\n}\nif(flow.get(\"single_camera\")==true){\n    cmd += \"--single_camera \";\n}\nif(flow.get(\"use_gpu\")==true){\n    cmd += \"--use_gpu 1 \";\n}\nmsg.payload = cmd;\nmsg.errorcode = 0;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -6025,7 +6615,7 @@
         "tooltip": "",
         "place": "Select option",
         "group": "6c2e3428a6c52ed8",
-        "order": 3,
+        "order": 4,
         "width": 8,
         "height": 1,
         "passthru": true,
@@ -6311,9 +6901,9 @@
         "group": "45c6e5c68f9384b7",
         "name": "Logging template",
         "order": 1,
-        "width": "12",
+        "width": 12,
         "height": 16,
-        "format": "<div style=\"height: 700px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px;\" id=\"logWindow\"></div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var logWindow = document.getElementById(\"logWindow\");\n            logWindow.innerHTML += payload + \"<br/>\";\n            logWindow.scrollTop = logWindow.scrollHeight;  // Auto-scroll to the bottom\n        });\n    })(scope);\n</script>",
+        "format": "<div style=\"height: 700px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px;\" id=\"logWindow\"></div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var logWindow = document.getElementById(\"logWindow\");\n            if (payload === \"clear\") {\n                logWindow.innerHTML = \"\";  // Clear the log window\n            } else {\n                logWindow.innerHTML += payload + \"<br/>\";\n                logWindow.scrollTop = logWindow.scrollHeight;  // Auto-scroll to the bottom\n            }\n        });\n    })(scope);\n</script>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
@@ -6335,7 +6925,7 @@
         "width": 8,
         "height": 1,
         "name": "Select Project",
-        "label": "Select a project where to initialize reconstruction",
+        "label": "Select a project where to initialize colmap camera pose extraction",
         "format": "",
         "layout": "row-center",
         "className": "",
@@ -6381,6 +6971,31 @@
         "wires": []
     },
     {
+        "id": "cf014e60e3ca34d2",
+        "type": "inject",
+        "z": "3669868b19b1582f",
+        "name": "Clear Log on Startup",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "clear",
+        "payloadType": "str",
+        "x": 1480,
+        "y": 220,
+        "wires": [
+            [
+                "ca970b6fa5aa189b"
+            ]
+        ]
+    },
+    {
         "id": "cdf08e1fa0f798cf",
         "type": "comment",
         "z": "f11166a80e40d7b6",
@@ -6395,7 +7010,7 @@
         "type": "function",
         "z": "f11166a80e40d7b6",
         "name": "function 4",
-        "func": "//construct command\n// var cmd = \"\";\n// cmd = cmd +\"python scripts/run.py \"\n// var full_cmd = \"python run.py --scene transforms.json --screenshot_dir rembg_abgabe_img1139/ --width 2048 --height 2048 --n_steps 1000 --save_snapshot ./snap.ingp\";\n// var folder = flow.get(\"folder\");\n// if(flow.get(\"folder\") == null){\n//     msg.errorcode = 1;\n//     msg.errortext = \"Please navigate to folder that contains images\";\n// }\n\n// if(flow.get(\"video\")==true){\n//  cmd += \"--video_in \";\n//  cmd += folder +\" \";\n// }else{\n//     cmd+= \"--images \";\n//     cmd+= folder+ \" \";\n// }\n// if(flow.get(\"run_colmap\")==true){\n//     cmd += \"--run_colmap \";\n// }\n// if(flow.get(\"single_camera\")==true){\n//     cmd += \"--single_camera \";\n// }\n// if(flow.get(\"use_gpu\")==true){\n//     cmd += \"--use_gpu 1 \";\n// }\n// msg.payload = cmd;\n// msg.errorcode = 0;\n// return msg;\n\nvar cmd = \"\";\nvar steps = flow.get(\"steps\")\nconsole.log(flow.get(\"transforms_found\"));\nvar default_folder = global.get(\"filebrowser_default_folder\") \nlet project_path =default_folder+ global.get(\"selected_project\");\ncmd = \"python ../../instant-ngp/scripts/run.py --scene \" + project_path + \"/transforms_centered.json --save_snapshot \" + project_path + \"/snapshot.ingp --save_mesh \" + project_path +\"/snapshot.obj --n_steps \"+steps;\n\nmsg.payload = cmd;\n\nreturn msg;",
+        "func": "//construct command\n// var cmd = \"\";\n// cmd = cmd +\"python scripts/run.py \"\n// var full_cmd = \"python run.py --scene transforms.json --screenshot_dir rembg_abgabe_img1139/ --width 2048 --height 2048 --n_steps 1000 --save_snapshot ./snap.ingp\";\n// var folder = flow.get(\"folder\");\n// if(flow.get(\"folder\") == null){\n//     msg.errorcode = 1;\n//     msg.errortext = \"Please navigate to folder that contains images\";\n// }\n\n// if(flow.get(\"video\")==true){\n//  cmd += \"--video_in \";\n//  cmd += folder +\" \";\n// }else{\n//     cmd+= \"--images \";\n//     cmd+= folder+ \" \";\n// }\n// if(flow.get(\"run_colmap\")==true){\n//     cmd += \"--run_colmap \";\n// }\n// if(flow.get(\"single_camera\")==true){\n//     cmd += \"--single_camera \";\n// }\n// if(flow.get(\"use_gpu\")==true){\n//     cmd += \"--use_gpu 1 \";\n// }\n// msg.payload = cmd;\n// msg.errorcode = 0;\n// return msg;\n\nvar cmd = \"\";\nvar steps = flow.get(\"steps\")\nconsole.log(flow.get(\"transforms_found\"));\nvar default_folder = global.get(\"filebrowser_default_folder\") \nlet project_path =default_folder+ global.get(\"selected_project\");\nvar ingp_root = global.get(\"ingp_root\")\ncmd = \"python \"+ingp_root+\"run.py\"+\" --scene \" + project_path + \"/transforms_centered.json --save_snapshot \" + project_path + \"/snapshot.ingp --save_mesh \" + project_path +\"/snapshot.obj --n_steps \"+steps;\n\nmsg.payload = cmd;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -6574,325 +7189,6 @@
         "wires": []
     },
     {
-        "id": "7aa205a7c54fbf27",
-        "type": "comment",
-        "z": "f11166a80e40d7b6",
-        "name": "Charuco Camera Poses",
-        "info": "",
-        "x": 320,
-        "y": 1280,
-        "wires": []
-    },
-    {
-        "id": "cbbc291d1b1c5e9d",
-        "type": "exec",
-        "z": "f11166a80e40d7b6",
-        "command": "python colmap2nerf.py ",
-        "addpay": "",
-        "append": "",
-        "useSpawn": "false",
-        "timer": "",
-        "winHide": false,
-        "oldrc": false,
-        "name": "",
-        "x": 1020,
-        "y": 1800,
-        "wires": [
-            [],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "4be32cea1e374e59",
-        "type": "function",
-        "z": "f11166a80e40d7b6",
-        "name": "function 5",
-        "func": "//construct command\nvar cmd = \"\";\ncmd = cmd +\"python scripts/run.py \"\nvar full_cmd = \"python run.py --scene transforms.json --screenshot_dir rembg_abgabe_img1139/ --width 2048 --height 2048 --n_steps 1000 --save_snapshot ./snap.ingp\";\nvar folder = flow.get(\"folder\");\nif(flow.get(\"folder\") == null){\n    msg.errorcode = 1;\n    msg.errortext = \"Please navigate to folder that contains images\";\n}\n\nif(flow.get(\"video\")==true){\n cmd += \"--video_in \";\n cmd += folder +\" \";\n}else{\n    cmd+= \"--images \";\n    cmd+= folder+ \" \";\n}\nif(flow.get(\"run_colmap\")==true){\n    cmd += \"--run_colmap \";\n}\nif(flow.get(\"single_camera\")==true){\n    cmd += \"--single_camera \";\n}\nif(flow.get(\"use_gpu\")==true){\n    cmd += \"--use_gpu 1 \";\n}\nmsg.payload = cmd;\nmsg.errorcode = 0;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 520,
-        "y": 1920,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "2f1638c588ab8b2b",
-        "type": "debug",
-        "z": "f11166a80e40d7b6",
-        "name": "debug 29",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 980,
-        "y": 1960,
-        "wires": []
-    },
-    {
-        "id": "fe63e6b15ceeeee6",
-        "type": "switch",
-        "z": "f11166a80e40d7b6",
-        "name": "",
-        "property": "errorcode",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "neq",
-                "v": "1",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 630,
-        "y": 1840,
-        "wires": [
-            [
-                "36f4b4b6d2954df2"
-            ]
-        ]
-    },
-    {
-        "id": "36f4b4b6d2954df2",
-        "type": "exec",
-        "z": "f11166a80e40d7b6",
-        "command": "python ./scripts/test_print.py",
-        "addpay": "",
-        "append": "",
-        "useSpawn": "false",
-        "timer": "",
-        "winHide": false,
-        "oldrc": false,
-        "name": "",
-        "x": 760,
-        "y": 1920,
-        "wires": [
-            [
-                "2f1638c588ab8b2b",
-                "8a414cf801785f10"
-            ],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "81d0dd5695f812f3",
-        "type": "change",
-        "z": "f11166a80e40d7b6",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "video",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 680,
-        "y": 2120,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e0b438c893deb015",
-        "type": "change",
-        "z": "f11166a80e40d7b6",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "use_gpu",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 690,
-        "y": 2200,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "0624a27f13fd08ab",
-        "type": "change",
-        "z": "f11166a80e40d7b6",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "steps",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 660,
-        "y": 2260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "8b515f18ba789c97",
-        "type": "change",
-        "z": "f11166a80e40d7b6",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "out",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 680,
-        "y": 2040,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "750113b5d0428cac",
-        "type": "comment",
-        "z": "f11166a80e40d7b6",
-        "name": "GS File Browser",
-        "info": "",
-        "x": 320,
-        "y": 1400,
-        "wires": []
-    },
-    {
-        "id": "a484367d4b5bda9c",
-        "type": "comment",
-        "z": "f11166a80e40d7b6",
-        "name": "GS Parameters",
-        "info": "",
-        "x": 340,
-        "y": 1780,
-        "wires": []
-    },
-    {
-        "id": "5ae3b7b8fe108ddb",
-        "type": "function",
-        "z": "f11166a80e40d7b6",
-        "g": "16e9549a3ea706bc",
-        "name": "Folder handling",
-        "func": "let folder = global.get(\"filebrowser_default_folder\");\nlet project_name = global.get(\"selected_project\")\n//console.log(project_name);\n\nif (folder===undefined) {\n    folder=\"./projects/\";\n    context.set(\"folder\", folder);\n}\n\n\nmsg.project_name = project_name;\nmsg.payload = {\"start\":folder};\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "fs",
-                "module": "fs"
-            }
-        ],
-        "x": 900,
-        "y": 1400,
-        "wires": [
-            [
-                "f0b90c78f5f79e71"
-            ]
-        ]
-    },
-    {
-        "id": "567a4991445ed8e7",
-        "type": "function",
-        "z": "f11166a80e40d7b6",
-        "g": "16e9549a3ea706bc",
-        "name": "Prep Data",
-        "func": "function convertDate(local) {\n    let d = new Date(local);\n    d.setTime(d.getTime()+3600*1000);\n    return d.toISOString().slice(0, 19).replace('T', ' ');\n}\n\nvar newmsg = msg;\nnewmsg.options = [];\n\nfor (var i=0; i<msg.payload.length; i++) {\n\n    msg.payload[i].fname = msg.payload[i].name.replace(/^.*(\\\\|\\/|\\:)/, '');\n    if (msg.payload[i].stat.isDirectory) {\n        msg.payload[i].ext = \"folder\";\n        newmsg.options[i] = msg.payload[i].fname;\n    }\n}\nif (global.get(\"selected_project\") !== \"\") {\n    // Find the index of the selected project\n    var project_name = global.get(\"selected_project\").split(\"/\").filter(Boolean).pop();\n    newmsg.payload = project_name\n}\nflow.set(\"currentfolder\",msg.payload);\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1240,
-        "y": 1400,
-        "wires": [
-            [
-                "6ec4b344c84f72e8",
-                "be3b2ff50c3c00d1"
-            ]
-        ]
-    },
-    {
-        "id": "be3b2ff50c3c00d1",
-        "type": "debug",
-        "z": "f11166a80e40d7b6",
-        "g": "16e9549a3ea706bc",
-        "name": "debug 41",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1310,
-        "y": 1500,
-        "wires": []
-    },
-    {
-        "id": "ca2e9a4b6955efb0",
-        "type": "link in",
-        "z": "f11166a80e40d7b6",
-        "g": "16e9549a3ea706bc",
-        "name": "Charuco global folder in",
-        "links": [
-            "9a67d1381a1e6960",
-            "fe0e5a3d2e1fe78b",
-            "4484b8d6a16e79f1",
-            "4819a5fb717ddca6"
-        ],
-        "x": 735,
-        "y": 1500,
-        "wires": [
-            [
-                "5ae3b7b8fe108ddb"
-            ]
-        ]
-    },
-    {
         "id": "ed3316b06c40e79c",
         "type": "function",
         "z": "f11166a80e40d7b6",
@@ -6959,34 +7255,6 @@
         "wires": []
     },
     {
-        "id": "6ec4b344c84f72e8",
-        "type": "ui_dropdown",
-        "z": "f11166a80e40d7b6",
-        "g": "16e9549a3ea706bc",
-        "name": "charuco project dropdown",
-        "label": "",
-        "tooltip": "",
-        "place": "Select option",
-        "group": "94b2d8d9e77fa636",
-        "order": 3,
-        "width": 8,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [],
-        "payload": "",
-        "topic": "topic",
-        "topicType": "msg",
-        "className": "",
-        "x": 1490,
-        "y": 1400,
-        "wires": [
-            [
-                "7b36c9095cf50122"
-            ]
-        ]
-    },
-    {
         "id": "d7c9289e3b43fa08",
         "type": "ui_dropdown",
         "z": "f11166a80e40d7b6",
@@ -7019,7 +7287,7 @@
         "type": "ui_button",
         "z": "f11166a80e40d7b6",
         "name": "",
-        "group": "919860c8b411c539",
+        "group": "23c5588908fde9b8",
         "order": 7,
         "width": 7,
         "height": 1,
@@ -7039,34 +7307,6 @@
         "wires": [
             [
                 "6922f8443327585e"
-            ]
-        ]
-    },
-    {
-        "id": "3747fa39bf8fdaed",
-        "type": "ui_button",
-        "z": "f11166a80e40d7b6",
-        "name": "",
-        "group": "b4e511253bf4fd53",
-        "order": 8,
-        "width": 6,
-        "height": 1,
-        "passthru": false,
-        "label": "run_reconstruction",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 390,
-        "y": 1840,
-        "wires": [
-            [
-                "36f4b4b6d2954df2"
             ]
         ]
     },
@@ -7139,74 +7379,6 @@
         ]
     },
     {
-        "id": "44eeaf0faf17f64f",
-        "type": "ui_switch",
-        "z": "f11166a80e40d7b6",
-        "name": "",
-        "label": "Save mesh",
-        "tooltip": "",
-        "group": "b4e511253bf4fd53",
-        "order": 2,
-        "width": 6,
-        "height": 1,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "video",
-        "topicType": "str",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "animate": false,
-        "className": "",
-        "x": 390,
-        "y": 2120,
-        "wires": [
-            [
-                "81d0dd5695f812f3"
-            ]
-        ]
-    },
-    {
-        "id": "7aa9b020d77d5e73",
-        "type": "ui_switch",
-        "z": "f11166a80e40d7b6",
-        "name": "",
-        "label": "Use gpu",
-        "tooltip": "",
-        "group": "b4e511253bf4fd53",
-        "order": 7,
-        "width": 6,
-        "height": 1,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "topic",
-        "topicType": "msg",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "animate": false,
-        "className": "",
-        "x": 380,
-        "y": 2200,
-        "wires": [
-            [
-                "e0b438c893deb015"
-            ]
-        ]
-    },
-    {
         "id": "70b4dca61ac86b02",
         "type": "ui_text_input",
         "z": "f11166a80e40d7b6",
@@ -7229,32 +7401,6 @@
         "wires": [
             [
                 "fb3bf4b6edab43c7"
-            ]
-        ]
-    },
-    {
-        "id": "db72336a999b7276",
-        "type": "ui_text_input",
-        "z": "f11166a80e40d7b6",
-        "name": "",
-        "label": "Save output to",
-        "tooltip": "",
-        "group": "b4e511253bf4fd53",
-        "order": 1,
-        "width": 6,
-        "height": 1,
-        "passthru": true,
-        "mode": "text",
-        "delay": 300,
-        "topic": "topic",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "msg",
-        "x": 420,
-        "y": 2040,
-        "wires": [
-            [
-                "8b515f18ba789c97"
             ]
         ]
     },
@@ -7283,34 +7429,6 @@
             [
                 "058a7201fdcec32f",
                 "21ec4e07bcb045bd"
-            ]
-        ]
-    },
-    {
-        "id": "c51b94ce893c960d",
-        "type": "ui_slider",
-        "z": "f11166a80e40d7b6",
-        "name": "",
-        "label": "Steps",
-        "tooltip": "",
-        "group": "b4e511253bf4fd53",
-        "order": 3,
-        "width": 5,
-        "height": 1,
-        "passthru": true,
-        "outs": "all",
-        "topic": "topic",
-        "topicType": "msg",
-        "min": 0,
-        "max": "20000",
-        "step": 1,
-        "className": "",
-        "x": 370,
-        "y": 2280,
-        "wires": [
-            [
-                "0624a27f13fd08ab",
-                "fa93ea05d3b7c2e9"
             ]
         ]
     },
@@ -7357,111 +7475,24 @@
         "wires": []
     },
     {
-        "id": "94af52f4920de305",
-        "type": "ui_text",
-        "z": "f11166a80e40d7b6",
-        "group": "421d878b677754c9",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "name": "Charuco guidelines",
-        "label": "",
-        "format": "Guidelines: You need to point to foler that contains transforms.json and then configure and start reconstruction",
-        "layout": "row-center",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 330,
-        "y": 1360,
-        "wires": []
-    },
-    {
-        "id": "fa93ea05d3b7c2e9",
-        "type": "ui_text",
-        "z": "f11166a80e40d7b6",
-        "group": "b4e511253bf4fd53",
-        "order": 5,
-        "width": 2,
-        "height": 1,
-        "name": "",
-        "label": "",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 610,
-        "y": 2320,
-        "wires": []
-    },
-    {
         "id": "ab3d335fc2c980c9",
         "type": "ui_template",
         "z": "f11166a80e40d7b6",
         "group": "a7d09646c3ab18c3",
-        "name": "",
+        "name": "Logging window ingp",
         "order": 1,
         "width": 16,
         "height": 16,
-        "format": "<div style=\"height: 700px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px;\" id=\"logWindow\"></div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var logWindow = document.getElementById(\"logWindow\");\n            logWindow.innerHTML += payload + \"<br/>\";\n            logWindow.scrollTop = logWindow.scrollHeight;  // Auto-scroll to the bottom\n        });\n    })(scope);\n</script>",
+        "format": "<div style=\"height: 700px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px;\" id=\"logWindow\"></div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var logWindow = document.getElementById(\"logWindow\");\n            if (payload === \"clear\") {\n                logWindow.innerHTML = \"\";  // Clear the log window\n            } else {\n                logWindow.innerHTML += payload + \"<br/>\";\n                logWindow.scrollTop = logWindow.scrollHeight;  // Auto-scroll to the bottom\n            }\n        });\n    })(scope);\n</script>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1580,
+        "x": 1620,
         "y": 580,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "8a414cf801785f10",
-        "type": "ui_template",
-        "z": "f11166a80e40d7b6",
-        "group": "40324dcc41601167",
-        "name": "",
-        "order": 1,
-        "width": 12,
-        "height": 16,
-        "format": "<div>\n  <pre>{{msg.payload}}</pre>\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 980,
-        "y": 1900,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f0b90c78f5f79e71",
-        "type": "fs-file-lister",
-        "z": "f11166a80e40d7b6",
-        "g": "16e9549a3ea706bc",
-        "name": "Files",
-        "start": "./projects/",
-        "pattern": "*.*",
-        "folders": "*",
-        "hidden": false,
-        "lstype": "directories",
-        "path": true,
-        "single": true,
-        "depth": 0,
-        "stat": true,
-        "showWarnings": false,
-        "x": 1090,
-        "y": 1400,
-        "wires": [
-            [
-                "567a4991445ed8e7"
-            ]
         ]
     },
     {
@@ -7714,25 +7745,6 @@
         ]
     },
     {
-        "id": "7b36c9095cf50122",
-        "type": "function",
-        "z": "f11166a80e40d7b6",
-        "g": "16e9549a3ea706bc",
-        "name": "Set global_folder",
-        "func": "var folder = global.get('filebrowser_default_folder');\nvar project= msg.payload;\nmsg.payload = folder+project+\"/\";\n\nglobal.set(\"selected_project\",project)\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1710,
-        "y": 1480,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "1f21093d7f876a07",
         "type": "link out",
         "z": "f11166a80e40d7b6",
@@ -7770,7 +7782,7 @@
         "z": "f11166a80e40d7b6",
         "d": true,
         "group": "a7d09646c3ab18c3",
-        "order": 1,
+        "order": 2,
         "width": 0,
         "height": 0,
         "name": "",
@@ -7824,6 +7836,31 @@
         ]
     },
     {
+        "id": "13c7112186c0a641",
+        "type": "inject",
+        "z": "f11166a80e40d7b6",
+        "name": "Clear Log on Startup",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "clear",
+        "payloadType": "str",
+        "x": 1340,
+        "y": 500,
+        "wires": [
+            [
+                "ab3d335fc2c980c9"
+            ]
+        ]
+    },
+    {
         "id": "586038a5dcac1eac",
         "type": "inject",
         "z": "cd35db7d9440e826",
@@ -7845,8 +7882,8 @@
         "topic": "change",
         "payload": "filebrowser_default_folder",
         "payloadType": "global",
-        "x": 290,
-        "y": 460,
+        "x": 650,
+        "y": 300,
         "wires": [
             [
                 "9ac718281d44165a"
@@ -7866,8 +7903,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 500,
-        "y": 500,
+        "x": 860,
+        "y": 340,
         "wires": [
             [
                 "f0d9e0579a4ed929",
@@ -7888,8 +7925,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 820,
-        "y": 500,
+        "x": 1180,
+        "y": 340,
         "wires": [
             [
                 "d6716d447139a35c"
@@ -7908,8 +7945,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 680,
-        "y": 580,
+        "x": 1040,
+        "y": 420,
         "wires": [
             [
                 "9ac718281d44165a"
@@ -7936,8 +7973,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 830,
-        "y": 440,
+        "x": 1190,
+        "y": 280,
         "wires": [
             [
                 "4de86a1edb0d9a2e"
@@ -7950,15 +7987,15 @@
         "z": "cd35db7d9440e826",
         "g": "29bf2eccfbb8fe16",
         "name": "function 6",
-        "func": "context.set(\"lastfile\",msg.payload)\nreturn msg;",
+        "func": "flow.set(\"lastfile\",msg.payload)\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1300,
-        "y": 600,
+        "x": 1720,
+        "y": 400,
         "wires": [
             []
         ]
@@ -7968,7 +8005,7 @@
         "type": "function",
         "z": "cd35db7d9440e826",
         "name": "function 7",
-        "func": "var filename = context.get(\"lastfile\");\nvar cmd = \"python test.py\"//+filename;\nmsg.payload = cmd;\nreturn msg;",
+        "func": "var filename = flow.get(\"lastfile\");\nvar cmd = \"python ../scripts/viz_test.py \" +filename;\nmsg.payload = cmd;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8014,7 +8051,7 @@
         "type": "debug",
         "z": "cd35db7d9440e826",
         "name": "debug 30",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -8153,19 +8190,20 @@
         "options": "{\"movableColumns\":true,\"resizableColumns\":true,\"selectable\":1,\"responsiveLayout\":\"collapse\",\"autoResize\":true,\"layout\":\"fitColumns\",\"pagination\":\"local\",\"height\":\"100%\"}",
         "group": "3fdc8d9e247e5296",
         "name": "Select folder where files located",
-        "order": 9,
+        "order": 13,
         "width": 23,
         "height": 10,
         "columns": [],
         "outputs": 1,
         "cts": false,
-        "x": 1050,
-        "y": 500,
+        "x": 1410,
+        "y": 340,
         "wires": [
             [
                 "25fce322b6f11e59",
                 "857e073fca509c2e",
-                "d23290c4262f3351"
+                "d23290c4262f3351",
+                "f01519fbe4901cea"
             ]
         ]
     },
@@ -8190,8 +8228,8 @@
         "payloadType": "str",
         "topic": "refresh",
         "topicType": "str",
-        "x": 280,
-        "y": 500,
+        "x": 640,
+        "y": 340,
         "wires": [
             [
                 "9ac718281d44165a"
@@ -8205,7 +8243,7 @@
         "g": "29bf2eccfbb8fe16",
         "name": "",
         "group": "3fdc8d9e247e5296",
-        "order": 5,
+        "order": 6,
         "width": 3,
         "height": 1,
         "passthru": false,
@@ -8219,8 +8257,8 @@
         "payloadType": "str",
         "topic": "up",
         "topicType": "str",
-        "x": 290,
-        "y": 580,
+        "x": 650,
+        "y": 420,
         "wires": [
             [
                 "9ac718281d44165a"
@@ -8234,7 +8272,7 @@
         "g": "29bf2eccfbb8fe16",
         "name": "",
         "group": "3fdc8d9e247e5296",
-        "order": 4,
+        "order": 5,
         "width": 4,
         "height": 1,
         "passthru": false,
@@ -8248,8 +8286,8 @@
         "payloadType": "global",
         "topic": "change",
         "topicType": "str",
-        "x": 290,
-        "y": 540,
+        "x": 650,
+        "y": 380,
         "wires": [
             [
                 "9ac718281d44165a"
@@ -8333,8 +8371,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 970,
-        "y": 440,
+        "x": 1330,
+        "y": 280,
         "wires": [
             [
                 "804b2434dfa88e92"
@@ -8358,8 +8396,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 260,
-        "y": 260,
+        "x": 620,
+        "y": 180,
         "wires": []
     },
     {
@@ -8380,8 +8418,8 @@
         "font": "",
         "fontSize": "",
         "color": "#000000",
-        "x": 680,
-        "y": 440,
+        "x": 1040,
+        "y": 280,
         "wires": []
     },
     {
@@ -8402,8 +8440,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 1360,
-        "y": 500,
+        "x": 1710,
+        "y": 320,
         "wires": []
     },
     {
@@ -8415,7 +8453,7 @@
         "order": 6,
         "width": 23,
         "height": 13,
-        "format": "<iframe id=\"myIframe\" src=\"http://localhost:22222\" style=\"display: {{msg.payload ? 'block' : 'none'}};width: 100%; height: 800px;\">\n</iframe>",
+        "format": "<iframe id=\"myIframe\" src=\"http://localhost:6001\" style=\"display: {{msg.payload ? 'block' : 'none'}};width: 100%; height: 800px;\">\n</iframe>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
@@ -8443,12 +8481,221 @@
         "depth": 0,
         "stat": true,
         "showWarnings": false,
-        "x": 670,
-        "y": 500,
+        "x": 1030,
+        "y": 340,
         "wires": [
             [
                 "804b2434dfa88e92",
                 "419a9f1c1e75891e"
+            ]
+        ]
+    },
+    {
+        "id": "cb77f7a82b32bf9e",
+        "type": "ui_button",
+        "z": "cd35db7d9440e826",
+        "g": "29bf2eccfbb8fe16",
+        "name": "Add file to viz",
+        "group": "3fdc8d9e247e5296",
+        "order": 14,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Add file to vizualization",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "add",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "refresh",
+        "topicType": "str",
+        "x": 950,
+        "y": 520,
+        "wires": [
+            [
+                "eb6ca6290bc7a968",
+                "f01519fbe4901cea"
+            ]
+        ]
+    },
+    {
+        "id": "eb6ca6290bc7a968",
+        "type": "function",
+        "z": "cd35db7d9440e826",
+        "g": "29bf2eccfbb8fe16",
+        "name": "function 17",
+        "func": "let file = flow.get(\"lastfile\");\n\nlet viz_files = flow.get(\"viz_files\");\n\nviz_files.push(file.name);\n\nmsg.payload = viz_files;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1210,
+        "y": 540,
+        "wires": [
+            [
+                "6855f6f284c43984"
+            ]
+        ]
+    },
+    {
+        "id": "6855f6f284c43984",
+        "type": "debug",
+        "z": "cd35db7d9440e826",
+        "g": "29bf2eccfbb8fe16",
+        "name": "debug 57",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1380,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "d1e3f71ea24a8eea",
+        "type": "inject",
+        "z": "cd35db7d9440e826",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 440,
+        "wires": [
+            [
+                "0dd51f602571afad",
+                "f01519fbe4901cea"
+            ]
+        ]
+    },
+    {
+        "id": "0dd51f602571afad",
+        "type": "function",
+        "z": "cd35db7d9440e826",
+        "name": "function 18",
+        "func": "flow.set(\"viz_files\",[]);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f01519fbe4901cea",
+        "type": "function",
+        "z": "cd35db7d9440e826",
+        "g": "29bf2eccfbb8fe16",
+        "name": "function 19",
+        "func": "let files = flow.get(\"viz_files\");\nmsg.payload = files\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1690,
+        "y": 480,
+        "wires": [
+            [
+                "72ac73d5a30d357d"
+            ]
+        ]
+    },
+    {
+        "id": "72ac73d5a30d357d",
+        "type": "ui_text",
+        "z": "cd35db7d9440e826",
+        "g": "29bf2eccfbb8fe16",
+        "group": "40495299a6187faf",
+        "order": 4,
+        "width": 15,
+        "height": 1,
+        "name": "",
+        "label": "Files for vizualization",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1940,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "c12eb424d725ba51",
+        "type": "ui_button",
+        "z": "cd35db7d9440e826",
+        "g": "29bf2eccfbb8fe16",
+        "name": "Clear vizualization",
+        "group": "3fdc8d9e247e5296",
+        "order": 14,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Clear all files from vizualization",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "Delete",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "refresh",
+        "topicType": "str",
+        "x": 950,
+        "y": 600,
+        "wires": [
+            [
+                "bccd7e1f55b8fa84"
+            ]
+        ]
+    },
+    {
+        "id": "bccd7e1f55b8fa84",
+        "type": "function",
+        "z": "cd35db7d9440e826",
+        "g": "29bf2eccfbb8fe16",
+        "name": "function 20",
+        "func": "flow.set(\"viz_files\",[]);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1210,
+        "y": 600,
+        "wires": [
+            [
+                "f01519fbe4901cea"
             ]
         ]
     },

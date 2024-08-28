@@ -23,7 +23,7 @@ def detect_pose(image, camera_matrix, dist_coeffs):
     dictionary = cv2.aruco.getPredefinedDictionary(ARUCO_DICT)
     board = cv2.aruco.CharucoBoard((SQUARES_VERTICALLY, SQUARES_HORIZONTALLY), SQUARE_LENGTH, MARKER_LENGTH, dictionary)
     params = cv2.aruco.DetectorParameters()
-    cv2.imwrite("test.png",undistorted_image)
+    #cv2.imwrite("test.png",undistorted_image)
     # Detect markers in the undistorted image
     marker_corners, marker_ids, _ = cv2.aruco.detectMarkers(undistorted_image, dictionary, parameters=params)
     

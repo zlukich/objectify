@@ -5,7 +5,7 @@ from pathlib import Path
 import argparse
 
 # Add the path to 'lib' directory
-sys.path.append(os.path.abspath(os.path.join('..', 'lib')))
+sys.path.append(os.path.abspath(os.path.join("..",'lib')))
 
 # Import the necessary modules
 from calibration.cv2api.calibrate import read_chessboards, calibrate_camera
