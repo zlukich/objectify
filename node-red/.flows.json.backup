@@ -85,87 +85,14 @@
             "color": "#a4a4a4"
         },
         "nodes": [
-            "2d708e665b7c164b",
             "a772c2fbbb54ca51",
-            "a37ed449fb2cb976",
-            "f01e566a8c6e6ba0",
-            "b0a1d6790969358a",
-            "0d243c5531f37867",
-            "6ccf0e71a403eaf7",
-            "861bd310d24aebbd",
-            "d5bb595df79fbc1d",
-            "13914612e1af3c4e",
-            "2595690ffeddea6c",
-            "a220187efef9b45f",
-            "0fb89040e041f20c",
-            "80f0e37eedd4ac4c"
+            "80f0e37eedd4ac4c",
+            "aca9a5a6408f5b30"
         ],
-        "x": 254,
-        "y": 759
-    },
-    {
-        "id": "dbdefdda299e513d",
-        "type": "group",
-        "z": "f11166a80e40d7b6",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "ae63448a19e2e3d9",
-            "416b2ca791999f81",
-            "065eea9d8b8485d6",
-            "8e76c283f70a71fc",
-            "e310048ab03cb97d",
-            "524542fd2d2d130c",
-            "5fdb8e722fa9876e",
-            "dc04a5a015a88ec5",
-            "ded800be46c3d733",
-            "d97bbc847a0d02b8",
-            "224a8f8dae98af42",
-            "aced4d4842d15275"
-        ],
-        "x": 254,
-        "y": 319,
-        "w": 1012,
-        "h": 222
-    },
-    {
-        "id": "289b4ed31554a093",
-        "type": "group",
-        "z": "f11166a80e40d7b6",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "868f7ae638c6efdb",
-            "322681938b7dacce",
-            "c5d109aad6e51fd5",
-            "c03b87a5457bdd63",
-            "483e19abed663189",
-            "21fdab1ce4386185",
-            "2cd1d3eedc81a73a",
-            "9d44fc0716f4014d",
-            "418f5fdcc50cf45e",
-            "bffb05299c426503",
-            "62a702b694f41e7f",
-            "063641edd6f9ca6f"
-        ],
-        "x": 254,
-        "y": 1519,
-        "w": 1012,
-        "h": 222
+        "x": 334,
+        "y": 759,
+        "w": 1178,
+        "h": 288
     },
     {
         "id": "29bf2eccfbb8fe16",
@@ -197,7 +124,9 @@
             "d23290c4262f3351"
         ],
         "x": 194,
-        "y": 399
+        "y": 399,
+        "w": 1262,
+        "h": 242
     },
     {
         "id": "16e9549a3ea706bc",
@@ -218,36 +147,13 @@
             "f0b90c78f5f79e71",
             "567a4991445ed8e7",
             "be3b2ff50c3c00d1",
-            "ca2e9a4b6955efb0"
+            "ca2e9a4b6955efb0",
+            "7b36c9095cf50122"
         ],
-        "x": 574,
-        "y": 1279,
-        "w": 792,
+        "x": 694,
+        "y": 1359,
+        "w": 1132,
         "h": 182
-    },
-    {
-        "id": "0775c74b900ba1a3",
-        "type": "group",
-        "z": "cd35db7d9440e826",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "97f20bae673a509f",
-            "dee8be2ca5a7aa26",
-            "428bae5bab968490",
-            "c8f59ba6663dbefa",
-            "0a59c89e12240d85",
-            "0c3f0e2b7da7af91"
-        ],
-        "x": 474,
-        "y": 179
     },
     {
         "id": "28c003637500bb58",
@@ -268,12 +174,22 @@
             "79f125292ff3885d",
             "0e8b617c0ee560fd",
             "c2deb24644c45a06",
-            "5b419ef735893404"
+            "c45f862057b98f28",
+            "50f6a1a84175c4c1",
+            "be433bed50bb1f35",
+            "ae681a65f8ed97a2",
+            "9cd6126067c8d457",
+            "7fff52a787654f03",
+            "8b4531d23690c116",
+            "8f84de504bd9865d",
+            "1f21093d7f876a07",
+            "8ce95ac3bfcccac5",
+            "ad467ef6eb73e5a7"
         ],
-        "x": 594,
-        "y": 99,
-        "w": 792,
-        "h": 182
+        "x": 764,
+        "y": 119,
+        "w": 1942,
+        "h": 242
     },
     {
         "id": "a97981e2e8c1f13e",
@@ -321,10 +237,13 @@
             "4612c2840bc9045d",
             "16bbbc3cfdc4abeb",
             "f7fedae0681f404d",
-            "97a9602c25c5b4b1"
+            "97a9602c25c5b4b1",
+            "77d15c886180587e"
         ],
-        "x": 334,
-        "y": 839
+        "x": 394,
+        "y": 839,
+        "w": 1092,
+        "h": 182
     },
     {
         "id": "d6a9b08dd46babd7",
@@ -535,7 +454,7 @@
         "type": "ui_group",
         "name": "Default",
         "tab": "6422196517775826",
-        "order": 1,
+        "order": 2,
         "disp": true,
         "width": "5",
         "collapse": false,
@@ -546,7 +465,7 @@
         "type": "ui_group",
         "name": "Colmap folder",
         "tab": "6422196517775826",
-        "order": 2,
+        "order": 1,
         "disp": true,
         "width": 11,
         "collapse": false,
@@ -568,7 +487,7 @@
         "type": "ui_group",
         "name": "Current Status",
         "tab": "a27b0a4d01a4d522",
-        "order": 2,
+        "order": 3,
         "disp": true,
         "width": "12",
         "collapse": true,
@@ -581,7 +500,7 @@
         "tab": "2685b6bd219f3017",
         "order": 1,
         "disp": true,
-        "width": "28",
+        "width": 12,
         "collapse": false,
         "className": ""
     },
@@ -603,7 +522,7 @@
         "tab": "1f362802086f4d96",
         "order": 1,
         "disp": true,
-        "width": "28",
+        "width": 23,
         "collapse": false,
         "className": ""
     },
@@ -641,24 +560,13 @@
         "className": ""
     },
     {
-        "id": "69f362d14b608c68",
-        "type": "ui_group",
-        "name": "File browser",
-        "tab": "2685b6bd219f3017",
-        "order": 3,
-        "disp": true,
-        "width": "11",
-        "collapse": false,
-        "className": ""
-    },
-    {
         "id": "a7d09646c3ab18c3",
         "type": "ui_group",
         "name": "Logging",
         "tab": "2685b6bd219f3017",
         "order": 4,
         "disp": true,
-        "width": 10,
+        "width": 16,
         "collapse": false,
         "className": ""
     },
@@ -702,18 +610,7 @@
         "tab": "1f362802086f4d96",
         "order": 3,
         "disp": true,
-        "width": "11",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "32cfb29eb3828c05",
-        "type": "ui_group",
-        "name": "VIZ visualizer",
-        "tab": "1f362802086f4d96",
-        "order": 3,
-        "disp": true,
-        "width": 15,
+        "width": 23,
         "collapse": false,
         "className": ""
     },
@@ -722,7 +619,7 @@
         "type": "ui_group",
         "name": "Cam",
         "tab": "a27b0a4d01a4d522",
-        "order": 3,
+        "order": 1,
         "disp": true,
         "width": "12",
         "collapse": false,
@@ -770,86 +667,6 @@
         "height": 1
     },
     {
-        "id": "4a89681cd9f7210a",
-        "type": "ui_spacer",
-        "z": "f11166a80e40d7b6",
-        "name": "spacer",
-        "group": "53646539ec83fa85",
-        "order": 3,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "6a47f17612a1a0e8",
-        "type": "ui_spacer",
-        "z": "f11166a80e40d7b6",
-        "name": "spacer",
-        "group": "53646539ec83fa85",
-        "order": 5,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "bfe741ada99f169b",
-        "type": "ui_spacer",
-        "z": "f11166a80e40d7b6",
-        "name": "spacer",
-        "group": "53646539ec83fa85",
-        "order": 7,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "729a31b423e5c8f5",
-        "type": "ui_spacer",
-        "z": "f11166a80e40d7b6",
-        "name": "spacer",
-        "group": "53646539ec83fa85",
-        "order": 9,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "92d3f2883da80a2b",
-        "type": "ui_spacer",
-        "z": "f11166a80e40d7b6",
-        "name": "spacer",
-        "group": "53646539ec83fa85",
-        "order": 11,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "e9837d7a2d3fb9f2",
-        "type": "ui_spacer",
-        "z": "f11166a80e40d7b6",
-        "name": "spacer",
-        "group": "53646539ec83fa85",
-        "order": 13,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "9fa5e55c0d4fd00c",
-        "type": "ui_spacer",
-        "z": "f11166a80e40d7b6",
-        "name": "spacer",
-        "group": "6c2e3428a6c52ed8",
-        "order": 7,
-        "width": 5,
-        "height": 1
-    },
-    {
-        "id": "a42061b0119f23d7",
-        "type": "ui_spacer",
-        "z": "f11166a80e40d7b6",
-        "name": "spacer",
-        "group": "69f362d14b608c68",
-        "order": 7,
-        "width": 5,
-        "height": 1
-    },
-    {
         "id": "36db9f1743b65ddd",
         "type": "ui_spacer",
         "z": "f11166a80e40d7b6",
@@ -890,196 +707,6 @@
         "height": 1
     },
     {
-        "id": "0cd906c8db336bd7",
-        "type": "ui_spacer",
-        "z": "cd35db7d9440e826",
-        "name": "spacer",
-        "group": "40495299a6187faf",
-        "order": 5,
-        "width": 5,
-        "height": 1
-    },
-    {
-        "id": "53dde14ebfdcd9c2",
-        "type": "ui_spacer",
-        "z": "cd35db7d9440e826",
-        "name": "spacer",
-        "group": "40495299a6187faf",
-        "order": 8,
-        "width": 5,
-        "height": 1
-    },
-    {
-        "id": "8e163764052d9c89",
-        "type": "ui_spacer",
-        "z": "cd35db7d9440e826",
-        "name": "spacer",
-        "group": "32cfb29eb3828c05",
-        "order": 2,
-        "width": 9,
-        "height": 1
-    },
-    {
-        "id": "2c28148d212a438f",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "a4ece68598262627",
-        "order": 7,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "29e19a413497b937",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "a4ece68598262627",
-        "order": 9,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "f7a2927624a8c06e",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "a4ece68598262627",
-        "order": 11,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "e59870de95417508",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "a4ece68598262627",
-        "order": 13,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "aebf91f9daf38029",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "a4ece68598262627",
-        "order": 15,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "9463ae49a91a2246",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "a4ece68598262627",
-        "order": 17,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "1e7601a2f7a983eb",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "a4ece68598262627",
-        "order": 19,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "744399f29fa27d71",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "a4ece68598262627",
-        "order": 21,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "c99655ce21b16a12",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "a4ece68598262627",
-        "order": 23,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "cb030617253fabe4",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "a4ece68598262627",
-        "order": 25,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "7499e735e0c56b19",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "a4ece68598262627",
-        "order": 27,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "70f896932f4ae3d9",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "a4ece68598262627",
-        "order": 29,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "c522319964a8797f",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "a4ece68598262627",
-        "order": 31,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "6b04b1c574ff434d",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "a4ece68598262627",
-        "order": 33,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "5e4a7aeba1508644",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "740f8e0483a46aa2",
-        "order": 3,
-        "width": 6,
-        "height": 1
-    },
-    {
-        "id": "272d2d0aef24c3cd",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "740f8e0483a46aa2",
-        "order": 5,
-        "width": 4,
-        "height": 1
-    },
-    {
         "id": "314b9936612ff9f3",
         "type": "ui_spacer",
         "z": "c0273576f864fea6",
@@ -1102,6 +729,346 @@
         "servername": "",
         "verifyservercert": false,
         "alpnprotocol": ""
+    },
+    {
+        "id": "040579c4451a96e9",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "3fdc8d9e247e5296",
+        "order": 2,
+        "width": 23,
+        "height": 1
+    },
+    {
+        "id": "8aa668f639f836be",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "3fdc8d9e247e5296",
+        "order": 6,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "cefbe3cbe5d21e42",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "3fdc8d9e247e5296",
+        "order": 8,
+        "width": 17,
+        "height": 1
+    },
+    {
+        "id": "2c38cf74227f1caa",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "3fdc8d9e247e5296",
+        "order": 11,
+        "width": 17,
+        "height": 1
+    },
+    {
+        "id": "b196e7213efe2738",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "40495299a6187faf",
+        "order": 3,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "1aa923a0a03838fb",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "40495299a6187faf",
+        "order": 5,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "9c64fb15589e3e19",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "a4ece68598262627",
+        "order": 7,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "c5c5f6666338d7bc",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "a4ece68598262627",
+        "order": 9,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "2879c45d1f10f465",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "a4ece68598262627",
+        "order": 11,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "d817641e5720e118",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "a4ece68598262627",
+        "order": 13,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "74929cb0ddc5da11",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "a4ece68598262627",
+        "order": 15,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "841ffd43930efd2b",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "a4ece68598262627",
+        "order": 17,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "c894a6155bba38cb",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "a4ece68598262627",
+        "order": 19,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "cfd279198029ce86",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "a4ece68598262627",
+        "order": 21,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "65a095f1680f0bb3",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "a4ece68598262627",
+        "order": 23,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "e5c9c2f28acb48d5",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "a4ece68598262627",
+        "order": 25,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "8d677324d31f955e",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "a4ece68598262627",
+        "order": 27,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "f4d8211f2f36ab82",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "a4ece68598262627",
+        "order": 29,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "6e85d859e59f3615",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "a4ece68598262627",
+        "order": 31,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "7ad22764797ee663",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "a4ece68598262627",
+        "order": 33,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "8dcab78481958bc5",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "740f8e0483a46aa2",
+        "order": 3,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "b7e0b9a6a620b0f3",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "740f8e0483a46aa2",
+        "order": 5,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "4a4db6abb9860a7d",
+        "type": "ui_spacer",
+        "z": "f11166a80e40d7b6",
+        "name": "spacer",
+        "group": "919860c8b411c539",
+        "order": 2,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "0ef9101d7a212d2c",
+        "type": "ui_spacer",
+        "z": "f11166a80e40d7b6",
+        "name": "spacer",
+        "group": "919860c8b411c539",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "06ff893f7b413795",
+        "type": "ui_spacer",
+        "z": "f11166a80e40d7b6",
+        "name": "spacer",
+        "group": "919860c8b411c539",
+        "order": 6,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "de5bd69cf50b6ab8",
+        "type": "ui_spacer",
+        "z": "f11166a80e40d7b6",
+        "name": "spacer",
+        "group": "919860c8b411c539",
+        "order": 8,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "b820d79b02416915",
+        "type": "ui_spacer",
+        "z": "3669868b19b1582f",
+        "name": "spacer",
+        "group": "53646539ec83fa85",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2d2c237a96854280",
+        "type": "ui_spacer",
+        "z": "3669868b19b1582f",
+        "name": "spacer",
+        "group": "53646539ec83fa85",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6da67c9ab0cfaf83",
+        "type": "ui_spacer",
+        "z": "3669868b19b1582f",
+        "name": "spacer",
+        "group": "53646539ec83fa85",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8533ab0935bd48bd",
+        "type": "ui_spacer",
+        "z": "3669868b19b1582f",
+        "name": "spacer",
+        "group": "53646539ec83fa85",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e7d9ae3dc6c32b28",
+        "type": "ui_spacer",
+        "z": "3669868b19b1582f",
+        "name": "spacer",
+        "group": "53646539ec83fa85",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0fb90f87d1bbd7c9",
+        "type": "ui_spacer",
+        "z": "3669868b19b1582f",
+        "name": "spacer",
+        "group": "53646539ec83fa85",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3aa4261186687352",
+        "type": "ui_spacer",
+        "z": "3669868b19b1582f",
+        "name": "spacer",
+        "group": "6c2e3428a6c52ed8",
+        "order": 2,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "cc0d37a29e3b8033",
+        "type": "ui_spacer",
+        "z": "3669868b19b1582f",
+        "name": "spacer",
+        "group": "6c2e3428a6c52ed8",
+        "order": 4,
+        "width": 3,
+        "height": 1
     },
     {
         "id": "022e8b8d5f02aba3",
@@ -1848,7 +1815,7 @@
         "type": "function",
         "z": "fccae755c2f8e1fe",
         "name": "Folder handling",
-        "func": "let folder = global.get(\"filebrowser_default_folder\");\nlet project_name = flow.get(\"project_name\")\nconsole.log(project_name);\nif(project_name!==\"\"){\n\nvar dir = folder+project_name;\n\nif (!fs.existsSync(dir)){\n    fs.mkdirSync(dir, { recursive: true });\n}\n}\nif (folder===undefined) {\n    folder=\"./projects/\";\n    context.set(\"folder\", folder);\n}\n\n\nmsg.project_name = project_name;\nmsg.payload = {\"start\":folder};\nreturn msg;",
+        "func": "let folder = global.get(\"filebrowser_default_folder\");\nlet project_name = flow.get(\"project_name\")\n//console.log(project_name);\nif(project_name!==\"\"){\n\nvar dir = folder+project_name;\n\nif (!fs.existsSync(dir)){\n    fs.mkdirSync(dir, { recursive: true });\n}\n\n}\nif (folder===undefined) {\n    folder=\"./projects/\";\n    context.set(\"folder\", folder);\n}\n\n\nmsg.project_name = project_name;\nmsg.payload = {\"start\":folder};\nreturn msg;",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -1865,8 +1832,7 @@
         "wires": [
             [
                 "9b1d7fda1b1e5bcc",
-                "48683e832b42b025",
-                "2df986bcf4a83e78"
+                "48683e832b42b025"
             ]
         ]
     },
@@ -1875,7 +1841,7 @@
         "type": "function",
         "z": "fccae755c2f8e1fe",
         "name": "Prep Data",
-        "func": "function convertDate(local) {\n    let d = new Date(local);\n    d.setTime(d.getTime()+3600*1000);\n    return d.toISOString().slice(0, 19).replace('T', ' ');\n}\n\nvar newmsg = msg;\nnewmsg.options = [];\n\nfor (var i=0; i<msg.payload.length; i++) {\n\n    msg.payload[i].fname = msg.payload[i].name.replace(/^.*(\\\\|\\/|\\:)/, '');\n    if (msg.payload[i].stat.isDirectory) {\n        msg.payload[i].ext = \"folder\";\n        newmsg.options[i] = msg.payload[i].fname\n    }\n}\nflow.set(\"currentfolder\",msg.payload);\nreturn msg;\n",
+        "func": "function convertDate(local) {\n    let d = new Date(local);\n    d.setTime(d.getTime()+3600*1000);\n    return d.toISOString().slice(0, 19).replace('T', ' ');\n}\n\nvar newmsg = msg;\nvar last_folder = \"\";\nnewmsg.options = [];\n\nfor (var i=0; i<msg.payload.length; i++) {\n\n    msg.payload[i].fname = msg.payload[i].name.replace(/^.*(\\\\|\\/|\\:)/, '');\n    if (msg.payload[i].stat.isDirectory) {\n        msg.payload[i].ext = \"folder\";\n        newmsg.options[i] = msg.payload[i].fname;\n        //newmsg.payload = msg.payload[i].fname;\n        last_folder = msg.payload[i].fname\n    }\n}\nmsg.payload = last_folder;\nflow.set(\"currentfolder\",msg.payload);\nreturn msg;\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -1957,23 +1923,6 @@
         "wires": []
     },
     {
-        "id": "2df986bcf4a83e78",
-        "type": "debug",
-        "z": "fccae755c2f8e1fe",
-        "name": "debug 36",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "project_name",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 640,
-        "y": 1180,
-        "wires": []
-    },
-    {
         "id": "15e4d6b85941baa2",
         "type": "inject",
         "z": "fccae755c2f8e1fe",
@@ -2021,7 +1970,11 @@
         "y": 1000,
         "wires": [
             [
-                "c995437f2e07c2a9"
+                "c995437f2e07c2a9",
+                "7bfa38a0f66d68e1",
+                "4819a5fb717ddca6",
+                "3a5cc637ad1c52df",
+                "067da2f1d49bc5ac"
             ]
         ]
     },
@@ -2029,24 +1982,20 @@
         "id": "a23887630790e859",
         "type": "function",
         "z": "fccae755c2f8e1fe",
-        "name": "function 9",
-        "func": "var folder = global.get('filebrowser_default_folder');\nvar project= msg.payload;\nmsg.payload = folder+project+\"/\";\n\nglobal.set(\"selected_project\",project)\nreturn msg;",
+        "name": "Set global_folder",
+        "func": "var folder = global.get('filebrowser_default_folder');\nvar project= msg.payload;\nmsg.payload = folder+project+\"/\";\n\nglobal.set(\"selected_project\", msg.payload)\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1120,
-        "y": 1020,
+        "x": 1150,
+        "y": 1060,
         "wires": [
             [
                 "a7816c586542ea3d",
-                "630c9b6d04bb1d91",
-                "7fd329b91a108e2a",
-                "83aed535b42e7aa1",
-                "6aa303ceb4f3bea0",
-                "f47a15f1884514aa"
+                "630c9b6d04bb1d91"
             ]
         ]
     },
@@ -2063,7 +2012,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1560,
+        "x": 2040,
         "y": 1160,
         "wires": []
     },
@@ -2080,73 +2029,9 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1020,
-        "y": 1240,
+        "x": 1460,
+        "y": 1460,
         "wires": []
-    },
-    {
-        "id": "7fd329b91a108e2a",
-        "type": "link call",
-        "z": "fccae755c2f8e1fe",
-        "name": "",
-        "links": [
-            "97a9602c25c5b4b1"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 1320,
-        "y": 1080,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "83aed535b42e7aa1",
-        "type": "link call",
-        "z": "fccae755c2f8e1fe",
-        "name": "",
-        "links": [
-            "ca2e9a4b6955efb0"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 1320,
-        "y": 1120,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "6aa303ceb4f3bea0",
-        "type": "link call",
-        "z": "fccae755c2f8e1fe",
-        "name": "",
-        "links": [
-            "5b419ef735893404"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 1320,
-        "y": 1160,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f47a15f1884514aa",
-        "type": "link call",
-        "z": "fccae755c2f8e1fe",
-        "name": "",
-        "links": [
-            "5eeb4bf58301947d"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 1320,
-        "y": 1200,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "a74cb59a85574a5d",
@@ -2582,7 +2467,7 @@
         "z": "fccae755c2f8e1fe",
         "name": "",
         "group": "740f8e0483a46aa2",
-        "order": 16,
+        "order": 7,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -2613,7 +2498,7 @@
         "label": "Create project",
         "tooltip": "",
         "group": "740f8e0483a46aa2",
-        "order": 5,
+        "order": 6,
         "width": 0,
         "height": 0,
         "passthru": true,
@@ -2687,12 +2572,12 @@
         "name": "",
         "order": 1,
         "width": 12,
-        "height": "12",
+        "height": 12,
         "url": "127.0.0.1:5000",
         "origin": "*",
         "scale": 100,
-        "x": 890,
-        "y": 1100,
+        "x": 730,
+        "y": 1480,
         "wires": [
             []
         ]
@@ -2708,11 +2593,17 @@
                 "pt": "global",
                 "to": "./projects/",
                 "tot": "str"
+            },
+            {
+                "p": "ingp_root",
+                "pt": "global",
+                "to": "../../instant-ngp/scripts/",
+                "tot": "str"
             }
         ],
         "active": true,
-        "x": 390,
-        "y": 1380,
+        "x": 490,
+        "y": 1360,
         "wires": []
     },
     {
@@ -2807,6 +2698,121 @@
                 "c0a95f2e814e50a6"
             ]
         ]
+    },
+    {
+        "id": "0e3188356bf30267",
+        "type": "debug",
+        "z": "fccae755c2f8e1fe",
+        "name": "STDOUT of ConifgManager",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2300,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "29cf2434ec8ef52d",
+        "type": "pythonshell in",
+        "z": "fccae755c2f8e1fe",
+        "name": "Config_manager",
+        "pyfile": "/home/iat/Documents/BA_Oleksandr/objectify/node-red/config_manager_server.py",
+        "virtualenv": "/home/iat/miniforge3/envs/ba_oleksandr",
+        "continuous": true,
+        "stdInData": false,
+        "x": 2010,
+        "y": 940,
+        "wires": [
+            [
+                "0e3188356bf30267"
+            ]
+        ]
+    },
+    {
+        "id": "f3986f152e25a633",
+        "type": "inject",
+        "z": "fccae755c2f8e1fe",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 1360,
+        "wires": [
+            [
+                "ebaf426061a8bade"
+            ]
+        ]
+    },
+    {
+        "id": "7bfa38a0f66d68e1",
+        "type": "link out",
+        "z": "fccae755c2f8e1fe",
+        "name": "Colmap global folder out",
+        "mode": "link",
+        "links": [
+            "97a9602c25c5b4b1"
+        ],
+        "x": 1505,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "4819a5fb717ddca6",
+        "type": "link out",
+        "z": "fccae755c2f8e1fe",
+        "name": "Charuco global folder out",
+        "mode": "link",
+        "links": [
+            "ca2e9a4b6955efb0"
+        ],
+        "x": 1505,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "3a5cc637ad1c52df",
+        "type": "link out",
+        "z": "fccae755c2f8e1fe",
+        "name": "INGP global folder out",
+        "mode": "link",
+        "links": [
+            "9cd6126067c8d457"
+        ],
+        "x": 1505,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "067da2f1d49bc5ac",
+        "type": "link out",
+        "z": "fccae755c2f8e1fe",
+        "name": "AR global folder out",
+        "mode": "link",
+        "links": [
+            "5eeb4bf58301947d"
+        ],
+        "x": 1505,
+        "y": 1240,
+        "wires": []
     },
     {
         "id": "8071265587d0b45a",
@@ -4233,23 +4239,8 @@
         "x": 2300,
         "y": 720,
         "wires": [
-            [
-                "3d10270c932dca69"
-            ]
+            []
         ]
-    },
-    {
-        "id": "3d10270c932dca69",
-        "type": "link out",
-        "z": "a08ae145f2d5cb38",
-        "name": "link out 13",
-        "mode": "link",
-        "links": [
-            "1275bed0427c4097"
-        ],
-        "x": 2415,
-        "y": 720,
-        "wires": []
     },
     {
         "id": "1275bed0427c4097",
@@ -4811,8 +4802,8 @@
         "createDir": false,
         "overwriteFile": "false",
         "encoding": "none",
-        "x": 1660,
-        "y": 820,
+        "x": 2460,
+        "y": 1080,
         "wires": [
             []
         ]
@@ -5236,11 +5227,11 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 1410,
-        "y": 820,
+        "x": 2090,
+        "y": 1080,
         "wires": [
             [
-                "d1429e220b5dce36"
+                "af4b1dda0d424b73"
             ]
         ]
     },
@@ -5303,8 +5294,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 1140,
-        "y": 1620,
+        "x": 1180,
+        "y": 1500,
         "wires": [
             [
                 "f6f5f97a260d6162"
@@ -5323,8 +5314,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1330,
-        "y": 1620,
+        "x": 1370,
+        "y": 1500,
         "wires": [
             [
                 "e88cabccd7176f6a",
@@ -5344,8 +5335,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "Execute calibration",
-        "x": 1590,
-        "y": 1660,
+        "x": 1630,
+        "y": 1540,
         "wires": [
             [
                 "e0d40c96a3882052"
@@ -5376,8 +5367,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1840,
-        "y": 1760,
+        "x": 1880,
+        "y": 1640,
         "wires": [
             [
                 "91b9918325f3b1ed"
@@ -5400,8 +5391,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2050,
-        "y": 1720,
+        "x": 2090,
+        "y": 1600,
         "wires": []
     },
     {
@@ -5417,8 +5408,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2070,
-        "y": 1800,
+        "x": 2110,
+        "y": 1680,
         "wires": []
     },
     {
@@ -5434,8 +5425,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1560,
-        "y": 1760,
+        "x": 1600,
+        "y": 1640,
         "wires": []
     },
     {
@@ -5450,8 +5441,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1830,
-        "y": 1900,
+        "x": 1870,
+        "y": 1780,
         "wires": []
     },
     {
@@ -5474,8 +5465,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 810,
-        "y": 2080,
+        "x": 1190,
+        "y": 2060,
         "wires": [
             [
                 "eb33b24fae8e05f7"
@@ -5494,8 +5485,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1470,
-        "y": 2100,
+        "x": 1850,
+        "y": 2080,
         "wires": [
             [
                 "3630aa3ca243ab6f",
@@ -5510,13 +5501,13 @@
         "command": "",
         "addpay": "payload",
         "append": "",
-        "useSpawn": "false",
+        "useSpawn": "true",
         "timer": "",
         "winHide": false,
         "oldrc": false,
-        "name": "Execute calibration",
-        "x": 1830,
-        "y": 2140,
+        "name": "Execute generate_poses",
+        "x": 2230,
+        "y": 2120,
         "wires": [
             [
                 "051ab86051a380d4"
@@ -5548,8 +5539,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 2080,
-        "y": 2240,
+        "x": 2460,
+        "y": 2220,
         "wires": [
             [
                 "e2359c634ac1d62d"
@@ -5572,8 +5563,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2290,
-        "y": 2200,
+        "x": 2670,
+        "y": 2180,
         "wires": []
     },
     {
@@ -5589,8 +5580,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2310,
-        "y": 2280,
+        "x": 2690,
+        "y": 2260,
         "wires": []
     },
     {
@@ -5606,8 +5597,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1800,
-        "y": 2240,
+        "x": 2180,
+        "y": 2220,
         "wires": []
     },
     {
@@ -5622,8 +5613,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2070,
-        "y": 2380,
+        "x": 2450,
+        "y": 2360,
         "wires": []
     },
     {
@@ -5642,8 +5633,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1150,
-        "y": 2100,
+        "x": 1530,
+        "y": 2080,
         "wires": [
             [
                 "6620c371f8bf918b",
@@ -5664,8 +5655,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1340,
-        "y": 2320,
+        "x": 1720,
+        "y": 2300,
         "wires": []
     },
     {
@@ -5680,29 +5671,65 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1800,
-        "y": 2620,
+        "x": 2180,
+        "y": 2600,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "3d6a530bee70b759",
+        "type": "comment",
+        "z": "a08ae145f2d5cb38",
+        "name": "File Upload",
+        "info": "",
+        "x": 2250,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "af4b1dda0d424b73",
+        "type": "function",
+        "z": "a08ae145f2d5cb38",
+        "name": "function 16",
+        "func": "var folder = flow.get(\"folder\");\n//node.warn(folder);\nmsg.filename = folder+'/'+msg.filename;\n//node.warn(msg.filename);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2290,
+        "y": 1180,
+        "wires": [
+            [
+                "d1429e220b5dce36"
+            ]
         ]
     },
     {
         "id": "7700ec9f893a1665",
         "type": "exec",
         "z": "3669868b19b1582f",
-        "command": "python colmap2nerf.py ",
-        "addpay": "",
+        "command": " Run colmap to nerf",
+        "addpay": "payload",
         "append": "",
         "useSpawn": "false",
         "timer": "",
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 1500,
-        "y": 180,
+        "x": 1370,
+        "y": 400,
         "wires": [
-            [],
-            [],
+            [
+                "ca970b6fa5aa189b",
+                "43095b37af32c13f"
+            ],
+            [
+                "ca970b6fa5aa189b",
+                "234412a362a92921"
+            ],
             []
         ]
     },
@@ -5711,17 +5738,20 @@
         "type": "function",
         "z": "3669868b19b1582f",
         "name": "function 3",
-        "func": "//construct command\nvar cmd = \"\";\ncmd = cmd +\"python colmap2nerf.py \"\n\nvar folder = flow.get(\"folder\");\nif(flow.get(\"folder\") == null){\n    msg.errorcode = 1;\n    msg.errortext = \"Please navigate to folder that contains images\";\n}\n\nif(flow.get(\"video\")==true){\n cmd += \"--video_in \";\n cmd += folder +\" \";\n}else{\n    cmd+= \"--images \";\n    cmd+= folder+ \" \";\n}\nif(flow.get(\"run_colmap\")==true){\n    cmd += \"--run_colmap \";\n}\nif(flow.get(\"single_camera\")==true){\n    cmd += \"--single_camera \";\n}\nif(flow.get(\"use_gpu\")==true){\n    cmd += \"--use_gpu 1 \";\n}\nmsg.payload = cmd;\nmsg.errorcode = 0;\nreturn msg;",
+        "func": "//construct command\nvar cmd = \"\";\nvar ingp_root = global.get(\"ingp_root\")\ncmd = cmd +\"python \"+ingp_root+\"run.py \"\n\nvar folder = global.get(\"selected_project\");\n\nif(flow.get(\"video\")==true){\n cmd += \"--video_in \";\n cmd += folder +\" \";\n}else{\n    cmd+= \"--images \";\n    cmd+= folder+ \" \";\n}\nif(flow.get(\"run_colmap\")==true){\n    cmd += \"--run_colmap \";\n}\nif(flow.get(\"single_camera\")==true){\n    cmd += \"--single_camera \";\n}\nif(flow.get(\"use_gpu\")==true){\n    cmd += \"--use_gpu 1 \";\n}\nmsg.payload = cmd;\nmsg.errorcode = 0;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1040,
+        "x": 1120,
         "y": 400,
         "wires": [
-            []
+            [
+                "7700ec9f893a1665",
+                "a7ced7cab1f31e8f"
+            ]
         ]
     },
     {
@@ -5881,135 +5911,9 @@
         "g": "9a065f7de759f344",
         "name": "New File Browser",
         "info": "",
-        "x": 380,
+        "x": 440,
         "y": 800,
         "wires": []
-    },
-    {
-        "id": "a37ed449fb2cb976",
-        "type": "inject",
-        "z": "3669868b19b1582f",
-        "d": true,
-        "g": "9a065f7de759f344",
-        "name": "Init",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "change",
-        "payload": "filebrowser_default_folder",
-        "payloadType": "global",
-        "x": 350,
-        "y": 1220,
-        "wires": [
-            [
-                "f01e566a8c6e6ba0"
-            ]
-        ]
-    },
-    {
-        "id": "f01e566a8c6e6ba0",
-        "type": "function",
-        "z": "3669868b19b1582f",
-        "d": true,
-        "g": "9a065f7de759f344",
-        "name": "Folder handling",
-        "func": "let folder = context.get(\"folder\");\nif (folder===undefined) {\n    folder=\"/projects/\";\n    context.set(\"folder\", folder);\n}\n\nlet hidden = context.get(\"hidden\");\nif (hidden===undefined) {\n    hidden=false;\n    context.set(\"hidden\", hidden);\n}\n\nif (msg.topic===\"up\") {\n    var the_arr = folder.split('/');\n    the_arr.pop();\n    folder=the_arr.join('/'); \n    context.set(\"folder\", folder);\n}\nif (msg.topic===\"change\") {\n    folder=msg.payload;    \n    context.set(\"folder\", folder);\n}\nif (msg.topic===\"hidden\") {\n    hidden=msg.payload;    \n    context.set(\"hidden\", hidden);\n}\n\nmsg.payload = {\"start\":folder, \"hidden\": hidden};\nflow.set(\"folder\", folder);\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 560,
-        "y": 1260,
-        "wires": [
-            [
-                "b0a1d6790969358a",
-                "2595690ffeddea6c"
-            ]
-        ]
-    },
-    {
-        "id": "0d243c5531f37867",
-        "type": "function",
-        "z": "3669868b19b1582f",
-        "d": true,
-        "g": "9a065f7de759f344",
-        "name": "Prep Data",
-        "func": "function convertDate(local) {\n    let d = new Date(local);\n    d.setTime(d.getTime()+3600*1000);\n    return d.toISOString().slice(0, 19).replace('T', ' ');\n}\n\nif (msg.topic === \"quickfilter\") {\n    let filter = msg.payload;\n    msg.payload = flow.get(\"currentfolder\").slice();\n    if (msg.payload !== \"\") {\n        for (var i = msg.payload.length-1; i >= 0; i--) {\n            if (!msg.payload[i].fname.includes(filter)) {\n                msg.payload.splice(i,1);\n            }\n        }\n    }\n    return msg;\n}\n\nfor (var i=0; i<msg.payload.length; i++) {\n   // msg.payload[i].stat.created = convertDate(msg.payload[i].stat.created);\n   // msg.payload[i].stat.changed = convertDate(msg.payload[i].stat.changed);\n   // msg.payload[i].stat.accessed = convertDate(msg.payload[i].stat.accessed);\n   // msg.payload[i].stat.statusChanged = convertDate(msg.payload[i].stat.statusChanged);\n    msg.payload[i].fname = msg.payload[i].name.replace(/^.*(\\\\|\\/|\\:)/, '');\n    if (msg.payload[i].stat.isDirectory) {\n        msg.payload[i].ext = \"folder\";\n        msg.payload[i].icon = \"<i class=\\\"fa fa-folder-o\\\"></i>\";\n    } else {\n        msg.payload[i].ext = msg.payload[i].fname.split('.').pop().toLowerCase();\n        msg.payload[i].downloadlink = \"/download?filename=\"+msg.payload[i].name;\n        switch (msg.payload[i].ext) {\n            case \"csv\":\n            case \"txt\":\n                msg.payload[i].icon = \"<i class=\\\"fa fa-file-text-o\\\"></i>\";\n                break;\n            case \"jpg\":\n            case \"jpeg\":\n            case \"png\":\n            case \"gif\":\n                msg.payload[i].icon = \"<i class=\\\"fa fa-file-image-o\\\"></i>\";\n                break;\n            case \"json\":\n            case \"py\":\n            case \"sh\":\n                msg.payload[i].icon = \"<i class=\\\"fa fa-file-code-o\\\"></i>\";\n                break;\n            default:\n                msg.payload[i].icon = \"<i class=\\\"fa fa-file-o\\\"></i>\";\n        }\n    }\n}\nflow.set(\"currentfolder\",msg.payload);\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 880,
-        "y": 1260,
-        "wires": [
-            [
-                "2d708e665b7c164b"
-            ]
-        ]
-    },
-    {
-        "id": "13914612e1af3c4e",
-        "type": "function",
-        "z": "3669868b19b1582f",
-        "d": true,
-        "g": "9a065f7de759f344",
-        "name": "Change folder",
-        "func": "\nif (msg.payload.stat.isDirectory) {\n\n    msg.topic = \"change\";\n    msg.payload = msg.payload.name;\n\n    return msg;\n}",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 740,
-        "y": 1340,
-        "wires": [
-            [
-                "f01e566a8c6e6ba0"
-            ]
-        ]
-    },
-    {
-        "id": "0fb89040e041f20c",
-        "type": "change",
-        "z": "3669868b19b1582f",
-        "d": true,
-        "g": "9a065f7de759f344",
-        "name": "Empty",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 890,
-        "y": 1200,
-        "wires": [
-            [
-                "a220187efef9b45f"
-            ]
-        ]
     },
     {
         "id": "234412a362a92921",
@@ -6024,57 +5928,9 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1480,
-        "y": 480,
+        "x": 1760,
+        "y": 720,
         "wires": []
-    },
-    {
-        "id": "8f523f9c88586703",
-        "type": "switch",
-        "z": "3669868b19b1582f",
-        "name": "",
-        "property": "errorcode",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "neq",
-                "v": "1",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 1230,
-        "y": 300,
-        "wires": [
-            [
-                "4ea65ba252a49b42"
-            ]
-        ]
-    },
-    {
-        "id": "4ea65ba252a49b42",
-        "type": "exec",
-        "z": "3669868b19b1582f",
-        "command": "python ./scripts/test_print.py",
-        "addpay": "",
-        "append": "",
-        "useSpawn": "false",
-        "timer": "",
-        "winHide": false,
-        "oldrc": false,
-        "name": "",
-        "x": 1300,
-        "y": 380,
-        "wires": [
-            [
-                "234412a362a92921",
-                "4f0600564535a669"
-            ],
-            [],
-            []
-        ]
     },
     {
         "id": "d266f296d5bff25f",
@@ -6082,7 +5938,7 @@
         "z": "3669868b19b1582f",
         "g": "80f0e37eedd4ac4c",
         "name": "Folder handling",
-        "func": "let folder = global.get(\"filebrowser_default_folder\");\nlet project_name = global.get(\"selected_project\")\nconsole.log(project_name);\n\nif (folder===undefined) {\n    folder=\"./projects/\";\n    context.set(\"folder\", folder);\n}\n\n\nmsg.project_name = project_name;\nmsg.payload = {\"start\":folder};\nreturn msg;",
+        "func": "let folder = global.get(\"filebrowser_default_folder\");\nlet project_name = global.get(\"selected_project\")\n//console.log(project_name);\n\nif (folder===undefined) {\n    folder=\"./projects/\";\n    context.set(\"folder\", folder);\n}\n\n\nmsg.project_name = project_name;\nmsg.payload = {\"start\":folder};\nreturn msg;",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -6094,7 +5950,7 @@
                 "module": "fs"
             }
         ],
-        "x": 540,
+        "x": 600,
         "y": 880,
         "wires": [
             [
@@ -6115,7 +5971,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 880,
+        "x": 940,
         "y": 880,
         "wires": [
             [
@@ -6138,7 +5994,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 950,
+        "x": 1120,
         "y": 980,
         "wires": []
     },
@@ -6147,38 +6003,15 @@
         "type": "link in",
         "z": "3669868b19b1582f",
         "g": "80f0e37eedd4ac4c",
-        "name": "link in 1",
-        "links": [],
-        "x": 375,
+        "name": "Colmap global folder in",
+        "links": [
+            "7bfa38a0f66d68e1"
+        ],
+        "x": 435,
         "y": 980,
         "wires": [
             [
                 "d266f296d5bff25f"
-            ]
-        ]
-    },
-    {
-        "id": "2d708e665b7c164b",
-        "type": "ui_etable",
-        "z": "3669868b19b1582f",
-        "d": true,
-        "g": "9a065f7de759f344",
-        "payload": "[{\"title\":\"Type\",\"field\":\"icon\",\"formatter\":\"html\",\"width\":50},{\"title\":\"Name\",\"field\":\"fname\"},{\"title\":\"Size\",\"field\":\"stat.size\",\"sorter\":\"number\",\"width\":100,\"sorterParams\":{\"thousandSeparator\":\",\",\"decimalSeparator\":\".\",\"alignEmptyValues\":\"top\"}},{\"title\":\"Created\",\"field\":\"stat.created\",\"formatter\":\"datetime\",\"width\":200,\"formatterParams\":{\"outputFormat\":\"yyyy.MM.DD HH:mm:ss\",\"invalidPlaceholder\":\"(invalid date)\",\"timezone\":\"system\"}},{\"title\":\"Changed\",\"field\":\"stat.changed\",\"formatter\":\"datetime\",\"width\":200,\"formatterParams\":{\"outputFormat\":\"yyyy.MM.DD HH:mm:ss\",\"invalidPlaceholder\":\"(invalid date)\",\"timezone\":\"system\"}}]",
-        "payloadType": "json",
-        "options": "{\"movableColumns\":true,\"resizableColumns\":true,\"selectable\":1,\"responsiveLayout\":\"collapse\",\"autoResize\":true,\"layout\":\"fitColumns\",\"pagination\":\"local\",\"height\":\"100%\"}",
-        "group": "6c2e3428a6c52ed8",
-        "name": "Select folder where files located",
-        "order": 5,
-        "width": 11,
-        "height": 13,
-        "columns": [],
-        "outputs": 1,
-        "cts": false,
-        "x": 1110,
-        "y": 1260,
-        "wires": [
-            [
-                "13914612e1af3c4e"
             ]
         ]
     },
@@ -6192,7 +6025,7 @@
         "tooltip": "",
         "place": "Select option",
         "group": "6c2e3428a6c52ed8",
-        "order": 4,
+        "order": 3,
         "width": 8,
         "height": 1,
         "passthru": true,
@@ -6202,10 +6035,12 @@
         "topic": "topic",
         "topicType": "msg",
         "className": "",
-        "x": 1040,
+        "x": 1140,
         "y": 880,
         "wires": [
-            []
+            [
+                "77d15c886180587e"
+            ]
         ]
     },
     {
@@ -6256,101 +6091,11 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 930,
-        "y": 320,
+        "x": 910,
+        "y": 400,
         "wires": [
             [
-                "4ea65ba252a49b42"
-            ]
-        ]
-    },
-    {
-        "id": "6ccf0e71a403eaf7",
-        "type": "ui_button",
-        "z": "3669868b19b1582f",
-        "d": true,
-        "g": "9a065f7de759f344",
-        "name": "",
-        "group": "6c2e3428a6c52ed8",
-        "order": 1,
-        "width": 4,
-        "height": 1,
-        "passthru": false,
-        "label": "Refresh",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "refresh",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "refresh",
-        "topicType": "str",
-        "x": 340,
-        "y": 1260,
-        "wires": [
-            [
-                "f01e566a8c6e6ba0"
-            ]
-        ]
-    },
-    {
-        "id": "861bd310d24aebbd",
-        "type": "ui_button",
-        "z": "3669868b19b1582f",
-        "d": true,
-        "g": "9a065f7de759f344",
-        "name": "",
-        "group": "6c2e3428a6c52ed8",
-        "order": 3,
-        "width": 3,
-        "height": 1,
-        "passthru": false,
-        "label": "Up",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "arrow_upwards",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "up",
-        "topicType": "str",
-        "x": 350,
-        "y": 1340,
-        "wires": [
-            [
-                "f01e566a8c6e6ba0"
-            ]
-        ]
-    },
-    {
-        "id": "d5bb595df79fbc1d",
-        "type": "ui_button",
-        "z": "3669868b19b1582f",
-        "d": true,
-        "g": "9a065f7de759f344",
-        "name": "",
-        "group": "6c2e3428a6c52ed8",
-        "order": 2,
-        "width": 4,
-        "height": 1,
-        "passthru": false,
-        "label": "Reset",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "autorenew",
-        "payload": "filebrowser_default_folder",
-        "payloadType": "global",
-        "topic": "change",
-        "topicType": "str",
-        "x": 350,
-        "y": 1300,
-        "wires": [
-            [
-                "f01e566a8c6e6ba0"
+                "7dded95e86225e65"
             ]
         ]
     },
@@ -6517,104 +6262,6 @@
         ]
     },
     {
-        "id": "a220187efef9b45f",
-        "type": "ui_text_input",
-        "z": "3669868b19b1582f",
-        "d": true,
-        "g": "9a065f7de759f344",
-        "name": "",
-        "label": "Filter:",
-        "tooltip": "",
-        "group": "6c2e3428a6c52ed8",
-        "order": 6,
-        "width": 6,
-        "height": 1,
-        "passthru": false,
-        "mode": "text",
-        "delay": 300,
-        "topic": "quickfilter",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 1030,
-        "y": 1200,
-        "wires": [
-            [
-                "0d243c5531f37867"
-            ]
-        ]
-    },
-    {
-        "id": "2595690ffeddea6c",
-        "type": "ui_text",
-        "z": "3669868b19b1582f",
-        "d": true,
-        "g": "9a065f7de759f344",
-        "group": "6c2e3428a6c52ed8",
-        "order": 4,
-        "width": 11,
-        "height": 1,
-        "name": "",
-        "label": "Folder:",
-        "format": "{{msg.payload.start}}",
-        "layout": "row-left",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": "",
-        "color": "#000000",
-        "x": 740,
-        "y": 1200,
-        "wires": []
-    },
-    {
-        "id": "4f0600564535a669",
-        "type": "ui_template",
-        "z": "3669868b19b1582f",
-        "group": "45c6e5c68f9384b7",
-        "name": "",
-        "order": 1,
-        "width": 12,
-        "height": 16,
-        "format": "<div>\n  <pre>{{msg.payload}}</pre>\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 1720,
-        "y": 440,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b0a1d6790969358a",
-        "type": "fs-file-lister",
-        "z": "3669868b19b1582f",
-        "d": true,
-        "g": "9a065f7de759f344",
-        "name": "Files",
-        "start": "./projects/",
-        "pattern": "*.*",
-        "folders": "*",
-        "hidden": false,
-        "lstype": "both",
-        "path": true,
-        "single": true,
-        "depth": 0,
-        "stat": true,
-        "showWarnings": false,
-        "x": 730,
-        "y": 1260,
-        "wires": [
-            [
-                "0d243c5531f37867",
-                "0fb89040e041f20c"
-            ]
-        ]
-    },
-    {
         "id": "4612c2840bc9045d",
         "type": "fs-file-lister",
         "z": "3669868b19b1582f",
@@ -6630,13 +6277,108 @@
         "depth": 0,
         "stat": true,
         "showWarnings": false,
-        "x": 730,
+        "x": 790,
         "y": 880,
         "wires": [
             [
                 "16bbbc3cfdc4abeb"
             ]
         ]
+    },
+    {
+        "id": "77d15c886180587e",
+        "type": "function",
+        "z": "3669868b19b1582f",
+        "g": "80f0e37eedd4ac4c",
+        "name": "Set global_folder",
+        "func": "var folder = global.get('filebrowser_default_folder');\nvar project = msg.payload;\nmsg.payload = folder + project + \"/\";\n\nglobal.set(\"selected_project\", msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1370,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ca970b6fa5aa189b",
+        "type": "ui_template",
+        "z": "3669868b19b1582f",
+        "group": "45c6e5c68f9384b7",
+        "name": "Logging template",
+        "order": 1,
+        "width": "12",
+        "height": 16,
+        "format": "<div style=\"height: 700px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px;\" id=\"logWindow\"></div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var logWindow = document.getElementById(\"logWindow\");\n            logWindow.innerHTML += payload + \"<br/>\";\n            logWindow.scrollTop = logWindow.scrollHeight;  // Auto-scroll to the bottom\n        });\n    })(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1749.88330078125,
+        "y": 441.8833312988281,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aca9a5a6408f5b30",
+        "type": "ui_text",
+        "z": "3669868b19b1582f",
+        "g": "9a065f7de759f344",
+        "group": "6c2e3428a6c52ed8",
+        "order": 1,
+        "width": 8,
+        "height": 1,
+        "name": "Select Project",
+        "label": "Select a project where to initialize reconstruction",
+        "format": "",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1160,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "43095b37af32c13f",
+        "type": "debug",
+        "z": "3669868b19b1582f",
+        "name": "debug 55",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1780,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "a7ced7cab1f31e8f",
+        "type": "debug",
+        "z": "3669868b19b1582f",
+        "name": "debug 56",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1190,
+        "y": 580,
+        "wires": []
     },
     {
         "id": "cdf08e1fa0f798cf",
@@ -6649,157 +6391,11 @@
         "wires": []
     },
     {
-        "id": "416b2ca791999f81",
-        "type": "inject",
-        "z": "f11166a80e40d7b6",
-        "d": true,
-        "g": "dbdefdda299e513d",
-        "name": "Init",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "change",
-        "payload": "filebrowser_default_folder",
-        "payloadType": "global",
-        "x": 350,
-        "y": 380,
-        "wires": [
-            [
-                "065eea9d8b8485d6"
-            ]
-        ]
-    },
-    {
-        "id": "065eea9d8b8485d6",
-        "type": "function",
-        "z": "f11166a80e40d7b6",
-        "d": true,
-        "g": "dbdefdda299e513d",
-        "name": "Folder handling",
-        "func": "let folder = context.get(\"folder\");\nif (folder===undefined) {\n    folder=\"./projects/\";\n    context.set(\"folder\", folder);\n}\n\nlet hidden = context.get(\"hidden\");\nif (hidden===undefined) {\n    hidden=false;\n    context.set(\"hidden\", hidden);\n}\n\nif (msg.topic===\"up\") {\n    var the_arr = folder.split('/');\n    the_arr.pop();\n    folder=the_arr.join('/'); \n    context.set(\"folder\", folder);\n}\nif (msg.topic===\"change\") {\n    folder=msg.payload;    \n    context.set(\"folder\", folder);\n}\nif (msg.topic===\"hidden\") {\n    hidden=msg.payload;    \n    context.set(\"hidden\", hidden);\n}\n\nmsg.payload = {\"start\":folder, \"hidden\": hidden};\nflow.set(\"folder\", folder);\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 560,
-        "y": 440,
-        "wires": [
-            [
-                "8e76c283f70a71fc",
-                "d97bbc847a0d02b8"
-            ]
-        ]
-    },
-    {
-        "id": "e310048ab03cb97d",
-        "type": "function",
-        "z": "f11166a80e40d7b6",
-        "d": true,
-        "g": "dbdefdda299e513d",
-        "name": "Prep Data",
-        "func": "function convertDate(local) {\n    let d = new Date(local);\n    d.setTime(d.getTime()+3600*1000);\n    return d.toISOString().slice(0, 19).replace('T', ' ');\n}\n\nif (msg.topic === \"quickfilter\") {\n    let filter = msg.payload;\n    msg.payload = flow.get(\"currentfolder\").slice();\n    if (msg.payload !== \"\") {\n        for (var i = msg.payload.length-1; i >= 0; i--) {\n            if (!msg.payload[i].fname.includes(filter)) {\n                msg.payload.splice(i,1);\n            }\n        }\n    }\n    return msg;\n}\n\nfor (var i=0; i<msg.payload.length; i++) {\n   // msg.payload[i].stat.created = convertDate(msg.payload[i].stat.created);\n   // msg.payload[i].stat.changed = convertDate(msg.payload[i].stat.changed);\n   // msg.payload[i].stat.accessed = convertDate(msg.payload[i].stat.accessed);\n   // msg.payload[i].stat.statusChanged = convertDate(msg.payload[i].stat.statusChanged);\n    msg.payload[i].fname = msg.payload[i].name.replace(/^.*(\\\\|\\/|\\:)/, '');\n    if (msg.payload[i].stat.isDirectory) {\n        msg.payload[i].ext = \"folder\";\n        msg.payload[i].icon = \"<i class=\\\"fa fa-folder-o\\\"></i>\";\n    } else {\n        msg.payload[i].ext = msg.payload[i].fname.split('.').pop().toLowerCase();\n        msg.payload[i].downloadlink = \"/download?filename=\"+msg.payload[i].name;\n        switch (msg.payload[i].ext) {\n            case \"csv\":\n            case \"txt\":\n                msg.payload[i].icon = \"<i class=\\\"fa fa-file-text-o\\\"></i>\";\n                break;\n            case \"jpg\":\n            case \"jpeg\":\n            case \"png\":\n            case \"gif\":\n                msg.payload[i].icon = \"<i class=\\\"fa fa-file-image-o\\\"></i>\";\n                break;\n            case \"json\":\n            case \"py\":\n            case \"sh\":\n                msg.payload[i].icon = \"<i class=\\\"fa fa-file-code-o\\\"></i>\";\n                break;\n            default:\n                msg.payload[i].icon = \"<i class=\\\"fa fa-file-o\\\"></i>\";\n        }\n    }\n}\nflow.set(\"currentfolder\",msg.payload);\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 880,
-        "y": 420,
-        "wires": [
-            [
-                "ae63448a19e2e3d9"
-            ]
-        ]
-    },
-    {
-        "id": "ded800be46c3d733",
-        "type": "function",
-        "z": "f11166a80e40d7b6",
-        "d": true,
-        "g": "dbdefdda299e513d",
-        "name": "Change folder",
-        "func": "\nif (msg.payload.stat.isDirectory) {\n\n    msg.topic = \"change\";\n    msg.payload = msg.payload.name;\n\n    return msg;\n}",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 740,
-        "y": 500,
-        "wires": [
-            [
-                "065eea9d8b8485d6"
-            ]
-        ]
-    },
-    {
-        "id": "aced4d4842d15275",
-        "type": "change",
-        "z": "f11166a80e40d7b6",
-        "d": true,
-        "g": "dbdefdda299e513d",
-        "name": "Empty",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 890,
-        "y": 360,
-        "wires": [
-            [
-                "224a8f8dae98af42"
-            ]
-        ]
-    },
-    {
-        "id": "96760b19255458ed",
-        "type": "exec",
-        "z": "f11166a80e40d7b6",
-        "command": "python colmap2nerf.py ",
-        "addpay": "",
-        "append": "",
-        "useSpawn": "false",
-        "timer": "",
-        "winHide": false,
-        "oldrc": false,
-        "name": "",
-        "x": 1480,
-        "y": 580,
-        "wires": [
-            [],
-            [],
-            []
-        ]
-    },
-    {
         "id": "6922f8443327585e",
         "type": "function",
         "z": "f11166a80e40d7b6",
         "name": "function 4",
-        "func": "//construct command\n// var cmd = \"\";\n// cmd = cmd +\"python scripts/run.py \"\n// var full_cmd = \"python run.py --scene transforms.json --screenshot_dir rembg_abgabe_img1139/ --width 2048 --height 2048 --n_steps 1000 --save_snapshot ./snap.ingp\";\n// var folder = flow.get(\"folder\");\n// if(flow.get(\"folder\") == null){\n//     msg.errorcode = 1;\n//     msg.errortext = \"Please navigate to folder that contains images\";\n// }\n\n// if(flow.get(\"video\")==true){\n//  cmd += \"--video_in \";\n//  cmd += folder +\" \";\n// }else{\n//     cmd+= \"--images \";\n//     cmd+= folder+ \" \";\n// }\n// if(flow.get(\"run_colmap\")==true){\n//     cmd += \"--run_colmap \";\n// }\n// if(flow.get(\"single_camera\")==true){\n//     cmd += \"--single_camera \";\n// }\n// if(flow.get(\"use_gpu\")==true){\n//     cmd += \"--use_gpu 1 \";\n// }\n// msg.payload = cmd;\n// msg.errorcode = 0;\n// return msg;\n\nvar cmd = \"\";\nlet folder = global.get(\"selected_project\");\ncmd = \"python ../../instant-ngp/scripts/run.py --scene \" +folder +\"/transforms_centered.json --save_snapshot \"+folder+\"/snapshot.ingp --save_mesh .\"+folder+\"/snapshot.obj --n_steps 1000\"\n\nmsg.payload = cmd;\n\nreturn msg;",
+        "func": "//construct command\n// var cmd = \"\";\n// cmd = cmd +\"python scripts/run.py \"\n// var full_cmd = \"python run.py --scene transforms.json --screenshot_dir rembg_abgabe_img1139/ --width 2048 --height 2048 --n_steps 1000 --save_snapshot ./snap.ingp\";\n// var folder = flow.get(\"folder\");\n// if(flow.get(\"folder\") == null){\n//     msg.errorcode = 1;\n//     msg.errortext = \"Please navigate to folder that contains images\";\n// }\n\n// if(flow.get(\"video\")==true){\n//  cmd += \"--video_in \";\n//  cmd += folder +\" \";\n// }else{\n//     cmd+= \"--images \";\n//     cmd+= folder+ \" \";\n// }\n// if(flow.get(\"run_colmap\")==true){\n//     cmd += \"--run_colmap \";\n// }\n// if(flow.get(\"single_camera\")==true){\n//     cmd += \"--single_camera \";\n// }\n// if(flow.get(\"use_gpu\")==true){\n//     cmd += \"--use_gpu 1 \";\n// }\n// msg.payload = cmd;\n// msg.errorcode = 0;\n// return msg;\n\nvar cmd = \"\";\nvar steps = flow.get(\"steps\")\nconsole.log(flow.get(\"transforms_found\"));\nvar default_folder = global.get(\"filebrowser_default_folder\") \nlet project_path =default_folder+ global.get(\"selected_project\");\ncmd = \"python ../../instant-ngp/scripts/run.py --scene \" + project_path + \"/transforms_centered.json --save_snapshot \" + project_path + \"/snapshot.ingp --save_mesh \" + project_path +\"/snapshot.obj --n_steps \"+steps;\n\nmsg.payload = cmd;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -6833,48 +6429,23 @@
         "wires": []
     },
     {
-        "id": "8cc11a92fe734712",
-        "type": "switch",
-        "z": "f11166a80e40d7b6",
-        "name": "",
-        "property": "errorcode",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "neq",
-                "v": "1",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 670,
-        "y": 620,
-        "wires": [
-            [
-                "cedf14d9a75fd905"
-            ]
-        ]
-    },
-    {
         "id": "cedf14d9a75fd905",
         "type": "exec",
         "z": "f11166a80e40d7b6",
         "command": "",
         "addpay": "payload",
         "append": "",
-        "useSpawn": "false",
+        "useSpawn": "true",
         "timer": "",
         "winHide": false,
         "oldrc": false,
         "name": "instant-ngp/run.py",
-        "x": 1030,
+        "x": 1050,
         "y": 700,
         "wires": [
             [
-                "90293cf435cb4df4",
-                "ab3d335fc2c980c9"
+                "60493bb1f6b0cab2",
+                "6cc453db05c0eb3e"
             ],
             [
                 "e19ae7959c10c9f3"
@@ -6915,7 +6486,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "use_gpu",
+                "p": "remove_background",
                 "pt": "flow",
                 "to": "payload",
                 "tot": "msg"
@@ -6926,7 +6497,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 690,
+        "x": 720,
         "y": 1000,
         "wires": [
             []
@@ -6951,8 +6522,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 660,
-        "y": 1060,
+        "x": 680,
+        "y": 1100,
         "wires": [
             []
         ]
@@ -6988,8 +6559,8 @@
         "z": "f11166a80e40d7b6",
         "name": "Instant-NGP File Browser",
         "info": "",
-        "x": 350,
-        "y": 200,
+        "x": 870,
+        "y": 80,
         "wires": []
     },
     {
@@ -7236,139 +6807,12 @@
         "wires": []
     },
     {
-        "id": "322681938b7dacce",
-        "type": "inject",
-        "z": "f11166a80e40d7b6",
-        "d": true,
-        "g": "289b4ed31554a093",
-        "name": "Init",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "change",
-        "payload": "filebrowser_default_folder",
-        "payloadType": "global",
-        "x": 350,
-        "y": 1580,
-        "wires": [
-            [
-                "c5d109aad6e51fd5"
-            ]
-        ]
-    },
-    {
-        "id": "c5d109aad6e51fd5",
-        "type": "function",
-        "z": "f11166a80e40d7b6",
-        "d": true,
-        "g": "289b4ed31554a093",
-        "name": "Folder handling",
-        "func": "let folder = context.get(\"folder\");\nif (folder===undefined) {\n    folder=\"/\";\n    context.set(\"folder\", folder);\n}\n\nlet hidden = context.get(\"hidden\");\nif (hidden===undefined) {\n    hidden=false;\n    context.set(\"hidden\", hidden);\n}\n\nif (msg.topic===\"up\") {\n    var the_arr = folder.split('/');\n    the_arr.pop();\n    folder=the_arr.join('/'); \n    context.set(\"folder\", folder);\n}\nif (msg.topic===\"change\") {\n    folder=msg.payload;    \n    context.set(\"folder\", folder);\n}\nif (msg.topic===\"hidden\") {\n    hidden=msg.payload;    \n    context.set(\"hidden\", hidden);\n}\n\nmsg.payload = {\"start\":folder, \"hidden\": hidden};\nflow.set(\"folder\", folder);\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 560,
-        "y": 1640,
-        "wires": [
-            [
-                "c03b87a5457bdd63",
-                "bffb05299c426503"
-            ]
-        ]
-    },
-    {
-        "id": "483e19abed663189",
-        "type": "function",
-        "z": "f11166a80e40d7b6",
-        "d": true,
-        "g": "289b4ed31554a093",
-        "name": "Prep Data",
-        "func": "function convertDate(local) {\n    let d = new Date(local);\n    d.setTime(d.getTime()+3600*1000);\n    return d.toISOString().slice(0, 19).replace('T', ' ');\n}\n\nif (msg.topic === \"quickfilter\") {\n    let filter = msg.payload;\n    msg.payload = flow.get(\"currentfolder\").slice();\n    if (msg.payload !== \"\") {\n        for (var i = msg.payload.length-1; i >= 0; i--) {\n            if (!msg.payload[i].fname.includes(filter)) {\n                msg.payload.splice(i,1);\n            }\n        }\n    }\n    return msg;\n}\n\nfor (var i=0; i<msg.payload.length; i++) {\n   // msg.payload[i].stat.created = convertDate(msg.payload[i].stat.created);\n   // msg.payload[i].stat.changed = convertDate(msg.payload[i].stat.changed);\n   // msg.payload[i].stat.accessed = convertDate(msg.payload[i].stat.accessed);\n   // msg.payload[i].stat.statusChanged = convertDate(msg.payload[i].stat.statusChanged);\n    msg.payload[i].fname = msg.payload[i].name.replace(/^.*(\\\\|\\/|\\:)/, '');\n    if (msg.payload[i].stat.isDirectory) {\n        msg.payload[i].ext = \"folder\";\n        msg.payload[i].icon = \"<i class=\\\"fa fa-folder-o\\\"></i>\";\n    } else {\n        msg.payload[i].ext = msg.payload[i].fname.split('.').pop().toLowerCase();\n        msg.payload[i].downloadlink = \"/download?filename=\"+msg.payload[i].name;\n        switch (msg.payload[i].ext) {\n            case \"csv\":\n            case \"txt\":\n                msg.payload[i].icon = \"<i class=\\\"fa fa-file-text-o\\\"></i>\";\n                break;\n            case \"jpg\":\n            case \"jpeg\":\n            case \"png\":\n            case \"gif\":\n                msg.payload[i].icon = \"<i class=\\\"fa fa-file-image-o\\\"></i>\";\n                break;\n            case \"json\":\n            case \"py\":\n            case \"sh\":\n                msg.payload[i].icon = \"<i class=\\\"fa fa-file-code-o\\\"></i>\";\n                break;\n            default:\n                msg.payload[i].icon = \"<i class=\\\"fa fa-file-o\\\"></i>\";\n        }\n    }\n}\nflow.set(\"currentfolder\",msg.payload);\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 880,
-        "y": 1620,
-        "wires": [
-            [
-                "868f7ae638c6efdb"
-            ]
-        ]
-    },
-    {
-        "id": "418f5fdcc50cf45e",
-        "type": "function",
-        "z": "f11166a80e40d7b6",
-        "d": true,
-        "g": "289b4ed31554a093",
-        "name": "Change folder",
-        "func": "\nif (msg.payload.stat.isDirectory) {\n\n    msg.topic = \"change\";\n    msg.payload = msg.payload.name;\n\n    return msg;\n}",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 740,
-        "y": 1700,
-        "wires": [
-            [
-                "c5d109aad6e51fd5"
-            ]
-        ]
-    },
-    {
-        "id": "063641edd6f9ca6f",
-        "type": "change",
-        "z": "f11166a80e40d7b6",
-        "d": true,
-        "g": "289b4ed31554a093",
-        "name": "Empty",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 890,
-        "y": 1560,
-        "wires": [
-            [
-                "62a702b694f41e7f"
-            ]
-        ]
-    },
-    {
         "id": "5ae3b7b8fe108ddb",
         "type": "function",
         "z": "f11166a80e40d7b6",
-        "d": true,
         "g": "16e9549a3ea706bc",
         "name": "Folder handling",
-        "func": "let folder = global.get(\"filebrowser_default_folder\");\nlet project_name = global.get(\"selected_project\")\nconsole.log(project_name);\n\nif (folder===undefined) {\n    folder=\"./projects/\";\n    context.set(\"folder\", folder);\n}\n\n\nmsg.project_name = project_name;\nmsg.payload = {\"start\":folder};\nreturn msg;",
+        "func": "let folder = global.get(\"filebrowser_default_folder\");\nlet project_name = global.get(\"selected_project\")\n//console.log(project_name);\n\nif (folder===undefined) {\n    folder=\"./projects/\";\n    context.set(\"folder\", folder);\n}\n\n\nmsg.project_name = project_name;\nmsg.payload = {\"start\":folder};\nreturn msg;",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -7380,8 +6824,8 @@
                 "module": "fs"
             }
         ],
-        "x": 780,
-        "y": 1320,
+        "x": 900,
+        "y": 1400,
         "wires": [
             [
                 "f0b90c78f5f79e71"
@@ -7392,7 +6836,6 @@
         "id": "567a4991445ed8e7",
         "type": "function",
         "z": "f11166a80e40d7b6",
-        "d": true,
         "g": "16e9549a3ea706bc",
         "name": "Prep Data",
         "func": "function convertDate(local) {\n    let d = new Date(local);\n    d.setTime(d.getTime()+3600*1000);\n    return d.toISOString().slice(0, 19).replace('T', ' ');\n}\n\nvar newmsg = msg;\nnewmsg.options = [];\n\nfor (var i=0; i<msg.payload.length; i++) {\n\n    msg.payload[i].fname = msg.payload[i].name.replace(/^.*(\\\\|\\/|\\:)/, '');\n    if (msg.payload[i].stat.isDirectory) {\n        msg.payload[i].ext = \"folder\";\n        newmsg.options[i] = msg.payload[i].fname;\n    }\n}\nif (global.get(\"selected_project\") !== \"\") {\n    // Find the index of the selected project\n    var project_name = global.get(\"selected_project\").split(\"/\").filter(Boolean).pop();\n    newmsg.payload = project_name\n}\nflow.set(\"currentfolder\",msg.payload);\nreturn msg;\n",
@@ -7402,8 +6845,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1120,
-        "y": 1320,
+        "x": 1240,
+        "y": 1400,
         "wires": [
             [
                 "6ec4b344c84f72e8",
@@ -7415,33 +6858,34 @@
         "id": "be3b2ff50c3c00d1",
         "type": "debug",
         "z": "f11166a80e40d7b6",
-        "d": true,
         "g": "16e9549a3ea706bc",
         "name": "debug 41",
         "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "selected",
+        "complete": "payload",
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1190,
-        "y": 1420,
+        "x": 1310,
+        "y": 1500,
         "wires": []
     },
     {
         "id": "ca2e9a4b6955efb0",
         "type": "link in",
         "z": "f11166a80e40d7b6",
-        "d": true,
         "g": "16e9549a3ea706bc",
-        "name": "link in 2",
+        "name": "Charuco global folder in",
         "links": [
-            "4740638cdaeb9ff4"
+            "9a67d1381a1e6960",
+            "fe0e5a3d2e1fe78b",
+            "4484b8d6a16e79f1",
+            "4819a5fb717ddca6"
         ],
-        "x": 615,
-        "y": 1420,
+        "x": 735,
+        "y": 1500,
         "wires": [
             [
                 "5ae3b7b8fe108ddb"
@@ -7454,7 +6898,7 @@
         "z": "f11166a80e40d7b6",
         "g": "28c003637500bb58",
         "name": "Folder handling",
-        "func": "let folder = global.get(\"filebrowser_default_folder\");\nlet project_name = global.get(\"selected_project\")\nconsole.log(project_name);\n\nif (folder===undefined) {\n    folder=\"./projects/\";\n    context.set(\"folder\", folder);\n}\n\n\nmsg.project_name = project_name;\nmsg.payload = {\"start\":folder};\nreturn msg;",
+        "func": "let folder = global.get(\"filebrowser_default_folder\");\nlet project_name = global.get(\"selected_project\");\nflow.set(\"transforms_found\", false);\nconsole.log(flow.get(\"transforms_found\"));\n\nif (folder===undefined) {\n    folder=\"./projects/\";\n    context.set(\"folder\", folder);\n}\n\n\nmsg.project_name = project_name;\nmsg.payload = {\"start\":folder};\nreturn msg;",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -7466,8 +6910,8 @@
                 "module": "fs"
             }
         ],
-        "x": 800,
-        "y": 140,
+        "x": 960,
+        "y": 220,
         "wires": [
             [
                 "79f125292ff3885d"
@@ -7487,8 +6931,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1140,
-        "y": 140,
+        "x": 1300,
+        "y": 220,
         "wires": [
             [
                 "d7c9289e3b43fa08",
@@ -7506,91 +6950,25 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "selected",
+        "complete": "payload",
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1210,
-        "y": 240,
+        "x": 1370,
+        "y": 320,
         "wires": []
-    },
-    {
-        "id": "5b419ef735893404",
-        "type": "link in",
-        "z": "f11166a80e40d7b6",
-        "g": "28c003637500bb58",
-        "name": "link in 4",
-        "links": [],
-        "x": 635,
-        "y": 240,
-        "wires": [
-            [
-                "ed3316b06c40e79c"
-            ]
-        ]
-    },
-    {
-        "id": "ae63448a19e2e3d9",
-        "type": "ui_etable",
-        "z": "f11166a80e40d7b6",
-        "d": true,
-        "g": "dbdefdda299e513d",
-        "payload": "[{\"title\":\"Type\",\"field\":\"icon\",\"formatter\":\"html\",\"width\":50},{\"title\":\"Name\",\"field\":\"fname\"},{\"title\":\"Size\",\"field\":\"stat.size\",\"sorter\":\"number\",\"width\":100,\"sorterParams\":{\"thousandSeparator\":\",\",\"decimalSeparator\":\".\",\"alignEmptyValues\":\"top\"}},{\"title\":\"Created\",\"field\":\"stat.created\",\"formatter\":\"datetime\",\"width\":200,\"formatterParams\":{\"outputFormat\":\"yyyy.MM.DD HH:mm:ss\",\"invalidPlaceholder\":\"(invalid date)\",\"timezone\":\"system\"}},{\"title\":\"Changed\",\"field\":\"stat.changed\",\"formatter\":\"datetime\",\"width\":200,\"formatterParams\":{\"outputFormat\":\"yyyy.MM.DD HH:mm:ss\",\"invalidPlaceholder\":\"(invalid date)\",\"timezone\":\"system\"}}]",
-        "payloadType": "json",
-        "options": "{\"movableColumns\":true,\"resizableColumns\":true,\"selectable\":1,\"responsiveLayout\":\"collapse\",\"autoResize\":true,\"layout\":\"fitColumns\",\"pagination\":\"local\",\"height\":\"100%\"}",
-        "group": "69f362d14b608c68",
-        "name": "Select folder where files located",
-        "order": 5,
-        "width": 11,
-        "height": 13,
-        "columns": [],
-        "outputs": 1,
-        "cts": false,
-        "x": 1110,
-        "y": 420,
-        "wires": [
-            [
-                "ded800be46c3d733"
-            ]
-        ]
-    },
-    {
-        "id": "868f7ae638c6efdb",
-        "type": "ui_etable",
-        "z": "f11166a80e40d7b6",
-        "d": true,
-        "g": "289b4ed31554a093",
-        "payload": "[{\"title\":\"Type\",\"field\":\"icon\",\"formatter\":\"html\",\"width\":50},{\"title\":\"Name\",\"field\":\"fname\"},{\"title\":\"Size\",\"field\":\"stat.size\",\"sorter\":\"number\",\"width\":100,\"sorterParams\":{\"thousandSeparator\":\",\",\"decimalSeparator\":\".\",\"alignEmptyValues\":\"top\"}},{\"title\":\"Created\",\"field\":\"stat.created\",\"formatter\":\"datetime\",\"width\":200,\"formatterParams\":{\"outputFormat\":\"yyyy.MM.DD HH:mm:ss\",\"invalidPlaceholder\":\"(invalid date)\",\"timezone\":\"system\"}},{\"title\":\"Changed\",\"field\":\"stat.changed\",\"formatter\":\"datetime\",\"width\":200,\"formatterParams\":{\"outputFormat\":\"yyyy.MM.DD HH:mm:ss\",\"invalidPlaceholder\":\"(invalid date)\",\"timezone\":\"system\"}}]",
-        "payloadType": "json",
-        "options": "{\"movableColumns\":true,\"resizableColumns\":true,\"selectable\":1,\"responsiveLayout\":\"collapse\",\"autoResize\":true,\"layout\":\"fitColumns\",\"pagination\":\"local\",\"height\":\"100%\"}",
-        "group": "94b2d8d9e77fa636",
-        "name": "Select folder where files located",
-        "order": 8,
-        "width": 10,
-        "height": 13,
-        "columns": [],
-        "outputs": 1,
-        "cts": false,
-        "x": 1110,
-        "y": 1620,
-        "wires": [
-            [
-                "418f5fdcc50cf45e"
-            ]
-        ]
     },
     {
         "id": "6ec4b344c84f72e8",
         "type": "ui_dropdown",
         "z": "f11166a80e40d7b6",
-        "d": true,
         "g": "16e9549a3ea706bc",
-        "name": "",
+        "name": "charuco project dropdown",
         "label": "",
         "tooltip": "",
         "place": "Select option",
-        "group": "69f362d14b608c68",
-        "order": 4,
+        "group": "94b2d8d9e77fa636",
+        "order": 3,
         "width": 8,
         "height": 1,
         "passthru": true,
@@ -7600,10 +6978,12 @@
         "topic": "topic",
         "topicType": "msg",
         "className": "",
-        "x": 1280,
-        "y": 1320,
+        "x": 1490,
+        "y": 1400,
         "wires": [
-            []
+            [
+                "7b36c9095cf50122"
+            ]
         ]
     },
     {
@@ -7611,13 +6991,13 @@
         "type": "ui_dropdown",
         "z": "f11166a80e40d7b6",
         "g": "28c003637500bb58",
-        "name": "",
+        "name": "ingp project dropdown",
         "label": "",
         "tooltip": "",
         "place": "Select option",
-        "group": "69f362d14b608c68",
-        "order": 4,
-        "width": 8,
+        "group": "919860c8b411c539",
+        "order": 3,
+        "width": 4,
         "height": 1,
         "passthru": true,
         "multiple": false,
@@ -7626,99 +7006,11 @@
         "topic": "topic",
         "topicType": "msg",
         "className": "",
-        "x": 1300,
-        "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "524542fd2d2d130c",
-        "type": "ui_button",
-        "z": "f11166a80e40d7b6",
-        "d": true,
-        "g": "dbdefdda299e513d",
-        "name": "",
-        "group": "69f362d14b608c68",
-        "order": 1,
-        "width": 4,
-        "height": 1,
-        "passthru": false,
-        "label": "Refresh",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "refresh",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "refresh",
-        "topicType": "str",
-        "x": 340,
-        "y": 420,
+        "x": 1520,
+        "y": 180,
         "wires": [
             [
-                "065eea9d8b8485d6"
-            ]
-        ]
-    },
-    {
-        "id": "5fdb8e722fa9876e",
-        "type": "ui_button",
-        "z": "f11166a80e40d7b6",
-        "d": true,
-        "g": "dbdefdda299e513d",
-        "name": "",
-        "group": "69f362d14b608c68",
-        "order": 3,
-        "width": 3,
-        "height": 1,
-        "passthru": false,
-        "label": "Up",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "arrow_upwards",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "up",
-        "topicType": "str",
-        "x": 350,
-        "y": 500,
-        "wires": [
-            [
-                "065eea9d8b8485d6"
-            ]
-        ]
-    },
-    {
-        "id": "dc04a5a015a88ec5",
-        "type": "ui_button",
-        "z": "f11166a80e40d7b6",
-        "d": true,
-        "g": "dbdefdda299e513d",
-        "name": "",
-        "group": "69f362d14b608c68",
-        "order": 2,
-        "width": 4,
-        "height": 1,
-        "passthru": false,
-        "label": "Reset",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "autorenew",
-        "payload": "filebrowser_default_folder",
-        "payloadType": "global",
-        "topic": "change",
-        "topicType": "str",
-        "x": 350,
-        "y": 460,
-        "wires": [
-            [
-                "065eea9d8b8485d6"
+                "8f84de504bd9865d"
             ]
         ]
     },
@@ -7727,8 +7019,8 @@
         "type": "ui_button",
         "z": "f11166a80e40d7b6",
         "name": "",
-        "group": "23c5588908fde9b8",
-        "order": 6,
+        "group": "919860c8b411c539",
+        "order": 7,
         "width": 7,
         "height": 1,
         "passthru": false,
@@ -7742,8 +7034,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 390,
-        "y": 640,
+        "x": 370,
+        "y": 660,
         "wires": [
             [
                 "6922f8443327585e"
@@ -7779,104 +7071,14 @@
         ]
     },
     {
-        "id": "21fdab1ce4386185",
-        "type": "ui_button",
-        "z": "f11166a80e40d7b6",
-        "d": true,
-        "g": "289b4ed31554a093",
-        "name": "",
-        "group": "94b2d8d9e77fa636",
-        "order": 1,
-        "width": 4,
-        "height": 1,
-        "passthru": false,
-        "label": "Refresh",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "refresh",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "refresh",
-        "topicType": "str",
-        "x": 340,
-        "y": 1620,
-        "wires": [
-            [
-                "c5d109aad6e51fd5"
-            ]
-        ]
-    },
-    {
-        "id": "2cd1d3eedc81a73a",
-        "type": "ui_button",
-        "z": "f11166a80e40d7b6",
-        "d": true,
-        "g": "289b4ed31554a093",
-        "name": "",
-        "group": "94b2d8d9e77fa636",
-        "order": 4,
-        "width": 3,
-        "height": 1,
-        "passthru": false,
-        "label": "Up",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "arrow_upwards",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "up",
-        "topicType": "str",
-        "x": 350,
-        "y": 1700,
-        "wires": [
-            [
-                "c5d109aad6e51fd5"
-            ]
-        ]
-    },
-    {
-        "id": "9d44fc0716f4014d",
-        "type": "ui_button",
-        "z": "f11166a80e40d7b6",
-        "d": true,
-        "g": "289b4ed31554a093",
-        "name": "",
-        "group": "94b2d8d9e77fa636",
-        "order": 2,
-        "width": 4,
-        "height": 1,
-        "passthru": false,
-        "label": "Reset",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "autorenew",
-        "payload": "filebrowser_default_folder",
-        "payloadType": "global",
-        "topic": "change",
-        "topicType": "str",
-        "x": 350,
-        "y": 1660,
-        "wires": [
-            [
-                "c5d109aad6e51fd5"
-            ]
-        ]
-    },
-    {
         "id": "a4b0507b374cecca",
         "type": "ui_switch",
         "z": "f11166a80e40d7b6",
-        "name": "",
+        "name": "Save ingp model",
         "label": "Save ingp model",
         "tooltip": "",
         "group": "23c5588908fde9b8",
-        "order": 2,
+        "order": 3,
         "width": 7,
         "height": 1,
         "passthru": true,
@@ -7906,11 +7108,11 @@
         "id": "9420f1f1f78a741f",
         "type": "ui_switch",
         "z": "f11166a80e40d7b6",
-        "name": "",
-        "label": "Use gpu",
+        "name": "Remove background",
+        "label": "Remove background",
         "tooltip": "",
         "group": "23c5588908fde9b8",
-        "order": 5,
+        "order": 6,
         "width": 7,
         "height": 1,
         "passthru": true,
@@ -7928,7 +7130,7 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 380,
+        "x": 420,
         "y": 1000,
         "wires": [
             [
@@ -8005,42 +7207,14 @@
         ]
     },
     {
-        "id": "224a8f8dae98af42",
-        "type": "ui_text_input",
-        "z": "f11166a80e40d7b6",
-        "d": true,
-        "g": "dbdefdda299e513d",
-        "name": "",
-        "label": "Filter:",
-        "tooltip": "",
-        "group": "69f362d14b608c68",
-        "order": 6,
-        "width": 6,
-        "height": 1,
-        "passthru": false,
-        "mode": "text",
-        "delay": 300,
-        "topic": "quickfilter",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 1030,
-        "y": 360,
-        "wires": [
-            [
-                "e310048ab03cb97d"
-            ]
-        ]
-    },
-    {
         "id": "70b4dca61ac86b02",
         "type": "ui_text_input",
         "z": "f11166a80e40d7b6",
-        "name": "",
-        "label": "Save output to",
+        "name": "Save output as",
+        "label": "Save output as",
         "tooltip": "",
         "group": "23c5588908fde9b8",
-        "order": 1,
+        "order": 2,
         "width": 7,
         "height": 1,
         "passthru": true,
@@ -8085,34 +7259,6 @@
         ]
     },
     {
-        "id": "62a702b694f41e7f",
-        "type": "ui_text_input",
-        "z": "f11166a80e40d7b6",
-        "d": true,
-        "g": "289b4ed31554a093",
-        "name": "",
-        "label": "Filter:",
-        "tooltip": "",
-        "group": "94b2d8d9e77fa636",
-        "order": 5,
-        "width": 6,
-        "height": 1,
-        "passthru": false,
-        "mode": "text",
-        "delay": 300,
-        "topic": "quickfilter",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 1030,
-        "y": 1560,
-        "wires": [
-            [
-                "483e19abed663189"
-            ]
-        ]
-    },
-    {
         "id": "8aaec62f5dc1c9f2",
         "type": "ui_slider",
         "z": "f11166a80e40d7b6",
@@ -8120,7 +7266,7 @@
         "label": "Steps",
         "tooltip": "",
         "group": "23c5588908fde9b8",
-        "order": 3,
+        "order": 4,
         "width": 5,
         "height": 1,
         "passthru": true,
@@ -8131,8 +7277,8 @@
         "max": "20000",
         "step": 1,
         "className": "",
-        "x": 370,
-        "y": 1080,
+        "x": 390,
+        "y": 1160,
         "wires": [
             [
                 "058a7201fdcec32f",
@@ -8172,10 +7318,10 @@
         "id": "46e5ca4933fd9f42",
         "type": "ui_text",
         "z": "f11166a80e40d7b6",
-        "group": "919860c8b411c539",
+        "group": "23c5588908fde9b8",
         "order": 1,
-        "width": 0,
-        "height": 0,
+        "width": 7,
+        "height": 1,
         "name": "",
         "label": "",
         "format": "Guidelines: You need to point to foler that contains transforms.json and then configure and start reconstruction",
@@ -8190,37 +7336,14 @@
         "wires": []
     },
     {
-        "id": "d97bbc847a0d02b8",
-        "type": "ui_text",
-        "z": "f11166a80e40d7b6",
-        "d": true,
-        "g": "dbdefdda299e513d",
-        "group": "69f362d14b608c68",
-        "order": 4,
-        "width": 11,
-        "height": 1,
-        "name": "",
-        "label": "Folder:",
-        "format": "{{msg.payload.start}}",
-        "layout": "row-left",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": "",
-        "color": "#000000",
-        "x": 740,
-        "y": 360,
-        "wires": []
-    },
-    {
         "id": "21ec4e07bcb045bd",
         "type": "ui_text",
         "z": "f11166a80e40d7b6",
         "group": "23c5588908fde9b8",
-        "order": 4,
+        "order": 5,
         "width": 2,
         "height": 1,
-        "name": "",
+        "name": "Show steps",
         "label": "",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
@@ -8229,8 +7352,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 610,
-        "y": 1120,
+        "x": 690,
+        "y": 1180,
         "wires": []
     },
     {
@@ -8241,7 +7364,7 @@
         "order": 1,
         "width": 0,
         "height": 0,
-        "name": "",
+        "name": "Charuco guidelines",
         "label": "",
         "format": "Guidelines: You need to point to foler that contains transforms.json and then configure and start reconstruction",
         "layout": "row-center",
@@ -8250,7 +7373,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 290,
+        "x": 330,
         "y": 1360,
         "wires": []
     },
@@ -8276,45 +7399,22 @@
         "wires": []
     },
     {
-        "id": "bffb05299c426503",
-        "type": "ui_text",
-        "z": "f11166a80e40d7b6",
-        "d": true,
-        "g": "289b4ed31554a093",
-        "group": "94b2d8d9e77fa636",
-        "order": 7,
-        "width": 10,
-        "height": 1,
-        "name": "",
-        "label": "Folder:",
-        "format": "{{msg.payload.start}}",
-        "layout": "row-left",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": "",
-        "color": "#000000",
-        "x": 740,
-        "y": 1560,
-        "wires": []
-    },
-    {
         "id": "ab3d335fc2c980c9",
         "type": "ui_template",
         "z": "f11166a80e40d7b6",
         "group": "a7d09646c3ab18c3",
         "name": "",
         "order": 1,
-        "width": 10,
+        "width": 16,
         "height": 16,
-        "format": "<div>\n  <pre>{{msg.payload}}</pre>\n</div>",
+        "format": "<div style=\"height: 700px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px;\" id=\"logWindow\"></div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var logWindow = document.getElementById(\"logWindow\");\n            logWindow.innerHTML += payload + \"<br/>\";\n            logWindow.scrollTop = logWindow.scrollHeight;  // Auto-scroll to the bottom\n        });\n    })(scope);\n</script>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1500,
-        "y": 680,
+        "x": 1580,
+        "y": 580,
         "wires": [
             []
         ]
@@ -8341,62 +7441,9 @@
         ]
     },
     {
-        "id": "8e76c283f70a71fc",
-        "type": "fs-file-lister",
-        "z": "f11166a80e40d7b6",
-        "d": true,
-        "g": "dbdefdda299e513d",
-        "name": "Files",
-        "start": "./projects/",
-        "pattern": "*.*",
-        "folders": "*",
-        "hidden": false,
-        "lstype": "both",
-        "path": true,
-        "single": true,
-        "depth": 0,
-        "stat": true,
-        "showWarnings": false,
-        "x": 730,
-        "y": 420,
-        "wires": [
-            [
-                "e310048ab03cb97d",
-                "aced4d4842d15275"
-            ]
-        ]
-    },
-    {
-        "id": "c03b87a5457bdd63",
-        "type": "fs-file-lister",
-        "z": "f11166a80e40d7b6",
-        "d": true,
-        "g": "289b4ed31554a093",
-        "name": "Files",
-        "start": "./",
-        "pattern": "*.*",
-        "folders": "*",
-        "hidden": false,
-        "lstype": "both",
-        "path": true,
-        "single": true,
-        "depth": 0,
-        "stat": true,
-        "showWarnings": false,
-        "x": 730,
-        "y": 1620,
-        "wires": [
-            [
-                "483e19abed663189",
-                "063641edd6f9ca6f"
-            ]
-        ]
-    },
-    {
         "id": "f0b90c78f5f79e71",
         "type": "fs-file-lister",
         "z": "f11166a80e40d7b6",
-        "d": true,
         "g": "16e9549a3ea706bc",
         "name": "Files",
         "start": "./projects/",
@@ -8409,8 +7456,8 @@
         "depth": 0,
         "stat": true,
         "showWarnings": false,
-        "x": 970,
-        "y": 1320,
+        "x": 1090,
+        "y": 1400,
         "wires": [
             [
                 "567a4991445ed8e7"
@@ -8433,8 +7480,8 @@
         "depth": 0,
         "stat": true,
         "showWarnings": false,
-        "x": 990,
-        "y": 140,
+        "x": 1150,
+        "y": 220,
         "wires": [
             [
                 "0e8b617c0ee560fd"
@@ -8472,6 +7519,309 @@
         "x": 1460,
         "y": 940,
         "wires": []
+    },
+    {
+        "id": "ad467ef6eb73e5a7",
+        "type": "ui_text",
+        "z": "f11166a80e40d7b6",
+        "g": "28c003637500bb58",
+        "group": "919860c8b411c539",
+        "order": 1,
+        "width": 8,
+        "height": 1,
+        "name": "Select Project",
+        "label": "Select a project where to initialize reconstruction",
+        "format": "",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1280,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "c45f862057b98f28",
+        "type": "ui_text",
+        "z": "f11166a80e40d7b6",
+        "g": "28c003637500bb58",
+        "group": "919860c8b411c539",
+        "order": 5,
+        "width": 7,
+        "height": 1,
+        "name": "transforms found or not",
+        "label": "",
+        "format": "{{msg.text}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 2570,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "50f6a1a84175c4c1",
+        "type": "function",
+        "z": "f11166a80e40d7b6",
+        "g": "28c003637500bb58",
+        "name": "Prep Data",
+        "func": "\nvar current_folder = global.get(\"selected_project\");\n\nvar newmsg = msg;\nnewmsg.result = false;\n\nvar transforms_substring = \"transforms_centered.json\";\nnewmsg.text = transforms_substring + \" wasn't found in \" + current_folder+\" . You can't run reconstruction!\";\n//console.log(msg.payload)\nfor (var i=0; i<msg.payload.length; i++) {\n\n    msg.payload[i].fname = msg.payload[i].name.replace(/^.*(\\\\|\\/|\\:)/, '');\n    //console.log(msg.payload[i].fname);\n\n    if(msg.payload[i].fname.includes(transforms_substring)) // true\n    {\n        flow.set(\"transforms_found\", true);\n        newmsg.result = true\n        newmsg.text = transforms_substring + \" is found in \" + current_folder + \" . You can run reconstruction!\";\n    }\n    \n}\n\nreturn newmsg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2340,
+        "y": 220,
+        "wires": [
+            [
+                "c45f862057b98f28",
+                "8b4531d23690c116"
+            ]
+        ]
+    },
+    {
+        "id": "be433bed50bb1f35",
+        "type": "function",
+        "z": "f11166a80e40d7b6",
+        "g": "28c003637500bb58",
+        "name": "Folder handling",
+        "func": "let folder = global.get(\"filebrowser_default_folder\");\nlet project_name = global.get(\"selected_project\");\n//console.log(project_name);\n\nif (folder===undefined) {\n    folder=\"./projects/\";\n    context.set(\"folder\", folder);\n}\n\nmsg.project_path = folder+project_name+\"/\";\nmsg.payload = { \"start\": msg.project_path };\n//console.log(msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fs",
+                "module": "fs"
+            }
+        ],
+        "x": 2020,
+        "y": 220,
+        "wires": [
+            [
+                "ae681a65f8ed97a2",
+                "8ce95ac3bfcccac5"
+            ]
+        ]
+    },
+    {
+        "id": "ae681a65f8ed97a2",
+        "type": "fs-file-lister",
+        "z": "f11166a80e40d7b6",
+        "g": "28c003637500bb58",
+        "name": "Files",
+        "start": "./projects/bfrog_4x4/",
+        "pattern": "*.*",
+        "folders": "*",
+        "hidden": false,
+        "lstype": "files",
+        "path": true,
+        "single": true,
+        "depth": 0,
+        "stat": true,
+        "showWarnings": false,
+        "x": 2190,
+        "y": 220,
+        "wires": [
+            [
+                "50f6a1a84175c4c1"
+            ]
+        ]
+    },
+    {
+        "id": "9cd6126067c8d457",
+        "type": "link in",
+        "z": "f11166a80e40d7b6",
+        "g": "28c003637500bb58",
+        "name": "INGP global folder in",
+        "links": [
+            "590c0108c7e5d026",
+            "fe0e5a3d2e1fe78b",
+            "4484b8d6a16e79f1",
+            "3a5cc637ad1c52df"
+        ],
+        "x": 805,
+        "y": 300,
+        "wires": [
+            [
+                "ed3316b06c40e79c"
+            ]
+        ]
+    },
+    {
+        "id": "7fff52a787654f03",
+        "type": "link in",
+        "z": "f11166a80e40d7b6",
+        "g": "28c003637500bb58",
+        "name": "find transforms in",
+        "links": [
+            "1f21093d7f876a07"
+        ],
+        "x": 1905,
+        "y": 280,
+        "wires": [
+            [
+                "be433bed50bb1f35"
+            ]
+        ]
+    },
+    {
+        "id": "8b4531d23690c116",
+        "type": "debug",
+        "z": "f11166a80e40d7b6",
+        "g": "28c003637500bb58",
+        "name": "debug 52",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "text",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2290,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "8f84de504bd9865d",
+        "type": "function",
+        "z": "f11166a80e40d7b6",
+        "g": "28c003637500bb58",
+        "name": "Set global_folder",
+        "func": "var folder = global.get('filebrowser_default_folder');\nvar project= msg.payload;\nmsg.payload = project;\n\nglobal.set(\"selected_project\", msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1710,
+        "y": 240,
+        "wires": [
+            [
+                "1f21093d7f876a07"
+            ]
+        ]
+    },
+    {
+        "id": "7b36c9095cf50122",
+        "type": "function",
+        "z": "f11166a80e40d7b6",
+        "g": "16e9549a3ea706bc",
+        "name": "Set global_folder",
+        "func": "var folder = global.get('filebrowser_default_folder');\nvar project= msg.payload;\nmsg.payload = folder+project+\"/\";\n\nglobal.set(\"selected_project\",project)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1710,
+        "y": 1480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1f21093d7f876a07",
+        "type": "link out",
+        "z": "f11166a80e40d7b6",
+        "g": "28c003637500bb58",
+        "name": "find transforms ou",
+        "mode": "link",
+        "links": [
+            "7fff52a787654f03"
+        ],
+        "x": 1605,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "8ce95ac3bfcccac5",
+        "type": "debug",
+        "z": "f11166a80e40d7b6",
+        "g": "28c003637500bb58",
+        "name": "debug 53",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2050,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "60493bb1f6b0cab2",
+        "type": "ui_text",
+        "z": "f11166a80e40d7b6",
+        "d": true,
+        "group": "a7d09646c3ab18c3",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "OUTPUT",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1520,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "74926709c85accd1",
+        "type": "debug",
+        "z": "f11166a80e40d7b6",
+        "name": "debug 54",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1480,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "6cc453db05c0eb3e",
+        "type": "function",
+        "z": "f11166a80e40d7b6",
+        "name": "function 15",
+        "func": "if (Buffer.isBuffer(msg.payload)) {\n    msg.payload = msg.payload.toString('utf8');\n} else if (typeof msg.payload !== 'string') {\n    msg.payload = \"\";\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1310,
+        "y": 660,
+        "wires": [
+            [
+                "ab3d335fc2c980c9",
+                "74926709c85accd1"
+            ]
+        ]
     },
     {
         "id": "586038a5dcac1eac",
@@ -8794,93 +8144,6 @@
         "wires": []
     },
     {
-        "id": "dee8be2ca5a7aa26",
-        "type": "function",
-        "z": "cd35db7d9440e826",
-        "d": true,
-        "g": "0775c74b900ba1a3",
-        "name": "Folder handling",
-        "func": "let folder = global.get(\"filebrowser_default_folder\");\nlet project_name = global.get(\"selected_project\")\nconsole.log(project_name);\n\nif (folder===undefined) {\n    folder=\"./projects/\";\n    context.set(\"folder\", folder);\n}\n\n\nmsg.project_name = project_name;\nmsg.payload = {\"start\":folder};\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "fs",
-                "module": "fs"
-            }
-        ],
-        "x": 680,
-        "y": 220,
-        "wires": [
-            [
-                "428bae5bab968490"
-            ]
-        ]
-    },
-    {
-        "id": "c8f59ba6663dbefa",
-        "type": "function",
-        "z": "cd35db7d9440e826",
-        "d": true,
-        "g": "0775c74b900ba1a3",
-        "name": "Prep Data",
-        "func": "function convertDate(local) {\n    let d = new Date(local);\n    d.setTime(d.getTime()+3600*1000);\n    return d.toISOString().slice(0, 19).replace('T', ' ');\n}\n\nvar newmsg = msg;\nnewmsg.options = [];\n\nfor (var i=0; i<msg.payload.length; i++) {\n\n    msg.payload[i].fname = msg.payload[i].name.replace(/^.*(\\\\|\\/|\\:)/, '');\n    if (msg.payload[i].stat.isDirectory) {\n        msg.payload[i].ext = \"folder\";\n        newmsg.options[i] = msg.payload[i].fname;\n    }\n}\nif (global.get(\"selected_project\") !== \"\") {\n    // Find the index of the selected project\n    var project_name = global.get(\"selected_project\").split(\"/\").filter(Boolean).pop();\n    newmsg.payload = project_name\n}\nflow.set(\"currentfolder\",msg.payload);\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1020,
-        "y": 220,
-        "wires": [
-            [
-                "97f20bae673a509f",
-                "0a59c89e12240d85"
-            ]
-        ]
-    },
-    {
-        "id": "0a59c89e12240d85",
-        "type": "debug",
-        "z": "cd35db7d9440e826",
-        "d": true,
-        "g": "0775c74b900ba1a3",
-        "name": "debug 42",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "selected",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1090,
-        "y": 320,
-        "wires": []
-    },
-    {
-        "id": "0c3f0e2b7da7af91",
-        "type": "link in",
-        "z": "cd35db7d9440e826",
-        "d": true,
-        "g": "0775c74b900ba1a3",
-        "name": "link in 3",
-        "links": [
-            "4740638cdaeb9ff4"
-        ],
-        "x": 515,
-        "y": 320,
-        "wires": [
-            [
-                "dee8be2ca5a7aa26"
-            ]
-        ]
-    },
-    {
         "id": "d6716d447139a35c",
         "type": "ui_etable",
         "z": "cd35db7d9440e826",
@@ -8888,11 +8151,11 @@
         "payload": "[{\"title\":\"Type\",\"field\":\"icon\",\"formatter\":\"html\",\"width\":50},{\"title\":\"Name\",\"field\":\"fname\"},{\"title\":\"Size\",\"field\":\"stat.size\",\"sorter\":\"number\",\"width\":100,\"sorterParams\":{\"thousandSeparator\":\",\",\"decimalSeparator\":\".\",\"alignEmptyValues\":\"top\"}},{\"title\":\"Created\",\"field\":\"stat.created\",\"formatter\":\"datetime\",\"width\":200,\"formatterParams\":{\"outputFormat\":\"yyyy.MM.DD HH:mm:ss\",\"invalidPlaceholder\":\"(invalid date)\",\"timezone\":\"system\"}},{\"title\":\"Changed\",\"field\":\"stat.changed\",\"formatter\":\"datetime\",\"width\":200,\"formatterParams\":{\"outputFormat\":\"yyyy.MM.DD HH:mm:ss\",\"invalidPlaceholder\":\"(invalid date)\",\"timezone\":\"system\"}}]",
         "payloadType": "json",
         "options": "{\"movableColumns\":true,\"resizableColumns\":true,\"selectable\":1,\"responsiveLayout\":\"collapse\",\"autoResize\":true,\"layout\":\"fitColumns\",\"pagination\":\"local\",\"height\":\"100%\"}",
-        "group": "40495299a6187faf",
+        "group": "3fdc8d9e247e5296",
         "name": "Select folder where files located",
-        "order": 6,
-        "width": 11,
-        "height": 8,
+        "order": 9,
+        "width": 23,
+        "height": 10,
         "columns": [],
         "outputs": 1,
         "cts": false,
@@ -8907,40 +8170,13 @@
         ]
     },
     {
-        "id": "97f20bae673a509f",
-        "type": "ui_dropdown",
-        "z": "cd35db7d9440e826",
-        "d": true,
-        "g": "0775c74b900ba1a3",
-        "name": "",
-        "label": "",
-        "tooltip": "",
-        "place": "Select option",
-        "group": "69f362d14b608c68",
-        "order": 4,
-        "width": 8,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [],
-        "payload": "",
-        "topic": "topic",
-        "topicType": "msg",
-        "className": "",
-        "x": 1180,
-        "y": 220,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "3fc5b673b5fef038",
         "type": "ui_button",
         "z": "cd35db7d9440e826",
         "g": "29bf2eccfbb8fe16",
         "name": "",
-        "group": "40495299a6187faf",
-        "order": 1,
+        "group": "3fdc8d9e247e5296",
+        "order": 3,
         "width": 4,
         "height": 1,
         "passthru": false,
@@ -8968,8 +8204,8 @@
         "z": "cd35db7d9440e826",
         "g": "29bf2eccfbb8fe16",
         "name": "",
-        "group": "40495299a6187faf",
-        "order": 3,
+        "group": "3fdc8d9e247e5296",
+        "order": 5,
         "width": 3,
         "height": 1,
         "passthru": false,
@@ -8997,8 +8233,8 @@
         "z": "cd35db7d9440e826",
         "g": "29bf2eccfbb8fe16",
         "name": "",
-        "group": "40495299a6187faf",
-        "order": 2,
+        "group": "3fdc8d9e247e5296",
+        "order": 4,
         "width": 4,
         "height": 1,
         "passthru": false,
@@ -9025,7 +8261,7 @@
         "type": "ui_button",
         "z": "cd35db7d9440e826",
         "name": "",
-        "group": "32cfb29eb3828c05",
+        "group": "40495299a6187faf",
         "order": 1,
         "width": 6,
         "height": 1,
@@ -9054,8 +8290,8 @@
         "type": "ui_button",
         "z": "cd35db7d9440e826",
         "name": "",
-        "group": "32cfb29eb3828c05",
-        "order": 1,
+        "group": "40495299a6187faf",
+        "order": 2,
         "width": 6,
         "height": 1,
         "passthru": false,
@@ -9086,8 +8322,8 @@
         "name": "",
         "label": "Filter:",
         "tooltip": "",
-        "group": "40495299a6187faf",
-        "order": 7,
+        "group": "3fdc8d9e247e5296",
+        "order": 10,
         "width": 6,
         "height": 1,
         "passthru": false,
@@ -9111,8 +8347,8 @@
         "z": "cd35db7d9440e826",
         "group": "3fdc8d9e247e5296",
         "order": 1,
-        "width": 0,
-        "height": 0,
+        "width": 23,
+        "height": 1,
         "name": "",
         "label": "Guideline:",
         "format": "Select reconstructed point cloud file (.ply)",
@@ -9131,8 +8367,8 @@
         "type": "ui_text",
         "z": "cd35db7d9440e826",
         "g": "29bf2eccfbb8fe16",
-        "group": "40495299a6187faf",
-        "order": 4,
+        "group": "3fdc8d9e247e5296",
+        "order": 7,
         "width": 6,
         "height": 1,
         "name": "",
@@ -9153,8 +8389,8 @@
         "type": "ui_text",
         "z": "cd35db7d9440e826",
         "g": "29bf2eccfbb8fe16",
-        "group": "32cfb29eb3828c05",
-        "order": 3,
+        "group": "40495299a6187faf",
+        "order": 4,
         "width": 15,
         "height": 1,
         "name": "",
@@ -9174,11 +8410,11 @@
         "id": "860e0f7928c64386",
         "type": "ui_template",
         "z": "cd35db7d9440e826",
-        "group": "32cfb29eb3828c05",
+        "group": "40495299a6187faf",
         "name": "",
-        "order": 4,
-        "width": 15,
-        "height": "15",
+        "order": 6,
+        "width": 23,
+        "height": 13,
         "format": "<iframe id=\"myIframe\" src=\"http://localhost:22222\" style=\"display: {{msg.payload ? 'block' : 'none'}};width: 100%; height: 800px;\">\n</iframe>",
         "storeOutMessages": true,
         "fwdInMessages": true,
@@ -9213,31 +8449,6 @@
             [
                 "804b2434dfa88e92",
                 "419a9f1c1e75891e"
-            ]
-        ]
-    },
-    {
-        "id": "428bae5bab968490",
-        "type": "fs-file-lister",
-        "z": "cd35db7d9440e826",
-        "d": true,
-        "g": "0775c74b900ba1a3",
-        "name": "Files",
-        "start": "./projects/",
-        "pattern": "*.*",
-        "folders": "*",
-        "hidden": false,
-        "lstype": "directories",
-        "path": true,
-        "single": true,
-        "depth": 0,
-        "stat": true,
-        "showWarnings": false,
-        "x": 870,
-        "y": 220,
-        "wires": [
-            [
-                "c8f59ba6663dbefa"
             ]
         ]
     },
@@ -9432,7 +8643,7 @@
         "z": "ce11a1573af9dae5",
         "g": "a97981e2e8c1f13e",
         "name": "Folder handling",
-        "func": "let folder = global.get(\"filebrowser_default_folder\");\nlet project_name = global.get(\"selected_project\")\nconsole.log(project_name);\n\nif (folder===undefined) {\n    folder=\"./projects/\";\n    context.set(\"folder\", folder);\n}\n\n\nmsg.project_name = project_name;\nmsg.payload = {\"start\":folder};\nreturn msg;",
+        "func": "let folder = global.get(\"filebrowser_default_folder\");\nlet project_name = global.get(\"selected_project\")\n//console.log(project_name);\n\nif (folder===undefined) {\n    folder=\"./projects/\";\n    context.set(\"folder\", folder);\n}\n\n\nmsg.project_name = project_name;\nmsg.payload = {\"start\":folder};\nreturn msg;",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -9484,7 +8695,7 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "selected",
+        "complete": "payload",
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
@@ -9497,8 +8708,13 @@
         "type": "link in",
         "z": "ce11a1573af9dae5",
         "g": "a97981e2e8c1f13e",
-        "name": "link in 5",
-        "links": [],
+        "name": "Automatic global folder in",
+        "links": [
+            "92800beeb59494a6",
+            "4484b8d6a16e79f1",
+            "fe0e5a3d2e1fe78b",
+            "067da2f1d49bc5ac"
+        ],
         "x": 715,
         "y": 840,
         "wires": [

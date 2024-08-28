@@ -3,14 +3,14 @@ from flask import Flask, request, jsonify
 import sys
 import os
 # Add the path to 'lib' directory
-sys.path.append(os.path.abspath(os.path.join('lib')))
+sys.path.append(os.path.abspath(os.path.join("..",'lib')))
 
 from config.ConfigManager import ConfigManager  # Assuming the ConfigManager class is in the same directory
 
 app = Flask(__name__)
 
 # Path to your configuration file
-config_file_path = 'node-red/config.json'
+config_file_path = 'config.json'
 config_manager = ConfigManager(config_file_path)
 
 @app.route('/config/<project_name>', methods=['GET', 'POST', 'DELETE'])

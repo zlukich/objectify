@@ -1,5 +1,7 @@
 /data
 /node-red/data
 /node-red/projects
+/camera_api
 **/__pycache__/
 **/backup/
+**/colmap/
