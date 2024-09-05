@@ -214,6 +214,33 @@
         "h": 182
     },
     {
+        "id": "16e9549a3ea706bc",
+        "type": "group",
+        "z": "c5fc9b7a988cec09",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "6ec4b344c84f72e8",
+            "5ae3b7b8fe108ddb",
+            "f0b90c78f5f79e71",
+            "567a4991445ed8e7",
+            "be3b2ff50c3c00d1",
+            "ca2e9a4b6955efb0",
+            "7b36c9095cf50122"
+        ],
+        "x": 1914,
+        "y": 259,
+        "w": 1132,
+        "h": 182
+    },
+    {
         "id": "80f0e37eedd4ac4c",
         "type": "group",
         "z": "3669868b19b1582f",
@@ -239,33 +266,6 @@
         "x": 394,
         "y": 839,
         "w": 1092,
-        "h": 182
-    },
-    {
-        "id": "16e9549a3ea706bc",
-        "type": "group",
-        "z": "c5fc9b7a988cec09",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "6ec4b344c84f72e8",
-            "5ae3b7b8fe108ddb",
-            "f0b90c78f5f79e71",
-            "567a4991445ed8e7",
-            "be3b2ff50c3c00d1",
-            "ca2e9a4b6955efb0",
-            "7b36c9095cf50122"
-        ],
-        "x": 1914,
-        "y": 259,
-        "w": 1132,
         "h": 182
     },
     {
@@ -578,7 +578,7 @@
         "tab": "2685b6bd219f3017",
         "order": 4,
         "disp": true,
-        "width": 16,
+        "width": 13,
         "collapse": false,
         "className": ""
     },
@@ -973,26 +973,6 @@
         "height": 1
     },
     {
-        "id": "bf4c9d4f267722b1",
-        "type": "ui_spacer",
-        "z": "f11166a80e40d7b6",
-        "name": "spacer",
-        "group": "919860c8b411c539",
-        "order": 2,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "f717e0ea57b4c0a2",
-        "type": "ui_spacer",
-        "z": "f11166a80e40d7b6",
-        "name": "spacer",
-        "group": "919860c8b411c539",
-        "order": 4,
-        "width": 1,
-        "height": 1
-    },
-    {
         "id": "f238fdb394e9bc82",
         "type": "ui_spacer",
         "z": "cd35db7d9440e826",
@@ -1080,6 +1060,196 @@
         "group": "40495299a6187faf",
         "order": 5,
         "width": 8,
+        "height": 1
+    },
+    {
+        "id": "e9c6ac9029485a8e",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "919860c8b411c539",
+        "order": 2,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "854cd727bb662e40",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "919860c8b411c539",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "4024e6ad9ed39ef0",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "a7d09646c3ab18c3",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "fe6d81016536fc36",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "a7d09646c3ab18c3",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6a70a9bd6e46df97",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "a7d09646c3ab18c3",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f4bf22d005141173",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "a7d09646c3ab18c3",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2227e40dfa090f56",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "a7d09646c3ab18c3",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "4003e535d67f8118",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "a7d09646c3ab18c3",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e99dcec73692bb35",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "a7d09646c3ab18c3",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9250da5e45067cb9",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "a7d09646c3ab18c3",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "fe6849621cf478bf",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "a7d09646c3ab18c3",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "39b7171463161fb2",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "a7d09646c3ab18c3",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6692f67b43fadd2c",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "a7d09646c3ab18c3",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "770dac78315e64b9",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "a7d09646c3ab18c3",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9131fa417b70cd61",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "a7d09646c3ab18c3",
+        "order": 14,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "5447bdb526da2195",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "a7d09646c3ab18c3",
+        "order": 15,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a3a2e5c63e2a8a8a",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "a7d09646c3ab18c3",
+        "order": 16,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "fcf7e6b54e36cf28",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "a7d09646c3ab18c3",
+        "order": 17,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "03d00b4d0fd1d6ed",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "a7d09646c3ab18c3",
+        "order": 19,
+        "width": 1,
         "height": 1
     },
     {
@@ -7481,7 +7651,7 @@
         "group": "a7d09646c3ab18c3",
         "name": "Logging window ingp",
         "order": 1,
-        "width": 16,
+        "width": 12,
         "height": 16,
         "format": "<div style=\"height: 700px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px;\" id=\"logWindow\"></div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var logWindow = document.getElementById(\"logWindow\");\n            if (payload === \"clear\") {\n                logWindow.innerHTML = \"\";  // Clear the log window\n            } else {\n                logWindow.innerHTML += payload + \"<br/>\";\n                logWindow.scrollTop = logWindow.scrollHeight;  // Auto-scroll to the bottom\n            }\n        });\n    })(scope);\n</script>",
         "storeOutMessages": true,
@@ -7782,9 +7952,9 @@
         "z": "f11166a80e40d7b6",
         "d": true,
         "group": "a7d09646c3ab18c3",
-        "order": 2,
-        "width": 0,
-        "height": 0,
+        "order": 18,
+        "width": 12,
+        "height": 1,
         "name": "",
         "label": "OUTPUT",
         "format": "{{msg.payload}}",
@@ -8660,12 +8830,12 @@
         "width": 4,
         "height": 1,
         "passthru": false,
-        "label": "Add file to vizualization",
+        "label": "Clear all files from vizualization",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
         "className": "",
-        "icon": "Reset",
+        "icon": "Delete",
         "payload": "",
         "payloadType": "str",
         "topic": "refresh",

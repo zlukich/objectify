@@ -126,8 +126,9 @@ def generate_json_for_images(folder_path,output_json_path , camera_matrix,dist_c
             
             retval, rvec, tvec = detect_pose(image, camera_matrix, dist_coeff)
             
+            print("Found something?")
 
-            if(retval > 3):
+            if(retval > 6):
                 #print(retval,rvec)
                 rvec,tvec = correct_to_center(rvec,tvec)
                 try:

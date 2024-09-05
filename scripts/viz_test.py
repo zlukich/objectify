@@ -14,6 +14,10 @@ from dash.exceptions import PreventUpdate
 
 from simpleicp import SimpleICP, PointCloud
 
+sys.path.append(os.path.abspath(os.path.join("..",'lib')))
+
+from visualization_api.pcd_viz import compute_similarity_transform,apply_similarity_transform
+
 # Function to handle command-line arguments
 def parse_args():
     parser = argparse.ArgumentParser(description="Visualize multiple point clouds.")
@@ -169,6 +173,120 @@ def clear_points_button(n_clicks):
         return "Points cleared."
     else:
         raise PreventUpdate
+
+# Callback to calculate transformation matrix when button is clicked
+@app.callback(
+    Output('point-cloud-plot', 'figure', allow_duplicate=True),
+    [Input('calculate-matrix-button', 'n_clicks')],
+    [State('point-cloud-plot', 'figure')],
+    prevent_initial_call=True
+
+)
+def calculate_transformation_matrix(n_clicks, figure):
+    global selected_point_obj1
+    global selected_point_obj2
+    global transformed_object1
+    if n_clicks is not None:
+
+        src_points = np.array(selected_point_obj1)
+        dst_points = np.array(selected_point_obj2)
+
+        similarity_matrix = compute_similarity_transform(src_points, dst_points)
+
+        transformed_all_points = apply_similarity_transform(np.asarray(points_object1), similarity_matrix)
+        transformed_object1 = transformed_all_points
+        np.save("transofrmed_frog1.npy", transformed_object1)
+        figure["data"].append(go.Scatter3d(
+            x=transformed_all_points[:, 0],
+            y=transformed_all_points[:, 1],
+            z=transformed_all_points[:, 2],
+            mode='markers',
+            marker=dict(
+                size=3,
+                color='black',
+                opacity=0.8
+            ),
+            name='Transformed Points'
+        ))
+        return figure
+
+    else:
+        raise PreventUpdate
+
+
+# Callback to calculate transformation matrix when button is clicked
+@app.callback(
+    Output('point-cloud-plot', 'figure'),
+    [Input('icp-alg-button', 'n_clicks')],
+    [State('point-cloud-plot', 'figure')],
+    prevent_initial_call=True
+
+)
+def run_icp_alg(n_clicks, figure):
+    global selected_point_obj1
+    global selected_point_obj2
+    global transformed_object1
+    if n_clicks is not None:
+
+        src_points = np.array(transformed_object1)
+        dst_points = np.array(points_object2)
+
+        obj_mov = PointCloud(src_points, columns=['x', 'y', 'z'])
+        obj_fix = PointCloud(dst_points, columns=['x', 'y', 'z'])
+
+        icp = SimpleICP()
+        icp.add_point_clouds(obj_fix, obj_mov)
+        H, X_mov_transformed, rigid_body_transformation_params, distance_residuals = icp.run(max_iterations=500)
+
+        figure["data"].append(go.Scatter3d(
+            x=X_mov_transformed[:, 0],
+            y=X_mov_transformed[:, 1],
+            z=X_mov_transformed[:, 2],
+            mode='markers',
+            marker=dict(
+                size=3,
+                color='brown',
+                opacity=1
+            ),
+            name='ICPed Points'
+        ))
+
+        return figure
+
+    else:
+        raise PreventUpdate
+
+
+# Function to stop the Dash app
+def stop_dash():
+    with open('exit_example.txt', 'w') as file:
+        # Write a line to the file
+        file.write("This is a line written to the text file.")
+    app.server.stop()
+    sys.exit()
+
+# TCP/IP socket server thread
+def socket_server():
+    HOST = '127.0.0.1'  # localhost
+    PORT = 65432        # Port to listen on
+
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+        s.bind((HOST, PORT))
+        s.listen()
+        conn, addr = s.accept()
+        with conn:
+            print('Connected by', addr)
+            while True:
+                data = conn.recv(1024)
+                if not data:
+                    break
+                if data.decode() == 'stop':
+                    print('Stop signal received from Node-RED')
+                    stop_dash()
+
+# Start TCP/IP socket server in a separate thread
+threading.Thread(target=socket_server).start()
+
 
 # TCP/IP socket server and Dash app execution code remains the same
 
