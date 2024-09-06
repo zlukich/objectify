@@ -33,7 +33,7 @@ def detect_pose(image, camera_matrix, dist_coeffs):
         charuco_retval, charuco_corners, charuco_ids = cv2.aruco.interpolateCornersCharuco(marker_corners, marker_ids, undistorted_image, board)
         
         # If enough corners are found, estimate the pose
-        if charuco_retval:
+        if charuco_retval>=6:
             retval, rvec, tvec = cv2.aruco.estimatePoseCharucoBoard(charuco_corners, charuco_ids, board, camera_matrix, dist_coeffs, None, None)
 
             # If pose estimation is successful, draw the axis

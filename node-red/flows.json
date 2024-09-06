@@ -1063,9 +1063,9 @@
         "height": 1
     },
     {
-        "id": "2881ac30d9484f68",
+        "id": "81b7ae6612104704",
         "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
+        "z": "c5fc9b7a988cec09",
         "name": "spacer",
         "group": "919860c8b411c539",
         "order": 2,
@@ -1073,9 +1073,9 @@
         "height": 1
     },
     {
-        "id": "4768a8ac6756365c",
+        "id": "d1d87d86d135705a",
         "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
+        "z": "c5fc9b7a988cec09",
         "name": "spacer",
         "group": "919860c8b411c539",
         "order": 4,
@@ -7783,8 +7783,8 @@
         "d": true,
         "group": "a7d09646c3ab18c3",
         "order": 2,
-        "width": 0,
-        "height": 0,
+        "width": 12,
+        "height": 1,
         "name": "",
         "label": "OUTPUT",
         "format": "{{msg.payload}}",
