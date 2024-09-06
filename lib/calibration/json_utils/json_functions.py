@@ -31,7 +31,9 @@ def update_frames_with_camera_properties(template):
         "cx": template.get("cx"),
         "cy": template.get("cy"),
         "w": template.get("w"),
-        "h": template.get("h")
+        "h": template.get("h"),
+        "aabb_scale": template.get("aabb_scale"),
+        "scale": template.get("scale")
     }
     return camera_properties
 
@@ -92,7 +94,8 @@ def generate_json_for_images(folder_path,output_json_path , camera_matrix,dist_c
         "w": image.shape[1],
         "h": image.shape[0],
         "aabb_scale": 1,
-        "scale": scale
+        "scale": scale,
+        "poses_from": "charuco"
     }
 
     data = {
@@ -113,6 +116,7 @@ def generate_json_for_images(folder_path,output_json_path , camera_matrix,dist_c
         "h": camera_params["h"],
         "aabb_scale": camera_params["aabb_scale"],
         "scale": camera_params["scale"],
+        "poses_from": camera_params["poses_from"],
         "frames": []
     }
 
@@ -129,8 +133,9 @@ def generate_json_for_images(folder_path,output_json_path , camera_matrix,dist_c
 
             if(retval > 3):
                 #print(retval,rvec)
-                rvec,tvec = correct_to_center(rvec,tvec)
                 try:
+                    rvec,tvec = correct_to_center(rvec,tvec)
+                
                     
                     c2w = create_transform_matrix(rvec, tvec)
                     up += c2w[0:3,1]

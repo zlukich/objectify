@@ -2,17 +2,17 @@ import cv2
 import numpy as np
 from matplotlib import pyplot as plt
 
-# ARUCO_DICT = cv2.aruco.DICT_ARUCO_ORIGINAL
-# SQUARES_VERTICALLY = 10
-# SQUARES_HORIZONTALLY = 7
-# SQUARE_LENGTH = 0.03
-# MARKER_LENGTH = 0.015
+ARUCO_DICT = cv2.aruco.DICT_ARUCO_ORIGINAL
+SQUARES_VERTICALLY = 10
+SQUARES_HORIZONTALLY = 7
+SQUARE_LENGTH = 0.03
+MARKER_LENGTH = 0.015
 
-ARUCO_DICT = cv2.aruco.DICT_4X4_50
-SQUARES_VERTICALLY = 7
-SQUARES_HORIZONTALLY = 5
-SQUARE_LENGTH = 0.056
-MARKER_LENGTH = 0.042
+# ARUCO_DICT = cv2.aruco.DICT_4X4_50
+# SQUARES_VERTICALLY = 7
+# SQUARES_HORIZONTALLY = 5
+# SQUARE_LENGTH = 0.056
+# MARKER_LENGTH = 0.042
 
 def detect_pose(image, camera_matrix, dist_coeffs):
     # Undistort the image
@@ -28,7 +28,7 @@ def detect_pose(image, camera_matrix, dist_coeffs):
     marker_corners, marker_ids, _ = cv2.aruco.detectMarkers(undistorted_image, dictionary, parameters=params)
     
     # If at least one marker is detected
-    if len(marker_ids) > 0:
+    if len(marker_ids) > 6:
         # Interpolate CharUco corners
         charuco_retval, charuco_corners, charuco_ids = cv2.aruco.interpolateCornersCharuco(marker_corners, marker_ids, undistorted_image, board)
         
@@ -42,7 +42,7 @@ def detect_pose(image, camera_matrix, dist_coeffs):
                 plt.imshow(undistorted_image)
         else:
             return False,None,None
-    return charuco_retval,rvec,tvec
-
+        return charuco_retval,rvec,tvec
+    return False,None,None
 
 

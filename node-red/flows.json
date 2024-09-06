@@ -214,6 +214,33 @@
         "h": 182
     },
     {
+        "id": "16e9549a3ea706bc",
+        "type": "group",
+        "z": "c5fc9b7a988cec09",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "6ec4b344c84f72e8",
+            "5ae3b7b8fe108ddb",
+            "f0b90c78f5f79e71",
+            "567a4991445ed8e7",
+            "be3b2ff50c3c00d1",
+            "ca2e9a4b6955efb0",
+            "7b36c9095cf50122"
+        ],
+        "x": 1914,
+        "y": 259,
+        "w": 1132,
+        "h": 182
+    },
+    {
         "id": "80f0e37eedd4ac4c",
         "type": "group",
         "z": "3669868b19b1582f",
@@ -239,33 +266,6 @@
         "x": 394,
         "y": 839,
         "w": 1092,
-        "h": 182
-    },
-    {
-        "id": "16e9549a3ea706bc",
-        "type": "group",
-        "z": "c5fc9b7a988cec09",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "6ec4b344c84f72e8",
-            "5ae3b7b8fe108ddb",
-            "f0b90c78f5f79e71",
-            "567a4991445ed8e7",
-            "be3b2ff50c3c00d1",
-            "ca2e9a4b6955efb0",
-            "7b36c9095cf50122"
-        ],
-        "x": 1914,
-        "y": 259,
-        "w": 1132,
         "h": 182
     },
     {
@@ -578,7 +578,7 @@
         "tab": "2685b6bd219f3017",
         "order": 4,
         "disp": true,
-        "width": 16,
+        "width": 12,
         "collapse": false,
         "className": ""
     },
@@ -973,26 +973,6 @@
         "height": 1
     },
     {
-        "id": "bf4c9d4f267722b1",
-        "type": "ui_spacer",
-        "z": "f11166a80e40d7b6",
-        "name": "spacer",
-        "group": "919860c8b411c539",
-        "order": 2,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "f717e0ea57b4c0a2",
-        "type": "ui_spacer",
-        "z": "f11166a80e40d7b6",
-        "name": "spacer",
-        "group": "919860c8b411c539",
-        "order": 4,
-        "width": 1,
-        "height": 1
-    },
-    {
         "id": "f238fdb394e9bc82",
         "type": "ui_spacer",
         "z": "cd35db7d9440e826",
@@ -1080,6 +1060,26 @@
         "group": "40495299a6187faf",
         "order": 5,
         "width": 8,
+        "height": 1
+    },
+    {
+        "id": "2881ac30d9484f68",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "919860c8b411c539",
+        "order": 2,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "4768a8ac6756365c",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "919860c8b411c539",
+        "order": 4,
+        "width": 1,
         "height": 1
     },
     {
@@ -6301,16 +6301,16 @@
         "id": "7700ec9f893a1665",
         "type": "exec",
         "z": "3669868b19b1582f",
-        "command": " Run colmap to nerf",
+        "command": "",
         "addpay": "payload",
         "append": "",
         "useSpawn": "false",
         "timer": "",
         "winHide": false,
         "oldrc": false,
-        "name": "",
-        "x": 1370,
-        "y": 400,
+        "name": "run colmap2nerf.py",
+        "x": 1450,
+        "y": 460,
         "wires": [
             [
                 "ca970b6fa5aa189b",
@@ -6328,7 +6328,7 @@
         "type": "function",
         "z": "3669868b19b1582f",
         "name": "function 3",
-        "func": "//construct command\nvar cmd = \"\";\nvar ingp_root = global.get(\"ingp_root\")\ncmd = cmd +\"python \"+ingp_root+\"colmap2nerf.py\"\n\nvar folder = global.get(\"selected_project\");\n\nif(flow.get(\"video\")==true){\n cmd += \"--video_in \";\n cmd += folder +\" \";\n}else{\n    cmd+= \"--images \";\n    cmd+= folder+ \" \";\n}\nif(flow.get(\"run_colmap\")==true){\n    cmd += \"--run_colmap \";\n}\nif(flow.get(\"single_camera\")==true){\n    cmd += \"--single_camera \";\n}\nif(flow.get(\"use_gpu\")==true){\n    cmd += \"--use_gpu 1 \";\n}\nmsg.payload = cmd;\nmsg.errorcode = 0;\nreturn msg;",
+        "func": "//construct command\nvar cmd = \"\";\nvar ingp_root = global.get(\"ingp_root\")\ncmd = cmd +\"python \"+ingp_root+\"colmap2nerf_nodered.py\"\n\nvar folder = global.get(\"selected_project\");\n\nif(flow.get(\"video\")==true){\n cmd += \"--video_in \";\n cmd += folder +\" \";\n}else{\n    cmd+= \" --images \";\n    cmd+= folder+ \" \";\n}\nif(flow.get(\"run_colmap\")==true){\n    cmd += \" --run_colmap \";\n}\nif(flow.get(\"single_camera\")==true){\n    cmd += \" --single_camera \";\n}\n// if(flow.get(\"use_gpu\")==true){\n//     cmd += \" --use_gpu 1 \";\n// }\nmsg.payload = cmd;\nmsg.errorcode = 0;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -6402,7 +6402,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "one_camera",
+                "p": "single_camera",
                 "pt": "flow",
                 "to": "payload",
                 "tot": "msg"
@@ -6518,8 +6518,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1760,
-        "y": 720,
+        "x": 1860,
+        "y": 680,
         "wires": []
     },
     {
@@ -6909,8 +6909,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1749.88330078125,
-        "y": 441.8833312988281,
+        "x": 1810,
+        "y": 420,
         "wires": [
             []
         ]
@@ -6949,8 +6949,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1780,
-        "y": 600,
+        "x": 1840,
+        "y": 580,
         "wires": []
     },
     {
@@ -7481,7 +7481,7 @@
         "group": "a7d09646c3ab18c3",
         "name": "Logging window ingp",
         "order": 1,
-        "width": 16,
+        "width": 12,
         "height": 16,
         "format": "<div style=\"height: 700px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px;\" id=\"logWindow\"></div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var logWindow = document.getElementById(\"logWindow\");\n            if (payload === \"clear\") {\n                logWindow.innerHTML = \"\";  // Clear the log window\n            } else {\n                logWindow.innerHTML += payload + \"<br/>\";\n                logWindow.scrollTop = logWindow.scrollHeight;  // Auto-scroll to the bottom\n            }\n        });\n    })(scope);\n</script>",
         "storeOutMessages": true,

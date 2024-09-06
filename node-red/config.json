@@ -202,5 +202,76 @@
     },
     "bfrog_4x4": {
         "transforms_path": "./projects/bfrog_4x4/transforms_centered.json"
+    },
+    "board_6x6_calib": {
+        "images": "./projects/board_6x6_calib",
+        "calibrated": true,
+        "camera_matrix": [
+            [
+                5046.267290496713,
+                0.0,
+                2024.7158677380676
+            ],
+            [
+                0.0,
+                5079.596030664194,
+                1073.605866822454
+            ],
+            [
+                0.0,
+                0.0,
+                1.0
+            ]
+        ],
+        "dist_coeff": [
+            [
+                16.99286166346934
+            ],
+            [
+                193.4692171692354
+            ],
+            [
+                -0.002599510850618294
+            ],
+            [
+                -0.0016537704121156352
+            ],
+            [
+                44.45028201171626
+            ],
+            [
+                16.9155519683524
+            ],
+            [
+                197.87766959029574
+            ],
+            [
+                41.75356923864585
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ]
+        ]
+    },
+    "bfrog_orig_1": {
+        "transforms_path": "./projects/bfrog_orig_1/transforms_centered.json"
+    },
+    "halterung_orig_1": {
+        "transforms_path": "./projects/halterung_orig_1/transforms_centered.json"
     }
 }
