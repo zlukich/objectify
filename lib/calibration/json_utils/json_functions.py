@@ -69,14 +69,50 @@ def sharpness(image):
 	fm = variance_of_laplacian(gray)
 	return fm
 
+
+def compute_scaling_factor(data_json):
+    # Load the transforms.json file
+    
+    camera_positions = []
+
+    for frame in data_json['frames']:
+        transform_matrix = frame['transform_matrix']
+        # Convert to numpy array
+        transform_matrix = np.array(transform_matrix)
+        # Get camera position in world coordinates
+        # Multiply transform_matrix with [0, 0, 0, 1]^T
+        camera_pos = np.dot(transform_matrix, np.array([0, 0, 0, 1]))
+        # Take the x, y, z components
+        camera_positions.append(camera_pos[:3])
+
+    camera_positions = np.array(camera_positions)
+    # Compute bounding box
+    min_coords = np.min(camera_positions, axis=0)
+    max_coords = np.max(camera_positions, axis=0)
+    # Compute dimensions
+    dimensions = max_coords - min_coords
+    # Compute maximum dimension
+    max_dimension = np.max(dimensions)
+    # Compute scaling factor
+    scaling_factor = 1 / max_dimension
+
+    print("Bounding box minimum coordinates:", min_coords)
+    print("Bounding box maximum coordinates:", max_coords)
+    print("Scene dimensions (x, y, z):", dimensions)
+    print("Maximum dimension:", max_dimension)
+    print("Scaling factor S =", scaling_factor)
+
+    return scaling_factor
+
+
 def generate_json_for_images(folder_path,output_json_path , camera_matrix,dist_coeff,scale = 3,colmap = False):
     """Generate JSON for a folder of images with given rvecs and tvecs."""
 
     # Example usage:
     # camera_matrix = np.load(folder_path+"camera_matrix.npy")
     # dist_coeff = np.load(folder_path+"camera_dist_coeff.npy")
-    
-    image = cv2.imread(folder_path+"/frame0000.jpg")
+    image_files = [os.path.join(folder_path, f) for f in os.listdir(folder_path) if f.endswith(".jpg") or f.endswith(".png")]
+    image = cv2.imread(image_files[0])
     camera_params = {
         "camera_angle_x": 2 * np.arctan(image.shape[1] / (2 * camera_matrix[0,0])),
         "camera_angle_y": 2 * np.arctan(image.shape[0] / (2 * camera_matrix[1,1])),
@@ -130,7 +166,7 @@ def generate_json_for_images(folder_path,output_json_path , camera_matrix,dist_c
             
             retval, rvec, tvec = detect_pose(image, camera_matrix, dist_coeff)
             
-            print("Found something?")
+            #print("Found something?")
 
             if(retval > 6):
                 #print(retval,rvec)
@@ -193,6 +229,12 @@ def generate_json_for_images(folder_path,output_json_path , camera_matrix,dist_c
     for f in data["frames"]:
         f["transform_matrix"] = f["transform_matrix"].tolist()
 
+    scaling_factor = compute_scaling_factor(data)
+    
+    data["computed_scaling_factor"] = scaling_factor
+
     with open(output_json_path, 'w') as json_file:
         json.dump(data, json_file, indent=4)
 
+# def vizualize_camera(transforms_json):
+    

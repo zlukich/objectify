@@ -48,14 +48,6 @@
         "env": []
     },
     {
-        "id": "0cc33ef5972e0643",
-        "type": "tab",
-        "label": "Flow 2",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "cd35db7d9440e826",
         "type": "tab",
         "label": "Save and Viz",
@@ -233,12 +225,13 @@
             "567a4991445ed8e7",
             "be3b2ff50c3c00d1",
             "ca2e9a4b6955efb0",
-            "7b36c9095cf50122"
+            "7b36c9095cf50122",
+            "840effcc5078fe89"
         ],
         "x": 1914,
         "y": 259,
         "w": 1132,
-        "h": 182
+        "h": 262
     },
     {
         "id": "80f0e37eedd4ac4c",
@@ -479,7 +472,7 @@
         "tab": "6422196517775826",
         "order": 2,
         "disp": true,
-        "width": "5",
+        "width": 6,
         "collapse": false,
         "className": ""
     },
@@ -501,7 +494,7 @@
         "tab": "6422196517775826",
         "order": 3,
         "disp": true,
-        "width": "12",
+        "width": "13",
         "collapse": false,
         "className": ""
     },
@@ -611,7 +604,7 @@
         "tab": "1e6c4b6a9d036b5a",
         "order": 3,
         "disp": true,
-        "width": "12",
+        "width": 14,
         "collapse": false,
         "className": ""
     },
@@ -863,116 +856,6 @@
         "height": 1
     },
     {
-        "id": "a72c21f0e8884bb4",
-        "type": "ui_spacer",
-        "z": "c5fc9b7a988cec09",
-        "name": "spacer",
-        "group": "6c2e3428a6c52ed8",
-        "order": 2,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "909479128c6439ca",
-        "type": "ui_spacer",
-        "z": "c5fc9b7a988cec09",
-        "name": "spacer",
-        "group": "6c2e3428a6c52ed8",
-        "order": 3,
-        "width": 11,
-        "height": 1
-    },
-    {
-        "id": "b09604b4787bf542",
-        "type": "ui_spacer",
-        "z": "c5fc9b7a988cec09",
-        "name": "spacer",
-        "group": "6c2e3428a6c52ed8",
-        "order": 5,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "2e213f322126a8c8",
-        "type": "ui_spacer",
-        "z": "c5fc9b7a988cec09",
-        "name": "spacer",
-        "group": "53646539ec83fa85",
-        "order": 3,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "8e0420aa37dd840d",
-        "type": "ui_spacer",
-        "z": "c5fc9b7a988cec09",
-        "name": "spacer",
-        "group": "53646539ec83fa85",
-        "order": 5,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "f2a5d184e192c9e9",
-        "type": "ui_spacer",
-        "z": "c5fc9b7a988cec09",
-        "name": "spacer",
-        "group": "53646539ec83fa85",
-        "order": 7,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "d8228f06b32cb732",
-        "type": "ui_spacer",
-        "z": "c5fc9b7a988cec09",
-        "name": "spacer",
-        "group": "53646539ec83fa85",
-        "order": 9,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "7f89662d8053bfdc",
-        "type": "ui_spacer",
-        "z": "c5fc9b7a988cec09",
-        "name": "spacer",
-        "group": "53646539ec83fa85",
-        "order": 11,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "641ab54d07b14db8",
-        "type": "ui_spacer",
-        "z": "c5fc9b7a988cec09",
-        "name": "spacer",
-        "group": "53646539ec83fa85",
-        "order": 13,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "0785c90990266f84",
-        "type": "ui_spacer",
-        "z": "c5fc9b7a988cec09",
-        "name": "spacer",
-        "group": "94b2d8d9e77fa636",
-        "order": 2,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "88a0645a8eb7958b",
-        "type": "ui_spacer",
-        "z": "c5fc9b7a988cec09",
-        "name": "spacer",
-        "group": "94b2d8d9e77fa636",
-        "order": 4,
-        "width": 2,
-        "height": 1
-    },
-    {
         "id": "f238fdb394e9bc82",
         "type": "ui_spacer",
         "z": "cd35db7d9440e826",
@@ -1063,9 +946,59 @@
         "height": 1
     },
     {
-        "id": "81b7ae6612104704",
+        "id": "97eee73ad49e78e4",
         "type": "ui_spacer",
-        "z": "c5fc9b7a988cec09",
+        "z": "3669868b19b1582f",
+        "name": "spacer",
+        "group": "6c2e3428a6c52ed8",
+        "order": 2,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "b0ef6ba6ea5eb6c8",
+        "type": "ui_spacer",
+        "z": "3669868b19b1582f",
+        "name": "spacer",
+        "group": "6c2e3428a6c52ed8",
+        "order": 3,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "846ca34431988b1f",
+        "type": "ui_spacer",
+        "z": "3669868b19b1582f",
+        "name": "spacer",
+        "group": "6c2e3428a6c52ed8",
+        "order": 5,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "1339e7369a66d669",
+        "type": "ui_spacer",
+        "z": "3669868b19b1582f",
+        "name": "spacer",
+        "group": "53646539ec83fa85",
+        "order": 8,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "cf6f037d222e8d20",
+        "type": "ui_spacer",
+        "z": "3669868b19b1582f",
+        "name": "spacer",
+        "group": "53646539ec83fa85",
+        "order": 10,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "bb3e6d8bac2203d0",
+        "type": "ui_spacer",
+        "z": "f11166a80e40d7b6",
         "name": "spacer",
         "group": "919860c8b411c539",
         "order": 2,
@@ -1073,13 +1006,33 @@
         "height": 1
     },
     {
-        "id": "d1d87d86d135705a",
+        "id": "fdb927f0bfab434b",
         "type": "ui_spacer",
-        "z": "c5fc9b7a988cec09",
+        "z": "f11166a80e40d7b6",
         "name": "spacer",
         "group": "919860c8b411c539",
         "order": 4,
         "width": 1,
+        "height": 1
+    },
+    {
+        "id": "300788559956df14",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "94b2d8d9e77fa636",
+        "order": 2,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "746d33c3255878cb",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "94b2d8d9e77fa636",
+        "order": 4,
+        "width": 2,
         "height": 1
     },
     {
@@ -1650,7 +1603,7 @@
         "type": "debug",
         "z": "fccae755c2f8e1fe",
         "name": "debug 22",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1659,7 +1612,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 2080,
-        "y": 400,
+        "y": 380,
         "wires": []
     },
     {
@@ -1827,7 +1780,7 @@
         "type": "function",
         "z": "fccae755c2f8e1fe",
         "name": "Folder handling",
-        "func": "let folder = global.get(\"filebrowser_default_folder\");\nlet project_name = flow.get(\"project_name\")\n//console.log(project_name);\nif(project_name!==\"\"){\n\nvar dir = folder+project_name;\n\nif (!fs.existsSync(dir)){\n    fs.mkdirSync(dir, { recursive: true });\n}\n\n}\nif (folder===undefined) {\n    folder=\"./projects/\";\n    context.set(\"folder\", folder);\n}\n\n\nmsg.project_name = project_name;\nmsg.payload = {\"start\":folder};\nreturn msg;",
+        "func": "let folder = global.get(\"filebrowser_default_folder\");\nlet project_name = global.get(\"selected_project\")\n//console.log(project_name);\nif(project_name!==\"\"){\n\nvar dir = folder+project_name;\n\nif (!fs.existsSync(dir)){\n    fs.mkdirSync(dir, { recursive: true });\n}\n\n}\nif (folder===undefined) {\n    folder=\"./projects/\";\n    context.set(\"folder\", folder);\n}\n\n\nmsg.project_name = project_name;\nmsg.payload = {\"start\":folder};\nreturn msg;",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -1905,7 +1858,7 @@
         "type": "debug",
         "z": "fccae755c2f8e1fe",
         "name": "debug 34",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1922,7 +1875,7 @@
         "type": "debug",
         "z": "fccae755c2f8e1fe",
         "name": "debug 35",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2016,7 +1969,7 @@
         "type": "debug",
         "z": "fccae755c2f8e1fe",
         "name": "debug 37",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2033,7 +1986,7 @@
         "type": "debug",
         "z": "fccae755c2f8e1fe",
         "name": "debug 38",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2670,7 +2623,7 @@
         "type": "debug",
         "z": "fccae755c2f8e1fe",
         "name": "debug 49",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2703,8 +2656,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 1580,
-        "y": 720,
+        "x": 1600,
+        "y": 700,
         "wires": [
             [
                 "c0a95f2e814e50a6"
@@ -2869,8 +2822,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 2020,
-        "y": 920,
+        "x": 2040,
+        "y": 900,
         "wires": [
             [
                 "0e3188356bf30267"
@@ -2880,6 +2833,107 @@
             ],
             []
         ]
+    },
+    {
+        "id": "35c9ddbb.ef7fd2",
+        "type": "switch",
+        "z": "fccae755c2f8e1fe",
+        "name": "Tab filter",
+        "property": "tab",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "4",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "5",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "6",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 7,
+        "x": 1180,
+        "y": 1260,
+        "wires": [
+            [
+                "32b9923dbf9e473e"
+            ],
+            [],
+            [
+                "7bfa38a0f66d68e1"
+            ],
+            [
+                "4819a5fb717ddca6"
+            ],
+            [
+                "3a5cc637ad1c52df"
+            ],
+            [
+                "067da2f1d49bc5ac"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "50ac1607bd742fc8",
+        "type": "ui_ui_control",
+        "z": "fccae755c2f8e1fe",
+        "name": "",
+        "events": "change",
+        "x": 920,
+        "y": 1260,
+        "wires": [
+            [
+                "35c9ddbb.ef7fd2",
+                "266b38f2c3070531"
+            ]
+        ]
+    },
+    {
+        "id": "266b38f2c3070531",
+        "type": "debug",
+        "z": "fccae755c2f8e1fe",
+        "name": "debug 62",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "tab",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1190,
+        "y": 1540,
+        "wires": []
     },
     {
         "id": "8071265587d0b45a",
@@ -4178,6 +4232,7 @@
         "name": "Div image",
         "func": "let text = \"<img src=\\\"data:image/png;base64,\";\ntext += msg.payload;\ntext += \"\\\" width=\\\"100%\\\"/>\";\nmsg.payload = text;\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -5433,7 +5488,7 @@
         "oldrc": false,
         "name": "Execute calibration",
         "x": 630,
-        "y": 680,
+        "y": 640,
         "wires": [
             [
                 "d7707fcee02fe1b8"
@@ -5468,7 +5523,7 @@
         "repair": false,
         "outputs": 2,
         "x": 920,
-        "y": 760,
+        "y": 720,
         "wires": [
             [
                 "91b9918325f3b1ed"
@@ -5526,7 +5581,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 600,
-        "y": 780,
+        "y": 740,
         "wires": []
     },
     {
@@ -5542,7 +5597,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 910,
-        "y": 940,
+        "y": 900,
         "wires": []
     },
     {
@@ -5565,32 +5620,11 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 180,
+        "x": 110,
         "y": 1060,
         "wires": [
             [
                 "eb33b24fae8e05f7"
-            ]
-        ]
-    },
-    {
-        "id": "edf6e52453a5ebf9",
-        "type": "function",
-        "z": "c5fc9b7a988cec09",
-        "name": "function 12",
-        "func": "let initial_folder = global.get(\"filebrowser_default_folder\");\nlet folder = global.get(\"selected_project\");\nlet full_path = initial_folder + folder;\nvar camera_matrix = msg.payload[\"camera_matrix\"];\n\nvar dist_coeff = msg.payload[\"dist_coeff\"];\n\n\nconst flattened_camera_matrix = camera_matrix.flat();\n\n// Convert to a space-separated string\nconst string_camera_matrix = flattened_camera_matrix.join(' ');\n\nconst flattened_dist_coeff = dist_coeff.flat();\n\n// Convert to a space-separated string\nconst string_dist_coeff = flattened_dist_coeff.join(' ');\n\nmsg.payload = \"python ../scripts/charuco_generate_pose.py --project_name \"+ folder+\" --input \"+ full_path+\" --mtx \"+string_camera_matrix+ \" --dist \"+string_dist_coeff;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 840,
-        "y": 1080,
-        "wires": [
-            [
-                "3630aa3ca243ab6f",
-                "4cc5362f85732f6b"
             ]
         ]
     },
@@ -5647,7 +5681,8 @@
         "wires": [
             [
                 "e2359c634ac1d62d",
-                "700961aee6cd9454"
+                "700961aee6cd9454",
+                "0a4cc215dd0d99c3"
             ],
             [
                 "e65e75d11688a7e5",
@@ -5668,8 +5703,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1800,
-        "y": 1160,
+        "x": 2000,
+        "y": 1360,
         "wires": []
     },
     {
@@ -5685,8 +5720,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1810,
-        "y": 1240,
+        "x": 2010,
+        "y": 1440,
         "wires": []
     },
     {
@@ -5702,8 +5737,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1170,
-        "y": 1220,
+        "x": 950,
+        "y": 1300,
         "wires": []
     },
     {
@@ -5739,12 +5774,12 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 520,
-        "y": 1080,
+        "x": 380,
+        "y": 1060,
         "wires": [
             [
                 "6620c371f8bf918b",
-                "edf6e52453a5ebf9"
+                "b9db3d87e78be7f3"
             ]
         ]
     },
@@ -5761,7 +5796,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 710,
+        "x": 690,
         "y": 1300,
         "wires": []
     },
@@ -5807,7 +5842,8 @@
         "y": 300,
         "wires": [
             [
-                "7b36c9095cf50122"
+                "7b36c9095cf50122",
+                "840effcc5078fe89"
             ]
         ]
     },
@@ -5889,7 +5925,7 @@
         "z": "c5fc9b7a988cec09",
         "g": "16e9549a3ea706bc",
         "name": "debug 41",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -5908,9 +5944,6 @@
         "g": "16e9549a3ea706bc",
         "name": "Charuco global folder in",
         "links": [
-            "9a67d1381a1e6960",
-            "fe0e5a3d2e1fe78b",
-            "4484b8d6a16e79f1",
             "4819a5fb717ddca6"
         ],
         "x": 1955,
@@ -5957,7 +5990,7 @@
         "group": "40324dcc41601167",
         "name": "Logging template",
         "order": 1,
-        "width": 12,
+        "width": 14,
         "height": 16,
         "format": "<div style=\"height: 700px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px;\" id=\"logWindow\"></div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var logWindow = document.getElementById(\"logWindow\");\n            if (payload === \"clear\") {\n                logWindow.innerHTML = \"\";  // Clear the log window\n            } else {\n                logWindow.innerHTML += payload + \"<br/>\";\n                logWindow.scrollTop = logWindow.scrollHeight;  // Auto-scroll to the bottom\n            }\n        });\n    })(scope);\n</script>",
         "storeOutMessages": true,
@@ -5965,8 +5998,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1750,
-        "y": 760,
+        "x": 2210,
+        "y": 800,
         "wires": [
             []
         ]
@@ -6023,7 +6056,7 @@
         "z": "c5fc9b7a988cec09",
         "name": "Every 5 seconds",
         "props": [],
-        "repeat": "5",
+        "repeat": "1",
         "crontab": "",
         "once": true,
         "onceDelay": "0.2",
@@ -6179,7 +6212,7 @@
         "topic": "",
         "payload": "clear",
         "payloadType": "str",
-        "x": 1440,
+        "x": 1460,
         "y": 640,
         "wires": [
             [
@@ -6223,8 +6256,8 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 1990,
-        "y": 980,
+        "x": 2230,
+        "y": 1160,
         "wires": [
             []
         ]
@@ -6255,8 +6288,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1680,
-        "y": 1000,
+        "x": 1860,
+        "y": 1140,
         "wires": [
             [
                 "12e6460ec3653f11"
@@ -6289,13 +6322,415 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1680,
-        "y": 1060,
+        "x": 1860,
+        "y": 1200,
         "wires": [
             [
                 "12e6460ec3653f11"
             ]
         ]
+    },
+    {
+        "id": "af185e402accbfbd",
+        "type": "function",
+        "z": "c5fc9b7a988cec09",
+        "name": "function 22",
+        "func": "let initial_folder = global.get(\"filebrowser_default_folder\");\nlet folder = global.get(\"selected_project\");\nlet full_path = initial_folder + folder;\n\n//msg.payload = \"/home/iat/Documents/BA_Oleksandr/objectify/node-red/projects/benchmark_4x4_freehand/cameras.html\";//full_path + '/cameras.html';\nif(msg.payload == true){\n    msg.showImage = true;\n}else if(msg.payload.code == 0){\n    msg.showImage = true;\n}else{\n    msg.showImage = false;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2030,
+        "y": 1060,
+        "wires": [
+            [
+                "eabf28a45eda53a1",
+                "2b21c26dc3074148"
+            ]
+        ]
+    },
+    {
+        "id": "eabf28a45eda53a1",
+        "type": "ui_template",
+        "z": "c5fc9b7a988cec09",
+        "group": "40324dcc41601167",
+        "name": "Cameras Iframe",
+        "order": 3,
+        "width": 14,
+        "height": 12,
+        "format": "\n<div  ng-if=\"msg.showImage\" height=\"100%\" style=\"height: 100%;\">\n    <iframe src=\"/get-html?file=cameras.html\" width=\"100%\" height=\"600px\"></iframe>\n    <br/>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 2800,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "06747669f0a4c2ca",
+        "type": "file in",
+        "z": "c5fc9b7a988cec09",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 2860,
+        "y": 840,
+        "wires": [
+            [
+                "e15211a6a1ade543"
+            ]
+        ]
+    },
+    {
+        "id": "e15211a6a1ade543",
+        "type": "base64",
+        "z": "c5fc9b7a988cec09",
+        "name": "",
+        "action": "",
+        "property": "payload",
+        "x": 3060,
+        "y": 800,
+        "wires": [
+            [
+                "8f29b5d90164bbb0"
+            ]
+        ]
+    },
+    {
+        "id": "8f29b5d90164bbb0",
+        "type": "function",
+        "z": "c5fc9b7a988cec09",
+        "name": "Div image",
+        "func": "let text = \"<img src=\\\"data:image/png;base64,\";\ntext += msg.payload;\ntext += \"\\\" width=\\\"100%\\\"/>\";\nmsg.payload = text;\nmsg.showImage = true;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3240,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2b21c26dc3074148",
+        "type": "debug",
+        "z": "c5fc9b7a988cec09",
+        "name": "debug 59",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2780,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "b62d9a9b92977ae9",
+        "type": "ui_switch",
+        "z": "c5fc9b7a988cec09",
+        "name": "show_cameras",
+        "label": "Show cameras",
+        "tooltip": "",
+        "group": "40324dcc41601167",
+        "order": 2,
+        "width": "4",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 1820,
+        "y": 1040,
+        "wires": [
+            [
+                "af185e402accbfbd"
+            ]
+        ]
+    },
+    {
+        "id": "e928cfc88502fc53",
+        "type": "http in",
+        "z": "c5fc9b7a988cec09",
+        "name": "",
+        "url": "/get-html",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 2410,
+        "y": 1420,
+        "wires": [
+            [
+                "37155a0d08c804b3"
+            ]
+        ]
+    },
+    {
+        "id": "37155a0d08c804b3",
+        "type": "function",
+        "z": "c5fc9b7a988cec09",
+        "name": "Set file path",
+        "func": "var fileName = \"cameras.html\";\nlet initial_folder = global.get(\"filebrowser_default_folder\"); \nlet folder = global.get(\"selected_project\");\nlet full_path = initial_folder + folder;\nvar filePath = full_path + \"/\" + fileName; \n\nmsg.filename = filePath;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2610,
+        "y": 1420,
+        "wires": [
+            [
+                "c82e984217b99f4a"
+            ]
+        ]
+    },
+    {
+        "id": "c82e984217b99f4a",
+        "type": "file in",
+        "z": "c5fc9b7a988cec09",
+        "name": "Read File",
+        "filename": "",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": true,
+        "encoding": "none",
+        "x": 2790,
+        "y": 1420,
+        "wires": [
+            [
+                "2df49f82f7cfc31e"
+            ]
+        ]
+    },
+    {
+        "id": "2df49f82f7cfc31e",
+        "type": "function",
+        "z": "c5fc9b7a988cec09",
+        "name": "File Check Logic",
+        "func": "if (!msg.payload) {\n    // File not found or empty, create an error message\n    msg.payload = `\n    <html>\n        <body>\n            <h2 style=\"color: red;\">Cameras not found</h2>\n            <p>You need to generate pose first.</p>\n        </body>\n    </html>`;\n    msg.headers = { 'Content-Type': 'text/html' };\n    msg.statusCode = 404;\n    return msg;\n}\n\n// File found, serve content\nmsg.headers = { 'Content-Type': 'text/html' };\nmsg.statusCode = 200;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2970,
+        "y": 1420,
+        "wires": [
+            [
+                "b24f32311b27fb1c"
+            ]
+        ]
+    },
+    {
+        "id": "b24f32311b27fb1c",
+        "type": "http response",
+        "z": "c5fc9b7a988cec09",
+        "name": "Send Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 3180,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "73311470963cae45",
+        "type": "inject",
+        "z": "c5fc9b7a988cec09",
+        "name": "Turn off cameras on startup",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 1480,
+        "y": 980,
+        "wires": [
+            [
+                "b62d9a9b92977ae9"
+            ]
+        ]
+    },
+    {
+        "id": "0a4cc215dd0d99c3",
+        "type": "function",
+        "z": "c5fc9b7a988cec09",
+        "name": "function 23",
+        "func": "msg.payload = true;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1650,
+        "y": 1100,
+        "wires": [
+            [
+                "b62d9a9b92977ae9"
+            ]
+        ]
+    },
+    {
+        "id": "840effcc5078fe89",
+        "type": "debug",
+        "z": "c5fc9b7a988cec09",
+        "g": "16e9549a3ea706bc",
+        "name": "debug 60",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2810,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "4fe2078a52c47bcd",
+        "type": "switch",
+        "z": "c5fc9b7a988cec09",
+        "name": "",
+        "property": "code",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 750,
+        "y": 1060,
+        "wires": [
+            [
+                "edf6e52453a5ebf9"
+            ],
+            [
+                "b7f134ad53ac555a"
+            ]
+        ]
+    },
+    {
+        "id": "b7f134ad53ac555a",
+        "type": "function",
+        "z": "c5fc9b7a988cec09",
+        "name": "write_to_log",
+        "func": "msg.payload = \"Camera is not calibrated, you can't run generate pose <br> firstly you need to press calibrate \"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1130,
+        "y": 1000,
+        "wires": [
+            [
+                "d7707fcee02fe1b8"
+            ]
+        ]
+    },
+    {
+        "id": "edf6e52453a5ebf9",
+        "type": "function",
+        "z": "c5fc9b7a988cec09",
+        "name": "generate_pose_signature",
+        "func": "let initial_folder = global.get(\"filebrowser_default_folder\");\nlet folder = global.get(\"selected_project\");\nlet full_path = initial_folder + folder;\n\nvar camera_matrix = msg.payload[\"camera_matrix\"];\n\nvar dist_coeff = msg.payload[\"dist_coeff\"];\n\n\nconst flattened_camera_matrix = camera_matrix.flat();\n\n// Convert to a space-separated string\nconst string_camera_matrix = flattened_camera_matrix.join(' ');\n\nconst flattened_dist_coeff = dist_coeff.flat();\n\n// Convert to a space-separated string\nconst string_dist_coeff = flattened_dist_coeff.join(' ');\n\nmsg.payload = \"python ../scripts/charuco_generate_pose.py --project_name \"+ folder+\" --input \"+ full_path+\" --mtx \"+string_camera_matrix+ \" --dist \"+string_dist_coeff;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 1100,
+        "wires": [
+            [
+                "3630aa3ca243ab6f"
+            ]
+        ]
+    },
+    {
+        "id": "b9db3d87e78be7f3",
+        "type": "function",
+        "z": "c5fc9b7a988cec09",
+        "name": "function 26",
+        "func": "if (msg.payload == null) {\n    msg.code = 1;\n} else {\n    msg.code = 0;\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 1060,
+        "wires": [
+            [
+                "4fe2078a52c47bcd",
+                "e5c1e574e44d6293"
+            ]
+        ]
+    },
+    {
+        "id": "e5c1e574e44d6293",
+        "type": "debug",
+        "z": "c5fc9b7a988cec09",
+        "name": "debug 61",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "code",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 690,
+        "y": 1160,
+        "wires": []
     },
     {
         "id": "7700ec9f893a1665",
@@ -6304,23 +6739,26 @@
         "command": "",
         "addpay": "payload",
         "append": "",
-        "useSpawn": "false",
+        "useSpawn": "true",
         "timer": "",
         "winHide": false,
         "oldrc": false,
         "name": "run colmap2nerf.py",
-        "x": 1450,
-        "y": 460,
+        "x": 1390,
+        "y": 440,
         "wires": [
             [
+                "a7c2b07bae7929ca",
                 "ca970b6fa5aa189b",
                 "43095b37af32c13f"
             ],
             [
-                "ca970b6fa5aa189b",
-                "234412a362a92921"
+                "234412a362a92921",
+                "ca970b6fa5aa189b"
             ],
-            []
+            [
+                "dafcdce899c297f6"
+            ]
         ]
     },
     {
@@ -6328,7 +6766,7 @@
         "type": "function",
         "z": "3669868b19b1582f",
         "name": "function 3",
-        "func": "//construct command\nvar cmd = \"\";\nvar ingp_root = global.get(\"ingp_root\")\ncmd = cmd +\"python \"+ingp_root+\"colmap2nerf_nodered.py\"\n\nvar folder = global.get(\"selected_project\");\n\nif(flow.get(\"video\")==true){\n cmd += \"--video_in \";\n cmd += folder +\" \";\n}else{\n    cmd+= \" --images \";\n    cmd+= folder+ \" \";\n}\nif(flow.get(\"run_colmap\")==true){\n    cmd += \" --run_colmap \";\n}\nif(flow.get(\"single_camera\")==true){\n    cmd += \" --single_camera \";\n}\n// if(flow.get(\"use_gpu\")==true){\n//     cmd += \" --use_gpu 1 \";\n// }\nmsg.payload = cmd;\nmsg.errorcode = 0;\nreturn msg;",
+        "func": "//construct command\nvar cmd = \"\";\nvar ingp_root = global.get(\"ingp_root\")\ncmd = cmd + \"python \" + ingp_root +\"colmap2nerf_nodered.py --colmap_matcher exhaustive --colmap_camera_model PINHOLE\"\n\nvar folder = global.get(\"selected_project\");\n\nif(flow.get(\"video\")==true){\n cmd += \"--video_in \";\n cmd += folder +\" \";\n}else{\n    cmd+= \" --images \";\n    cmd+= folder+ \" \";\n}\nif(flow.get(\"run_colmap\")==true){\n    cmd += \" --run_colmap \";\n}\nif(flow.get(\"single_camera\")==true){\n    cmd += \" --single_camera 1\";\n}else{\n    cmd += \" --single_camera 0\";\n}\nif(flow.get(\"remove_background\")!= \"None\"){\n    cmd += \" --remove_background --bg_model \" + flow.get(\"remove_background\");\n}\n// if(flow.get(\"use_gpu\")==true){\n//     cmd += \" --use_gpu 1 \";\n// }\nmsg.payload = cmd;\nmsg.errorcode = 0;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -6452,10 +6890,10 @@
         "rules": [
             {
                 "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "",
-                "tot": "str"
+                "p": "remove_background",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
             }
         ],
         "action": "",
@@ -6463,7 +6901,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 550,
+        "x": 620,
         "y": 660,
         "wires": [
             []
@@ -6519,7 +6957,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1860,
-        "y": 680,
+        "y": 700,
         "wires": []
     },
     {
@@ -6576,7 +7014,7 @@
         "z": "3669868b19b1582f",
         "g": "80f0e37eedd4ac4c",
         "name": "debug 40",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -6634,40 +7072,12 @@
         ]
     },
     {
-        "id": "f78bceb4e079a816",
-        "type": "ui_numeric",
-        "z": "3669868b19b1582f",
-        "name": "",
-        "label": "gpu number",
-        "tooltip": "",
-        "group": "53646539ec83fa85",
-        "order": 10,
-        "width": 4,
-        "height": 1,
-        "wrap": false,
-        "passthru": true,
-        "topic": "topic",
-        "topicType": "msg",
-        "format": "{{value}}",
-        "min": 0,
-        "max": 10,
-        "step": 1,
-        "className": "",
-        "x": 310,
-        "y": 660,
-        "wires": [
-            [
-                "9d65157ed9d8240e"
-            ]
-        ]
-    },
-    {
         "id": "984435ad09c8523e",
         "type": "ui_button",
         "z": "3669868b19b1582f",
         "name": "",
         "group": "53646539ec83fa85",
-        "order": 12,
+        "order": 9,
         "width": 4,
         "height": 1,
         "passthru": false,
@@ -6698,7 +7108,7 @@
         "tooltip": "",
         "group": "53646539ec83fa85",
         "order": 2,
-        "width": 4,
+        "width": 6,
         "height": 1,
         "passthru": true,
         "decouple": "false",
@@ -6731,8 +7141,8 @@
         "label": "run_colmap",
         "tooltip": "",
         "group": "53646539ec83fa85",
-        "order": 4,
-        "width": 4,
+        "order": 3,
+        "width": 6,
         "height": 1,
         "passthru": true,
         "decouple": "false",
@@ -6765,8 +7175,8 @@
         "label": "shared intrinsics",
         "tooltip": "",
         "group": "53646539ec83fa85",
-        "order": 6,
-        "width": 4,
+        "order": 4,
+        "width": 6,
         "height": 1,
         "passthru": true,
         "decouple": "false",
@@ -6799,8 +7209,8 @@
         "label": "use_gpu",
         "tooltip": "",
         "group": "53646539ec83fa85",
-        "order": 8,
-        "width": 4,
+        "order": 5,
+        "width": 6,
         "height": 1,
         "passthru": true,
         "decouple": "false",
@@ -6834,7 +7244,7 @@
         "tooltip": "",
         "group": "53646539ec83fa85",
         "order": 1,
-        "width": 5,
+        "width": 6,
         "height": 1,
         "passthru": true,
         "mode": "text",
@@ -6901,15 +7311,15 @@
         "group": "45c6e5c68f9384b7",
         "name": "Logging template",
         "order": 1,
-        "width": 12,
+        "width": 13,
         "height": 16,
-        "format": "<div style=\"height: 700px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px;\" id=\"logWindow\"></div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var logWindow = document.getElementById(\"logWindow\");\n            if (payload === \"clear\") {\n                logWindow.innerHTML = \"\";  // Clear the log window\n            } else {\n                logWindow.innerHTML += payload + \"<br/>\";\n                logWindow.scrollTop = logWindow.scrollHeight;  // Auto-scroll to the bottom\n            }\n        });\n    })(scope);\n</script>",
+        "format": "<div style=\"height: 700px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px;\" id=\"logWindow\"></div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var logWindow = document.getElementById(\"logWindow\");\n            if (payload === \"clear\") {\n                logWindow.innerHTML = \"\";  // Clear the log window\n            } else {\n                logWindow.innerHTML += payload + \"<br/>\" + \"<br/>\";\n                logWindow.scrollTop = logWindow.scrollHeight;  // Auto-scroll to the bottom\n            }\n        });\n    })(scope);\n</script>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1810,
+        "x": 1910,
         "y": 420,
         "wires": [
             []
@@ -6949,7 +7359,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1840,
+        "x": 1860,
         "y": 580,
         "wires": []
     },
@@ -6996,6 +7406,288 @@
         ]
     },
     {
+        "id": "a7c2b07bae7929ca",
+        "type": "function",
+        "z": "3669868b19b1582f",
+        "d": true,
+        "name": "function 21",
+        "func": "if (Buffer.isBuffer(msg.payload)) {\n    msg.payload = msg.payload.toString('utf8');\n} else if (typeof msg.payload !== 'string') {\n    msg.payload = \"\";\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1650,
+        "y": 380,
+        "wires": [
+            [
+                "ca970b6fa5aa189b",
+                "43095b37af32c13f"
+            ]
+        ]
+    },
+    {
+        "id": "0d29c261eff396ae",
+        "type": "ui_switch",
+        "z": "3669868b19b1582f",
+        "d": true,
+        "name": "remove_background",
+        "label": "remove_background",
+        "tooltip": "",
+        "group": "53646539ec83fa85",
+        "order": 7,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 300,
+        "y": 660,
+        "wires": [
+            [
+                "9d65157ed9d8240e"
+            ]
+        ]
+    },
+    {
+        "id": "8fc1bc83138cc3a0",
+        "type": "ui_dropdown",
+        "z": "3669868b19b1582f",
+        "name": "remove_background",
+        "label": "Background removal",
+        "tooltip": "Select a model within background will be removed (recommended birefnet-general))",
+        "place": "Select option",
+        "group": "53646539ec83fa85",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "sam",
+                "value": "sam",
+                "type": "str"
+            },
+            {
+                "label": "isnet-general-use",
+                "value": "isnet-general-use",
+                "type": "str"
+            },
+            {
+                "label": "u2net",
+                "value": "u2net",
+                "type": "str"
+            },
+            {
+                "label": "birefnet-general",
+                "value": "birefnet-general",
+                "type": "str"
+            },
+            {
+                "label": "birefnet-general-lite",
+                "value": "birefnet-general-lite",
+                "type": "str"
+            },
+            {
+                "label": "None",
+                "value": "None",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 280,
+        "y": 720,
+        "wires": [
+            [
+                "9d65157ed9d8240e",
+                "a977d7e50168c4a1"
+            ]
+        ]
+    },
+    {
+        "id": "a977d7e50168c4a1",
+        "type": "debug",
+        "z": "3669868b19b1582f",
+        "name": "debug 58",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "dafcdce899c297f6",
+        "type": "switch",
+        "z": "3669868b19b1582f",
+        "name": "Success?",
+        "property": "payload.code",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 2240,
+        "y": 600,
+        "wires": [
+            [
+                "51151b33377ffc63"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "51151b33377ffc63",
+        "type": "function",
+        "z": "3669868b19b1582f",
+        "name": "function 24",
+        "func": "msg.payload = true;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2390,
+        "y": 520,
+        "wires": [
+            [
+                "22889b5401268315"
+            ]
+        ]
+    },
+    {
+        "id": "0333b345e546f3de",
+        "type": "inject",
+        "z": "3669868b19b1582f",
+        "name": "Turn off cameras on startup",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 2240,
+        "y": 400,
+        "wires": [
+            [
+                "22889b5401268315"
+            ]
+        ]
+    },
+    {
+        "id": "22889b5401268315",
+        "type": "ui_switch",
+        "z": "3669868b19b1582f",
+        "name": "show_cameras",
+        "label": "Show cameras",
+        "tooltip": "",
+        "group": "45c6e5c68f9384b7",
+        "order": 2,
+        "width": "4",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 2560,
+        "y": 460,
+        "wires": [
+            [
+                "10f90fee559b838c"
+            ]
+        ]
+    },
+    {
+        "id": "10f90fee559b838c",
+        "type": "function",
+        "z": "3669868b19b1582f",
+        "name": "function 25",
+        "func": "let initial_folder = global.get(\"filebrowser_default_folder\");\nlet folder = global.get(\"selected_project\");\nlet full_path = initial_folder + folder;\n\n//msg.payload = \"/home/iat/Documents/BA_Oleksandr/objectify/node-red/projects/benchmark_4x4_freehand/cameras.html\";//full_path + '/cameras.html';\nif(msg.payload == true){\n    msg.showImage = true;\n}else if(msg.payload.code == 0){\n    msg.showImage = true;\n}else{\n    msg.showImage = false;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2830,
+        "y": 460,
+        "wires": [
+            [
+                "2b991ea3d7978c7e"
+            ]
+        ]
+    },
+    {
+        "id": "2b991ea3d7978c7e",
+        "type": "ui_template",
+        "z": "3669868b19b1582f",
+        "group": "45c6e5c68f9384b7",
+        "name": "Cameras Iframe",
+        "order": 3,
+        "width": "13",
+        "height": 12,
+        "format": "\n<div  ng-if=\"msg.showImage\" height=\"100%\" style=\"height: 100%;\">\n    <iframe src=\"/get-html?file=cameras.html\" width=\"100%\" height=\"600px\"></iframe>\n    <br/>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 3540,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "cdf08e1fa0f798cf",
         "type": "comment",
         "z": "f11166a80e40d7b6",
@@ -7010,7 +7702,7 @@
         "type": "function",
         "z": "f11166a80e40d7b6",
         "name": "function 4",
-        "func": "//construct command\n// var cmd = \"\";\n// cmd = cmd +\"python scripts/run.py \"\n// var full_cmd = \"python run.py --scene transforms.json --screenshot_dir rembg_abgabe_img1139/ --width 2048 --height 2048 --n_steps 1000 --save_snapshot ./snap.ingp\";\n// var folder = flow.get(\"folder\");\n// if(flow.get(\"folder\") == null){\n//     msg.errorcode = 1;\n//     msg.errortext = \"Please navigate to folder that contains images\";\n// }\n\n// if(flow.get(\"video\")==true){\n//  cmd += \"--video_in \";\n//  cmd += folder +\" \";\n// }else{\n//     cmd+= \"--images \";\n//     cmd+= folder+ \" \";\n// }\n// if(flow.get(\"run_colmap\")==true){\n//     cmd += \"--run_colmap \";\n// }\n// if(flow.get(\"single_camera\")==true){\n//     cmd += \"--single_camera \";\n// }\n// if(flow.get(\"use_gpu\")==true){\n//     cmd += \"--use_gpu 1 \";\n// }\n// msg.payload = cmd;\n// msg.errorcode = 0;\n// return msg;\n\nvar cmd = \"\";\nvar steps = flow.get(\"steps\")\nconsole.log(flow.get(\"transforms_found\"));\nvar default_folder = global.get(\"filebrowser_default_folder\") \nlet project_path =default_folder+ global.get(\"selected_project\");\nvar ingp_root = global.get(\"ingp_root\")\ncmd = \"python \"+ingp_root+\"run.py\"+\" --scene \" + project_path + \"/transforms_centered.json --save_snapshot \" + project_path + \"/snapshot.ingp --save_mesh \" + project_path +\"/snapshot.obj --n_steps \"+steps;\n\nmsg.payload = cmd;\n\nreturn msg;",
+        "func": "//construct command\n// var cmd = \"\";\n// cmd = cmd +\"python scripts/run.py \"\n// var full_cmd = \"python run.py --scene transforms.json --screenshot_dir rembg_abgabe_img1139/ --width 2048 --height 2048 --n_steps 1000 --save_snapshot ./snap.ingp\";\n// var folder = flow.get(\"folder\");\n// if(flow.get(\"folder\") == null){\n//     msg.errorcode = 1;\n//     msg.errortext = \"Please navigate to folder that contains images\";\n// }\n\n// if(flow.get(\"video\")==true){\n//  cmd += \"--video_in \";\n//  cmd += folder +\" \";\n// }else{\n//     cmd+= \"--images \";\n//     cmd+= folder+ \" \";\n// }\n// if(flow.get(\"run_colmap\")==true){\n//     cmd += \"--run_colmap \";\n// }\n// if(flow.get(\"single_camera\")==true){\n//     cmd += \"--single_camera \";\n// }\n// if(flow.get(\"use_gpu\")==true){\n//     cmd += \"--use_gpu 1 \";\n// }\n// msg.payload = cmd;\n// msg.errorcode = 0;\n// return msg;\n\nvar cmd = \"\";\nvar steps = flow.get(\"steps\")\nconsole.log(flow.get(\"transforms_found\"));\nvar default_folder = global.get(\"filebrowser_default_folder\") \nlet project_path =default_folder+ global.get(\"selected_project\");\nvar ingp_root = global.get(\"ingp_root\")\nvar mc_resolution = flow.get(\"resolution\");\ncmd = \"python \" + ingp_root + \"run.py\" + \" --scene \" + project_path + \"/transforms_centered.json --save_snapshot \" + project_path + \"/snapshot.ingp --save_mesh \" + project_path + \"/snapshot.ply --n_steps \" + steps + \" --marching_cubes_res \" + mc_resolution;\n\nmsg.payload = cmd;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -7055,15 +7747,16 @@
         "winHide": false,
         "oldrc": false,
         "name": "instant-ngp/run.py",
-        "x": 1050,
-        "y": 700,
+        "x": 1010,
+        "y": 680,
         "wires": [
             [
                 "60493bb1f6b0cab2",
                 "6cc453db05c0eb3e"
             ],
             [
-                "e19ae7959c10c9f3"
+                "e19ae7959c10c9f3",
+                "ab3d335fc2c980c9"
             ],
             []
         ]
@@ -7242,7 +7935,7 @@
         "z": "f11166a80e40d7b6",
         "g": "28c003637500bb58",
         "name": "debug 43",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -7288,7 +7981,7 @@
         "z": "f11166a80e40d7b6",
         "name": "",
         "group": "23c5588908fde9b8",
-        "order": 7,
+        "order": 9,
         "width": 7,
         "height": 1,
         "passthru": false,
@@ -7336,7 +8029,7 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 410,
+        "x": 430,
         "y": 920,
         "wires": [
             [
@@ -7352,7 +8045,7 @@
         "label": "Remove background",
         "tooltip": "",
         "group": "23c5588908fde9b8",
-        "order": 6,
+        "order": 8,
         "width": 7,
         "height": 1,
         "passthru": true,
@@ -7370,7 +8063,7 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 420,
+        "x": 440,
         "y": 1000,
         "wires": [
             [
@@ -7483,7 +8176,7 @@
         "order": 1,
         "width": 12,
         "height": 16,
-        "format": "<div style=\"height: 700px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px;\" id=\"logWindow\"></div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var logWindow = document.getElementById(\"logWindow\");\n            if (payload === \"clear\") {\n                logWindow.innerHTML = \"\";  // Clear the log window\n            } else {\n                logWindow.innerHTML += payload + \"<br/>\";\n                logWindow.scrollTop = logWindow.scrollHeight;  // Auto-scroll to the bottom\n            }\n        });\n    })(scope);\n</script>",
+        "format": "<div style=\"height: 700px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px;\" id=\"logWindow\"></div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var logWindow = document.getElementById(\"logWindow\");\n            if (payload === \"clear\") {\n                logWindow.innerHTML = \"\";  // Clear the log window\n            } else {\n                logWindow.innerHTML += payload + \"<br/>\"+ \"<br/>\";\n                logWindow.scrollTop = logWindow.scrollHeight;  // Auto-scroll to the bottom\n            }\n        });\n    })(scope);\n</script>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
@@ -7711,7 +8404,7 @@
         "z": "f11166a80e40d7b6",
         "g": "28c003637500bb58",
         "name": "debug 52",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -7764,7 +8457,7 @@
         "z": "f11166a80e40d7b6",
         "g": "28c003637500bb58",
         "name": "debug 53",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -7783,8 +8476,8 @@
         "d": true,
         "group": "a7d09646c3ab18c3",
         "order": 2,
-        "width": 12,
-        "height": 1,
+        "width": 0,
+        "height": 0,
         "name": "",
         "label": "OUTPUT",
         "format": "{{msg.payload}}",
@@ -7830,8 +8523,8 @@
         "y": 660,
         "wires": [
             [
-                "ab3d335fc2c980c9",
-                "74926709c85accd1"
+                "74926709c85accd1",
+                "ab3d335fc2c980c9"
             ]
         ]
     },
@@ -7857,6 +8550,180 @@
         "wires": [
             [
                 "ab3d335fc2c980c9"
+            ]
+        ]
+    },
+    {
+        "id": "e388b41723f2b104",
+        "type": "change",
+        "z": "f11166a80e40d7b6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "resolution",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 710,
+        "y": 1340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f78ff75e888d02bf",
+        "type": "ui_slider",
+        "z": "f11166a80e40d7b6",
+        "name": "",
+        "label": "MC Resolution",
+        "tooltip": "",
+        "group": "23c5588908fde9b8",
+        "order": 6,
+        "width": 5,
+        "height": 1,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": "128",
+        "max": "1000",
+        "step": "2",
+        "className": "",
+        "x": 440,
+        "y": 1400,
+        "wires": [
+            [
+                "e388b41723f2b104",
+                "6d83c76c150ca263"
+            ]
+        ]
+    },
+    {
+        "id": "6d83c76c150ca263",
+        "type": "ui_text",
+        "z": "f11166a80e40d7b6",
+        "group": "23c5588908fde9b8",
+        "order": 7,
+        "width": 2,
+        "height": 1,
+        "name": "Show resolution",
+        "label": "",
+        "format": "{{msg.payload}}x{{msg.payload}}x{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 720,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "0b2bb585ccb06aed",
+        "type": "inject",
+        "z": "f11166a80e40d7b6",
+        "name": "Set resolution on Startup",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "256",
+        "payloadType": "num",
+        "x": 210,
+        "y": 1400,
+        "wires": [
+            [
+                "f78ff75e888d02bf"
+            ]
+        ]
+    },
+    {
+        "id": "32246494181923e5",
+        "type": "inject",
+        "z": "f11166a80e40d7b6",
+        "name": "Set steps on Startup",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "2000",
+        "payloadType": "num",
+        "x": 160,
+        "y": 1160,
+        "wires": [
+            [
+                "8aaec62f5dc1c9f2"
+            ]
+        ]
+    },
+    {
+        "id": "828f67f611f6a4e6",
+        "type": "inject",
+        "z": "f11166a80e40d7b6",
+        "name": "Remove background on Startup",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 170,
+        "y": 1000,
+        "wires": [
+            [
+                "9420f1f1f78a741f"
+            ]
+        ]
+    },
+    {
+        "id": "c6b2c8866b3120a8",
+        "type": "inject",
+        "z": "f11166a80e40d7b6",
+        "name": "Remove ingp selection on Startup",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 180,
+        "y": 920,
+        "wires": [
+            [
+                "a4b0507b374cecca"
             ]
         ]
     },
@@ -8005,7 +8872,7 @@
         "type": "function",
         "z": "cd35db7d9440e826",
         "name": "function 7",
-        "func": "var filename = flow.get(\"lastfile\");\nvar cmd = \"python ../scripts/viz_test.py \" +filename;\nmsg.payload = cmd;\nreturn msg;",
+        "func": "let files = flow.get(\"viz_files\");\nvar cmd = \"python ../scripts/vizualization.py \" + files;\nmsg.payload = cmd;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8750,7 +9617,7 @@
         "type": "debug",
         "z": "c0273576f864fea6",
         "name": "debug 44",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -8938,7 +9805,7 @@
         "z": "ce11a1573af9dae5",
         "g": "a97981e2e8c1f13e",
         "name": "debug 45",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,

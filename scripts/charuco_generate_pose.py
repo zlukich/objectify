@@ -12,7 +12,7 @@ from calibration.cv2api.calibrate import read_chessboards, calibrate_camera
 from calibration.cv2api.detect import detect_pose
 from config.ConfigManagerServer import ConfigManagerAPI
 from calibration.json_utils.json_functions import generate_json_for_images
-
+from calibration.viz_utils.viz_cameras import camera_with_frustums
 config_manager = ConfigManagerAPI("http://127.0.0.1:5001")
 
 
@@ -58,6 +58,8 @@ def main():
     print("I am here")
     generate_json_for_images(input_path, out_path, mtx, dist, scale = 3,colmap=True)
     config_manager.update_project(project_name,{"transforms_path":out_path})
+    
+    camera_with_frustums(out_path, os.path.join(input_path, "cameras.html"))
 
 if __name__ == "__main__":
     main()

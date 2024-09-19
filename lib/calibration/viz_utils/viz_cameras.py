@@ -23,7 +23,7 @@ def transform_frustum(vertices, transform_matrix):
     vertices_world = (rotation_matrix @ vertices.T).T + camera_position
     return vertices_world
 
-def camera_with_frustums(json_path):
+def camera_with_frustums(json_path, write_image_path = "cameras.png"):
 
     # Load JSON file containing transformation matrices
     with open(json_path, 'r') as f:
@@ -32,7 +32,7 @@ def camera_with_frustums(json_path):
 
     # Extract frames from JSON data
     frames = data['frames']
-
+    num_cameras = len(frames)  # Count the number of cameras
     # Plot camera frustums
     fig = go.Figure()
 
@@ -76,6 +76,14 @@ def camera_with_frustums(json_path):
         ),
         title='Camera Frustums'
     )
-
+    # Optionally, add an annotation for the number of cameras
+    fig.add_annotation(
+        text=f'Number of Cameras: {num_cameras}',
+        xref='paper', yref='paper',
+        x=0.5, y=1.05, showarrow=False,
+        font=dict(size=14),
+        align='center'
+    )
     # Show plot
-    pio.show(fig)
+    #pio.show(fig)
+    fig.write_html(write_image_path)

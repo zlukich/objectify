@@ -7,7 +7,7 @@ import os
 
 # Parse command-line arguments
 parser = argparse.ArgumentParser(description='Remove background from images.')
-parser.add_argument('--model', type=str, choices=['isnet-general-use', 'sam'], default='isnet-general-use', help='Model to use for background removal.')
+parser.add_argument('--model', type=str, choices=['isnet-general-use', 'sam',"u2net","birefnet-general","birefnet-general-lite"], default='isnet-general-use', help='Model to use for background removal.')
 parser.add_argument('--input_dir', type=str, required=True, help='Input directory containing the images.')
 args = parser.parse_args()
 
@@ -18,25 +18,34 @@ input_dir = Path(args.input_dir)
 output_dir = input_dir / 'rembg'
 output_dir.mkdir(parents=True, exist_ok=True)
 
-image_files = list(input_dir.glob('*.jpg'))
+image_files = list(input_dir.glob('*.png')) + list(input_dir.glob('*.jpg')) +list(input_dir.glob('*.jpeg'))
+print(image_files)
 num_images = len(image_files)
 
 if num_images == 0:
     print("No images found in the input directory.")
     exit()
 
-# Open the first image to get dimensions
-first_image = Image.open(image_files[0])
-width, height = first_image.size
-center_point = [width / 2, height / 2]
 
+
+input_points = []
+input_labels = []
 if model_name == "sam":
-    input_labels = np.array([1] * num_images)
-    input_points = np.array([center_point] * num_images)
+    for file in image_files:
+        # Open the first image to get dimensions
+        image = Image.open(file)
+        width, height = image.size
+        center_point = [width / 2, height / 2]
+        input_labels.append(1)
+        input_points.append(center_point)
+    
+    input_labels = np.array(input_labels)
+    input_points = np.array(input_points)
+        
 
 for file in image_files:
     input_path = str(file)
-    output_path = str(output_dir / (file.stem + ".out.png"))
+    output_path = str(output_dir / (file.stem + ".png"))
 
     with open(input_path, 'rb') as i:
         with open(output_path, 'wb') as o:

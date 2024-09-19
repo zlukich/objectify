@@ -17,7 +17,7 @@ config_manager = ConfigManagerAPI("http://127.0.0.1:5001")
 
 def calibrate_and_write(project_name, output_folder, config_manager):
 
-    image_files = [os.path.join(output_folder, f) for f in os.listdir(output_folder) if f.endswith(".jpg")]
+    image_files = [os.path.join(output_folder, f) for f in os.listdir(output_folder) if f.endswith(".jpg") or f.endswith(".png")]
     image_files.sort()  # Ensure files are in order
 
     allCorners, allIds, imsize, num_of_detected_markers = read_chessboards(image_files)
@@ -69,7 +69,7 @@ def main():
     #         config_manager.update_project(project_name, {"images": output_folder})
     #         mtx, dist = calibrate_and_write(project_name, output_folder, config_manager)
 
-    generate_json_for_images(output_folder, os.path.join(output_folder, "transforms_centered.json"), mtx, dist, colmap=True)
+    #generate_json_for_images(output_folder, os.path.join(output_folder, "transforms_centered.json"), mtx, dist, colmap=True)
 
 if __name__ == "__main__":
     main()

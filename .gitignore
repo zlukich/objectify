@@ -7,3 +7,5 @@
 **/colmap/
 *.ply
 __pycache__/
+imgui.ini
+/scripts/config.json

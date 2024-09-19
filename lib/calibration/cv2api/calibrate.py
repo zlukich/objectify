@@ -1,17 +1,17 @@
 import cv2
 import numpy as np
 
-# ARUCO_DICT = cv2.aruco.DICT_4X4_50
-# SQUARES_VERTICALLY = 7
-# SQUARES_HORIZONTALLY = 5
-# SQUARE_LENGTH = 0.056
-# MARKER_LENGTH = 0.042
+ARUCO_DICT = cv2.aruco.DICT_4X4_50
+SQUARES_VERTICALLY = 7
+SQUARES_HORIZONTALLY = 5
+SQUARE_LENGTH = 0.056
+MARKER_LENGTH = 0.042
 
-ARUCO_DICT = cv2.aruco.DICT_ARUCO_ORIGINAL
-SQUARES_VERTICALLY = 10
-SQUARES_HORIZONTALLY = 7
-SQUARE_LENGTH = 0.03
-MARKER_LENGTH = 0.015
+# ARUCO_DICT = cv2.aruco.DICT_ARUCO_ORIGINAL
+# SQUARES_VERTICALLY = 10
+# SQUARES_HORIZONTALLY = 7
+# SQUARE_LENGTH = 0.03
+# MARKER_LENGTH = 0.015
 
 
 # ...
@@ -41,16 +41,21 @@ def read_chessboards(images):
         frame = cv2.imread(im)
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         imsize = gray.shape
+        print(imsize)
         corners, ids, rejectedImgPoints = cv2.aruco.detectMarkers(gray, dictionary)
-
+        
         if len(corners)>0:
             # SUB PIXEL DETECTION
             for corner in corners:
+                
                 cv2.cornerSubPix(gray, corner,
                                  winSize = (3,3),
                                  zeroZone = (-1,-1),
                                  criteria = criteria)
+            
+                
             res2 = cv2.aruco.interpolateCornersCharuco(corners,ids,gray,board)
+            #print("I am here")
             if res2[1] is not None and res2[2] is not None and len(res2[1])>6 and decimator%1==0:
                 allCorners.append(res2[1])
                 allIds.append(res2[2])
@@ -87,7 +92,7 @@ def calibrate_camera(allCorners,allIds,imsize):
     Calibrates the camera using the dected corners.
     """
     print("CAMERA CALIBRATION")
-
+    print(imsize)
     # cameraMatrixInit = np.array([[ 1000.,    0., imsize[0]/2.],
     #                              [    0., 1000., imsize[1]/2.],
     #                              [    0.,    0.,           1.]])
