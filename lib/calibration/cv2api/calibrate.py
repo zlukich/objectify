@@ -34,7 +34,8 @@ def read_chessboards(images):
     num_detected_markers = []
     decimator = 0
     # SUB PIXEL CORNER DETECTION CRITERION
-    criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 100, 0.00001)
+    #criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 100, 0.00001)
+    criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 30, 0.001) 
     imsize = -1
     for im in images:
         print("=> Processing image {0}".format(im))
@@ -56,33 +57,11 @@ def read_chessboards(images):
                 
             res2 = cv2.aruco.interpolateCornersCharuco(corners,ids,gray,board)
             #print("I am here")
-            if res2[1] is not None and res2[2] is not None and len(res2[1])>6 and decimator%1==0:
+            if res2[1] is not None and res2[2] is not None and len(res2[1])>3 and decimator%1==0:
                 allCorners.append(res2[1])
                 allIds.append(res2[2])
 
-            decimator+=1
-
-    
-            # marker_corners, marker_ids, _ = cv2.aruco.detectMarkers(gray, dictionary)
-            # charuco_retval, charuco_corners, charuco_ids = cv2.aruco.interpolateCornersCharuco(marker_corners, marker_ids, gray, board)
-            # if charuco_retval and len(charuco_corners>3):
-            #     allCorners.append(charuco_corners)
-            #     allIds.append(charuco_ids)
-
-    #         if np.size(all_corne|rs) == 0:
-    #             all_corners = corners
-    #             all_ids = ids
-    #         else:
-    #             all_corners = np.append(all_corners, corners, axis=0)
-    #             all_ids = np.append(all_ids, ids, axis=0)
-    #         num_detected_markers.append(len(ids))
-
-            
-
-    # num_detected_markers = np.array(num_detected_markers)
-
-    # allCorners = all_corners
-    # allIds= all_ids
+        decimator+=1
 
     
     return allCorners,allIds,imsize,num_detected_markers
@@ -93,6 +72,9 @@ def calibrate_camera(allCorners,allIds,imsize):
     """
     print("CAMERA CALIBRATION")
     print(imsize)
+    if(len(allCorners) <=3 or len(allIds) <=3):
+        print("To few images to start calibration, please increase number of images make angle wider to capture charuco board \n")
+        return 1,None,None,None,None
     # cameraMatrixInit = np.array([[ 1000.,    0., imsize[0]/2.],
     #                              [    0., 1000., imsize[1]/2.],
     #                              [    0.,    0.,           1.]])

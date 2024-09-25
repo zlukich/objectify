@@ -605,5 +605,148 @@
     },
     "bfrog_macrolens_rembg": {
         "images": "./projects/bfrog_macrolens_rembg"
+    },
+    "calib_2409_4x4": {
+        "images": "./projects/calib_2409_4x4",
+        "calibrated": true,
+        "camera_matrix": [
+            [
+                1642.0277971037528,
+                0.0,
+                1030.0540155619533
+            ],
+            [
+                0.0,
+                1448.985599777761,
+                3570.858555010581
+            ],
+            [
+                0.0,
+                0.0,
+                1.0
+            ]
+        ],
+        "dist_coeff": [
+            [
+                0.004491384219493516
+            ],
+            [
+                -0.008372834742506224
+            ],
+            [
+                -0.08138205901733526
+            ],
+            [
+                0.006010347190744563
+            ],
+            [
+                0.0013530016760536201
+            ],
+            [
+                -0.008386102540015403
+            ],
+            [
+                0.012058583288008257
+            ],
+            [
+                -0.00016971735446216605
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ]
+        ]
+    },
+    "bench_4x4_2409_2": {
+        "transforms_path": "./projects/bench_4x4_2409_2/transforms_centered.json"
+    },
+    "bench_4x4_2409_3": {
+        "transforms_path": "./projects/bench_4x4_2409_3/transforms_centered.json"
+    },
+    "bench_4x4_2409_1": {
+        "transforms_path": "./projects/bench_4x4_2409_1/transforms_centered.json"
+    },
+    "bfrog_4x4_phone": {
+        "images": "./projects/bfrog_4x4_phone"
+    },
+    "benchmark_4x4_phone": {
+        "images": "./projects/benchmark_4x4_phone",
+        "calibrated": true,
+        "camera_matrix": [
+            [
+                3770.2479374073737,
+                0.0,
+                1224.3411932232032
+            ],
+            [
+                0.0,
+                3753.693362285835,
+                1570.8935580177845
+            ],
+            [
+                0.0,
+                0.0,
+                1.0
+            ]
+        ],
+        "dist_coeff": [
+            [
+                -0.06902332771385099
+            ],
+            [
+                0.6205850875244534
+            ],
+            [
+                -0.022337197758085812
+            ],
+            [
+                0.007537176669263887
+            ],
+            [
+                1.6334737075748293
+            ],
+            [
+                0.05366308237860579
+            ],
+            [
+                -0.44515304750561546
+            ],
+            [
+                2.7559573292866295
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ]
+        ],
+        "transforms_path": "./projects/benchmark_4x4_phone/transforms_centered.json"
     }
 }

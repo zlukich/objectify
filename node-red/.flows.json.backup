@@ -6517,7 +6517,8 @@
         "type": "file in",
         "z": "c5fc9b7a988cec09",
         "name": "Read File",
-        "filename": "",
+        "filename": "filename",
+        "filenameType": "msg",
         "format": "utf8",
         "chunk": false,
         "sendError": true,
@@ -6766,19 +6767,21 @@
         "type": "function",
         "z": "3669868b19b1582f",
         "name": "function 3",
-        "func": "//construct command\nvar cmd = \"\";\nvar ingp_root = global.get(\"ingp_root\")\ncmd = cmd + \"python \" + ingp_root +\"colmap2nerf_nodered.py --colmap_matcher exhaustive --colmap_camera_model PINHOLE\"\n\nvar folder = global.get(\"selected_project\");\n\nif(flow.get(\"video\")==true){\n cmd += \"--video_in \";\n cmd += folder +\" \";\n}else{\n    cmd+= \" --images \";\n    cmd+= folder+ \" \";\n}\nif(flow.get(\"run_colmap\")==true){\n    cmd += \" --run_colmap \";\n}\nif(flow.get(\"single_camera\")==true){\n    cmd += \" --single_camera 1\";\n}else{\n    cmd += \" --single_camera 0\";\n}\nif(flow.get(\"remove_background\")!= \"None\"){\n    cmd += \" --remove_background --bg_model \" + flow.get(\"remove_background\");\n}\n// if(flow.get(\"use_gpu\")==true){\n//     cmd += \" --use_gpu 1 \";\n// }\nmsg.payload = cmd;\nmsg.errorcode = 0;\nreturn msg;",
+        "func": "//construct command\nvar cmd = \"\";\nvar ingp_root = global.get(\"ingp_root\")\ncmd = cmd + \"python \" + ingp_root +\"colmap2nerf_nodered.py --colmap_matcher exhaustive --colmap_camera_model PINHOLE\"\n\nvar folder = global.get(\"selected_project\");\n\nif(flow.get(\"video\")==true){\n cmd += \"--video_in \";\n cmd += folder +\" \";\n}else{\n    cmd+= \" --images \";\n    var initial_folder = global.get(\"filebrowser_default_folder\") ;\n    cmd+= initial_folder+folder+ \" \";\n}\nif(flow.get(\"run_colmap\")==true){\n    cmd += \" --run_colmap \";\n}\nif(flow.get(\"single_camera\")==true){\n    cmd += \" --single_camera 1\";\n}else{\n    cmd += \" --single_camera 0\";\n}\nif(flow.get(\"remove_background\")!= \"None\"){\n    cmd += \" --remove_background --bg_model \" + flow.get(\"remove_background\");\n}\n// if(flow.get(\"use_gpu\")==true){\n//     cmd += \" --use_gpu 1 \";\n// }\nmsg.payload = cmd;\nmsg.errorcode = 0;\nmsg.code = 1;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1120,
-        "y": 400,
+        "x": 1160,
+        "y": 460,
         "wires": [
             [
                 "7700ec9f893a1665",
-                "a7ced7cab1f31e8f"
+                "a7ced7cab1f31e8f",
+                "51151b33377ffc63",
+                "95cfc845d599c03b"
             ]
         ]
     },
@@ -6956,8 +6959,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1860,
-        "y": 700,
+        "x": 1300,
+        "y": 340,
         "wires": []
     },
     {
@@ -7291,7 +7294,7 @@
         "z": "3669868b19b1582f",
         "g": "80f0e37eedd4ac4c",
         "name": "Set global_folder",
-        "func": "var folder = global.get('filebrowser_default_folder');\nvar project = msg.payload;\nmsg.payload = folder + project + \"/\";\n\nglobal.set(\"selected_project\", msg.payload)\nreturn msg;",
+        "func": "var folder = global.get('filebrowser_default_folder');\nvar project = msg.payload;\nmsg.payload = folder + project + \"/\";\n\nglobal.set(\"selected_project\", project)\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -7319,7 +7322,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1910,
+        "x": 1950,
         "y": 420,
         "wires": [
             []
@@ -7359,8 +7362,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1860,
-        "y": 580,
+        "x": 1480,
+        "y": 320,
         "wires": []
     },
     {
@@ -7558,11 +7561,13 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 2240,
-        "y": 600,
+        "x": 1580,
+        "y": 580,
         "wires": [
             [
-                "51151b33377ffc63"
+                "51151b33377ffc63",
+                "2e707d6af94c0f92",
+                "fcfe73963f887224"
             ],
             []
         ]
@@ -7572,15 +7577,15 @@
         "type": "function",
         "z": "3669868b19b1582f",
         "name": "function 24",
-        "func": "msg.payload = true;\nreturn msg;",
+        "func": "if (msg.payload.code == 0) {\n    msg.payload = true;\n    return msg;\n}else if (msg.code == 1){\n    msg.payload = false;\n    return msg\n}",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2390,
-        "y": 520,
+        "x": 1930,
+        "y": 500,
         "wires": [
             [
                 "22889b5401268315"
@@ -7604,8 +7609,8 @@
         "topic": "",
         "payload": "false",
         "payloadType": "bool",
-        "x": 2240,
-        "y": 400,
+        "x": 2260,
+        "y": 420,
         "wires": [
             [
                 "22889b5401268315"
@@ -7638,8 +7643,8 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 2560,
-        "y": 460,
+        "x": 2260,
+        "y": 500,
         "wires": [
             [
                 "10f90fee559b838c"
@@ -7651,15 +7656,15 @@
         "type": "function",
         "z": "3669868b19b1582f",
         "name": "function 25",
-        "func": "let initial_folder = global.get(\"filebrowser_default_folder\");\nlet folder = global.get(\"selected_project\");\nlet full_path = initial_folder + folder;\n\n//msg.payload = \"/home/iat/Documents/BA_Oleksandr/objectify/node-red/projects/benchmark_4x4_freehand/cameras.html\";//full_path + '/cameras.html';\nif(msg.payload == true){\n    msg.showImage = true;\n}else if(msg.payload.code == 0){\n    msg.showImage = true;\n}else{\n    msg.showImage = false;\n}\n\nreturn msg;",
+        "func": "let initial_folder = global.get(\"filebrowser_default_folder\");\nlet folder = global.get(\"selected_project\");\nlet full_path = folder;\n\n//msg.payload = \"/home/iat/Documents/BA_Oleksandr/objectify/node-red/projects/benchmark_4x4_freehand/cameras.html\";//full_path + '/cameras.html';\nif(msg.payload == true){\n    msg.showImage = true;\n}else if(msg.payload.code == 0){\n    msg.showImage = true;\n}else{\n    msg.showImage = false;\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2830,
-        "y": 460,
+        "x": 2470,
+        "y": 500,
         "wires": [
             [
                 "2b991ea3d7978c7e"
@@ -7681,11 +7686,62 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 3540,
-        "y": 400,
+        "x": 2700,
+        "y": 500,
         "wires": [
             []
         ]
+    },
+    {
+        "id": "2e707d6af94c0f92",
+        "type": "debug",
+        "z": "3669868b19b1582f",
+        "name": "debug 63",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2520,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "fcfe73963f887224",
+        "type": "debug",
+        "z": "3669868b19b1582f",
+        "name": "debug 64",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.code",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2100,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "95cfc845d599c03b",
+        "type": "debug",
+        "z": "3669868b19b1582f",
+        "name": "debug 65",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.code",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1390,
+        "y": 580,
+        "wires": []
     },
     {
         "id": "cdf08e1fa0f798cf",
@@ -7702,7 +7758,7 @@
         "type": "function",
         "z": "f11166a80e40d7b6",
         "name": "function 4",
-        "func": "//construct command\n// var cmd = \"\";\n// cmd = cmd +\"python scripts/run.py \"\n// var full_cmd = \"python run.py --scene transforms.json --screenshot_dir rembg_abgabe_img1139/ --width 2048 --height 2048 --n_steps 1000 --save_snapshot ./snap.ingp\";\n// var folder = flow.get(\"folder\");\n// if(flow.get(\"folder\") == null){\n//     msg.errorcode = 1;\n//     msg.errortext = \"Please navigate to folder that contains images\";\n// }\n\n// if(flow.get(\"video\")==true){\n//  cmd += \"--video_in \";\n//  cmd += folder +\" \";\n// }else{\n//     cmd+= \"--images \";\n//     cmd+= folder+ \" \";\n// }\n// if(flow.get(\"run_colmap\")==true){\n//     cmd += \"--run_colmap \";\n// }\n// if(flow.get(\"single_camera\")==true){\n//     cmd += \"--single_camera \";\n// }\n// if(flow.get(\"use_gpu\")==true){\n//     cmd += \"--use_gpu 1 \";\n// }\n// msg.payload = cmd;\n// msg.errorcode = 0;\n// return msg;\n\nvar cmd = \"\";\nvar steps = flow.get(\"steps\")\nconsole.log(flow.get(\"transforms_found\"));\nvar default_folder = global.get(\"filebrowser_default_folder\") \nlet project_path =default_folder+ global.get(\"selected_project\");\nvar ingp_root = global.get(\"ingp_root\")\nvar mc_resolution = flow.get(\"resolution\");\ncmd = \"python \" + ingp_root + \"run.py\" + \" --scene \" + project_path + \"/transforms_centered.json --save_snapshot \" + project_path + \"/snapshot.ingp --save_mesh \" + project_path + \"/snapshot.ply --n_steps \" + steps + \" --marching_cubes_res \" + mc_resolution;\n\nmsg.payload = cmd;\n\nreturn msg;",
+        "func": "//construct command\n// var cmd = \"\";\n// cmd = cmd +\"python scripts/run.py \"\n// var full_cmd = \"python run.py --scene transforms.json --screenshot_dir rembg_abgabe_img1139/ --width 2048 --height 2048 --n_steps 1000 --save_snapshot ./snap.ingp\";\n// var folder = flow.get(\"folder\");\n// if(flow.get(\"folder\") == null){\n//     msg.errorcode = 1;\n//     msg.errortext = \"Please navigate to folder that contains images\";\n// }\n\n// if(flow.get(\"video\")==true){\n//  cmd += \"--video_in \";\n//  cmd += folder +\" \";\n// }else{\n//     cmd+= \"--images \";\n//     cmd+= folder+ \" \";\n// }\n// if(flow.get(\"run_colmap\")==true){\n//     cmd += \"--run_colmap \";\n// }\n// if(flow.get(\"single_camera\")==true){\n//     cmd += \"--single_camera \";\n// }\n// if(flow.get(\"use_gpu\")==true){\n//     cmd += \"--use_gpu 1 \";\n// }\n// msg.payload = cmd;\n// msg.errorcode = 0;\n// return msg;\n\nvar cmd = \"\";\nvar steps = flow.get(\"steps\")\nconsole.log(flow.get(\"transforms_found\"));\nvar default_folder = global.get(\"filebrowser_default_folder\") \nlet project_path =default_folder+ global.get(\"selected_project\");\nvar ingp_root = global.get(\"ingp_root\")\nvar mc_resolution = flow.get(\"resolution\");\ncmd = \"python \" + ingp_root + \"run.py\" + \" --scene \" + project_path + \"/transforms_centered.json --save_snapshot \" + project_path + \"/snapshot.ingp --save_mesh \" + project_path + \"/snapshot.ply --n_steps \" + steps + \" --marching_cubes_res \" + mc_resolution +\" --marching_cubes_density_thresh 4.5\";\n\nmsg.payload = cmd;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8182,7 +8238,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1620,
+        "x": 1640,
         "y": 580,
         "wires": [
             []
@@ -9657,6 +9713,7 @@
         "id": "a9270599221108f3",
         "type": "pythonshell in",
         "z": "c0273576f864fea6",
+        "d": true,
         "name": "compare_surface",
         "pyfile": "C:\\Users\\zlukich\\Desktop\\lehre\\sose23\\Bachelorarbeit\\node-red\\CloudComPy310/compare_surface.py",
         "virtualenv": "C:\\zlukich\\anaconda3\\envs\\CloudComPy310",
@@ -9805,7 +9862,7 @@
         "z": "ce11a1573af9dae5",
         "g": "a97981e2e8c1f13e",
         "name": "debug 45",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,

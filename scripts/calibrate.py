@@ -24,13 +24,14 @@ def calibrate_and_write(project_name, output_folder, config_manager):
 
     ret, mtx, dist, rvecs, tvecs = calibrate_camera(allCorners, allIds, imsize)
 
-    if ret > 0:
+    if ret !=- 1:
         np.save(os.path.join(output_folder, "camera_matrix.npy"), mtx)
         np.save(os.path.join(output_folder, "camera_dist_coeff.npy"), dist)
         config_manager.update_project(project_name, {"calibrated": True, "camera_matrix": mtx.tolist(),
                                                      "dist_coeff": dist.tolist()})
     else:
         print("No calibration data were found")
+        return None, None
 
     return mtx, dist
 
@@ -56,8 +57,10 @@ def main():
     config_manager.update_project(project_name, {"images": output_folder})
     mtx, dist = calibrate_and_write(project_name, output_folder, config_manager)
     
-    config_manager.update_current_work({"camera_matrix": mtx.tolist(), "dist_coeff": dist.tolist()})
-
+    if mtx is not None and mtx.any():
+        config_manager.update_current_work({"camera_matrix": mtx.tolist(), "dist_coeff": dist.tolist()})
+    else:
+        print("Calibration cannot be done, to little charuco markers detection")
     # if os.path.isdir(input_path):
         
     # else:
