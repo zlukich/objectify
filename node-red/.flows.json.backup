@@ -97,7 +97,7 @@
             "80f0e37eedd4ac4c",
             "aca9a5a6408f5b30"
         ],
-        "x": 334,
+        "x": 594,
         "y": 759,
         "w": 1178,
         "h": 288
@@ -256,7 +256,7 @@
             "97a9602c25c5b4b1",
             "77d15c886180587e"
         ],
-        "x": 394,
+        "x": 654,
         "y": 839,
         "w": 1092,
         "h": 182
@@ -6508,7 +6508,8 @@
         "y": 1420,
         "wires": [
             [
-                "c82e984217b99f4a"
+                "c82e984217b99f4a",
+                "e6bd8655ca29b057"
             ]
         ]
     },
@@ -6691,7 +6692,8 @@
         "y": 1100,
         "wires": [
             [
-                "3630aa3ca243ab6f"
+                "3630aa3ca243ab6f",
+                "4cc5362f85732f6b"
             ]
         ]
     },
@@ -6734,6 +6736,23 @@
         "wires": []
     },
     {
+        "id": "e6bd8655ca29b057",
+        "type": "debug",
+        "z": "c5fc9b7a988cec09",
+        "name": "debug 66",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "filename",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2770,
+        "y": 1640,
+        "wires": []
+    },
+    {
         "id": "7700ec9f893a1665",
         "type": "exec",
         "z": "3669868b19b1582f",
@@ -6745,7 +6764,7 @@
         "winHide": false,
         "oldrc": false,
         "name": "run colmap2nerf.py",
-        "x": 1390,
+        "x": 1650,
         "y": 440,
         "wires": [
             [
@@ -6774,7 +6793,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1160,
+        "x": 1420,
         "y": 460,
         "wires": [
             [
@@ -6804,7 +6823,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 580,
+        "x": 840,
         "y": 400,
         "wires": [
             []
@@ -6829,7 +6848,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 600,
+        "x": 860,
         "y": 460,
         "wires": [
             []
@@ -6854,7 +6873,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 600,
+        "x": 860,
         "y": 520,
         "wires": [
             []
@@ -6879,7 +6898,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 590,
+        "x": 850,
         "y": 580,
         "wires": [
             []
@@ -6904,7 +6923,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 620,
+        "x": 880,
         "y": 660,
         "wires": [
             []
@@ -6929,7 +6948,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 560,
+        "x": 820,
         "y": 320,
         "wires": [
             []
@@ -6942,7 +6961,7 @@
         "g": "9a065f7de759f344",
         "name": "New File Browser",
         "info": "",
-        "x": 440,
+        "x": 700,
         "y": 800,
         "wires": []
     },
@@ -6959,7 +6978,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1300,
+        "x": 1560,
         "y": 340,
         "wires": []
     },
@@ -6981,7 +7000,7 @@
                 "module": "fs"
             }
         ],
-        "x": 600,
+        "x": 860,
         "y": 880,
         "wires": [
             [
@@ -7002,7 +7021,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 940,
+        "x": 1200,
         "y": 880,
         "wires": [
             [
@@ -7025,7 +7044,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1120,
+        "x": 1380,
         "y": 980,
         "wires": []
     },
@@ -7038,7 +7057,7 @@
         "links": [
             "7bfa38a0f66d68e1"
         ],
-        "x": 435,
+        "x": 695,
         "y": 980,
         "wires": [
             [
@@ -7066,7 +7085,7 @@
         "topic": "topic",
         "topicType": "msg",
         "className": "",
-        "x": 1140,
+        "x": 1400,
         "y": 880,
         "wires": [
             [
@@ -7094,7 +7113,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 910,
+        "x": 1170,
         "y": 400,
         "wires": [
             [
@@ -7128,7 +7147,7 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 270,
+        "x": 530,
         "y": 400,
         "wires": [
             [
@@ -7162,7 +7181,7 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 290,
+        "x": 550,
         "y": 460,
         "wires": [
             [
@@ -7196,7 +7215,7 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 300,
+        "x": 560,
         "y": 520,
         "wires": [
             [
@@ -7230,7 +7249,7 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 280,
+        "x": 540,
         "y": 580,
         "wires": [
             [
@@ -7256,7 +7275,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "msg",
-        "x": 340,
+        "x": 600,
         "y": 320,
         "wires": [
             [
@@ -7280,7 +7299,7 @@
         "depth": 0,
         "stat": true,
         "showWarnings": false,
-        "x": 790,
+        "x": 1050,
         "y": 880,
         "wires": [
             [
@@ -7301,7 +7320,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1370,
+        "x": 1630,
         "y": 920,
         "wires": [
             []
@@ -7322,7 +7341,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1950,
+        "x": 2210,
         "y": 420,
         "wires": [
             []
@@ -7346,7 +7365,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 1160,
+        "x": 1420,
         "y": 800,
         "wires": []
     },
@@ -7362,7 +7381,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1480,
+        "x": 1740,
         "y": 320,
         "wires": []
     },
@@ -7379,7 +7398,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1190,
+        "x": 1450,
         "y": 580,
         "wires": []
     },
@@ -7400,7 +7419,7 @@
         "topic": "",
         "payload": "clear",
         "payloadType": "str",
-        "x": 1480,
+        "x": 1740,
         "y": 220,
         "wires": [
             [
@@ -7421,7 +7440,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1650,
+        "x": 1910,
         "y": 380,
         "wires": [
             [
@@ -7457,7 +7476,7 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 300,
+        "x": 560,
         "y": 660,
         "wires": [
             [
@@ -7515,7 +7534,7 @@
         "topic": "topic",
         "topicType": "msg",
         "className": "",
-        "x": 280,
+        "x": 540,
         "y": 720,
         "wires": [
             [
@@ -7537,7 +7556,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 580,
+        "x": 840,
         "y": 720,
         "wires": []
     },
@@ -7561,7 +7580,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1580,
+        "x": 1840,
         "y": 580,
         "wires": [
             [
@@ -7584,7 +7603,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1930,
+        "x": 2190,
         "y": 500,
         "wires": [
             [
@@ -7609,7 +7628,7 @@
         "topic": "",
         "payload": "false",
         "payloadType": "bool",
-        "x": 2260,
+        "x": 2520,
         "y": 420,
         "wires": [
             [
@@ -7643,7 +7662,7 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 2260,
+        "x": 2520,
         "y": 500,
         "wires": [
             [
@@ -7663,7 +7682,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2470,
+        "x": 2730,
         "y": 500,
         "wires": [
             [
@@ -7686,7 +7705,7 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 2700,
+        "x": 2960,
         "y": 500,
         "wires": [
             []
@@ -7705,7 +7724,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2520,
+        "x": 2780,
         "y": 760,
         "wires": []
     },
@@ -7722,7 +7741,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2100,
+        "x": 2360,
         "y": 600,
         "wires": []
     },
@@ -7739,9 +7758,134 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1390,
+        "x": 1650,
         "y": 580,
         "wires": []
+    },
+    {
+        "id": "7ccf580e1e7360af",
+        "type": "inject",
+        "z": "3669868b19b1582f",
+        "name": "set colmap_video on startup",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 300,
+        "y": 400,
+        "wires": [
+            [
+                "4da3863b8fc9706b"
+            ]
+        ]
+    },
+    {
+        "id": "af635c948e0665cb",
+        "type": "inject",
+        "z": "3669868b19b1582f",
+        "name": "set run_colmap on startup",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 290,
+        "y": 460,
+        "wires": [
+            [
+                "864c2629e018fb05"
+            ]
+        ]
+    },
+    {
+        "id": "47d71f9c57157849",
+        "type": "inject",
+        "z": "3669868b19b1582f",
+        "name": "set shared_intrinsics on startup",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 310,
+        "y": 520,
+        "wires": [
+            [
+                "2f6d0c33b5027ea1"
+            ]
+        ]
+    },
+    {
+        "id": "50d6c251ed26b5e1",
+        "type": "inject",
+        "z": "3669868b19b1582f",
+        "name": "set use_gpu on startup",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 290,
+        "y": 580,
+        "wires": [
+            [
+                "eeb610666b3bd473"
+            ]
+        ]
+    },
+    {
+        "id": "de3032893871e8b9",
+        "type": "inject",
+        "z": "3669868b19b1582f",
+        "name": "set colmap_video on startup",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "None",
+        "payloadType": "str",
+        "x": 260,
+        "y": 680,
+        "wires": [
+            [
+                "8fc1bc83138cc3a0"
+            ]
+        ]
     },
     {
         "id": "cdf08e1fa0f798cf",
@@ -7758,7 +7902,7 @@
         "type": "function",
         "z": "f11166a80e40d7b6",
         "name": "function 4",
-        "func": "//construct command\n// var cmd = \"\";\n// cmd = cmd +\"python scripts/run.py \"\n// var full_cmd = \"python run.py --scene transforms.json --screenshot_dir rembg_abgabe_img1139/ --width 2048 --height 2048 --n_steps 1000 --save_snapshot ./snap.ingp\";\n// var folder = flow.get(\"folder\");\n// if(flow.get(\"folder\") == null){\n//     msg.errorcode = 1;\n//     msg.errortext = \"Please navigate to folder that contains images\";\n// }\n\n// if(flow.get(\"video\")==true){\n//  cmd += \"--video_in \";\n//  cmd += folder +\" \";\n// }else{\n//     cmd+= \"--images \";\n//     cmd+= folder+ \" \";\n// }\n// if(flow.get(\"run_colmap\")==true){\n//     cmd += \"--run_colmap \";\n// }\n// if(flow.get(\"single_camera\")==true){\n//     cmd += \"--single_camera \";\n// }\n// if(flow.get(\"use_gpu\")==true){\n//     cmd += \"--use_gpu 1 \";\n// }\n// msg.payload = cmd;\n// msg.errorcode = 0;\n// return msg;\n\nvar cmd = \"\";\nvar steps = flow.get(\"steps\")\nconsole.log(flow.get(\"transforms_found\"));\nvar default_folder = global.get(\"filebrowser_default_folder\") \nlet project_path =default_folder+ global.get(\"selected_project\");\nvar ingp_root = global.get(\"ingp_root\")\nvar mc_resolution = flow.get(\"resolution\");\ncmd = \"python \" + ingp_root + \"run.py\" + \" --scene \" + project_path + \"/transforms_centered.json --save_snapshot \" + project_path + \"/snapshot.ingp --save_mesh \" + project_path + \"/snapshot.ply --n_steps \" + steps + \" --marching_cubes_res \" + mc_resolution +\" --marching_cubes_density_thresh 4.5\";\n\nmsg.payload = cmd;\n\nreturn msg;",
+        "func": "//construct command\n// var cmd = \"\";\n// cmd = cmd +\"python scripts/run.py \"\n// var full_cmd = \"python run.py --scene transforms.json --screenshot_dir rembg_abgabe_img1139/ --width 2048 --height 2048 --n_steps 1000 --save_snapshot ./snap.ingp\";\n// var folder = flow.get(\"folder\");\n// if(flow.get(\"folder\") == null){\n//     msg.errorcode = 1;\n//     msg.errortext = \"Please navigate to folder that contains images\";\n// }\n\n// if(flow.get(\"video\")==true){\n//  cmd += \"--video_in \";\n//  cmd += folder +\" \";\n// }else{\n//     cmd+= \"--images \";\n//     cmd+= folder+ \" \";\n// }\n// if(flow.get(\"run_colmap\")==true){\n//     cmd += \"--run_colmap \";\n// }\n// if(flow.get(\"single_camera\")==true){\n//     cmd += \"--single_camera \";\n// }\n// if(flow.get(\"use_gpu\")==true){\n//     cmd += \"--use_gpu 1 \";\n// }\n// msg.payload = cmd;\n// msg.errorcode = 0;\n// return msg;\n\nvar cmd = \"\";\nvar steps = flow.get(\"steps\")\nconsole.log(flow.get(\"transforms_found\"));\nvar default_folder = global.get(\"filebrowser_default_folder\") \nlet project_path =default_folder+ global.get(\"selected_project\");\nvar ingp_root = global.get(\"ingp_root\")\nvar mc_resolution = flow.get(\"resolution\");\ncmd = \"python \" + ingp_root + \"run.py\" + \" --scene \" + project_path + \"/transforms_centered.json --save_snapshot \" + project_path + \"/snapshot.ingp --save_mesh \" + project_path + \"/snapshot.ply --n_steps \" + steps + \" --marching_cubes_res \" + mc_resolution +\" --marching_cubes_density_thresh 2.8\";\n\nmsg.payload = cmd;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -7804,7 +7948,7 @@
         "oldrc": false,
         "name": "instant-ngp/run.py",
         "x": 1010,
-        "y": 680,
+        "y": 640,
         "wires": [
             [
                 "60493bb1f6b0cab2",
@@ -8277,7 +8421,8 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
         "x": 960,

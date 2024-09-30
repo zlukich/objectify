@@ -6508,7 +6508,8 @@
         "y": 1420,
         "wires": [
             [
-                "c82e984217b99f4a"
+                "c82e984217b99f4a",
+                "e6bd8655ca29b057"
             ]
         ]
     },
@@ -6691,7 +6692,8 @@
         "y": 1100,
         "wires": [
             [
-                "3630aa3ca243ab6f"
+                "3630aa3ca243ab6f",
+                "4cc5362f85732f6b"
             ]
         ]
     },
@@ -6734,6 +6736,23 @@
         "wires": []
     },
     {
+        "id": "e6bd8655ca29b057",
+        "type": "debug",
+        "z": "c5fc9b7a988cec09",
+        "name": "debug 66",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "filename",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2770,
+        "y": 1640,
+        "wires": []
+    },
+    {
         "id": "7700ec9f893a1665",
         "type": "exec",
         "z": "3669868b19b1582f",
@@ -6767,7 +6786,7 @@
         "type": "function",
         "z": "3669868b19b1582f",
         "name": "function 3",
-        "func": "//construct command\nvar cmd = \"\";\nvar ingp_root = global.get(\"ingp_root\")\ncmd = cmd + \"python \" + ingp_root +\"colmap2nerf_nodered.py --colmap_matcher exhaustive --colmap_camera_model PINHOLE\"\n\nvar folder = global.get(\"selected_project\");\n\nif(flow.get(\"video\")==true){\n cmd += \"--video_in \";\n cmd += folder +\" \";\n}else{\n    cmd+= \" --images \";\n    var initial_folder = global.get(\"filebrowser_default_folder\") ;\n    cmd+= initial_folder+folder+ \" \";\n}\nif(flow.get(\"run_colmap\")==true){\n    cmd += \" --run_colmap \";\n}\nif(flow.get(\"single_camera\")==true){\n    cmd += \" --single_camera 1\";\n}else{\n    cmd += \" --single_camera 0\";\n}\nif(flow.get(\"remove_background\")!= \"None\"){\n    cmd += \" --remove_background --bg_model \" + flow.get(\"remove_background\");\n}\n// if(flow.get(\"use_gpu\")==true){\n//     cmd += \" --use_gpu 1 \";\n// }\nmsg.payload = cmd;\nmsg.errorcode = 0;\nmsg.code = 1;\nreturn msg;",
+        "func": "//construct command\nvar cmd = \"\";\nvar ingp_root = global.get(\"ingp_root\")\ncmd = cmd + \"python \" + ingp_root +\"colmap2nerf_nodered.py --colmap_matcher exhaustive --colmap_camera_model PINHOLE --keep_colmap_coords\"\n\nvar folder = global.get(\"selected_project\");\n\nif(flow.get(\"video\")==true){\n cmd += \"--video_in \";\n cmd += folder +\" \";\n}else{\n    cmd+= \" --images \";\n    var initial_folder = global.get(\"filebrowser_default_folder\") ;\n    cmd+= initial_folder+folder+ \" \";\n}\nif(flow.get(\"run_colmap\")==true){\n    cmd += \" --run_colmap \";\n}\nif(flow.get(\"single_camera\")==true){\n    cmd += \" --single_camera 1\";\n}else{\n    cmd += \" --single_camera 0\";\n}\nif(flow.get(\"remove_background\")!= \"None\"){\n    cmd += \" --remove_background --bg_model \" + flow.get(\"remove_background\");\n}\n// if(flow.get(\"use_gpu\")==true){\n//     cmd += \" --use_gpu 1 \";\n// }\nmsg.payload = cmd;\nmsg.errorcode = 0;\nmsg.code = 1;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -7883,7 +7902,7 @@
         "type": "function",
         "z": "f11166a80e40d7b6",
         "name": "function 4",
-        "func": "//construct command\n// var cmd = \"\";\n// cmd = cmd +\"python scripts/run.py \"\n// var full_cmd = \"python run.py --scene transforms.json --screenshot_dir rembg_abgabe_img1139/ --width 2048 --height 2048 --n_steps 1000 --save_snapshot ./snap.ingp\";\n// var folder = flow.get(\"folder\");\n// if(flow.get(\"folder\") == null){\n//     msg.errorcode = 1;\n//     msg.errortext = \"Please navigate to folder that contains images\";\n// }\n\n// if(flow.get(\"video\")==true){\n//  cmd += \"--video_in \";\n//  cmd += folder +\" \";\n// }else{\n//     cmd+= \"--images \";\n//     cmd+= folder+ \" \";\n// }\n// if(flow.get(\"run_colmap\")==true){\n//     cmd += \"--run_colmap \";\n// }\n// if(flow.get(\"single_camera\")==true){\n//     cmd += \"--single_camera \";\n// }\n// if(flow.get(\"use_gpu\")==true){\n//     cmd += \"--use_gpu 1 \";\n// }\n// msg.payload = cmd;\n// msg.errorcode = 0;\n// return msg;\n\nvar cmd = \"\";\nvar steps = flow.get(\"steps\")\nconsole.log(flow.get(\"transforms_found\"));\nvar default_folder = global.get(\"filebrowser_default_folder\") \nlet project_path =default_folder+ global.get(\"selected_project\");\nvar ingp_root = global.get(\"ingp_root\")\nvar mc_resolution = flow.get(\"resolution\");\ncmd = \"python \" + ingp_root + \"run.py\" + \" --scene \" + project_path + \"/transforms_centered.json --save_snapshot \" + project_path + \"/snapshot.ingp --save_mesh \" + project_path + \"/snapshot.ply --n_steps \" + steps + \" --marching_cubes_res \" + mc_resolution +\" --marching_cubes_density_thresh 4.5\";\n\nmsg.payload = cmd;\n\nreturn msg;",
+        "func": "//construct command\n// var cmd = \"\";\n// cmd = cmd +\"python scripts/run.py \"\n// var full_cmd = \"python run.py --scene transforms.json --screenshot_dir rembg_abgabe_img1139/ --width 2048 --height 2048 --n_steps 1000 --save_snapshot ./snap.ingp\";\n// var folder = flow.get(\"folder\");\n// if(flow.get(\"folder\") == null){\n//     msg.errorcode = 1;\n//     msg.errortext = \"Please navigate to folder that contains images\";\n// }\n\n// if(flow.get(\"video\")==true){\n//  cmd += \"--video_in \";\n//  cmd += folder +\" \";\n// }else{\n//     cmd+= \"--images \";\n//     cmd+= folder+ \" \";\n// }\n// if(flow.get(\"run_colmap\")==true){\n//     cmd += \"--run_colmap \";\n// }\n// if(flow.get(\"single_camera\")==true){\n//     cmd += \"--single_camera \";\n// }\n// if(flow.get(\"use_gpu\")==true){\n//     cmd += \"--use_gpu 1 \";\n// }\n// msg.payload = cmd;\n// msg.errorcode = 0;\n// return msg;\n\nvar cmd = \"\";\nvar steps = flow.get(\"steps\")\nconsole.log(flow.get(\"transforms_found\"));\nvar default_folder = global.get(\"filebrowser_default_folder\") \nlet project_path =default_folder+ global.get(\"selected_project\");\nvar ingp_root = global.get(\"ingp_root\")\nvar mc_resolution = flow.get(\"resolution\");\ncmd = \"python \" + ingp_root + \"run.py\" + \" --scene \" + project_path + \"/transforms_centered.json --save_snapshot \" + project_path + \"/snapshot.ingp --save_mesh \" + project_path + \"/snapshot.ply --n_steps \" + steps + \" --marching_cubes_res \" + mc_resolution +\" --marching_cubes_density_thresh 2.8\";\n\nmsg.payload = cmd;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,

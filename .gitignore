@@ -9,3 +9,6 @@
 __pycache__/
 imgui.ini
 /scripts/config.json
+/experiments
+lib/calibration/viz_utils/__pycache__/viz_cameras.cpython-310.pyc
+node-red/.flows.json.backup

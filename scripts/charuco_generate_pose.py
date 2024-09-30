@@ -13,28 +13,10 @@ from calibration.cv2api.detect import detect_pose
 from config.ConfigManagerServer import ConfigManagerAPI
 from calibration.json_utils.json_functions import generate_json_for_images
 from calibration.viz_utils.viz_cameras import camera_with_frustums
+import cv2
 config_manager = ConfigManagerAPI("http://127.0.0.1:5001")
 
 
-
-def calibrate_and_write(project_name, output_folder, config_manager):
-
-    image_files = [os.path.join(output_folder, f) for f in os.listdir(output_folder) if f.endswith(".jpg")]
-    image_files.sort()  # Ensure files are in order
-
-    allCorners, allIds, imsize, num_of_detected_markers = read_chessboards(image_files)
-
-    ret, mtx, dist, rvecs, tvecs = calibrate_camera(allCorners, allIds, imsize)
-
-    if ret > 0:
-        np.save(os.path.join(output_folder, "camera_matrix.npy"), mtx)
-        np.save(os.path.join(output_folder, "camera_dist_coeff.npy"), dist)
-        config_manager.update_project(project_name, {"calibrated": True, "camera_matrix": mtx.tolist(),
-                                                     "dist_coeff": dist.tolist()})
-    else:
-        print("No calibration data were found")
-
-    return mtx, dist
 
 def main():
     parser = argparse.ArgumentParser(description="Camera calibration and image processing script.")

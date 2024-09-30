@@ -18,7 +18,7 @@ input_dir = Path(args.input_dir)
 output_dir = input_dir / 'rembg'
 output_dir.mkdir(parents=True, exist_ok=True)
 
-image_files = list(input_dir.glob('*.png')) + list(input_dir.glob('*.jpg')) +list(input_dir.glob('*.jpeg'))
+image_files = list(input_dir.glob('*.png')) + list(input_dir.glob('*.jpg')) +list(input_dir.glob('*.jpeg')) + list(input_dir.glob('*.bmp'))
 print(image_files)
 num_images = len(image_files)
 

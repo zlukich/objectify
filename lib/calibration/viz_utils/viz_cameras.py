@@ -43,9 +43,11 @@ def camera_with_frustums(json_path, write_image_path = "cameras.png"):
         
         # Plot camera center
         fig.add_trace(go.Scatter3d(
-            x=[frustum_vertices_world[0, 0]], 
-            y=[frustum_vertices_world[0, 1]], 
+            x=[frustum_vertices_world[0, 0]],
+            y=[frustum_vertices_world[0, 1]],
             z=[frustum_vertices_world[0, 2]],
+            text=frame['file_path'],       # Use 'text' instead of 'hovertext'
+            hoverinfo='text',              # Set hoverinfo to 'text'
             mode='markers',
             marker=dict(size=3, color='red'),
             name='Camera Center'

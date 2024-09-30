@@ -57,7 +57,7 @@ def read_chessboards(images):
                 
             res2 = cv2.aruco.interpolateCornersCharuco(corners,ids,gray,board)
             #print("I am here")
-            if res2[1] is not None and res2[2] is not None and len(res2[1])>3 and decimator%1==0:
+            if res2[1] is not None and res2[2] is not None and len(res2[1])>6 and decimator%1==0:
                 allCorners.append(res2[1])
                 allIds.append(res2[2])
 
@@ -74,7 +74,7 @@ def calibrate_camera(allCorners,allIds,imsize):
     print(imsize)
     if(len(allCorners) <=3 or len(allIds) <=3):
         print("To few images to start calibration, please increase number of images make angle wider to capture charuco board \n")
-        return 1,None,None,None,None
+        return -1,None,None,None,None
     # cameraMatrixInit = np.array([[ 1000.,    0., imsize[0]/2.],
     #                              [    0., 1000., imsize[1]/2.],
     #                              [    0.,    0.,           1.]])

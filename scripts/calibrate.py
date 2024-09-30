@@ -24,6 +24,7 @@ def calibrate_and_write(project_name, output_folder, config_manager):
 
     ret, mtx, dist, rvecs, tvecs = calibrate_camera(allCorners, allIds, imsize)
 
+    
     if ret !=- 1:
         np.save(os.path.join(output_folder, "camera_matrix.npy"), mtx)
         np.save(os.path.join(output_folder, "camera_dist_coeff.npy"), dist)
@@ -34,6 +35,8 @@ def calibrate_and_write(project_name, output_folder, config_manager):
         return None, None
 
     return mtx, dist
+
+
 
 def main():
     parser = argparse.ArgumentParser(description="Camera calibration and image processing script.")
@@ -61,6 +64,7 @@ def main():
         config_manager.update_current_work({"camera_matrix": mtx.tolist(), "dist_coeff": dist.tolist()})
     else:
         print("Calibration cannot be done, to little charuco markers detection")
+        raise Exception('calib failed')
     # if os.path.isdir(input_path):
         
     # else:

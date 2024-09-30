@@ -13,6 +13,12 @@ from calibration.geometry_utils.geometry_functions import rotmat
 
 from calibration.cv2api.detect import detect_pose
 
+def undistort_image(image, camera_matrix, dist_coeffs):
+    h, w = image.shape[:2]
+    new_camera_matrix, roi = cv2.getOptimalNewCameraMatrix(camera_matrix, dist_coeffs, (w, h), 1, (w, h))
+    undistorted_image = cv2.undistort(image, camera_matrix, dist_coeffs, None, new_camera_matrix)
+    return undistorted_image
+
 
 def update_frames_with_camera_properties(template):
     # Extract the camera properties from the template
@@ -111,19 +117,20 @@ def generate_json_for_images(folder_path,output_json_path , camera_matrix,dist_c
     # Example usage:
     # camera_matrix = np.load(folder_path+"camera_matrix.npy")
     # dist_coeff = np.load(folder_path+"camera_dist_coeff.npy")
-    image_files = [os.path.join(folder_path, f) for f in os.listdir(folder_path) if f.endswith(".jpg") or f.endswith(".png")]
+    image_files = [os.path.join(folder_path, f) for f in os.listdir(folder_path) if f.endswith(".jpg") or f.endswith(".png")or f.endswith(".bmp")]
     image = cv2.imread(image_files[0])
+    #print(image)
     camera_params = {
         "camera_angle_x": 2 * np.arctan(image.shape[1] / (2 * camera_matrix[0,0])),
         "camera_angle_y": 2 * np.arctan(image.shape[0] / (2 * camera_matrix[1,1])),
         "fl_x": camera_matrix[0,0],
         "fl_y": camera_matrix[1,1],
-        "k1": 0,
-        "k2": 0,
-        "k3": 0,
+        "k1": dist_coeff[0],
+        "k2": dist_coeff[1],
+        "k3": dist_coeff[4],
         "k4": 0,
-        "p1": 0,
-        "p2": 0,
+        "p1": dist_coeff[2],
+        "p2": dist_coeff[3],
         "is_fisheye": False,
         "cy": camera_matrix[1,2],
         "cx": camera_matrix[0,2],
@@ -161,11 +168,15 @@ def generate_json_for_images(folder_path,output_json_path , camera_matrix,dist_c
     print(image_files)
     up = np.array([0.0, 0.0, 0.0])
     for i, image_file in enumerate(image_files):
-        if image_file.endswith(('.png', '.jpg', '.jpeg')):
+        if image_file.endswith(('.png', '.jpg', '.jpeg',".bmp")):
             image = cv2.imread(os.path.join(folder_path,image_file))
             
             retval, rvec, tvec = detect_pose(image, camera_matrix, dist_coeff)
             
+            if rvec is not None and rvec.any():
+                print(image_file,len(rvec))
+            else:
+                print(image_file, "No markers detected:/")
             #print("Found something?")
 
             if(retval > 0):
