@@ -24,7 +24,7 @@ def read_chessboards(images):
     """
     Charuco base pose estimation.
     """
-    print("POSE ESTIMATION STARTS:")
+    print("POSE ESTIMATION STARTS:", flush=True)
     
     allCorners = []
     allIds = []
@@ -38,7 +38,7 @@ def read_chessboards(images):
     criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 30, 0.001) 
     imsize = -1
     for im in images:
-        print("=> Processing image {0}".format(im))
+        print("=> Processing image {0}".format(im), flush=True)
         frame = cv2.imread(im)
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         imsize = gray.shape
@@ -70,7 +70,7 @@ def calibrate_camera(allCorners,allIds,imsize):
     """
     Calibrates the camera using the dected corners.
     """
-    print("CAMERA CALIBRATION")
+    print("CAMERA CALIBRATION", flush=True)
     print(imsize)
     if(len(allCorners) <=3 or len(allIds) <=3):
         print("To few images to start calibration, please increase number of images make angle wider to capture charuco board \n")

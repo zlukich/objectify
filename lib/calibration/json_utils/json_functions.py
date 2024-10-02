@@ -102,11 +102,11 @@ def compute_scaling_factor(data_json):
     # Compute scaling factor
     scaling_factor = 1 / max_dimension
 
-    print("Bounding box minimum coordinates:", min_coords)
-    print("Bounding box maximum coordinates:", max_coords)
-    print("Scene dimensions (x, y, z):", dimensions)
-    print("Maximum dimension:", max_dimension)
-    print("Scaling factor S =", scaling_factor)
+    print("Bounding box minimum coordinates:", min_coords,flush = True)
+    print("Bounding box maximum coordinates:", max_coords,flush = True)
+    print("Scene dimensions (x, y, z):", dimensions,flush = True)
+    print("Maximum dimension:", max_dimension,flush = True)
+    print("Scaling factor S =", scaling_factor,flush = True)
 
     return scaling_factor
 
@@ -165,7 +165,7 @@ def generate_json_for_images(folder_path,output_json_path , camera_matrix,dist_c
 
 
     image_files = sorted(os.listdir(folder_path))
-    print(image_files)
+    print(image_files,flush = True)
     up = np.array([0.0, 0.0, 0.0])
     for i, image_file in enumerate(image_files):
         if image_file.endswith(('.png', '.jpg', '.jpeg',".bmp")):
@@ -174,9 +174,9 @@ def generate_json_for_images(folder_path,output_json_path , camera_matrix,dist_c
             retval, rvec, tvec = detect_pose(image, camera_matrix, dist_coeff)
             
             if rvec is not None and rvec.any():
-                print(image_file,len(rvec))
+                print(image_file,len(rvec),flush = True)
             else:
-                print(image_file, "No markers detected:/")
+                print(image_file, "No markers detected:/",flush = True)
             #print("Found something?")
 
             if(retval > 0):
@@ -233,7 +233,7 @@ def generate_json_for_images(folder_path,output_json_path , camera_matrix,dist_c
         for f in data["frames"]:
             avglen += np.linalg.norm(f["transform_matrix"][0:3,3])
         avglen /= nframes
-        print("avg camera distance from origin", avglen)
+        print("avg camera distance from origin", avglen,flush = True)
         for f in data["frames"]:
             f["transform_matrix"][0:3,3] *= 4.0 / avglen # scale to "nerf sized"
 
