@@ -20,7 +20,17 @@ class ConfigManagerAPI:
         response = requests.get(url)
         response.raise_for_status()
         return response.json()
+    def get_config(self):
+        """
+        Get the configuration for a specific project.
 
+        :param project_name: Name of the project.
+        :return: JSON response containing the project data.
+        """
+        url = f"{self.base_url}/config/"
+        response = requests.get(url)
+        response.raise_for_status()
+        return response.json()
     def update_project(self, project_name, data):
         """
         Update the configuration for a specific project.

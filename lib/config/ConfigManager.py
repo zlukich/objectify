@@ -59,6 +59,10 @@ class ConfigManager:
         """Retrieve project configuration."""
         return self.config_data.get(project_name, {})
 
+    def get_config(self):
+        """Retrieve project configuration."""
+        return self.config_data
+
     def delete_project(self, project_name):
         """Delete a project from the configuration."""
         try:

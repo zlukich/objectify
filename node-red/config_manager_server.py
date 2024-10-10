@@ -44,5 +44,21 @@ def handle_current_work():
         config_manager.clear_current_work()
         return jsonify({"status": "current_work cleared"})
 
+@app.route('/config/', methods=['GET', 'POST', 'DELETE'])
+def handle_get_config():
+    print("Requested Config")
+    if request.method == 'GET':
+        config_data = config_manager.get_config()
+        print("Config is", config_data)
+
+        return jsonify(config_data)
+    # elif request.method == 'POST':
+    #     data = request.json
+    #     config_manager.update_current_work(data)
+    #     return jsonify({"status": "success"})
+    # elif request.method == 'DELETE':
+    #     config_manager.clear_current_work()
+    #     return jsonify({"status": "current_work cleared"})
+
 if __name__ == '__main__':
     app.run(port=5001, host='127.0.0.1')

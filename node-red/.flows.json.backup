@@ -32,6 +32,14 @@
         "env": []
     },
     {
+        "id": "4b77236584df4d0f",
+        "type": "tab",
+        "label": "Config",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "3669868b19b1582f",
         "type": "tab",
         "label": "Colmap",
@@ -97,9 +105,9 @@
             "80f0e37eedd4ac4c",
             "aca9a5a6408f5b30"
         ],
-        "x": 594,
-        "y": 759,
-        "w": 1178,
+        "x": 634,
+        "y": 799,
+        "w": 1268,
         "h": 288
     },
     {
@@ -226,11 +234,12 @@
             "be3b2ff50c3c00d1",
             "ca2e9a4b6955efb0",
             "7b36c9095cf50122",
-            "840effcc5078fe89"
+            "840effcc5078fe89",
+            "26c7c6d054bad91c"
         ],
         "x": 1914,
         "y": 259,
-        "w": 1132,
+        "w": 1202,
         "h": 262
     },
     {
@@ -254,11 +263,12 @@
             "16bbbc3cfdc4abeb",
             "f7fedae0681f404d",
             "97a9602c25c5b4b1",
-            "77d15c886180587e"
+            "77d15c886180587e",
+            "b6dbdbefdc1b2ff0"
         ],
-        "x": 654,
-        "y": 839,
-        "w": 1092,
+        "x": 694,
+        "y": 879,
+        "w": 1182,
         "h": 182
     },
     {
@@ -604,7 +614,7 @@
         "tab": "1e6c4b6a9d036b5a",
         "order": 3,
         "disp": true,
-        "width": 14,
+        "width": "14",
         "collapse": false,
         "className": ""
     },
@@ -946,56 +956,6 @@
         "height": 1
     },
     {
-        "id": "97eee73ad49e78e4",
-        "type": "ui_spacer",
-        "z": "3669868b19b1582f",
-        "name": "spacer",
-        "group": "6c2e3428a6c52ed8",
-        "order": 2,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "b0ef6ba6ea5eb6c8",
-        "type": "ui_spacer",
-        "z": "3669868b19b1582f",
-        "name": "spacer",
-        "group": "6c2e3428a6c52ed8",
-        "order": 3,
-        "width": 11,
-        "height": 1
-    },
-    {
-        "id": "846ca34431988b1f",
-        "type": "ui_spacer",
-        "z": "3669868b19b1582f",
-        "name": "spacer",
-        "group": "6c2e3428a6c52ed8",
-        "order": 5,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "1339e7369a66d669",
-        "type": "ui_spacer",
-        "z": "3669868b19b1582f",
-        "name": "spacer",
-        "group": "53646539ec83fa85",
-        "order": 8,
-        "width": 6,
-        "height": 1
-    },
-    {
-        "id": "cf6f037d222e8d20",
-        "type": "ui_spacer",
-        "z": "3669868b19b1582f",
-        "name": "spacer",
-        "group": "53646539ec83fa85",
-        "order": 10,
-        "width": 2,
-        "height": 1
-    },
-    {
         "id": "bb3e6d8bac2203d0",
         "type": "ui_spacer",
         "z": "f11166a80e40d7b6",
@@ -1033,6 +993,100 @@
         "group": "94b2d8d9e77fa636",
         "order": 4,
         "width": 2,
+        "height": 1
+    },
+    {
+        "id": "f1d5e8c9.6e57e8",
+        "type": "ui_tab",
+        "name": "Dashboard",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "b059073edf59e633",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "abc123def456",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "order": 1
+    },
+    {
+        "id": "343306f666946f42",
+        "type": "ui_spacer",
+        "z": "3669868b19b1582f",
+        "name": "spacer",
+        "group": "6c2e3428a6c52ed8",
+        "order": 2,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "2664dbdcfe65d42c",
+        "type": "ui_spacer",
+        "z": "3669868b19b1582f",
+        "name": "spacer",
+        "group": "6c2e3428a6c52ed8",
+        "order": 4,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "cae503d1953158dc",
+        "type": "ui_spacer",
+        "z": "3669868b19b1582f",
+        "name": "spacer",
+        "group": "6c2e3428a6c52ed8",
+        "order": 5,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "aa740effea8bdbe7",
+        "type": "ui_spacer",
+        "z": "3669868b19b1582f",
+        "name": "spacer",
+        "group": "53646539ec83fa85",
+        "order": 8,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "fe511ad450db0b0d",
+        "type": "ui_spacer",
+        "z": "3669868b19b1582f",
+        "name": "spacer",
+        "group": "53646539ec83fa85",
+        "order": 10,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "75d038d652b57c38",
+        "type": "ui_spacer",
+        "z": "3669868b19b1582f",
+        "name": "spacer",
+        "group": "45c6e5c68f9384b7",
+        "order": 3,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "ebca928474497ca2",
+        "type": "ui_spacer",
+        "z": "3669868b19b1582f",
+        "name": "spacer",
+        "group": "45c6e5c68f9384b7",
+        "order": 5,
+        "width": 6,
         "height": 1
     },
     {
@@ -2823,7 +2877,7 @@
         "oldrc": false,
         "name": "",
         "x": 2040,
-        "y": 900,
+        "y": 880,
         "wires": [
             [
                 "0e3188356bf30267"
@@ -5970,7 +6024,9 @@
         "x": 2930,
         "y": 380,
         "wires": [
-            []
+            [
+                "26c7c6d054bad91c"
+            ]
         ]
     },
     {
@@ -5979,8 +6035,8 @@
         "z": "c5fc9b7a988cec09",
         "name": "Charuco Camera Poses",
         "info": "",
-        "x": 560,
-        "y": 40,
+        "x": 200,
+        "y": 60,
         "wires": []
     },
     {
@@ -6445,6 +6501,7 @@
         "id": "b62d9a9b92977ae9",
         "type": "ui_switch",
         "z": "c5fc9b7a988cec09",
+        "d": true,
         "name": "show_cameras",
         "label": "Show cameras",
         "tooltip": "",
@@ -6584,7 +6641,8 @@
         "y": 980,
         "wires": [
             [
-                "b62d9a9b92977ae9"
+                "b62d9a9b92977ae9",
+                "55b34b4c924c54be"
             ]
         ]
     },
@@ -6604,7 +6662,8 @@
         "y": 1100,
         "wires": [
             [
-                "b62d9a9b92977ae9"
+                "b62d9a9b92977ae9",
+                "55b34b4c924c54be"
             ]
         ]
     },
@@ -6751,6 +6810,277 @@
         "x": 2770,
         "y": 1640,
         "wires": []
+    },
+    {
+        "id": "26c7c6d054bad91c",
+        "type": "link out",
+        "z": "c5fc9b7a988cec09",
+        "g": "16e9549a3ea706bc",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [
+            "95ea35cbfef53422"
+        ],
+        "x": 3075,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "55b34b4c924c54be",
+        "type": "ui_template",
+        "z": "c5fc9b7a988cec09",
+        "group": "40324dcc41601167",
+        "name": "Toggle Button",
+        "order": 4,
+        "width": 7,
+        "height": 1,
+        "format": "<div class=\"toggle-container\">\n  <button class=\"toggle-button\" ng-class=\"{'on': state}\" ng-click=\"toggle()\">\n    {{state ? 'Cameras ON' : 'Cameras OFF'}}\n  </button>\n</div>\n\n<script>\n  (function(scope) {\n    scope.state = scope.state || false;\n\n    scope.toggle = function() {\n        scope.state = !scope.state;\n        scope.send({payload: scope.state});\n    };\n})(scope);\n</script>\n\n<style>\n  .toggle-container {\n    text-align: left;\n  }\n\n  .toggle-container .toggle-button {\n    background-color: red;\n    color: white;\n    border: none;\n    padding: 15px 32px;\n    font-size: 16px;\n    cursor: pointer;\n  }\n\n  .toggle-container .toggle-button.on {\n    background-color: green;\n  }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1840,
+        "y": 980,
+        "wires": [
+            [
+                "af185e402accbfbd"
+            ]
+        ]
+    },
+    {
+        "id": "d5e6f7a8b9c0",
+        "type": "http request",
+        "z": "4b77236584df4d0f",
+        "name": "Get Config",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:5001/config/",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 910,
+        "y": 380,
+        "wires": [
+            [
+                "d1f0b5e3.ef9e68"
+            ]
+        ]
+    },
+    {
+        "id": "d1f0b5e3.ef9e68",
+        "type": "function",
+        "z": "4b77236584df4d0f",
+        "name": "Prepare Data",
+        "func": "// Retrieve the configuration data from msg.payload\nlet config = msg.payload || {};\n\n// Get the selected project name from global context\nlet selected_project = global.get('selected_project') || '';\n\n// Get the 'current_work' object\nlet current_work = config.current_work || {};\n\n// Get the selected project's data\nlet project_data = config[selected_project] || {};\n\n// Prepare the message payload\nmsg.payload = {\n    current_work: current_work,\n    project_name: selected_project,\n    project_data: project_data\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1110,
+        "y": 380,
+        "wires": [
+            [
+                "a2f4c8b4.c8f538"
+            ]
+        ]
+    },
+    {
+        "id": "a2f4c8b4.c8f538",
+        "type": "ui_template",
+        "z": "4b77236584df4d0f",
+        "group": "6c2e3428a6c52ed8",
+        "name": "Config Display COLMAP",
+        "order": 6,
+        "width": 11,
+        "height": 6,
+        "format": "<div style=\"border: 2px solid white; padding: 20px; border-radius: 10px;\">\n    <h2>Current Work</h2>\n    <div ng-if=\"isObjectEmpty(msg.payload.current_work)\">\n        <p>Current session is empty yet, perform some work first.</p>\n    </div>\n    <div ng-if=\"!isObjectEmpty(msg.payload.current_work)\">\n        <pre>{{msg.payload.current_work | json}}</pre>\n    </div>\n\n    <h2>Selected Project: {{msg.payload.project_name}}</h2>\n    <table style=\"width: 100%; border-collapse: collapse;\">\n        <tr ng-repeat=\"(key, value) in msg.payload.project_data\">\n            <td style=\"border: 1px solid #ccc; padding: 8px;\"><strong>{{key}}</strong></td>\n            <td style=\"border: 1px solid #ccc; padding: 8px;\" ng-if=\"value === true\">\n                <span style=\"color: green;\">{{value}}</span>\n            </td>\n            <td style=\"border: 1px solid #ccc; padding: 8px;\" ng-if=\"value === false\">\n                <span style=\"color: red;\">{{value}}</span>\n            </td>\n            <td style=\"border: 1px solid #ccc; padding: 8px;\" ng-if=\"value !== true && value !== false\">\n                <span>{{value}}</span>\n            </td>\n        </tr>\n    </table>\n</div>\n\n<script>\n    (function(scope) {\n    scope.isObjectEmpty = function(obj) {\n        // Check if the object is null or undefined\n        if (!obj) return true;\n        // Check if the object has any own properties\n        return Object.keys(obj).length === 0;\n    };\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1350,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fa6f54d95580fe30",
+        "type": "link in",
+        "z": "4b77236584df4d0f",
+        "name": "Update config in COLMAP",
+        "links": [
+            "b6dbdbefdc1b2ff0"
+        ],
+        "x": 445,
+        "y": 440,
+        "wires": [
+            [
+                "d5e6f7a8b9c0"
+            ]
+        ]
+    },
+    {
+        "id": "0cf4b0cc6f369842",
+        "type": "http request",
+        "z": "4b77236584df4d0f",
+        "name": "Get Config",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:5001/config/",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 890,
+        "y": 740,
+        "wires": [
+            [
+                "cb5112b1cf567faa"
+            ]
+        ]
+    },
+    {
+        "id": "cb5112b1cf567faa",
+        "type": "function",
+        "z": "4b77236584df4d0f",
+        "name": "Prepare Data",
+        "func": "// Retrieve the configuration data from msg.payload\nlet config = msg.payload || {};\n\n// Get the selected project name from global context\nlet selected_project = global.get('selected_project') || '';\n\n// Get the 'current_work' object\nlet current_work = config.current_work || {};\n\n// Get the selected project's data\nlet project_data = config[selected_project] || {};\n\n// Prepare the message payload\nmsg.payload = {\n    current_work: current_work,\n    project_name: selected_project,\n    project_data: project_data\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 740,
+        "wires": [
+            [
+                "96c41cfd63d924ec"
+            ]
+        ]
+    },
+    {
+        "id": "96c41cfd63d924ec",
+        "type": "ui_template",
+        "z": "4b77236584df4d0f",
+        "group": "94b2d8d9e77fa636",
+        "name": "Config Display Charuco",
+        "order": 6,
+        "width": "10",
+        "height": "6",
+        "format": "<div style=\"border: 2px solid white; padding: 20px; border-radius: 10px;\">\n    <h2>Current Work</h2>\n    <div ng-if=\"isObjectEmpty(msg.payload.current_work)\">\n        <p>Current session is empty yet, perform some work first.</p>\n    </div>\n    <div ng-if=\"!isObjectEmpty(msg.payload.current_work)\">\n        <pre>{{msg.payload.current_work | json}}</pre>\n    </div>\n\n    <h2>Selected Project: {{msg.payload.project_name}}</h2>\n    <table style=\"width: 100%; border-collapse: collapse;\">\n        <tr ng-repeat=\"(key, value) in msg.payload.project_data\">\n            <td style=\"border: 1px solid #ccc; padding: 8px;\"><strong>{{key}}</strong></td>\n            <td style=\"border: 1px solid #ccc; padding: 8px;\" ng-if=\"value === true\">\n                <span style=\"color: green;\">{{value}}</span>\n            </td>\n            <td style=\"border: 1px solid #ccc; padding: 8px;\" ng-if=\"value === false\">\n                <span style=\"color: red;\">{{value}}</span>\n            </td>\n            <td style=\"border: 1px solid #ccc; padding: 8px;\" ng-if=\"value !== true && value !== false\">\n                <span>{{value}}</span>\n            </td>\n        </tr>\n    </table>\n</div>\n\n<script>\n    (function(scope) {\n    scope.isObjectEmpty = function(obj) {\n        // Check if the object is null or undefined\n        if (!obj) return true;\n        // Check if the object has any own properties\n        return Object.keys(obj).length === 0;\n    };\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1330,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "95ea35cbfef53422",
+        "type": "link in",
+        "z": "4b77236584df4d0f",
+        "name": "Update config in CHARUCO",
+        "links": [
+            "26c7c6d054bad91c"
+        ],
+        "x": 435,
+        "y": 760,
+        "wires": [
+            [
+                "0cf4b0cc6f369842"
+            ]
+        ]
+    },
+    {
+        "id": "5c680f2c65482ee7",
+        "type": "http request",
+        "z": "4b77236584df4d0f",
+        "name": "Get Config",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:5001/config/",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 930,
+        "y": 1040,
+        "wires": [
+            [
+                "8c3102a6b22d022f"
+            ]
+        ]
+    },
+    {
+        "id": "8c3102a6b22d022f",
+        "type": "function",
+        "z": "4b77236584df4d0f",
+        "name": "Prepare Data",
+        "func": "// Retrieve the configuration data from msg.payload\nlet config = msg.payload || {};\n\n// Get the selected project name from global context\nlet selected_project = global.get('selected_project') || '';\n\n// Get the 'current_work' object\nlet current_work = config.current_work || {};\n\n// Get the selected project's data\nlet project_data = config[selected_project] || {};\n\n// Prepare the message payload\nmsg.payload = {\n    current_work: current_work,\n    project_name: selected_project,\n    project_data: project_data\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1130,
+        "y": 1040,
+        "wires": [
+            [
+                "fccc230a2f088304"
+            ]
+        ]
+    },
+    {
+        "id": "fccc230a2f088304",
+        "type": "ui_template",
+        "z": "4b77236584df4d0f",
+        "group": "919860c8b411c539",
+        "name": "Config Display INGP",
+        "order": 6,
+        "width": 11,
+        "height": "6",
+        "format": "<div style=\"border: 2px solid white; padding: 20px; border-radius: 10px;\">\n    <h2>Current Work</h2>\n    <div ng-if=\"isObjectEmpty(msg.payload.current_work)\">\n        <p>Current session is empty yet, perform some work first.</p>\n    </div>\n    <div ng-if=\"!isObjectEmpty(msg.payload.current_work)\">\n        <pre>{{msg.payload.current_work | json}}</pre>\n    </div>\n\n    <h2>Selected Project: {{msg.payload.project_name}}</h2>\n    <table style=\"width: 100%; border-collapse: collapse;\">\n        <tr ng-repeat=\"(key, value) in msg.payload.project_data\">\n            <td style=\"border: 1px solid #ccc; padding: 8px;\"><strong>{{key}}</strong></td>\n            <td style=\"border: 1px solid #ccc; padding: 8px;\" ng-if=\"value === true\">\n                <span style=\"color: green;\">{{value}}</span>\n            </td>\n            <td style=\"border: 1px solid #ccc; padding: 8px;\" ng-if=\"value === false\">\n                <span style=\"color: red;\">{{value}}</span>\n            </td>\n            <td style=\"border: 1px solid #ccc; padding: 8px;\" ng-if=\"value !== true && value !== false\">\n                <span>{{value}}</span>\n            </td>\n        </tr>\n    </table>\n</div>\n\n<script>\n    (function(scope) {\n    scope.isObjectEmpty = function(obj) {\n        // Check if the object is null or undefined\n        if (!obj) return true;\n        // Check if the object has any own properties\n        return Object.keys(obj).length === 0;\n    };\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1360,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5e5981fb6bf20e28",
+        "type": "link in",
+        "z": "4b77236584df4d0f",
+        "name": "Update config in INGP",
+        "links": [
+            "1f21093d7f876a07"
+        ],
+        "x": 445,
+        "y": 1060,
+        "wires": [
+            [
+                "5c680f2c65482ee7"
+            ]
+        ]
     },
     {
         "id": "7700ec9f893a1665",
@@ -6961,8 +7291,8 @@
         "g": "9a065f7de759f344",
         "name": "New File Browser",
         "info": "",
-        "x": 700,
-        "y": 800,
+        "x": 740,
+        "y": 840,
         "wires": []
     },
     {
@@ -7000,8 +7330,8 @@
                 "module": "fs"
             }
         ],
-        "x": 860,
-        "y": 880,
+        "x": 900,
+        "y": 920,
         "wires": [
             [
                 "4612c2840bc9045d"
@@ -7021,8 +7351,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1220,
-        "y": 880,
+        "x": 1260,
+        "y": 920,
         "wires": [
             [
                 "8c41744e6989238e",
@@ -7044,8 +7374,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1380,
-        "y": 980,
+        "x": 1420,
+        "y": 1020,
         "wires": []
     },
     {
@@ -7057,8 +7387,8 @@
         "links": [
             "7bfa38a0f66d68e1"
         ],
-        "x": 695,
-        "y": 980,
+        "x": 735,
+        "y": 1020,
         "wires": [
             [
                 "d266f296d5bff25f"
@@ -7075,7 +7405,7 @@
         "tooltip": "",
         "place": "Select option",
         "group": "6c2e3428a6c52ed8",
-        "order": 4,
+        "order": 3,
         "width": 8,
         "height": 1,
         "passthru": true,
@@ -7085,8 +7415,8 @@
         "topic": "topic",
         "topicType": "msg",
         "className": "",
-        "x": 1420,
-        "y": 880,
+        "x": 1460,
+        "y": 920,
         "wires": [
             [
                 "77d15c886180587e"
@@ -7299,8 +7629,8 @@
         "depth": 0,
         "stat": true,
         "showWarnings": false,
-        "x": 1050,
-        "y": 880,
+        "x": 1090,
+        "y": 920,
         "wires": [
             [
                 "16bbbc3cfdc4abeb"
@@ -7320,10 +7650,12 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1630,
-        "y": 920,
+        "x": 1670,
+        "y": 960,
         "wires": [
-            []
+            [
+                "b6dbdbefdc1b2ff0"
+            ]
         ]
     },
     {
@@ -7365,8 +7697,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 1440,
-        "y": 800,
+        "x": 1480,
+        "y": 840,
         "wires": []
     },
     {
@@ -7538,27 +7870,9 @@
         "y": 720,
         "wires": [
             [
-                "9d65157ed9d8240e",
-                "a977d7e50168c4a1"
+                "9d65157ed9d8240e"
             ]
         ]
-    },
-    {
-        "id": "a977d7e50168c4a1",
-        "type": "debug",
-        "z": "3669868b19b1582f",
-        "name": "debug 58",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 840,
-        "y": 720,
-        "wires": []
     },
     {
         "id": "dafcdce899c297f6",
@@ -7607,7 +7921,8 @@
         "y": 540,
         "wires": [
             [
-                "22889b5401268315"
+                "22889b5401268315",
+                "e53b8b2a.7e5748"
             ]
         ]
     },
@@ -7632,7 +7947,8 @@
         "y": 440,
         "wires": [
             [
-                "22889b5401268315"
+                "22889b5401268315",
+                "e53b8b2a.7e5748"
             ]
         ]
     },
@@ -7640,13 +7956,14 @@
         "id": "22889b5401268315",
         "type": "ui_switch",
         "z": "3669868b19b1582f",
+        "d": true,
         "name": "show_cameras",
         "label": "Show cameras",
         "tooltip": "",
         "group": "45c6e5c68f9384b7",
         "order": 2,
-        "width": "4",
-        "height": "1",
+        "width": 4,
+        "height": 1,
         "passthru": true,
         "decouple": "false",
         "topic": "topic",
@@ -7663,7 +7980,7 @@
         "animate": false,
         "className": "",
         "x": 3060,
-        "y": 520,
+        "y": 500,
         "wires": [
             [
                 "10f90fee559b838c"
@@ -7683,7 +8000,7 @@
         "finalize": "",
         "libs": [],
         "x": 3290,
-        "y": 520,
+        "y": 540,
         "wires": [
             [
                 "2b991ea3d7978c7e"
@@ -7696,8 +8013,8 @@
         "z": "3669868b19b1582f",
         "group": "45c6e5c68f9384b7",
         "name": "Cameras Iframe",
-        "order": 3,
-        "width": "13",
+        "order": 6,
+        "width": 13,
         "height": 12,
         "format": "\n<div  ng-if=\"msg.showImage\" height=\"100%\" style=\"height: 100%;\">\n    <iframe src=\"/get-html?file=cameras.html\" width=\"100%\" height=\"600px\"></iframe>\n    <br/>\n</div>",
         "storeOutMessages": true,
@@ -7916,7 +8233,7 @@
         "type": "function",
         "z": "3669868b19b1582f",
         "name": "function 27",
-        "func": "node.warn(msg.payload)\nif (msg.payload == null) {\n    msg.code = 1;\n} else {\n    msg.code = 0;\n}\nreturn msg;",
+        "func": "node.warn(msg.payload)\nif (msg.payload == null || Object.keys(msg.payload).length === 0) {\n    msg.code = 1; // Indicates that the payload is null, undefined, or empty\n} else {\n    msg.code = 0;\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -7987,6 +8304,56 @@
         ]
     },
     {
+        "id": "b6dbdbefdc1b2ff0",
+        "type": "link out",
+        "z": "3669868b19b1582f",
+        "g": "80f0e37eedd4ac4c",
+        "name": "Config update out",
+        "mode": "link",
+        "links": [
+            "fa6f54d95580fe30"
+        ],
+        "x": 1835,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "e53b8b2a.7e5748",
+        "type": "ui_template",
+        "z": "3669868b19b1582f",
+        "group": "45c6e5c68f9384b7",
+        "name": "Toggle Button",
+        "order": 4,
+        "width": 7,
+        "height": 1,
+        "format": "<div class=\"toggle-container\">\n  <button class=\"toggle-button\" ng-class=\"{'on': state}\" ng-click=\"toggle()\">\n    {{state ? 'Cameras ON' : 'Cameras OFF'}}\n  </button>\n</div>\n\n<script>\n  (function(scope) {\n    scope.state = scope.state || false;\n\n    scope.toggle = function() {\n        scope.state = !scope.state;\n        scope.send({payload: scope.state});\n    };\n})(scope);\n</script>\n\n<style>\n  .toggle-container {\n    text-align: left;\n  }\n\n  .toggle-container .toggle-button {\n    background-color: red;\n    color: white;\n    border: none;\n    padding: 15px 32px;\n    font-size: 16px;\n    cursor: pointer;\n  }\n\n  .toggle-container .toggle-button.on {\n    background-color: green;\n  }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 3060,
+        "y": 560,
+        "wires": [
+            [
+                "7890abcd1234",
+                "10f90fee559b838c"
+            ]
+        ]
+    },
+    {
+        "id": "7890abcd1234",
+        "type": "debug",
+        "z": "3669868b19b1582f",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "payload",
+        "x": 3280,
+        "y": 900,
+        "wires": []
+    },
+    {
         "id": "cdf08e1fa0f798cf",
         "type": "comment",
         "z": "f11166a80e40d7b6",
@@ -8000,16 +8367,16 @@
         "id": "6922f8443327585e",
         "type": "function",
         "z": "f11166a80e40d7b6",
-        "name": "function 4",
-        "func": "//construct command\n// var cmd = \"\";\n// cmd = cmd +\"python scripts/run.py \"\n// var full_cmd = \"python run.py --scene transforms.json --screenshot_dir rembg_abgabe_img1139/ --width 2048 --height 2048 --n_steps 1000 --save_snapshot ./snap.ingp\";\n// var folder = flow.get(\"folder\");\n// if(flow.get(\"folder\") == null){\n//     msg.errorcode = 1;\n//     msg.errortext = \"Please navigate to folder that contains images\";\n// }\n\n// if(flow.get(\"video\")==true){\n//  cmd += \"--video_in \";\n//  cmd += folder +\" \";\n// }else{\n//     cmd+= \"--images \";\n//     cmd+= folder+ \" \";\n// }\n// if(flow.get(\"run_colmap\")==true){\n//     cmd += \"--run_colmap \";\n// }\n// if(flow.get(\"single_camera\")==true){\n//     cmd += \"--single_camera \";\n// }\n// if(flow.get(\"use_gpu\")==true){\n//     cmd += \"--use_gpu 1 \";\n// }\n// msg.payload = cmd;\n// msg.errorcode = 0;\n// return msg;\n\nvar cmd = \"\";\nvar steps = flow.get(\"steps\")\nconsole.log(flow.get(\"transforms_found\"));\nvar default_folder = global.get(\"filebrowser_default_folder\") \nlet project_path =default_folder+ global.get(\"selected_project\");\nvar ingp_root = global.get(\"ingp_root\")\nvar mc_resolution = flow.get(\"resolution\");\ncmd = \"python \" + ingp_root + \"run.py\" + \" --scene \" + project_path + \"/transforms_centered.json --save_snapshot \" + project_path + \"/snapshot.ingp --save_mesh \" + project_path + \"/snapshot.ply --n_steps \" + steps + \" --marching_cubes_res \" + mc_resolution +\" --marching_cubes_density_thresh 2.8\";\n\nmsg.payload = cmd;\n\nreturn msg;",
+        "name": "Building ingp run command",
+        "func": "//construct command\n// var cmd = \"\";\n// cmd = cmd +\"python scripts/run.py \"\n// var full_cmd = \"python run.py --scene transforms.json --screenshot_dir rembg_abgabe_img1139/ --width 2048 --height 2048 --n_steps 1000 --save_snapshot ./snap.ingp\";\n// var folder = flow.get(\"folder\");\n// if(flow.get(\"folder\") == null){\n//     msg.errorcode = 1;\n//     msg.errortext = \"Please navigate to folder that contains images\";\n// }\n\n// if(flow.get(\"video\")==true){\n//  cmd += \"--video_in \";\n//  cmd += folder +\" \";\n// }else{\n//     cmd+= \"--images \";\n//     cmd+= folder+ \" \";\n// }\n// if(flow.get(\"run_colmap\")==true){\n//     cmd += \"--run_colmap \";\n// }\n// if(flow.get(\"single_camera\")==true){\n//     cmd += \"--single_camera \";\n// }\n// if(flow.get(\"use_gpu\")==true){\n//     cmd += \"--use_gpu 1 \";\n// }\n// msg.payload = cmd;\n// msg.errorcode = 0;\n// return msg;\n\nvar cmd = \"\";\nvar steps = flow.get(\"steps\")\nconsole.log(flow.get(\"transforms_found\"));\nvar default_folder = global.get(\"filebrowser_default_folder\") \nlet project_path =default_folder+ global.get(\"selected_project\");\nvar ingp_root = global.get(\"ingp_root\")\nvar mc_resolution = flow.get(\"resolution\");\ncmd = \"python \" + ingp_root + \"run.py\" + \" --scene \" + project_path + \"/transforms_centered.json --save_snapshot \" + project_path + \"/snapshot.ingp --save_mesh \" + project_path + \"/snapshot.ply --n_steps \" + steps + \" --marching_cubes_res \" + mc_resolution +\" --marching_cubes_density_thresh 2.8\";\ncmd += \nmsg.payload = cmd;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 680,
-        "y": 680,
+        "x": 620,
+        "y": 740,
         "wires": [
             [
                 "cedf14d9a75fd905",
@@ -8046,18 +8413,19 @@
         "winHide": false,
         "oldrc": false,
         "name": "instant-ngp/run.py",
-        "x": 1010,
-        "y": 640,
+        "x": 870,
+        "y": 680,
         "wires": [
             [
-                "60493bb1f6b0cab2",
-                "6cc453db05c0eb3e"
+                "60493bb1f6b0cab2"
             ],
             [
                 "e19ae7959c10c9f3",
                 "ab3d335fc2c980c9"
             ],
-            []
+            [
+                "f0d1c39fb0f1234a"
+            ]
         ]
     },
     {
@@ -8294,11 +8662,11 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 370,
-        "y": 660,
+        "x": 110,
+        "y": 740,
         "wires": [
             [
-                "6922f8443327585e"
+                "758183874dfb91e1"
             ]
         ]
     },
@@ -8481,8 +8849,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1640,
-        "y": 580,
+        "x": 2020,
+        "y": 600,
         "wires": [
             []
         ]
@@ -8745,6 +9113,7 @@
         "name": "find transforms ou",
         "mode": "link",
         "links": [
+            "5e5981fb6bf20e28",
             "7fff52a787654f03"
         ],
         "x": 1605,
@@ -8787,8 +9156,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 1520,
-        "y": 700,
+        "x": 1740,
+        "y": 720,
         "wires": []
     },
     {
@@ -8800,33 +9169,13 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "command",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1480,
-        "y": 760,
+        "x": 1720,
+        "y": 800,
         "wires": []
-    },
-    {
-        "id": "6cc453db05c0eb3e",
-        "type": "function",
-        "z": "f11166a80e40d7b6",
-        "name": "function 15",
-        "func": "if (Buffer.isBuffer(msg.payload)) {\n    msg.payload = msg.payload.toString('utf8');\n} else if (typeof msg.payload !== 'string') {\n    msg.payload = \"\";\n}\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1310,
-        "y": 660,
-        "wires": [
-            [
-                "74926709c85accd1",
-                "ab3d335fc2c980c9"
-            ]
-        ]
     },
     {
         "id": "13c7112186c0a641",
@@ -9026,6 +9375,281 @@
                 "a4b0507b374cecca"
             ]
         ]
+    },
+    {
+        "id": "507289d09c5bc0bd",
+        "type": "change",
+        "z": "f11166a80e40d7b6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "extract_surface",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 710,
+        "y": 1060,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7755b03a8542665b",
+        "type": "ui_switch",
+        "z": "f11166a80e40d7b6",
+        "name": "Extract mesh surface",
+        "label": "Extract mesh surface",
+        "tooltip": "",
+        "group": "23c5588908fde9b8",
+        "order": 8,
+        "width": 7,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 440,
+        "y": 1060,
+        "wires": [
+            [
+                "507289d09c5bc0bd"
+            ]
+        ]
+    },
+    {
+        "id": "3939cc623cada575",
+        "type": "inject",
+        "z": "f11166a80e40d7b6",
+        "name": "Extract mesh Sufrace on Startup",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 180,
+        "y": 1060,
+        "wires": [
+            [
+                "7755b03a8542665b"
+            ]
+        ]
+    },
+    {
+        "id": "d9dc7c058499a92c",
+        "type": "function",
+        "z": "f11166a80e40d7b6",
+        "name": "Remove background",
+        "func": "// Fynunction to remove background and change transforms json\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 640,
+        "wires": [
+            [
+                "6922f8443327585e"
+            ]
+        ]
+    },
+    {
+        "id": "758183874dfb91e1",
+        "type": "switch",
+        "z": "f11166a80e40d7b6",
+        "name": "",
+        "property": "remove_background",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 310,
+        "y": 740,
+        "wires": [
+            [
+                "d9dc7c058499a92c"
+            ],
+            [
+                "6922f8443327585e"
+            ]
+        ]
+    },
+    {
+        "id": "f0d1c39fb0f1234a",
+        "type": "switch",
+        "z": "f11166a80e40d7b6",
+        "name": "Programm returned 0?",
+        "property": "payload.code",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1100,
+        "y": 700,
+        "wires": [
+            [
+                "33ed466f90fd0c96"
+            ],
+            [
+                "d6258becfac91573"
+            ]
+        ]
+    },
+    {
+        "id": "33ed466f90fd0c96",
+        "type": "function",
+        "z": "f11166a80e40d7b6",
+        "name": "get_suface cmd",
+        "func": "let extract_surface = flow.get(\"extract_surface\");\n\nvar default_folder = global.get(\"filebrowser_default_folder\")\nlet project_path = default_folder + global.get(\"selected_project\");\n\nif(extract_surface){\n    msg.payload = \"Starting of extracting the surface\"\n    msg.payload.code\n    msg.command = \"python \" + \"../scripts/get_surface.py\" + \" --mesh_path \" + project_path + \"/snapshot.ply\" + \" --num_points \" + 12000000 + \" --out_name \" + project_path+ \"/snapshot_surface.obj\";\n}\nelse{\n    msg.payload = \"Reconstruction completed, and saved under \" +project_path +\" with the name \" +\"snapshot.ply\"\n}\n\n\n\n//msg.command = \"python \" + \"../scripts/get_surface.py\" + \"--mesh_path \" + ./ data / meshes / charuco_rembg.ply +\" --num_points \" +12000000 +\" --out_name \" +\"./ data / meshes / charucosurface.obj\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 660,
+        "wires": [
+            [
+                "f4f28669f1f743fb"
+            ]
+        ]
+    },
+    {
+        "id": "d6258becfac91573",
+        "type": "function",
+        "z": "f11166a80e40d7b6",
+        "name": "programm failed",
+        "func": "msg.payload = \"Something went wrong in reconstruction. System returned code 1\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1340,
+        "y": 740,
+        "wires": [
+            [
+                "ab3d335fc2c980c9"
+            ]
+        ]
+    },
+    {
+        "id": "f4f28669f1f743fb",
+        "type": "switch",
+        "z": "f11166a80e40d7b6",
+        "name": "If extract_surface",
+        "property": "extract_surface",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1530,
+        "y": 660,
+        "wires": [
+            [
+                "5efd905d83e9dcdf",
+                "74926709c85accd1"
+            ],
+            [
+                "ab3d335fc2c980c9"
+            ]
+        ]
+    },
+    {
+        "id": "5efd905d83e9dcdf",
+        "type": "exec",
+        "z": "f11166a80e40d7b6",
+        "command": "",
+        "addpay": "command",
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "get_sutface",
+        "x": 1710,
+        "y": 600,
+        "wires": [
+            [
+                "ab3d335fc2c980c9",
+                "088716da10f744e3"
+            ],
+            [
+                "088716da10f744e3"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "088716da10f744e3",
+        "type": "debug",
+        "z": "f11166a80e40d7b6",
+        "name": "debug 67",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2000,
+        "y": 700,
+        "wires": []
     },
     {
         "id": "586038a5dcac1eac",
