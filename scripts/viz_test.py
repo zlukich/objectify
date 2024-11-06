@@ -5,12 +5,13 @@ from socket import socket
 import argparse
 
 import dash
-from dash import dcc, html, ctx
+from dash import dcc, html, callback_context
 from dash.dependencies import Input, Output, State
 import plotly.graph_objs as go
 import open3d as o3d
 import numpy as np
 from dash.exceptions import PreventUpdate
+import copy
 
 from simpleicp import SimpleICP, PointCloud
 
@@ -81,7 +82,7 @@ app.layout = html.Div([
                     zaxis=dict(title='Z')
                 ),
                 margin=dict(l=0, r=0, b=0, t=0),
-                legend=dict(orientation='h')  # Ensure legend is horizontally oriented
+                legend=dict(orientation='h')
             )
         }
     ),
@@ -97,109 +98,120 @@ app.layout = html.Div([
         html.Button('Clear selected points', id='clear-points-button', n_clicks=0),
         html.Div(id='clear-points-output')
     ]),
-    html.Div(id='container-ctx-example'),
     html.Div([
         html.Button('Run ICP Algorithm', id='icp-alg-button', n_clicks=0)
     ]),
+    # Add dcc.Store components
+    dcc.Store(id='selected-point-indices-store', data=[]),
+    dcc.Store(id='selected-points-store', data={obj_name: [] for obj_name in point_clouds.keys()}),
 ])
 
-# Store selected point indices
-selected_point_indices = set()
-selected_points = {obj_name: [] for obj_name in point_clouds.keys()}
-count_n = 0
-test = None
-
+# Store transformed objects
 transformed_objects = {}
 
-# Callback to capture clicks on points and update selected point style
+# Callback to update selection data
 @app.callback(
-    Output('point-cloud-plot', 'figure', allow_duplicate=True),
-    [Input('point-cloud-plot', 'clickData')],
-    [State('point-cloud-plot', 'figure')],
+    Output('selected-point-indices-store', 'data', allow_duplicate=True),
+    Output('selected-points-store', 'data', allow_duplicate=True),
+    Input('point-cloud-plot', 'clickData'),
+    State('selected-point-indices-store', 'data'),
+    State('selected-points-store', 'data'),
     prevent_initial_call=True
 )
-def display_click_data(clickData, figure):
-    global selected_point_indices, selected_points, test, count_n
-
-    if clickData is not None:
-        count_n += 1
-        test = clickData
-        point_clicked = clickData['points'][0]
-        object_id = point_clicked['customdata']
-        selected_point_index = point_clicked['pointNumber']
-        obj_name = list(point_clouds.keys())[object_id - 1]
-
-        # Check if the clicked point is already in the set of selected points
-        if (object_id, selected_point_index) in selected_point_indices:
-            selected_point_indices.remove((object_id, selected_point_index))
-            selected_points[obj_name].remove([point_clicked["x"], point_clicked["y"], point_clicked["z"]])
-        else:
-            selected_point_indices.add((object_id, selected_point_index))
-            selected_points[obj_name].append([point_clicked["x"], point_clicked["y"], point_clicked["z"]])
-
-        new_figure = figure
-        for i, trace in enumerate(new_figure['data']):
-            trace_color = colors[i % len(colors)]  # Original color
-            selected_color = 'green'
-            # Update marker colors
-            new_figure['data'][i]['marker']['color'] = [
-                selected_color if (i + 1, j) in selected_point_indices else trace_color
-                for j in range(len(trace['x']))
-            ]
-        return new_figure
-    else:
+def update_selection(clickData, selected_point_indices_data, selected_points_data):
+    if clickData is None:
         raise PreventUpdate
 
-# Callback to show selected points
+    # Convert stored data back to appropriate types
+    selected_point_indices = set(tuple(idx) for idx in selected_point_indices_data)
+    selected_points = selected_points_data
+
+    point_clicked = clickData['points'][0]
+    object_id = point_clicked['customdata']
+    selected_point_index = point_clicked['pointNumber']
+    obj_name = list(point_clouds.keys())[object_id - 1]
+
+    # Toggle selection
+    if (object_id, selected_point_index) in selected_point_indices:
+        selected_point_indices.remove((object_id, selected_point_index))
+        selected_points[obj_name].remove([point_clicked["x"], point_clicked["y"], point_clicked["z"]])
+    else:
+        selected_point_indices.add((object_id, selected_point_index))
+        selected_points[obj_name].append([point_clicked["x"], point_clicked["y"], point_clicked["z"]])
+
+    # Prepare data for storage
+    selected_point_indices_data = [list(idx) for idx in selected_point_indices]
+
+    return selected_point_indices_data, selected_points
+
+# Callback to update the figure based on selection
 @app.callback(
-    Output('show-points-output', 'children'),
-    [Input('show-points-button', 'n_clicks')],
+    Output('point-cloud-plot', 'figure', allow_duplicate=True),
+    Input('selected-point-indices-store', 'data'),
+    State('point-cloud-plot', 'figure'),
+    prevent_initial_call=True
 )
-def show_points_button(n_clicks):
-    if n_clicks > 0:
-        return [html.P(f'Selected points for {obj_name}: {points}') for obj_name, points in selected_points.items()]
-    else:
-        raise PreventUpdate
+def update_figure(selected_point_indices_data, figure):
+    figure = copy.deepcopy(figure)
+
+    selected_point_indices = set(tuple(idx) for idx in selected_point_indices_data)
+
+    for i, trace in enumerate(figure['data']):
+        trace_color = colors[i % len(colors)]  # Original color
+        selected_color = 'green'
+        # Update marker colors
+        figure['data'][i]['marker']['color'] = [
+            selected_color if (i + 1, j) in selected_point_indices else trace_color
+            for j in range(len(trace['x']))
+        ]
+
+    return figure
 
 # Callback to clear selected points
 @app.callback(
+    Output('selected-point-indices-store', 'data', allow_duplicate=True),
+    Output('selected-points-store', 'data', allow_duplicate=True),
     Output('clear-points-output', 'children'),
-    [Input('clear-points-button', 'n_clicks')],
+    Input('clear-points-button', 'n_clicks'),
+    prevent_initial_call=True
 )
-def clear_points_button(n_clicks):
-    global selected_points
+def clear_points(n_clicks):
     if n_clicks > 0:
-        selected_points = {obj_name: [] for obj_name in point_clouds.keys()}
-        return "Points cleared."
+        selected_point_indices_data = []
+        selected_points_data = {obj_name: [] for obj_name in point_clouds.keys()}
+        return selected_point_indices_data, selected_points_data, "Points cleared."
     else:
         raise PreventUpdate
 
-# Callback to calculate transformation matrix when button is clicked
+# Callback to calculate transformation matrix
 @app.callback(
     Output('point-cloud-plot', 'figure', allow_duplicate=True),
-    [Input('calculate-matrix-button', 'n_clicks')],
-    [State('point-cloud-plot', 'figure')],
+    Input('calculate-matrix-button', 'n_clicks'),
+    State('point-cloud-plot', 'figure'),
+    State('selected-points-store', 'data'),
     prevent_initial_call=True
-
 )
-def calculate_transformation_matrix(n_clicks, figure):
-    global selected_point_obj1
-    global selected_point_obj2
-    global transformed_object1
-    if n_clicks is not None:
+def calculate_transformation_matrix(n_clicks, figure, selected_points):
+    if n_clicks is None:
+        raise PreventUpdate
 
-        src_points = np.array(selected_point_obj1)
-        dst_points = np.array(selected_point_obj2)
+    if all(len(points) >= 3 for points in selected_points.values()):
+        obj_names = list(selected_points.keys())
+        src_obj_name = obj_names[0]
+        dst_obj_name = obj_names[1]
+
+        src_points = np.array(selected_points[src_obj_name])
+        dst_points = np.array(selected_points[dst_obj_name])
 
         similarity_matrix = compute_similarity_transform(src_points, dst_points)
+        src_points_full = point_clouds[src_obj_name]
+        transformed_points = apply_similarity_transform(src_points_full, similarity_matrix)
 
-        transformed_all_points = apply_similarity_transform(np.asarray(points_object1), similarity_matrix)
-        transformed_object1 = transformed_all_points
-        np.save("transofrmed_frog1.npy", transformed_object1)
-        figure["data"].append(go.Scatter3d(
-            x=transformed_all_points[:, 0],
-            y=transformed_all_points[:, 1],
-            z=transformed_all_points[:, 2],
+        figure = copy.deepcopy(figure)
+        figure['data'].append(go.Scatter3d(
+            x=transformed_points[:, 0],
+            y=transformed_points[:, 1],
+            z=transformed_points[:, 2],
             mode='markers',
             marker=dict(
                 size=3,
@@ -208,28 +220,31 @@ def calculate_transformation_matrix(n_clicks, figure):
             ),
             name='Transformed Points'
         ))
-        return figure
 
+        transformed_objects[src_obj_name] = transformed_points
+
+        return figure
     else:
+        print("Please select at least 3 points from each object.")
         raise PreventUpdate
 
-
-# Callback to calculate transformation matrix when button is clicked
+# Callback to run ICP algorithm
 @app.callback(
-    Output('point-cloud-plot', 'figure'),
-    [Input('icp-alg-button', 'n_clicks')],
-    [State('point-cloud-plot', 'figure')],
+    Output('point-cloud-plot', 'figure', allow_duplicate=True),
+    Input('icp-alg-button', 'n_clicks'),
+    State('point-cloud-plot', 'figure'),
     prevent_initial_call=True
-
 )
 def run_icp_alg(n_clicks, figure):
-    global selected_point_obj1
-    global selected_point_obj2
-    global transformed_object1
-    if n_clicks is not None:
+    if n_clicks is None:
+        raise PreventUpdate
 
-        src_points = np.array(transformed_object1)
-        dst_points = np.array(points_object2)
+    if transformed_objects:
+        src_obj_name = list(transformed_objects.keys())[0]
+        dst_obj_name = [name for name in point_clouds.keys() if name != src_obj_name][0]
+
+        src_points = transformed_objects[src_obj_name]
+        dst_points = point_clouds[dst_obj_name]
 
         obj_mov = PointCloud(src_points, columns=['x', 'y', 'z'])
         obj_fix = PointCloud(dst_points, columns=['x', 'y', 'z'])
@@ -238,7 +253,8 @@ def run_icp_alg(n_clicks, figure):
         icp.add_point_clouds(obj_fix, obj_mov)
         H, X_mov_transformed, rigid_body_transformation_params, distance_residuals = icp.run(max_iterations=500)
 
-        figure["data"].append(go.Scatter3d(
+        figure = copy.deepcopy(figure)
+        figure['data'].append(go.Scatter3d(
             x=X_mov_transformed[:, 0],
             y=X_mov_transformed[:, 1],
             z=X_mov_transformed[:, 2],
@@ -248,47 +264,26 @@ def run_icp_alg(n_clicks, figure):
                 color='brown',
                 opacity=1
             ),
-            name='ICPed Points'
+            name='ICP Transformed Points'
         ))
 
         return figure
-
     else:
+        print("Please calculate the transformation matrix first.")
         raise PreventUpdate
 
-
-# Function to stop the Dash app
-def stop_dash():
-    with open('exit_example.txt', 'w') as file:
-        # Write a line to the file
-        file.write("This is a line written to the text file.")
-    app.server.stop()
-    sys.exit()
-
-# TCP/IP socket server thread
-def socket_server():
-    HOST = '127.0.0.1'  # localhost
-    PORT = 65432        # Port to listen on
-
-    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-        s.bind((HOST, PORT))
-        s.listen()
-        conn, addr = s.accept()
-        with conn:
-            print('Connected by', addr)
-            while True:
-                data = conn.recv(1024)
-                if not data:
-                    break
-                if data.decode() == 'stop':
-                    print('Stop signal received from Node-RED')
-                    stop_dash()
-
-# Start TCP/IP socket server in a separate thread
-threading.Thread(target=socket_server).start()
-
-
-# TCP/IP socket server and Dash app execution code remains the same
+# Callback to show selected points
+@app.callback(
+    Output('show-points-output', 'children'),
+    Input('show-points-button', 'n_clicks'),
+    State('selected-points-store', 'data'),
+    prevent_initial_call=True
+)
+def show_points_button(n_clicks, selected_points_data):
+    if n_clicks > 0:
+        return [html.P(f'Selected points for {obj_name}: {points}') for obj_name, points in selected_points_data.items()]
+    else:
+        raise PreventUpdate
 
 if __name__ == '__main__':
     app.run_server(debug=True, port=6001)

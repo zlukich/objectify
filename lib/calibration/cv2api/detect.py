@@ -47,18 +47,12 @@ MARKER_LENGTH = 0.042
 #         return charuco_retval,rvec,tvec
 #     return False,None,None
 
-def detect_pose(image, camera_matrix, dist_coeffs,debug_viz = False):
+def detect_pose(image, camera_matrix, dist_coeffs,board,debug_viz = False):
     # Use the original image for detection
     image_for_detection = image.copy()
 
     # Define the aruco dictionary and charuco board
-    dictionary = cv2.aruco.getPredefinedDictionary(ARUCO_DICT)
-    board = cv2.aruco.CharucoBoard(
-        (SQUARES_VERTICALLY, SQUARES_HORIZONTALLY),
-        SQUARE_LENGTH,
-        MARKER_LENGTH,
-        dictionary
-    )
+    dictionary = board.getDictionary()
     # Customize detector parameters
     params = cv2.aruco.DetectorParameters()
     params.adaptiveThreshConstant = 7  # Try increasing or decreasing to control thresholding

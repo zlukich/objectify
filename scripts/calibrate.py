@@ -3,7 +3,7 @@ import os
 import numpy as np
 from pathlib import Path
 import argparse
-
+import cv2
 # Add the path to 'lib' directory
 sys.path.append(os.path.abspath(os.path.join("..",'lib')))
 
@@ -17,14 +17,14 @@ print("Starting a calibration", flush=True)
 
 config_manager = ConfigManagerAPI("http://127.0.0.1:5001")
 
-def calibrate_and_write(project_name, output_folder, config_manager):
+def calibrate_and_write(project_name, output_folder, config_manager, board):
 
     image_files = [os.path.join(output_folder, f) for f in os.listdir(output_folder) if f.endswith(".jpg") or f.endswith(".png")]
     image_files.sort()  # Ensure files are in order
 
-    allCorners, allIds, imsize, num_of_detected_markers = read_chessboards(image_files)
+    allCorners, allIds, imsize, num_of_detected_markers = read_chessboards(image_files, board)
 
-    ret, mtx, dist, rvecs, tvecs = calibrate_camera(allCorners, allIds, imsize)
+    ret, mtx, dist, rvecs, tvecs = calibrate_camera(allCorners, allIds, imsize, board)
 
     
     if ret !=- 1:
@@ -55,12 +55,20 @@ input_path = args.input
 output_folder = args.output_folder
 num_of_images = args.num_of_images
 
+ARUCO_DICT = cv2.aruco.DICT_6X6_250
+SQUARES_VERTICALLY = 13
+SQUARES_HORIZONTALLY = 9
+SQUARE_LENGTH = 0.03
+MARKER_LENGTH = 0.02
 
+dictionary = cv2.aruco.getPredefinedDictionary(ARUCO_DICT)
+board = cv2.aruco.CharucoBoard((SQUARES_VERTICALLY, SQUARES_HORIZONTALLY), SQUARE_LENGTH, MARKER_LENGTH, dictionary)
+print("Setup with this board", board.getDictionary())
 
 print(os.path.isdir(input_path))
 
 config_manager.update_project(project_name, {"images": output_folder})
-mtx, dist = calibrate_and_write(project_name, output_folder, config_manager)
+mtx, dist = calibrate_and_write(project_name, output_folder, config_manager, board = board)
 
 if mtx is not None and mtx.any():
     config_manager.update_current_work({"camera_matrix": mtx.tolist(), "dist_coeff": dist.tolist()})

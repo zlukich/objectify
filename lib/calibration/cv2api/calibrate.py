@@ -1,11 +1,14 @@
 import cv2
 import numpy as np
 
-ARUCO_DICT = cv2.aruco.DICT_4X4_50
-SQUARES_VERTICALLY = 7
-SQUARES_HORIZONTALLY = 5
-SQUARE_LENGTH = 0.056
-MARKER_LENGTH = 0.042
+# ARUCO_DICT = cv2.aruco.DICT_4X4_50
+# SQUARES_VERTICALLY = 7
+# SQUARES_HORIZONTALLY = 5
+# SQUARE_LENGTH = 0.056
+# MARKER_LENGTH = 0.042
+
+# dictionary = cv2.aruco.getPredefinedDictionary(ARUCO_DICT)
+# board = cv2.aruco.CharucoBoard((SQUARES_VERTICALLY, SQUARES_HORIZONTALLY), SQUARE_LENGTH, MARKER_LENGTH, dictionary)
 
 # ARUCO_DICT = cv2.aruco.DICT_ARUCO_ORIGINAL
 # SQUARES_VERTICALLY = 10
@@ -17,14 +20,15 @@ MARKER_LENGTH = 0.042
 # ...
 #PATH_TO_YOUR_IMAGES = './images/solenoid/' # example
 # ------------------------------
-dictionary = cv2.aruco.getPredefinedDictionary(ARUCO_DICT)
-board = cv2.aruco.CharucoBoard((SQUARES_VERTICALLY, SQUARES_HORIZONTALLY), SQUARE_LENGTH, MARKER_LENGTH, dictionary)
 
-def read_chessboards(images):
+
+def read_chessboards(images,board):
     """
     Charuco base pose estimation.
     """
     print("POSE ESTIMATION STARTS:", flush=True)
+    
+    print("Using this board ",board.getDictionary())
     
     allCorners = []
     allIds = []
@@ -43,7 +47,7 @@ def read_chessboards(images):
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         imsize = gray.shape
         print(imsize)
-        corners, ids, rejectedImgPoints = cv2.aruco.detectMarkers(gray, dictionary)
+        corners, ids, rejectedImgPoints = cv2.aruco.detectMarkers(gray, board.getDictionary())
         
         if len(corners)>0:
             # SUB PIXEL DETECTION
@@ -66,7 +70,7 @@ def read_chessboards(images):
     
     return allCorners,allIds,imsize,num_detected_markers
 
-def calibrate_camera(allCorners,allIds,imsize):
+def calibrate_camera(allCorners,allIds,imsize, board ):
     """
     Calibrates the camera using the dected corners.
     """

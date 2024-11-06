@@ -958,9 +958,82 @@
         "transforms_path": "./projects/calib_0210/transforms_centered.json"
     },
     "bench_0210__all": {
-        "transforms_path": "./projects/bench_0210__all/transforms_centered.json"
+        "transforms_path": "./projects/bench_0210__all/transforms_centered.json",
+        "images": "./projects/bench_0210__all"
     },
     "bacardicup_0210": {
         "transforms_path": "./projects/bacardicup_0210/transforms_centered.json"
+    },
+    "calib_1110": {
+        "images": "./projects/calib_1110",
+        "calibrated": true,
+        "camera_matrix": [
+            [
+                4962.431150902704,
+                0.0,
+                1718.446572697908
+            ],
+            [
+                0.0,
+                5199.843650063241,
+                1517.3243536225802
+            ],
+            [
+                0.0,
+                0.0,
+                1.0
+            ]
+        ],
+        "dist_coeff": [
+            [
+                -0.053341438472009235
+            ],
+            [
+                0.14657360271841668
+            ],
+            [
+                -0.010398618453983993
+            ],
+            [
+                -0.020156342852264485
+            ],
+            [
+                -0.5485406643928226
+            ],
+            [
+                0.04806769876410323
+            ],
+            [
+                -0.09384836040091096
+            ],
+            [
+                -0.0955438953483606
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ]
+        ],
+        "transforms_path": "./projects/calib_1110/transforms_centered.json"
+    },
+    "bfrog_1110": {
+        "transforms_path": "./projects/bfrog_1110/transforms_centered.json"
+    },
+    "bfrog_silver_1110": {
+        "transforms_path": "./projects/bfrog_silver_1110/transforms_centered.json"
     }
 }

@@ -111,7 +111,7 @@ def compute_scaling_factor(data_json):
     return scaling_factor
 
 
-def generate_json_for_images(folder_path,output_json_path , camera_matrix,dist_coeff,scale = 3,colmap = False):
+def generate_json_for_images(folder_path,output_json_path , camera_matrix,dist_coeff,board,scale = 3,colmap = False):
     """Generate JSON for a folder of images with given rvecs and tvecs."""
 
     # Example usage:
@@ -119,21 +119,22 @@ def generate_json_for_images(folder_path,output_json_path , camera_matrix,dist_c
     # dist_coeff = np.load(folder_path+"camera_dist_coeff.npy")
     image_files = [os.path.join(folder_path, f) for f in os.listdir(folder_path) if f.endswith(".jpg") or f.endswith(".png")or f.endswith(".bmp")]
     image = cv2.imread(image_files[0])
+    
     #print(image)
     camera_params = {
         "camera_angle_x": 2 * np.arctan(image.shape[1] / (2 * camera_matrix[0,0])),
         "camera_angle_y": 2 * np.arctan(image.shape[0] / (2 * camera_matrix[1,1])),
-        "fl_x": camera_matrix[0,0],
-        "fl_y": camera_matrix[1,1],
-        "k1": dist_coeff[0],
-        "k2": dist_coeff[1],
-        "k3": dist_coeff[4],
+        "fl_x": float(camera_matrix[0,0]),
+        "fl_y": float(camera_matrix[1,1]),
+        "k1": float(dist_coeff[0]),
+        "k2": float(dist_coeff[1]),
+        "k3": float(dist_coeff[4]),
         "k4": 0,
-        "p1": dist_coeff[2],
-        "p2": dist_coeff[3],
+        "p1": float(dist_coeff[2]),
+        "p2": float(dist_coeff[3]),
         "is_fisheye": False,
-        "cy": camera_matrix[1,2],
-        "cx": camera_matrix[0,2],
+        "cy": float(camera_matrix[1,2]),
+        "cx": float(camera_matrix[0,2]),
         "w": image.shape[1],
         "h": image.shape[0],
         "aabb_scale": 1,
@@ -171,12 +172,12 @@ def generate_json_for_images(folder_path,output_json_path , camera_matrix,dist_c
         if image_file.endswith(('.png', '.jpg', '.jpeg',".bmp")):
             image = cv2.imread(os.path.join(folder_path,image_file))
             
-            retval, rvec, tvec = detect_pose(image, camera_matrix, dist_coeff)
+            retval, rvec, tvec = detect_pose(image, camera_matrix, dist_coeff,board)
             
             if rvec is not None and rvec.any():
-                print(image_file,len(rvec),flush = True)
+                print(image_file,retval,flush = True)
             else:
-                print(image_file, "No markers detected:/",flush = True)
+                print(image_file, retval,"No markers detected:/",flush = True)
             #print("Found something?")
 
             if(retval > 0):
@@ -188,12 +189,12 @@ def generate_json_for_images(folder_path,output_json_path , camera_matrix,dist_c
                     c2w = create_transform_matrix(rvec, tvec)
                     up += c2w[0:3,1]
                     frame_data = {
-                        "file_path": image_file,
-                        "sharpness": sharpness(image),  # Placeholder, update as needed
+                        "file_path": os.path.join("./",image_file),
+                        "sharpness": sharpness(image), 
                         "transform_matrix": c2w
                     }
                     data["frames"].append(frame_data)
-                    #print("test")
+                    
                 except Exception as e: 
                     print(e)
     
@@ -242,7 +243,10 @@ def generate_json_for_images(folder_path,output_json_path , camera_matrix,dist_c
 
     scaling_factor = compute_scaling_factor(data)
     
-    data["computed_scaling_factor"] = scaling_factor
+    data["computed_scaling_factor"] = float(scaling_factor)
+
+    # for key,value in data.items():
+    #     print(f"{key} with type {type(value)}")
 
     with open(output_json_path, 'w') as json_file:
         json.dump(data, json_file, indent=4)
