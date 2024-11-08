@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Point Cloud Alignment</title>
+    <style>
+        body { margin: 0; background-color: #000000; }
+        canvas { display: block; }
+        #info { position: absolute; top: 10px; left: 10px; color: white; }
+        #buttons { position: absolute; top: 10px; right: 10px; }
+        #toggle-selection {
+            margin-top: 10px;
+            padding: 10px;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        #selection-mode {
+            position: absolute;
+            top: 80px;
+            left: 10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="info">
+        <p>Select 4 points on each point cloud for alignment.</p>
+        <p>Source Points Selected: <span id="source-count">0</span></p>
+        <p>Target Points Selected: <span id="target-count">0</span></p>
+        <button id="clear-selections-button">Clear Selections</button>
+    </div>
+    <div id="buttons">
+        <input type="file" id="source-file" accept=".ply" />
+        <input type="file" id="target-file" accept=".ply" />
+        <button id="clear-pointclouds-button">Clear Point Clouds</button>
+        <button id="align-button" disabled>Align Point Clouds</button>
+        <button id="download-button" disabled>Download Transformed Point Cloud</button>
+        <br/>
+        <button id="toggle-selection">Switch to Target Selection</button>
+    </div>
+    <!-- Selection Mode Indicator -->
+    <div id="selection-mode">
+        Currently Selecting: Source Points
+    </div>
+    <!-- Include Three.js and related scripts -->
+    <script src="{{ url_for('static', filename='js/three.min.js') }}"></script>
+    <!-- Include OrbitControls -->
+    <script src="{{ url_for('static', filename='js/OrbitControls.js') }}"></script>
+    <!-- Include PLYLoader -->
+    <script src="{{ url_for('static', filename='js/PLYLoader.js') }}"></script>
+    <!-- Include the main JavaScript code -->
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>

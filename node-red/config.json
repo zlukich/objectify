@@ -1035,5 +1035,8 @@
     },
     "bfrog_silver_1110": {
         "transforms_path": "./projects/bfrog_silver_1110/transforms_centered.json"
+    },
+    "5x5placube.complete_images": {
+        "images": "./projects/5x5placube.complete_images"
     }
 }

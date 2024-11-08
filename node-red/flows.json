@@ -111,47 +111,6 @@
         "h": 288
     },
     {
-        "id": "29bf2eccfbb8fe16",
-        "type": "group",
-        "z": "cd35db7d9440e826",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "d6716d447139a35c",
-            "586038a5dcac1eac",
-            "9ac718281d44165a",
-            "f0d9e0579a4ed929",
-            "804b2434dfa88e92",
-            "3fc5b673b5fef038",
-            "0c114a1712edbf27",
-            "583d5f7edc4fb63a",
-            "25fce322b6f11e59",
-            "e8e972c0b58a4f12",
-            "4de86a1edb0d9a2e",
-            "419a9f1c1e75891e",
-            "857e073fca509c2e",
-            "d23290c4262f3351",
-            "cb77f7a82b32bf9e",
-            "eb6ca6290bc7a968",
-            "6855f6f284c43984",
-            "f01519fbe4901cea",
-            "72ac73d5a30d357d",
-            "c12eb424d725ba51",
-            "bccd7e1f55b8fa84"
-        ],
-        "x": 554,
-        "y": 239,
-        "w": 1512,
-        "h": 402
-    },
-    {
         "id": "28c003637500bb58",
         "type": "group",
         "z": "f11166a80e40d7b6",
@@ -527,17 +486,6 @@
         "order": 1,
         "disp": true,
         "width": 12,
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "3fdc8d9e247e5296",
-        "type": "ui_group",
-        "name": "Guideline",
-        "tab": "1f362802086f4d96",
-        "order": 1,
-        "disp": true,
-        "width": 23,
         "collapse": false,
         "className": ""
     },
@@ -996,9 +944,9 @@
         "height": 1
     },
     {
-        "id": "dd329999bdce6b3b",
+        "id": "c0ba2825f0d481ad",
         "type": "ui_spacer",
-        "z": "3669868b19b1582f",
+        "z": "cd35db7d9440e826",
         "name": "spacer",
         "group": "3fdc8d9e247e5296",
         "order": 2,
@@ -1006,9 +954,9 @@
         "height": 1
     },
     {
-        "id": "32acdbdab8af828e",
+        "id": "888fd9688f480e18",
         "type": "ui_spacer",
-        "z": "3669868b19b1582f",
+        "z": "cd35db7d9440e826",
         "name": "spacer",
         "group": "3fdc8d9e247e5296",
         "order": 4,
@@ -1016,9 +964,9 @@
         "height": 1
     },
     {
-        "id": "815b4903e79da0d4",
+        "id": "cd7f71873eaea64a",
         "type": "ui_spacer",
-        "z": "3669868b19b1582f",
+        "z": "cd35db7d9440e826",
         "name": "spacer",
         "group": "3fdc8d9e247e5296",
         "order": 8,
@@ -1026,9 +974,9 @@
         "height": 1
     },
     {
-        "id": "c0a9e9834ad7a141",
+        "id": "85fe94c1032a7bed",
         "type": "ui_spacer",
-        "z": "3669868b19b1582f",
+        "z": "cd35db7d9440e826",
         "name": "spacer",
         "group": "3fdc8d9e247e5296",
         "order": 9,
@@ -1036,9 +984,9 @@
         "height": 1
     },
     {
-        "id": "90985d8a4e895627",
+        "id": "84607ff0de3cc6e8",
         "type": "ui_spacer",
-        "z": "3669868b19b1582f",
+        "z": "cd35db7d9440e826",
         "name": "spacer",
         "group": "3fdc8d9e247e5296",
         "order": 11,
@@ -1046,9 +994,9 @@
         "height": 1
     },
     {
-        "id": "b05e9e33968e4b91",
+        "id": "ed5048e5cde405de",
         "type": "ui_spacer",
-        "z": "3669868b19b1582f",
+        "z": "cd35db7d9440e826",
         "name": "spacer",
         "group": "3fdc8d9e247e5296",
         "order": 12,
@@ -1056,9 +1004,9 @@
         "height": 1
     },
     {
-        "id": "30f505f875e98fcd",
+        "id": "41c1b70b16e51675",
         "type": "ui_spacer",
-        "z": "3669868b19b1582f",
+        "z": "cd35db7d9440e826",
         "name": "spacer",
         "group": "3fdc8d9e247e5296",
         "order": 16,
@@ -1066,9 +1014,9 @@
         "height": 1
     },
     {
-        "id": "102bee12ca7ccd54",
+        "id": "4fcf98e2f0fe814c",
         "type": "ui_spacer",
-        "z": "3669868b19b1582f",
+        "z": "cd35db7d9440e826",
         "name": "spacer",
         "group": "40495299a6187faf",
         "order": 3,
@@ -1076,9 +1024,9 @@
         "height": 1
     },
     {
-        "id": "cb7f17f29232686f",
+        "id": "affce94b05c11261",
         "type": "ui_spacer",
-        "z": "3669868b19b1582f",
+        "z": "cd35db7d9440e826",
         "name": "spacer",
         "group": "40495299a6187faf",
         "order": 5,
@@ -1086,9 +1034,9 @@
         "height": 1
     },
     {
-        "id": "1a4a603e693740ab",
+        "id": "2407246269339721",
         "type": "ui_spacer",
-        "z": "3669868b19b1582f",
+        "z": "cd35db7d9440e826",
         "name": "spacer",
         "group": "40495299a6187faf",
         "order": 7,
@@ -9828,860 +9776,25 @@
         "wires": []
     },
     {
-        "id": "586038a5dcac1eac",
-        "type": "inject",
-        "z": "cd35db7d9440e826",
-        "g": "29bf2eccfbb8fe16",
-        "name": "Init",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "change",
-        "payload": "filebrowser_default_folder",
-        "payloadType": "global",
-        "x": 650,
-        "y": 300,
-        "wires": [
-            [
-                "9ac718281d44165a"
-            ]
-        ]
-    },
-    {
-        "id": "9ac718281d44165a",
-        "type": "function",
-        "z": "cd35db7d9440e826",
-        "g": "29bf2eccfbb8fe16",
-        "name": "Folder handling",
-        "func": "let folder = context.get(\"folder\");\nif (folder===undefined) {\n    folder=\"./projects/\";\n    context.set(\"folder\", folder);\n}\n\nlet hidden = context.get(\"hidden\");\nif (hidden===undefined) {\n    hidden=false;\n    context.set(\"hidden\", hidden);\n}\n\nif (msg.topic===\"up\") {\n    var the_arr = folder.split('/');\n    the_arr.pop();\n    folder=the_arr.join('/'); \n    context.set(\"folder\", folder);\n}\nif (msg.topic===\"change\") {\n    folder=msg.payload;    \n    context.set(\"folder\", folder);\n}\nif (msg.topic===\"hidden\") {\n    hidden=msg.payload;    \n    context.set(\"hidden\", hidden);\n}\n\nmsg.payload = {\"start\":folder, \"hidden\": hidden};\nflow.set(\"folder\", folder);\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 860,
-        "y": 340,
-        "wires": [
-            [
-                "f0d9e0579a4ed929",
-                "e8e972c0b58a4f12"
-            ]
-        ]
-    },
-    {
-        "id": "804b2434dfa88e92",
-        "type": "function",
-        "z": "cd35db7d9440e826",
-        "g": "29bf2eccfbb8fe16",
-        "name": "Prep Data",
-        "func": "function convertDate(local) {\n    let d = new Date(local);\n    d.setTime(d.getTime()+3600*1000);\n    return d.toISOString().slice(0, 19).replace('T', ' ');\n}\n\nif (msg.topic === \"quickfilter\") {\n    let filter = msg.payload;\n    msg.payload = flow.get(\"currentfolder\").slice();\n    if (msg.payload !== \"\") {\n        for (var i = msg.payload.length-1; i >= 0; i--) {\n            if (!msg.payload[i].fname.includes(filter)) {\n                msg.payload.splice(i,1);\n            }\n        }\n    }\n    return msg;\n}\n\nfor (var i=0; i<msg.payload.length; i++) {\n   // msg.payload[i].stat.created = convertDate(msg.payload[i].stat.created);\n   // msg.payload[i].stat.changed = convertDate(msg.payload[i].stat.changed);\n   // msg.payload[i].stat.accessed = convertDate(msg.payload[i].stat.accessed);\n   // msg.payload[i].stat.statusChanged = convertDate(msg.payload[i].stat.statusChanged);\n    msg.payload[i].fname = msg.payload[i].name.replace(/^.*(\\\\|\\/|\\:)/, '');\n    if (msg.payload[i].stat.isDirectory) {\n        msg.payload[i].ext = \"folder\";\n        msg.payload[i].icon = \"<i class=\\\"fa fa-folder-o\\\"></i>\";\n    } else {\n        msg.payload[i].ext = msg.payload[i].fname.split('.').pop().toLowerCase();\n        msg.payload[i].downloadlink = \"/download?filename=\"+msg.payload[i].name;\n        switch (msg.payload[i].ext) {\n            case \"csv\":\n            case \"txt\":\n                msg.payload[i].icon = \"<i class=\\\"fa fa-file-text-o\\\"></i>\";\n                break;\n            case \"jpg\":\n            case \"jpeg\":\n            case \"png\":\n            case \"gif\":\n                msg.payload[i].icon = \"<i class=\\\"fa fa-file-image-o\\\"></i>\";\n                break;\n            case \"json\":\n            case \"py\":\n            case \"sh\":\n                msg.payload[i].icon = \"<i class=\\\"fa fa-file-code-o\\\"></i>\";\n                break;\n            default:\n                msg.payload[i].icon = \"<i class=\\\"fa fa-file-o\\\"></i>\";\n        }\n    }\n}\nflow.set(\"currentfolder\",msg.payload);\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1180,
-        "y": 340,
-        "wires": [
-            [
-                "d6716d447139a35c"
-            ]
-        ]
-    },
-    {
-        "id": "25fce322b6f11e59",
-        "type": "function",
-        "z": "cd35db7d9440e826",
-        "g": "29bf2eccfbb8fe16",
-        "name": "Change folder",
-        "func": "\nif (msg.payload.stat.isDirectory) {\n\n    msg.topic = \"change\";\n    msg.payload = msg.payload.name;\n\n    return msg;\n}",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1040,
-        "y": 420,
-        "wires": [
-            [
-                "9ac718281d44165a"
-            ]
-        ]
-    },
-    {
-        "id": "419a9f1c1e75891e",
-        "type": "change",
-        "z": "cd35db7d9440e826",
-        "g": "29bf2eccfbb8fe16",
-        "name": "Empty",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1190,
-        "y": 280,
-        "wires": [
-            [
-                "4de86a1edb0d9a2e"
-            ]
-        ]
-    },
-    {
-        "id": "d23290c4262f3351",
-        "type": "function",
-        "z": "cd35db7d9440e826",
-        "g": "29bf2eccfbb8fe16",
-        "name": "function 6",
-        "func": "flow.set(\"lastfile\",msg.payload)\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1720,
-        "y": 400,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "aafc3dbd21459889",
-        "type": "function",
-        "z": "cd35db7d9440e826",
-        "name": "function 7",
-        "func": "let files = flow.get(\"viz_files\");\nvar cmd = \"python ../scripts/vizualization.py \" + files;\nmsg.payload = cmd;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 480,
-        "y": 820,
-        "wires": [
-            [
-                "a4275741466c473d",
-                "7a50ce5aaed7ce21"
-            ]
-        ]
-    },
-    {
-        "id": "a4275741466c473d",
-        "type": "exec",
-        "z": "cd35db7d9440e826",
-        "command": "",
-        "addpay": "payload",
-        "append": "",
-        "useSpawn": "false",
-        "timer": "",
-        "winHide": false,
-        "oldrc": false,
-        "name": "",
-        "x": 670,
-        "y": 820,
-        "wires": [
-            [
-                "e625add736e0ea17"
-            ],
-            [
-                "e625add736e0ea17"
-            ],
-            [
-                "e625add736e0ea17"
-            ]
-        ]
-    },
-    {
-        "id": "e625add736e0ea17",
-        "type": "debug",
-        "z": "cd35db7d9440e826",
-        "name": "debug 30",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 920,
-        "y": 820,
-        "wires": []
-    },
-    {
-        "id": "4e7f11f86327a4ed",
-        "type": "debug",
-        "z": "cd35db7d9440e826",
-        "name": "debug 31",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 900,
-        "y": 680,
-        "wires": []
-    },
-    {
-        "id": "ee615ffba38355d5",
-        "type": "delay",
-        "z": "cd35db7d9440e826",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "2",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 570,
-        "y": 720,
-        "wires": [
-            [
-                "860e0f7928c64386"
-            ]
-        ]
-    },
-    {
-        "id": "e64f7a9d58ae58e6",
-        "type": "function",
-        "z": "cd35db7d9440e826",
-        "name": "function 8",
-        "func": "msg.payload = \"stop\";\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 540,
-        "y": 980,
-        "wires": [
-            [
-                "ddc316ed834ffaf7"
-            ]
-        ]
-    },
-    {
-        "id": "0ba0e140ce18da90",
-        "type": "tcp request",
-        "z": "cd35db7d9440e826",
-        "name": "",
-        "server": "",
-        "port": "",
-        "out": "time",
-        "ret": "buffer",
-        "splitc": "0",
-        "newline": "",
-        "trim": false,
-        "tls": "",
-        "x": 830,
-        "y": 1140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "ddc316ed834ffaf7",
-        "type": "tcp request",
-        "z": "cd35db7d9440e826",
-        "name": "",
-        "server": "127.0.0.1",
-        "port": "65432",
-        "out": "time",
-        "ret": "buffer",
-        "splitc": "0",
-        "newline": "",
-        "trim": false,
-        "tls": "",
-        "x": 800,
-        "y": 1000,
-        "wires": [
-            [
-                "0c02a4e5b944c78d"
-            ]
-        ]
-    },
-    {
-        "id": "0c02a4e5b944c78d",
-        "type": "debug",
-        "z": "cd35db7d9440e826",
-        "name": "debug 32",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1030,
-        "y": 1020,
-        "wires": []
-    },
-    {
-        "id": "d6716d447139a35c",
-        "type": "ui_etable",
-        "z": "cd35db7d9440e826",
-        "g": "29bf2eccfbb8fe16",
-        "payload": "[{\"title\":\"Type\",\"field\":\"icon\",\"formatter\":\"html\",\"width\":50},{\"title\":\"Name\",\"field\":\"fname\"},{\"title\":\"Size\",\"field\":\"stat.size\",\"sorter\":\"number\",\"width\":100,\"sorterParams\":{\"thousandSeparator\":\",\",\"decimalSeparator\":\".\",\"alignEmptyValues\":\"top\"}},{\"title\":\"Created\",\"field\":\"stat.created\",\"formatter\":\"datetime\",\"width\":200,\"formatterParams\":{\"outputFormat\":\"yyyy.MM.DD HH:mm:ss\",\"invalidPlaceholder\":\"(invalid date)\",\"timezone\":\"system\"}},{\"title\":\"Changed\",\"field\":\"stat.changed\",\"formatter\":\"datetime\",\"width\":200,\"formatterParams\":{\"outputFormat\":\"yyyy.MM.DD HH:mm:ss\",\"invalidPlaceholder\":\"(invalid date)\",\"timezone\":\"system\"}}]",
-        "payloadType": "json",
-        "options": "{\"movableColumns\":true,\"resizableColumns\":true,\"selectable\":1,\"responsiveLayout\":\"collapse\",\"autoResize\":true,\"layout\":\"fitColumns\",\"pagination\":\"local\",\"height\":\"100%\"}",
-        "group": "3fdc8d9e247e5296",
-        "name": "Select folder where files located",
-        "order": 13,
-        "width": 23,
-        "height": 10,
-        "columns": [],
-        "outputs": 1,
-        "cts": false,
-        "x": 1410,
-        "y": 340,
-        "wires": [
-            [
-                "25fce322b6f11e59",
-                "857e073fca509c2e",
-                "d23290c4262f3351",
-                "f01519fbe4901cea"
-            ]
-        ]
-    },
-    {
-        "id": "3fc5b673b5fef038",
-        "type": "ui_button",
-        "z": "cd35db7d9440e826",
-        "g": "29bf2eccfbb8fe16",
-        "name": "",
-        "group": "3fdc8d9e247e5296",
-        "order": 3,
-        "width": 4,
-        "height": 1,
-        "passthru": false,
-        "label": "Refresh",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "refresh",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "refresh",
-        "topicType": "str",
-        "x": 640,
-        "y": 340,
-        "wires": [
-            [
-                "9ac718281d44165a"
-            ]
-        ]
-    },
-    {
-        "id": "0c114a1712edbf27",
-        "type": "ui_button",
-        "z": "cd35db7d9440e826",
-        "g": "29bf2eccfbb8fe16",
-        "name": "",
-        "group": "3fdc8d9e247e5296",
-        "order": 6,
-        "width": 3,
-        "height": 1,
-        "passthru": false,
-        "label": "Up",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "arrow_upwards",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "up",
-        "topicType": "str",
-        "x": 650,
-        "y": 420,
-        "wires": [
-            [
-                "9ac718281d44165a"
-            ]
-        ]
-    },
-    {
-        "id": "583d5f7edc4fb63a",
-        "type": "ui_button",
-        "z": "cd35db7d9440e826",
-        "g": "29bf2eccfbb8fe16",
-        "name": "",
-        "group": "3fdc8d9e247e5296",
-        "order": 5,
-        "width": 4,
-        "height": 1,
-        "passthru": false,
-        "label": "Reset",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "autorenew",
-        "payload": "filebrowser_default_folder",
-        "payloadType": "global",
-        "topic": "change",
-        "topicType": "str",
-        "x": 650,
-        "y": 380,
-        "wires": [
-            [
-                "9ac718281d44165a"
-            ]
-        ]
-    },
-    {
-        "id": "30e9dde572fb57fe",
-        "type": "ui_button",
-        "z": "cd35db7d9440e826",
-        "name": "",
-        "group": "40495299a6187faf",
-        "order": 1,
-        "width": 6,
-        "height": 1,
-        "passthru": false,
-        "label": "Run Visualizer",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "true",
-        "payloadType": "bool",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 260,
-        "y": 740,
-        "wires": [
-            [
-                "ee615ffba38355d5",
-                "aafc3dbd21459889"
-            ]
-        ]
-    },
-    {
-        "id": "4ef85168cd2e4805",
-        "type": "ui_button",
-        "z": "cd35db7d9440e826",
-        "name": "",
-        "group": "40495299a6187faf",
-        "order": 2,
-        "width": 6,
-        "height": 1,
-        "passthru": false,
-        "label": "Stop visualizer",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "false",
-        "payloadType": "bool",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 260,
-        "y": 920,
-        "wires": [
-            [
-                "e64f7a9d58ae58e6",
-                "860e0f7928c64386"
-            ]
-        ]
-    },
-    {
-        "id": "4de86a1edb0d9a2e",
-        "type": "ui_text_input",
-        "z": "cd35db7d9440e826",
-        "g": "29bf2eccfbb8fe16",
-        "name": "",
-        "label": "Filter:",
-        "tooltip": "",
-        "group": "3fdc8d9e247e5296",
-        "order": 10,
-        "width": 6,
-        "height": 1,
-        "passthru": false,
-        "mode": "text",
-        "delay": 300,
-        "topic": "quickfilter",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 1330,
-        "y": 280,
-        "wires": [
-            [
-                "804b2434dfa88e92"
-            ]
-        ]
-    },
-    {
-        "id": "6e8839f21d4ad1b1",
-        "type": "ui_text",
-        "z": "cd35db7d9440e826",
-        "group": "3fdc8d9e247e5296",
-        "order": 1,
-        "width": 23,
-        "height": 1,
-        "name": "",
-        "label": "Guideline:",
-        "format": "Select reconstructed point cloud file (.ply)",
-        "layout": "row-center",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 620,
-        "y": 180,
-        "wires": []
-    },
-    {
-        "id": "e8e972c0b58a4f12",
-        "type": "ui_text",
-        "z": "cd35db7d9440e826",
-        "g": "29bf2eccfbb8fe16",
-        "group": "3fdc8d9e247e5296",
-        "order": 7,
-        "width": 6,
-        "height": 1,
-        "name": "",
-        "label": "Folder:",
-        "format": "{{msg.payload.start}}",
-        "layout": "row-left",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": "",
-        "color": "#000000",
-        "x": 1040,
-        "y": 280,
-        "wires": []
-    },
-    {
-        "id": "857e073fca509c2e",
-        "type": "ui_text",
-        "z": "cd35db7d9440e826",
-        "g": "29bf2eccfbb8fe16",
-        "group": "40495299a6187faf",
-        "order": 4,
-        "width": 15,
-        "height": 1,
-        "name": "",
-        "label": "Selected file",
-        "format": "{{msg.payload.name}}",
-        "layout": "row-center",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 1710,
-        "y": 320,
-        "wires": []
-    },
-    {
-        "id": "860e0f7928c64386",
+        "id": "572ab1316025d42c",
         "type": "ui_template",
         "z": "cd35db7d9440e826",
         "group": "40495299a6187faf",
         "name": "",
-        "order": 8,
+        "order": 9,
         "width": 23,
         "height": 22,
-        "format": "<iframe id=\"myIframe\" src=\"http://localhost:6001\" style=\"display: {{msg.payload ? 'block' : 'none'}};width: 100%; height: 800px;\">\n</iframe>",
+        "format": "<iframe id=\"myIframe\" src=\"http://localhost:5000\" style=\"width: 100%; height: 1000px;\">\n</iframe>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 900,
-        "y": 740,
+        "x": 940,
+        "y": 660,
         "wires": [
             []
         ]
-    },
-    {
-        "id": "f0d9e0579a4ed929",
-        "type": "fs-file-lister",
-        "z": "cd35db7d9440e826",
-        "g": "29bf2eccfbb8fe16",
-        "name": "Files",
-        "start": "./projects/",
-        "pattern": "*.*",
-        "folders": "*",
-        "hidden": false,
-        "lstype": "both",
-        "path": true,
-        "single": true,
-        "depth": 0,
-        "stat": true,
-        "showWarnings": false,
-        "x": 1030,
-        "y": 340,
-        "wires": [
-            [
-                "804b2434dfa88e92",
-                "419a9f1c1e75891e"
-            ]
-        ]
-    },
-    {
-        "id": "cb77f7a82b32bf9e",
-        "type": "ui_button",
-        "z": "cd35db7d9440e826",
-        "g": "29bf2eccfbb8fe16",
-        "name": "Add file to viz",
-        "group": "3fdc8d9e247e5296",
-        "order": 14,
-        "width": 4,
-        "height": 1,
-        "passthru": false,
-        "label": "Add file to vizualization",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "add",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "refresh",
-        "topicType": "str",
-        "x": 950,
-        "y": 520,
-        "wires": [
-            [
-                "eb6ca6290bc7a968",
-                "f01519fbe4901cea"
-            ]
-        ]
-    },
-    {
-        "id": "eb6ca6290bc7a968",
-        "type": "function",
-        "z": "cd35db7d9440e826",
-        "g": "29bf2eccfbb8fe16",
-        "name": "function 17",
-        "func": "let file = flow.get(\"lastfile\");\n\nlet viz_files = flow.get(\"viz_files\");\n\nviz_files.push(file.name);\n\nmsg.payload = viz_files;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1210,
-        "y": 540,
-        "wires": [
-            [
-                "6855f6f284c43984"
-            ]
-        ]
-    },
-    {
-        "id": "6855f6f284c43984",
-        "type": "debug",
-        "z": "cd35db7d9440e826",
-        "g": "29bf2eccfbb8fe16",
-        "name": "debug 57",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1380,
-        "y": 520,
-        "wires": []
-    },
-    {
-        "id": "d1e3f71ea24a8eea",
-        "type": "inject",
-        "z": "cd35db7d9440e826",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 210,
-        "y": 440,
-        "wires": [
-            [
-                "0dd51f602571afad",
-                "f01519fbe4901cea"
-            ]
-        ]
-    },
-    {
-        "id": "0dd51f602571afad",
-        "type": "function",
-        "z": "cd35db7d9440e826",
-        "name": "function 18",
-        "func": "flow.set(\"viz_files\",[]);\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 410,
-        "y": 260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f01519fbe4901cea",
-        "type": "function",
-        "z": "cd35db7d9440e826",
-        "g": "29bf2eccfbb8fe16",
-        "name": "function 19",
-        "func": "let files = flow.get(\"viz_files\");\nmsg.payload = files\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1690,
-        "y": 480,
-        "wires": [
-            [
-                "72ac73d5a30d357d"
-            ]
-        ]
-    },
-    {
-        "id": "72ac73d5a30d357d",
-        "type": "ui_text",
-        "z": "cd35db7d9440e826",
-        "g": "29bf2eccfbb8fe16",
-        "group": "40495299a6187faf",
-        "order": 6,
-        "width": 15,
-        "height": 1,
-        "name": "",
-        "label": "Files for vizualization",
-        "format": "{{msg.payload}}",
-        "layout": "row-center",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 1940,
-        "y": 480,
-        "wires": []
-    },
-    {
-        "id": "c12eb424d725ba51",
-        "type": "ui_button",
-        "z": "cd35db7d9440e826",
-        "g": "29bf2eccfbb8fe16",
-        "name": "Clear vizualization",
-        "group": "3fdc8d9e247e5296",
-        "order": 15,
-        "width": 4,
-        "height": 1,
-        "passthru": false,
-        "label": "Clear all files from vizualization",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "Delete",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "refresh",
-        "topicType": "str",
-        "x": 950,
-        "y": 600,
-        "wires": [
-            [
-                "bccd7e1f55b8fa84"
-            ]
-        ]
-    },
-    {
-        "id": "bccd7e1f55b8fa84",
-        "type": "function",
-        "z": "cd35db7d9440e826",
-        "g": "29bf2eccfbb8fe16",
-        "name": "function 20",
-        "func": "flow.set(\"viz_files\",[]);\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1210,
-        "y": 600,
-        "wires": [
-            [
-                "f01519fbe4901cea"
-            ]
-        ]
-    },
-    {
-        "id": "7a50ce5aaed7ce21",
-        "type": "debug",
-        "z": "cd35db7d9440e826",
-        "name": "debug 69",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 640,
-        "y": 900,
-        "wires": []
     },
     {
         "id": "58f4f425e9b543ca",
