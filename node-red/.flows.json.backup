@@ -32,14 +32,6 @@
         "env": []
     },
     {
-        "id": "4b77236584df4d0f",
-        "type": "tab",
-        "label": "Config",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "3669868b19b1582f",
         "type": "tab",
         "label": "Colmap",
@@ -88,6 +80,14 @@
         "env": []
     },
     {
+        "id": "4b77236584df4d0f",
+        "type": "tab",
+        "label": "Config",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "9a065f7de759f344",
         "type": "group",
         "z": "3669868b19b1582f",
@@ -108,7 +108,7 @@
         "x": 634,
         "y": 799,
         "w": 1268,
-        "h": 288
+        "h": 294
     },
     {
         "id": "28c003637500bb58",
@@ -136,15 +136,15 @@
             "9cd6126067c8d457",
             "7fff52a787654f03",
             "8b4531d23690c116",
-            "8f84de504bd9865d",
             "1f21093d7f876a07",
             "8ce95ac3bfcccac5",
-            "ad467ef6eb73e5a7"
+            "ad467ef6eb73e5a7",
+            "e6812c157a022f7a"
         ],
         "x": 764,
-        "y": 119,
+        "y": 113,
         "w": 1942,
-        "h": 242
+        "h": 248
     },
     {
         "id": "a97981e2e8c1f13e",
@@ -192,12 +192,63 @@
             "567a4991445ed8e7",
             "be3b2ff50c3c00d1",
             "ca2e9a4b6955efb0",
-            "7b36c9095cf50122",
             "840effcc5078fe89",
-            "26c7c6d054bad91c"
+            "26c7c6d054bad91c",
+            "f5b066733b7099e4"
         ],
         "x": 1914,
         "y": 259,
+        "w": 1202,
+        "h": 262
+    },
+    {
+        "id": "c95c3762d28db2e7",
+        "type": "group",
+        "z": "fccae755c2f8e1fe",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "a23887630790e859",
+            "http_request_node_id"
+        ],
+        "x": 954,
+        "y": 999,
+        "w": 272,
+        "h": 162
+    },
+    {
+        "id": "e2e624193a86d3b9",
+        "type": "group",
+        "z": "c0273576f864fea6",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "e921c83c7d1b6871",
+            "93c090cf3a7bccc7",
+            "d11f03a9cf9216c1",
+            "95875027e0f1854f",
+            "d182d22217881571",
+            "b91f80df53529646",
+            "559faaaff15c078d",
+            "b6296ab6f8faa47c",
+            "5b33861cacd40f7d"
+        ],
+        "x": 354,
+        "y": 299,
         "w": 1202,
         "h": 262
     },
@@ -222,13 +273,105 @@
             "16bbbc3cfdc4abeb",
             "f7fedae0681f404d",
             "97a9602c25c5b4b1",
-            "77d15c886180587e",
-            "b6dbdbefdc1b2ff0"
+            "b6dbdbefdc1b2ff0",
+            "25f3c5600f2539f4"
         ],
         "x": 694,
-        "y": 879,
+        "y": 853,
         "w": 1182,
-        "h": 182
+        "h": 214
+    },
+    {
+        "id": "f5b066733b7099e4",
+        "type": "group",
+        "z": "c5fc9b7a988cec09",
+        "g": "16e9549a3ea706bc",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "9690e2b68f0781d4",
+            "c4cdc6410331d79c"
+        ],
+        "x": 2794,
+        "y": 319,
+        "w": 252,
+        "h": 162
+    },
+    {
+        "id": "e6812c157a022f7a",
+        "type": "group",
+        "z": "f11166a80e40d7b6",
+        "g": "28c003637500bb58",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "60c98f04b535d14a",
+            "82e35819ede10259"
+        ],
+        "x": 1594,
+        "y": 139,
+        "w": 272,
+        "h": 162
+    },
+    {
+        "id": "5b33861cacd40f7d",
+        "type": "group",
+        "z": "c0273576f864fea6",
+        "g": "e2e624193a86d3b9",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "09f392d65d1f4059",
+            "1d6c1f982a3f410b"
+        ],
+        "x": 1214,
+        "y": 359,
+        "w": 252,
+        "h": 162
+    },
+    {
+        "id": "25f3c5600f2539f4",
+        "type": "group",
+        "z": "3669868b19b1582f",
+        "g": "80f0e37eedd4ac4c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "acd724c4469b4f7e",
+            "ff4dbd7543a823f9"
+        ],
+        "x": 1494,
+        "y": 879,
+        "w": 272,
+        "h": 162
     },
     {
         "id": "d6a9b08dd46babd7",
@@ -496,7 +639,7 @@
         "tab": "32edcbac3bca6f64",
         "order": 1,
         "disp": true,
-        "width": 22,
+        "width": "22",
         "collapse": false,
         "className": ""
     },
@@ -630,16 +773,6 @@
         "height": 1
     },
     {
-        "id": "314b9936612ff9f3",
-        "type": "ui_spacer",
-        "z": "c0273576f864fea6",
-        "name": "spacer",
-        "group": "bbcac8f35b0ea650",
-        "order": 3,
-        "width": 16,
-        "height": 1
-    },
-    {
         "id": "c84c35e6e9992f9a",
         "type": "tls-config",
         "name": "",
@@ -652,166 +785,6 @@
         "servername": "",
         "verifyservercert": false,
         "alpnprotocol": ""
-    },
-    {
-        "id": "9c64fb15589e3e19",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "a4ece68598262627",
-        "order": 7,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "c5c5f6666338d7bc",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "a4ece68598262627",
-        "order": 9,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "2879c45d1f10f465",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "a4ece68598262627",
-        "order": 11,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "d817641e5720e118",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "a4ece68598262627",
-        "order": 13,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "74929cb0ddc5da11",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "a4ece68598262627",
-        "order": 15,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "841ffd43930efd2b",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "a4ece68598262627",
-        "order": 17,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "c894a6155bba38cb",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "a4ece68598262627",
-        "order": 19,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "cfd279198029ce86",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "a4ece68598262627",
-        "order": 21,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "65a095f1680f0bb3",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "a4ece68598262627",
-        "order": 23,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "e5c9c2f28acb48d5",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "a4ece68598262627",
-        "order": 25,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "8d677324d31f955e",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "a4ece68598262627",
-        "order": 27,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "f4d8211f2f36ab82",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "a4ece68598262627",
-        "order": 29,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "6e85d859e59f3615",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "a4ece68598262627",
-        "order": 31,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "7ad22764797ee663",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "a4ece68598262627",
-        "order": 33,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "8dcab78481958bc5",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "740f8e0483a46aa2",
-        "order": 3,
-        "width": 6,
-        "height": 1
-    },
-    {
-        "id": "b7e0b9a6a620b0f3",
-        "type": "ui_spacer",
-        "z": "fccae755c2f8e1fe",
-        "name": "spacer",
-        "group": "740f8e0483a46aa2",
-        "order": 5,
-        "width": 4,
-        "height": 1
     },
     {
         "id": "bb3e6d8bac2203d0",
@@ -904,116 +877,6 @@
         "height": 1
     },
     {
-        "id": "3d949f00f0f68354",
-        "type": "ui_spacer",
-        "z": "c5fc9b7a988cec09",
-        "name": "spacer",
-        "group": "94b2d8d9e77fa636",
-        "order": 2,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "f7df1faa697c61bd",
-        "type": "ui_spacer",
-        "z": "c5fc9b7a988cec09",
-        "name": "spacer",
-        "group": "94b2d8d9e77fa636",
-        "order": 4,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "893087d040dad8c7",
-        "type": "ui_spacer",
-        "z": "c5fc9b7a988cec09",
-        "name": "spacer",
-        "group": "40324dcc41601167",
-        "order": 3,
-        "width": 7,
-        "height": 1
-    },
-    {
-        "id": "a09db2ec3ec0dab4",
-        "type": "ui_spacer",
-        "z": "c5fc9b7a988cec09",
-        "name": "spacer",
-        "group": "40324dcc41601167",
-        "order": 5,
-        "width": 10,
-        "height": 1
-    },
-    {
-        "id": "c0ba2825f0d481ad",
-        "type": "ui_spacer",
-        "z": "cd35db7d9440e826",
-        "name": "spacer",
-        "group": "3fdc8d9e247e5296",
-        "order": 2,
-        "width": 23,
-        "height": 1
-    },
-    {
-        "id": "888fd9688f480e18",
-        "type": "ui_spacer",
-        "z": "cd35db7d9440e826",
-        "name": "spacer",
-        "group": "3fdc8d9e247e5296",
-        "order": 4,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "cd7f71873eaea64a",
-        "type": "ui_spacer",
-        "z": "cd35db7d9440e826",
-        "name": "spacer",
-        "group": "3fdc8d9e247e5296",
-        "order": 8,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "85fe94c1032a7bed",
-        "type": "ui_spacer",
-        "z": "cd35db7d9440e826",
-        "name": "spacer",
-        "group": "3fdc8d9e247e5296",
-        "order": 9,
-        "width": 12,
-        "height": 1
-    },
-    {
-        "id": "84607ff0de3cc6e8",
-        "type": "ui_spacer",
-        "z": "cd35db7d9440e826",
-        "name": "spacer",
-        "group": "3fdc8d9e247e5296",
-        "order": 11,
-        "width": 5,
-        "height": 1
-    },
-    {
-        "id": "ed5048e5cde405de",
-        "type": "ui_spacer",
-        "z": "cd35db7d9440e826",
-        "name": "spacer",
-        "group": "3fdc8d9e247e5296",
-        "order": 12,
-        "width": 23,
-        "height": 1
-    },
-    {
-        "id": "41c1b70b16e51675",
-        "type": "ui_spacer",
-        "z": "cd35db7d9440e826",
-        "name": "spacer",
-        "group": "3fdc8d9e247e5296",
-        "order": 16,
-        "width": 15,
-        "height": 1
-    },
-    {
         "id": "4fcf98e2f0fe814c",
         "type": "ui_spacer",
         "z": "cd35db7d9440e826",
@@ -1041,6 +904,236 @@
         "group": "40495299a6187faf",
         "order": 7,
         "width": 8,
+        "height": 1
+    },
+    {
+        "id": "2985fab17eeadff5",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "94b2d8d9e77fa636",
+        "order": 2,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "f38c30c387807450",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "94b2d8d9e77fa636",
+        "order": 4,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "88256076f2b53dc0",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "40324dcc41601167",
+        "order": 3,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "75e163769f1813d6",
+        "type": "ui_spacer",
+        "z": "c5fc9b7a988cec09",
+        "name": "spacer",
+        "group": "40324dcc41601167",
+        "order": 5,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "1fedaa45c20d5359",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "740f8e0483a46aa2",
+        "order": 4,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "4fe4b4ed0fd19274",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "740f8e0483a46aa2",
+        "order": 6,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "c14ffc313bbde1a1",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "a4ece68598262627",
+        "order": 7,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "02c54657fc216d31",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "a4ece68598262627",
+        "order": 9,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "9ebecf29a7086bd4",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "a4ece68598262627",
+        "order": 11,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "b10c5906372339d7",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "a4ece68598262627",
+        "order": 13,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "3a1f41c0279416b0",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "a4ece68598262627",
+        "order": 15,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "9a1d6926374b8a80",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "a4ece68598262627",
+        "order": 17,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "cf1aaa30af024711",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "a4ece68598262627",
+        "order": 19,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "a4b24f3023776ffe",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "a4ece68598262627",
+        "order": 21,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "9010eebe93cefcce",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "a4ece68598262627",
+        "order": 23,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "d5bfc9664f1c646e",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "a4ece68598262627",
+        "order": 25,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "b17abb9bc96f07f2",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "a4ece68598262627",
+        "order": 27,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "1a84f0c6f69795bb",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "a4ece68598262627",
+        "order": 29,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "575642dbb98a184f",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "a4ece68598262627",
+        "order": 31,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "aedad3f47ce0a611",
+        "type": "ui_spacer",
+        "z": "fccae755c2f8e1fe",
+        "name": "spacer",
+        "group": "a4ece68598262627",
+        "order": 33,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "754d5e88c2950cfc",
+        "type": "ui_spacer",
+        "z": "c0273576f864fea6",
+        "name": "spacer",
+        "group": "bbcac8f35b0ea650",
+        "order": 2,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "342d9e5a68ef744b",
+        "type": "ui_spacer",
+        "z": "c0273576f864fea6",
+        "name": "spacer",
+        "group": "bbcac8f35b0ea650",
+        "order": 4,
+        "width": 14,
+        "height": 1
+    },
+    {
+        "id": "f8636c6701f97825",
+        "type": "ui_spacer",
+        "z": "c0273576f864fea6",
+        "name": "spacer",
+        "group": "bbcac8f35b0ea650",
+        "order": 6,
+        "width": 16,
         "height": 1
     },
     {
@@ -1921,54 +2014,28 @@
         ]
     },
     {
-        "id": "a7816c586542ea3d",
-        "type": "change",
-        "z": "fccae755c2f8e1fe",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "selected_project",
-                "pt": "global",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1420,
-        "y": 1000,
-        "wires": [
-            [
-                "c995437f2e07c2a9",
-                "7bfa38a0f66d68e1",
-                "4819a5fb717ddca6",
-                "3a5cc637ad1c52df",
-                "067da2f1d49bc5ac"
-            ]
-        ]
-    },
-    {
         "id": "a23887630790e859",
         "type": "function",
         "z": "fccae755c2f8e1fe",
+        "g": "c95c3762d28db2e7",
         "name": "Set global_folder",
-        "func": "var folder = global.get('filebrowser_default_folder');\nvar project= msg.payload;\nmsg.payload = folder+project+\"/\";\n\nglobal.set(\"selected_project\", msg.payload)\nreturn msg;",
+        "func": "// Retrieve the folder path from a global variable in Node-RED\nvar folder = global.get('filebrowser_default_folder');\nvar project = msg.payload;\n\n// Construct the desired path\nvar selected_folder_path = folder + project + \"/\";\n\n// Prepare the payload as a JSON object with the required structure\nmsg.payload = { \"selected_folder\": selected_folder_path };\n\n// Optionally store selected folder path in a global variable\nglobal.set(\"selected_project\", project);\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1150,
-        "y": 1060,
+        "x": 1110,
+        "y": 1040,
         "wires": [
             [
-                "a7816c586542ea3d",
-                "630c9b6d04bb1d91"
+                "630c9b6d04bb1d91",
+                "http_request_node_id",
+                "7bfa38a0f66d68e1",
+                "4819a5fb717ddca6",
+                "3a5cc637ad1c52df",
+                "067da2f1d49bc5ac"
             ]
         ]
     },
@@ -2015,7 +2082,7 @@
         "tooltip": "",
         "place": "Select option",
         "group": "740f8e0483a46aa2",
-        "order": 4,
+        "order": 5,
         "width": 8,
         "height": 1,
         "passthru": true,
@@ -2440,7 +2507,7 @@
         "z": "fccae755c2f8e1fe",
         "name": "",
         "group": "740f8e0483a46aa2",
-        "order": 7,
+        "order": 8,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -2471,7 +2538,7 @@
         "label": "Create project",
         "tooltip": "",
         "group": "740f8e0483a46aa2",
-        "order": 6,
+        "order": 7,
         "width": 0,
         "height": 0,
         "passthru": true,
@@ -2521,7 +2588,7 @@
         "type": "ui_text",
         "z": "fccae755c2f8e1fe",
         "group": "740f8e0483a46aa2",
-        "order": 2,
+        "order": 3,
         "width": 6,
         "height": 1,
         "name": "",
@@ -2541,9 +2608,10 @@
         "id": "a7f80355e5046908",
         "type": "ui_iframe",
         "z": "fccae755c2f8e1fe",
+        "d": true,
         "group": "740f8e0483a46aa2",
         "name": "",
-        "order": 1,
+        "order": 2,
         "width": 12,
         "height": 12,
         "url": "127.0.0.1:5000",
@@ -2757,7 +2825,8 @@
         "name": "Charuco global folder out",
         "mode": "link",
         "links": [
-            "ca2e9a4b6955efb0"
+            "ca2e9a4b6955efb0",
+            "b91f80df53529646"
         ],
         "x": 1505,
         "y": 1140,
@@ -2831,7 +2900,7 @@
         "oldrc": false,
         "name": "",
         "x": 2040,
-        "y": 880,
+        "y": 900,
         "wires": [
             [
                 "0e3188356bf30267"
@@ -2942,6 +3011,161 @@
         "x": 1190,
         "y": 1540,
         "wires": []
+    },
+    {
+        "id": "http_request_node_id",
+        "type": "http request",
+        "z": "fccae755c2f8e1fe",
+        "g": "c95c3762d28db2e7",
+        "name": "POST to Flask Server",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:5001/config/current_work",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "Content-Type",
+                "valueType": "other",
+                "valueValue": "application/json"
+            }
+        ],
+        "x": 1080,
+        "y": 1120,
+        "wires": [
+            [
+                "debug_node_id"
+            ]
+        ]
+    },
+    {
+        "id": "debug_node_id",
+        "type": "debug",
+        "z": "fccae755c2f8e1fe",
+        "name": "Server Response",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 1310,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "fa9a2e51168ded58",
+        "type": "debug",
+        "z": "fccae755c2f8e1fe",
+        "name": "STDOUT of PointCloudAlignment server",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2380,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "27fe052d6a86d839",
+        "type": "pythonshell in",
+        "z": "fccae755c2f8e1fe",
+        "d": true,
+        "name": "Config_manager",
+        "pyfile": "/home/iat/Documents/BA_Oleksandr/objectify/node-red/config_manager_server.py",
+        "virtualenv": "/home/iat/miniforge3/envs/ba_oleksandr",
+        "continuous": true,
+        "stdInData": false,
+        "x": 2000,
+        "y": 1460,
+        "wires": [
+            [
+                "fa9a2e51168ded58"
+            ]
+        ]
+    },
+    {
+        "id": "11beb9a4fc2b2b03",
+        "type": "inject",
+        "z": "fccae755c2f8e1fe",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.01",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1750,
+        "y": 1380,
+        "wires": [
+            [
+                "5c67edf5181c1ba5"
+            ]
+        ]
+    },
+    {
+        "id": "5c67edf5181c1ba5",
+        "type": "exec",
+        "z": "fccae755c2f8e1fe",
+        "command": "python ../point_cloud_alignment/app.py",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 2000,
+        "y": 1340,
+        "wires": [
+            [
+                "fa9a2e51168ded58"
+            ],
+            [
+                "fa9a2e51168ded58"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "4f70e3c752265bbb",
+        "type": "ui_template",
+        "z": "fccae755c2f8e1fe",
+        "group": "740f8e0483a46aa2",
+        "name": "",
+        "order": 1,
+        "width": 12,
+        "height": 6,
+        "format": "<div id=\"container\">\n    <p id=\"message\" style=\"display: none;\">Firstly, you need to connect the camera and start the server.</p>\n    <iframe id=\"cam_frame\" src=\"http://localhost:5000\" style=\"width: 100%; height: 100%; display: none;\"></iframe>\n</div>\n\n<script>\n    function checkServer() {\n        fetch(\"http://localhost:5000\", { method: \"HEAD\" })\n            .then((response) => {\n                if (response.ok) {\n                    // Server is accessible, show the iframe and hide the message\n                    document.getElementById(\"cam_frame\").style.display = \"block\";\n                    document.getElementById(\"message\").style.display = \"none\";\n                } else {\n                    // Server is not accessible, show the message and hide the iframe\n                    document.getElementById(\"cam_frame\").style.display = \"none\";\n                    document.getElementById(\"message\").style.display = \"block\";\n                }\n            })\n            .catch((error) => {\n                // In case of an error (server down), show the message and hide the iframe\n                document.getElementById(\"cam_frame\").style.display = \"none\";\n                document.getElementById(\"message\").style.display = \"block\";\n            });\n    }\n\n    // Run the server check every 2 seconds\n    setInterval(checkServer, 2000);\n\n    // Initial check on page load\n    checkServer();\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 740,
+        "y": 1560,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "8071265587d0b45a",
@@ -5628,8 +5852,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 110,
-        "y": 1060,
+        "x": 130,
+        "y": 1100,
         "wires": [
             [
                 "eb33b24fae8e05f7"
@@ -5850,8 +6074,8 @@
         "y": 300,
         "wires": [
             [
-                "7b36c9095cf50122",
-                "840effcc5078fe89"
+                "840effcc5078fe89",
+                "9690e2b68f0781d4"
             ]
         ]
     },
@@ -5963,27 +6187,6 @@
         ]
     },
     {
-        "id": "7b36c9095cf50122",
-        "type": "function",
-        "z": "c5fc9b7a988cec09",
-        "g": "16e9549a3ea706bc",
-        "name": "Set global_folder",
-        "func": "var folder = global.get('filebrowser_default_folder');\nvar project= msg.payload;\nmsg.payload = folder+project+\"/\";\n\nglobal.set(\"selected_project\",project)\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2930,
-        "y": 380,
-        "wires": [
-            [
-                "26c7c6d054bad91c"
-            ]
-        ]
-    },
-    {
         "id": "7aa205a7c54fbf27",
         "type": "comment",
         "z": "c5fc9b7a988cec09",
@@ -6008,7 +6211,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 2210,
+        "x": 2190,
         "y": 800,
         "wires": [
             []
@@ -6031,7 +6234,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 160,
+        "x": 120,
         "y": 1000,
         "wires": []
     },
@@ -6051,12 +6254,12 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 490,
-        "y": 280,
+        "x": 430,
+        "y": 300,
         "wires": [
             [
-                "3",
-                "4325551d270b89d7"
+                "4325551d270b89d7",
+                "be0e5a9f75f42fca"
             ]
         ]
     },
@@ -6071,8 +6274,8 @@
         "once": true,
         "onceDelay": "0.2",
         "topic": "",
-        "x": 270,
-        "y": 340,
+        "x": 190,
+        "y": 360,
         "wires": [
             [
                 "4de0ac6342d8d836"
@@ -6084,21 +6287,21 @@
         "type": "switch",
         "z": "c5fc9b7a988cec09",
         "name": "Check current_work",
-        "property": "payload",
+        "property": "camera_calibrated",
         "propertyType": "msg",
         "rules": [
             {
-                "t": "nempty"
+                "t": "true"
             },
             {
-                "t": "empty"
+                "t": "false"
             }
         ],
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 720,
-        "y": 220,
+        "x": 830,
+        "y": 240,
         "wires": [
             [
                 "ce10213a8e5db4a7"
@@ -6147,8 +6350,8 @@
                 "tot": "str"
             }
         ],
-        "x": 1050,
-        "y": 200,
+        "x": 1160,
+        "y": 220,
         "wires": [
             [
                 "81810eff6af1ce1b"
@@ -6176,8 +6379,8 @@
                 "tot": "str"
             }
         ],
-        "x": 1050,
-        "y": 240,
+        "x": 1160,
+        "y": 260,
         "wires": [
             [
                 "81810eff6af1ce1b"
@@ -6199,8 +6402,8 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 1410,
-        "y": 260,
+        "x": 1520,
+        "y": 280,
         "wires": [
             []
         ]
@@ -6257,7 +6460,7 @@
         "z": "c5fc9b7a988cec09",
         "group": "b4e511253bf4fd53",
         "name": "Generating poses result",
-        "order": 5,
+        "order": 6,
         "width": 0,
         "height": 0,
         "format": "<div style=\"color:{{msg.color}};font-size:20px;\">{{msg.text}}</div>",
@@ -6694,7 +6897,7 @@
         "type": "function",
         "z": "c5fc9b7a988cec09",
         "name": "generate_pose_signature",
-        "func": "let initial_folder = global.get(\"filebrowser_default_folder\");\nlet folder = global.get(\"selected_project\");\nlet full_path = initial_folder + folder;\n\nvar camera_matrix = msg.payload[\"camera_matrix\"];\n\nvar dist_coeff = msg.payload[\"dist_coeff\"];\n\n\nconst flattened_camera_matrix = camera_matrix.flat();\n\n// Convert to a space-separated string\nconst string_camera_matrix = flattened_camera_matrix.join(' ');\n\nconst flattened_dist_coeff = dist_coeff.flat();\n\n// Convert to a space-separated string\nconst string_dist_coeff = flattened_dist_coeff.join(' ');\n\nmsg.payload = \"python ../scripts/charuco_generate_pose.py --project_name \"+ folder+\" --input \"+ full_path+\" --mtx \"+string_camera_matrix+ \" --dist \"+string_dist_coeff;\nreturn msg;",
+        "func": "let initial_folder = global.get(\"filebrowser_default_folder\");\nlet folder = global.get(\"selected_project\");\nlet full_path = initial_folder + folder;\n\nvar camera_matrix = msg.payload[\"camera_matrix\"];\n\nvar dist_coeff = msg.payload[\"dist_coeff\"];\n\nvar remove_background = flow.get(\"remove_background\")\n\nconst flattened_camera_matrix = camera_matrix.flat();\n\n// Convert to a space-separated string\nconst string_camera_matrix = flattened_camera_matrix.join(' ');\n\nconst flattened_dist_coeff = dist_coeff.flat();\n\n// Convert to a space-separated string\nconst string_dist_coeff = flattened_dist_coeff.join(' ');\n\n\nmsg.payload = \"python ../scripts/charuco_generate_pose.py\" +\n    \" --project_name \" + folder +\n    \" --input \" + full_path +\n    \" --mtx \" + string_camera_matrix +\n    \" --dist \" + string_dist_coeff;\nif(remove_background === \"None\"){\n    return msg;\n}else{\n    msg.payload = msg.payload + \" --remove_background --bg_model \" + remove_background;\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -6803,236 +7006,182 @@
         ]
     },
     {
-        "id": "d5e6f7a8b9c0",
-        "type": "http request",
-        "z": "4b77236584df4d0f",
-        "name": "Get Config",
-        "method": "GET",
-        "ret": "obj",
-        "paytoqs": "ignore",
-        "url": "http://127.0.0.1:5001/config/",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "authType": "",
-        "senderr": false,
-        "x": 910,
-        "y": 380,
-        "wires": [
-            [
-                "d1f0b5e3.ef9e68"
-            ]
-        ]
-    },
-    {
-        "id": "d1f0b5e3.ef9e68",
+        "id": "9690e2b68f0781d4",
         "type": "function",
-        "z": "4b77236584df4d0f",
-        "name": "Prepare Data",
-        "func": "// Retrieve the configuration data from msg.payload\nlet config = msg.payload || {};\n\n// Get the selected project name from global context\nlet selected_project = global.get('selected_project') || '';\n\n// Get the 'current_work' object\nlet current_work = config.current_work || {};\n\n// Get the selected project's data\nlet project_data = config[selected_project] || {};\n\n// Prepare the message payload\nmsg.payload = {\n    current_work: current_work,\n    project_name: selected_project,\n    project_data: project_data\n};\n\nreturn msg;",
+        "z": "c5fc9b7a988cec09",
+        "g": "f5b066733b7099e4",
+        "name": "Set global_folder",
+        "func": "// Retrieve the folder path from a global variable in Node-RED\nvar folder = global.get('filebrowser_default_folder');\nvar project = msg.payload;\n\n// Construct the desired path\nvar selected_folder_path = folder + project + \"/\";\n\n// Prepare the payload as a JSON object with the required structure\nmsg.payload = { \"selected_folder\": selected_folder_path };\n\n// Optionally store selected folder path in a global variable\nglobal.set(\"selected_project\", project);\n\nreturn msg;\n",
         "outputs": 1,
+        "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1110,
-        "y": 380,
+        "x": 2910,
+        "y": 360,
         "wires": [
             [
-                "a2f4c8b4.c8f538"
+                "c4cdc6410331d79c",
+                "26c7c6d054bad91c"
             ]
         ]
     },
     {
-        "id": "a2f4c8b4.c8f538",
-        "type": "ui_template",
-        "z": "4b77236584df4d0f",
-        "group": "6c2e3428a6c52ed8",
-        "name": "Config Display COLMAP",
-        "order": 6,
-        "width": 11,
-        "height": 6,
-        "format": "<div style=\"border: 2px solid white; padding: 20px; border-radius: 10px;\">\n    <h2>Current Work</h2>\n    <div ng-if=\"isObjectEmpty(msg.payload.current_work)\">\n        <p>Current session is empty yet, perform some work first.</p>\n    </div>\n    <div ng-if=\"!isObjectEmpty(msg.payload.current_work)\">\n        <pre>{{msg.payload.current_work | json}}</pre>\n    </div>\n\n    <h2>Selected Project: {{msg.payload.project_name}}</h2>\n    <table style=\"width: 100%; border-collapse: collapse;\">\n        <tr ng-repeat=\"(key, value) in msg.payload.project_data\">\n            <td style=\"border: 1px solid #ccc; padding: 8px;\"><strong>{{key}}</strong></td>\n            <td style=\"border: 1px solid #ccc; padding: 8px;\" ng-if=\"value === true\">\n                <span style=\"color: green;\">{{value}}</span>\n            </td>\n            <td style=\"border: 1px solid #ccc; padding: 8px;\" ng-if=\"value === false\">\n                <span style=\"color: red;\">{{value}}</span>\n            </td>\n            <td style=\"border: 1px solid #ccc; padding: 8px;\" ng-if=\"value !== true && value !== false\">\n                <span>{{value}}</span>\n            </td>\n        </tr>\n    </table>\n</div>\n\n<script>\n    (function(scope) {\n    scope.isObjectEmpty = function(obj) {\n        // Check if the object is null or undefined\n        if (!obj) return true;\n        // Check if the object has any own properties\n        return Object.keys(obj).length === 0;\n    };\n})(scope);\n</script>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 1350,
-        "y": 380,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "fa6f54d95580fe30",
-        "type": "link in",
-        "z": "4b77236584df4d0f",
-        "name": "Update config in COLMAP",
-        "links": [
-            "b6dbdbefdc1b2ff0"
+        "id": "c4cdc6410331d79c",
+        "type": "http request",
+        "z": "c5fc9b7a988cec09",
+        "g": "f5b066733b7099e4",
+        "name": "POST to Flask Server",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:5001/config/current_work",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "Content-Type",
+                "valueType": "other",
+                "valueValue": "application/json"
+            }
         ],
-        "x": 445,
+        "x": 2920,
         "y": 440,
         "wires": [
-            [
-                "d5e6f7a8b9c0"
-            ]
+            []
         ]
     },
     {
-        "id": "0cf4b0cc6f369842",
-        "type": "http request",
-        "z": "4b77236584df4d0f",
-        "name": "Get Config",
-        "method": "GET",
-        "ret": "obj",
-        "paytoqs": "ignore",
-        "url": "http://127.0.0.1:5001/config/",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "authType": "",
-        "senderr": false,
-        "x": 890,
-        "y": 740,
+        "id": "bef12c959bdaebd1",
+        "type": "inject",
+        "z": "c5fc9b7a988cec09",
+        "name": "set charuco background removal on startup",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "None",
+        "payloadType": "str",
+        "x": 190,
+        "y": 1440,
         "wires": [
             [
-                "cb5112b1cf567faa"
+                "55040291161a7ac2"
             ]
         ]
     },
     {
-        "id": "cb5112b1cf567faa",
-        "type": "function",
-        "z": "4b77236584df4d0f",
-        "name": "Prepare Data",
-        "func": "// Retrieve the configuration data from msg.payload\nlet config = msg.payload || {};\n\n// Get the selected project name from global context\nlet selected_project = global.get('selected_project') || '';\n\n// Get the 'current_work' object\nlet current_work = config.current_work || {};\n\n// Get the selected project's data\nlet project_data = config[selected_project] || {};\n\n// Prepare the message payload\nmsg.payload = {\n    current_work: current_work,\n    project_name: selected_project,\n    project_data: project_data\n};\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1090,
-        "y": 740,
-        "wires": [
-            [
-                "96c41cfd63d924ec"
-            ]
-        ]
-    },
-    {
-        "id": "96c41cfd63d924ec",
-        "type": "ui_template",
-        "z": "4b77236584df4d0f",
-        "group": "94b2d8d9e77fa636",
-        "name": "Config Display Charuco",
+        "id": "55040291161a7ac2",
+        "type": "ui_dropdown",
+        "z": "c5fc9b7a988cec09",
+        "name": "remove_background",
+        "label": "Background removal",
+        "tooltip": "Select a model within background will be removed (recommended birefnet-general))",
+        "place": "Select option",
+        "group": "b4e511253bf4fd53",
         "order": 5,
-        "width": 10,
-        "height": 6,
-        "format": "<div style=\"border: 2px solid white; padding: 20px; border-radius: 10px;\">\n    <h2>Current Work</h2>\n    <div ng-if=\"isObjectEmpty(msg.payload.current_work)\">\n        <p>Current session is empty yet, perform some work first.</p>\n    </div>\n    <div ng-if=\"!isObjectEmpty(msg.payload.current_work)\">\n        <pre>{{msg.payload.current_work | json}}</pre>\n    </div>\n\n    <h2>Selected Project: {{msg.payload.project_name}}</h2>\n    <table style=\"width: 100%; border-collapse: collapse;\">\n        <tr ng-repeat=\"(key, value) in msg.payload.project_data\">\n            <td style=\"border: 1px solid #ccc; padding: 8px;\"><strong>{{key}}</strong></td>\n            <td style=\"border: 1px solid #ccc; padding: 8px;\" ng-if=\"value === true\">\n                <span style=\"color: green;\">{{value}}</span>\n            </td>\n            <td style=\"border: 1px solid #ccc; padding: 8px;\" ng-if=\"value === false\">\n                <span style=\"color: red;\">{{value}}</span>\n            </td>\n            <td style=\"border: 1px solid #ccc; padding: 8px;\" ng-if=\"value !== true && value !== false\">\n                <span>{{value}}</span>\n            </td>\n        </tr>\n    </table>\n</div>\n\n<script>\n    (function(scope) {\n    scope.isObjectEmpty = function(obj) {\n        // Check if the object is null or undefined\n        if (!obj) return true;\n        // Check if the object has any own properties\n        return Object.keys(obj).length === 0;\n    };\n})(scope);\n</script>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "sam",
+                "value": "sam",
+                "type": "str"
+            },
+            {
+                "label": "isnet-general-use",
+                "value": "isnet-general-use",
+                "type": "str"
+            },
+            {
+                "label": "u2net",
+                "value": "u2net",
+                "type": "str"
+            },
+            {
+                "label": "birefnet-general",
+                "value": "birefnet-general",
+                "type": "str"
+            },
+            {
+                "label": "birefnet-general-lite",
+                "value": "birefnet-general-lite",
+                "type": "str"
+            },
+            {
+                "label": "None",
+                "value": "None",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
         "className": "",
-        "x": 1330,
-        "y": 740,
+        "x": 480,
+        "y": 1500,
+        "wires": [
+            [
+                "e2bd37b6f1ed07c9"
+            ]
+        ]
+    },
+    {
+        "id": "e2bd37b6f1ed07c9",
+        "type": "change",
+        "z": "c5fc9b7a988cec09",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "remove_background",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 1420,
         "wires": [
             []
         ]
     },
     {
-        "id": "95ea35cbfef53422",
-        "type": "link in",
-        "z": "4b77236584df4d0f",
-        "name": "Update config in CHARUCO",
-        "links": [
-            "26c7c6d054bad91c"
-        ],
-        "x": 435,
-        "y": 760,
-        "wires": [
-            [
-                "0cf4b0cc6f369842"
-            ]
-        ]
-    },
-    {
-        "id": "5c680f2c65482ee7",
-        "type": "http request",
-        "z": "4b77236584df4d0f",
-        "name": "Get Config",
-        "method": "GET",
-        "ret": "obj",
-        "paytoqs": "ignore",
-        "url": "http://127.0.0.1:5001/config/",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "authType": "",
-        "senderr": false,
-        "x": 930,
-        "y": 1040,
-        "wires": [
-            [
-                "8c3102a6b22d022f"
-            ]
-        ]
-    },
-    {
-        "id": "8c3102a6b22d022f",
+        "id": "be0e5a9f75f42fca",
         "type": "function",
-        "z": "4b77236584df4d0f",
-        "name": "Prepare Data",
-        "func": "// Retrieve the configuration data from msg.payload\nlet config = msg.payload || {};\n\n// Get the selected project name from global context\nlet selected_project = global.get('selected_project') || '';\n\n// Get the 'current_work' object\nlet current_work = config.current_work || {};\n\n// Get the selected project's data\nlet project_data = config[selected_project] || {};\n\n// Prepare the message payload\nmsg.payload = {\n    current_work: current_work,\n    project_name: selected_project,\n    project_data: project_data\n};\n\nreturn msg;",
+        "z": "c5fc9b7a988cec09",
+        "name": "function 28",
+        "func": "var camera_calibrated = false;\n//node.warn(msg.payload[\"camera_matrix\"])\nif(msg.payload[\"camera_matrix\"] == undefined){\n    camera_calibrated = false;\n    //node.warn(\"no calibration\")\n} else{\n    camera_calibrated = true;\n    //node.warn(\"yes calibration\")\n}\nmsg.camera_calibrated = camera_calibrated;\nreturn msg;",
         "outputs": 1,
+        "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1130,
-        "y": 1040,
+        "x": 610,
+        "y": 260,
         "wires": [
             [
-                "fccc230a2f088304"
-            ]
-        ]
-    },
-    {
-        "id": "fccc230a2f088304",
-        "type": "ui_template",
-        "z": "4b77236584df4d0f",
-        "group": "919860c8b411c539",
-        "name": "Config Display INGP",
-        "order": 6,
-        "width": 11,
-        "height": "6",
-        "format": "<div style=\"border: 2px solid white; padding: 20px; border-radius: 10px;\">\n    <h2>Current Work</h2>\n    <div ng-if=\"isObjectEmpty(msg.payload.current_work)\">\n        <p>Current session is empty yet, perform some work first.</p>\n    </div>\n    <div ng-if=\"!isObjectEmpty(msg.payload.current_work)\">\n        <pre>{{msg.payload.current_work | json}}</pre>\n    </div>\n\n    <h2>Selected Project: {{msg.payload.project_name}}</h2>\n    <table style=\"width: 100%; border-collapse: collapse;\">\n        <tr ng-repeat=\"(key, value) in msg.payload.project_data\">\n            <td style=\"border: 1px solid #ccc; padding: 8px;\"><strong>{{key}}</strong></td>\n            <td style=\"border: 1px solid #ccc; padding: 8px;\" ng-if=\"value === true\">\n                <span style=\"color: green;\">{{value}}</span>\n            </td>\n            <td style=\"border: 1px solid #ccc; padding: 8px;\" ng-if=\"value === false\">\n                <span style=\"color: red;\">{{value}}</span>\n            </td>\n            <td style=\"border: 1px solid #ccc; padding: 8px;\" ng-if=\"value !== true && value !== false\">\n                <span>{{value}}</span>\n            </td>\n        </tr>\n    </table>\n</div>\n\n<script>\n    (function(scope) {\n    scope.isObjectEmpty = function(obj) {\n        // Check if the object is null or undefined\n        if (!obj) return true;\n        // Check if the object has any own properties\n        return Object.keys(obj).length === 0;\n    };\n})(scope);\n</script>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 1360,
-        "y": 1040,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5e5981fb6bf20e28",
-        "type": "link in",
-        "z": "4b77236584df4d0f",
-        "name": "Update config in INGP",
-        "links": [
-            "1f21093d7f876a07"
-        ],
-        "x": 445,
-        "y": 1060,
-        "wires": [
-            [
-                "5c680f2c65482ee7"
+                "3"
             ]
         ]
     },
@@ -7373,7 +7522,7 @@
         "y": 920,
         "wires": [
             [
-                "77d15c886180587e"
+                "acd724c4469b4f7e"
             ]
         ]
     },
@@ -7588,27 +7737,6 @@
         "wires": [
             [
                 "16bbbc3cfdc4abeb"
-            ]
-        ]
-    },
-    {
-        "id": "77d15c886180587e",
-        "type": "function",
-        "z": "3669868b19b1582f",
-        "g": "80f0e37eedd4ac4c",
-        "name": "Set global_folder",
-        "func": "var folder = global.get('filebrowser_default_folder');\nvar project = msg.payload;\nmsg.payload = folder + project + \"/\";\n\nglobal.set(\"selected_project\", project)\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1670,
-        "y": 960,
-        "wires": [
-            [
-                "b6dbdbefdc1b2ff0"
             ]
         ]
     },
@@ -8300,12 +8428,64 @@
         "type": "debug",
         "z": "3669868b19b1582f",
         "name": "",
-        "active": true,
+        "active": false,
         "console": "false",
         "complete": "payload",
         "x": 3280,
         "y": 900,
         "wires": []
+    },
+    {
+        "id": "acd724c4469b4f7e",
+        "type": "function",
+        "z": "3669868b19b1582f",
+        "g": "25f3c5600f2539f4",
+        "name": "Set global_folder",
+        "func": "// Retrieve the folder path from a global variable in Node-RED\nvar folder = global.get('filebrowser_default_folder');\nvar project = msg.payload;\n\n// Construct the desired path\nvar selected_folder_path = folder + project + \"/\";\n\n// Prepare the payload as a JSON object with the required structure\nmsg.payload = { \"selected_folder\": selected_folder_path };\n\n// Optionally store selected folder path in a global variable\nglobal.set(\"selected_project\", project);\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1650,
+        "y": 920,
+        "wires": [
+            [
+                "ff4dbd7543a823f9",
+                "b6dbdbefdc1b2ff0"
+            ]
+        ]
+    },
+    {
+        "id": "ff4dbd7543a823f9",
+        "type": "http request",
+        "z": "3669868b19b1582f",
+        "g": "25f3c5600f2539f4",
+        "name": "POST to Flask Server",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:5001/config/current_work",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "Content-Type",
+                "valueType": "other",
+                "valueValue": "application/json"
+            }
+        ],
+        "x": 1620,
+        "y": 1000,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "cdf08e1fa0f798cf",
@@ -8322,7 +8502,7 @@
         "type": "function",
         "z": "f11166a80e40d7b6",
         "name": "Building ingp run command",
-        "func": "//construct command\n// var cmd = \"\";\n// cmd = cmd +\"python scripts/run.py \"\n// var full_cmd = \"python run.py --scene transforms.json --screenshot_dir rembg_abgabe_img1139/ --width 2048 --height 2048 --n_steps 1000 --save_snapshot ./snap.ingp\";\n// var folder = flow.get(\"folder\");\n// if(flow.get(\"folder\") == null){\n//     msg.errorcode = 1;\n//     msg.errortext = \"Please navigate to folder that contains images\";\n// }\n\n// if(flow.get(\"video\")==true){\n//  cmd += \"--video_in \";\n//  cmd += folder +\" \";\n// }else{\n//     cmd+= \"--images \";\n//     cmd+= folder+ \" \";\n// }\n// if(flow.get(\"run_colmap\")==true){\n//     cmd += \"--run_colmap \";\n// }\n// if(flow.get(\"single_camera\")==true){\n//     cmd += \"--single_camera \";\n// }\n// if(flow.get(\"use_gpu\")==true){\n//     cmd += \"--use_gpu 1 \";\n// }\n// msg.payload = cmd;\n// msg.errorcode = 0;\n// return msg;\n\nvar cmd = \"\";\nvar steps = flow.get(\"steps\")\nconsole.log(flow.get(\"transforms_found\"));\nvar default_folder = global.get(\"filebrowser_default_folder\") \nlet project_path =default_folder+ global.get(\"selected_project\");\nvar ingp_root = global.get(\"ingp_root\")\nvar mc_resolution = flow.get(\"resolution\");\ncmd = \"python \" + ingp_root + \"run.py\" + \" --scene \" + project_path + \"/transforms_centered.json --save_snapshot \" + project_path + \"/snapshot.ingp --save_mesh \" + project_path + \"/snapshot.obj --n_steps \" + steps + \" --marching_cubes_res \" + mc_resolution +\" --marching_cubes_density_thresh 2.8\";\ncmd += \nmsg.payload = cmd;\n\nreturn msg;",
+        "func": "\n\nvar cmd = \"\";\nvar steps = flow.get(\"steps\")\nconsole.log(flow.get(\"transforms_found\"));\nvar default_folder = global.get(\"filebrowser_default_folder\") \nlet project_path =default_folder+ global.get(\"selected_project\");\nvar ingp_root = global.get(\"ingp_root\")\nvar mc_resolution = flow.get(\"resolution\");\ncmd = \"python \" + ingp_root + \"run.py\" + \" --scene \" + project_path + \n    \"/transforms_centered.json --save_snapshot \" + project_path + \"/snapshot.ingp --save_mesh \" + project_path \n    + \"/snapshot.obj --n_steps \" + steps + \n    \" --marching_cubes_res \" + mc_resolution + \n    \" --marching_cubes_density_thresh 2.8\";\ncmd += \nmsg.payload = cmd;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8592,7 +8772,7 @@
         "y": 180,
         "wires": [
             [
-                "8f84de504bd9865d"
+                "60c98f04b535d14a"
             ]
         ]
     },
@@ -8616,11 +8796,12 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 110,
+        "x": 130,
         "y": 740,
         "wires": [
             [
-                "758183874dfb91e1"
+                "6922f8443327585e",
+                "48b85358d2e6637b"
             ]
         ]
     },
@@ -8797,14 +8978,14 @@
         "order": 1,
         "width": 12,
         "height": 16,
-        "format": "<div style=\"height: 700px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px;\" id=\"logWindow\"></div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var logWindow = document.getElementById(\"logWindow\");\n            if (payload === \"clear\") {\n                logWindow.innerHTML = \"\";  // Clear the log window\n            } else {\n                logWindow.innerHTML += payload + \"<br>\"+ \"<br>\" + \"<br>\";\n                logWindow.scrollTop = logWindow.scrollHeight;  // Auto-scroll to the bottom\n            }\n        });\n    })(scope);\n</script>",
+        "format": "<div style=\"height: 700px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px;\" id=\"logWindow\"></div>\n\n<script>\n    (function(scope) {\n        const trackedLines = {};  // To store the last line elements for each keyword\n\n        // Define keywords that indicate updatable lines\n        const keywords = [];//\"Training:\", \"Precompute neighbors\", \"Clustering\"];\n\n        scope.$watch('msg.payload', function(payload) {\n            var logWindow = document.getElementById(\"logWindow\");\n\n            if (payload === \"clear\") {\n                logWindow.innerHTML = \"\";  // Clear the log window\n                for (let key in trackedLines) {\n                    trackedLines[key] = null;\n                }\n            } else {\n                // Check if the payload contains any of the keywords\n                let updated = false;\n                for (let keyword of keywords) {\n                    if (payload.includes(keyword)) {\n                        // Update or create a line for the keyword progress\n                        if (trackedLines[keyword]) {\n                            trackedLines[keyword].innerHTML = payload;\n                        } else {\n                            trackedLines[keyword] = document.createElement(\"div\");\n                            trackedLines[keyword].innerHTML = payload;\n                            logWindow.appendChild(trackedLines[keyword]);\n                        }\n                        updated = true;\n                        break;\n                    }\n                }\n\n                if (!updated) {\n                    // For other lines, append as usual\n                    var newLine = document.createElement(\"div\");\n                    newLine.innerHTML = payload;\n                    logWindow.appendChild(newLine);\n                }\n                \n                logWindow.scrollTop = logWindow.scrollHeight;  // Auto-scroll to the bottom\n            }\n        });\n    })(scope);\n</script>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 3080,
-        "y": 660,
+        "x": 3060,
+        "y": 640,
         "wires": [
             []
         ]
@@ -8855,7 +9036,7 @@
         "type": "debug",
         "z": "f11166a80e40d7b6",
         "name": "debug 48",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -9037,27 +9218,6 @@
         "x": 2290,
         "y": 300,
         "wires": []
-    },
-    {
-        "id": "8f84de504bd9865d",
-        "type": "function",
-        "z": "f11166a80e40d7b6",
-        "g": "28c003637500bb58",
-        "name": "Set global_folder",
-        "func": "var folder = global.get('filebrowser_default_folder');\nvar project= msg.payload;\nmsg.payload = project;\n\nglobal.set(\"selected_project\", msg.payload)\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1710,
-        "y": 240,
-        "wires": [
-            [
-                "1f21093d7f876a07"
-            ]
-        ]
     },
     {
         "id": "1f21093d7f876a07",
@@ -9415,55 +9575,6 @@
         ]
     },
     {
-        "id": "d9dc7c058499a92c",
-        "type": "function",
-        "z": "f11166a80e40d7b6",
-        "name": "Remove background",
-        "func": "// Fynunction to remove background and change transforms json\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 470,
-        "y": 640,
-        "wires": [
-            [
-                "6922f8443327585e"
-            ]
-        ]
-    },
-    {
-        "id": "758183874dfb91e1",
-        "type": "switch",
-        "z": "f11166a80e40d7b6",
-        "name": "",
-        "property": "remove_background",
-        "propertyType": "flow",
-        "rules": [
-            {
-                "t": "true"
-            },
-            {
-                "t": "false"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 310,
-        "y": 740,
-        "wires": [
-            [
-                "d9dc7c058499a92c"
-            ],
-            [
-                "6922f8443327585e"
-            ]
-        ]
-    },
-    {
         "id": "f0d1c39fb0f1234a",
         "type": "switch",
         "z": "f11166a80e40d7b6",
@@ -9499,7 +9610,7 @@
         "type": "function",
         "z": "f11166a80e40d7b6",
         "name": "get_suface cmd",
-        "func": "let extract_surface = flow.get(\"extract_surface\");\n\n\nvar cmd = \"\";\nvar steps = flow.get(\"steps\")\nconsole.log(flow.get(\"transforms_found\"));\nvar default_folder = global.get(\"filebrowser_default_folder\")\nlet project_path = default_folder + global.get(\"selected_project\");\nvar ingp_root = global.get(\"ingp_root\")\nvar mc_resolution = flow.get(\"resolution\");\n\n\nif(extract_surface){\n    msg.payload = \"Starting of extracting the surface\"\n    cmd = \"python \" + ingp_root + \"run.py\" + \" --scene \" + project_path + \"/snapshot.obj --save_mesh \" + project_path + \"/surface_snapshot.ply --n_steps 2000\" + \" --marching_cubes_res \" + mc_resolution + \" --marching_cubes_density_thresh 0.0\";\n    msg.command = cmd;\n}\nelse{\n    msg.payload = \"Reconstruction completed, and saved under \" +project_path +\" with the name \" +\"snapshot.ply\"\n}\n\n\n\n\n\n\n\n//msg.command = \"python \" + \"../scripts/get_surface.py\" + \"--mesh_path \" + ./ data / meshes / charuco_rembg.ply +\" --num_points \" +12000000 +\" --out_name \" +\"./ data / meshes / charucosurface.obj\";\nreturn msg;",
+        "func": "let extract_surface = flow.get(\"extract_surface\");\n\n\nvar cmd = \"\";\nvar steps = flow.get(\"steps\")\nconsole.log(flow.get(\"transforms_found\"));\nvar default_folder = global.get(\"filebrowser_default_folder\")\nlet project_path = default_folder + global.get(\"selected_project\");\nvar ingp_root = global.get(\"ingp_root\")\nvar mc_resolution = flow.get(\"resolution\");\n\n\nif(extract_surface){\n    msg.payload = \"Starting of extracting the surface\"\n    cmd = \"python \" + ingp_root + \"run.py\" + \" --scene \" + project_path + \"/snapshot.obj --save_surface --save_mesh \" + project_path + \"/surface_snapshot.ply --n_steps 3000\" + \" --marching_cubes_res \" + mc_resolution + \" --marching_cubes_density_thresh 0.0\";\n    msg.command = cmd;\n}\nelse{\n    msg.payload = \"Reconstruction completed, and saved under \" +project_path +\" with the name \" +\"snapshot.ply\"\n}\n\n\n\n\n\n\n\n//msg.command = \"python \" + \"../scripts/get_surface.py\" + \"--mesh_path \" + ./ data / meshes / charuco_rembg.ply +\" --num_points \" +12000000 +\" --out_name \" +\"./ data / meshes / charucosurface.obj\";\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -9643,7 +9754,7 @@
         "id": "ad3ba70e4a3a679d",
         "type": "function",
         "z": "f11166a80e40d7b6",
-        "name": "get_suface cmd",
+        "name": "refine_mesh cmd",
         "func": "let refine_mesh = flow.get(\"refine_mesh\");\nlet extract_surface = flow.get(\"extract_surface\")\n\nvar cmd = \"\";\nvar steps = flow.get(\"steps\")\nconsole.log(flow.get(\"transforms_found\"));\nvar default_folder = global.get(\"filebrowser_default_folder\")\nlet project_path = default_folder + global.get(\"selected_project\");\nvar ingp_root = global.get(\"ingp_root\")\nvar mc_resolution = flow.get(\"resolution\");\n\n\nif(refine_mesh){\n    msg.payload = \"Starting of refining the surface\"\n    if(extract_surface){\n        cmd = \"python ../scripts/point_filtering.py \" + project_path + \"/surface_snapshot.ply \" + project_path + \"/filtered_pcd.ply --do_poisson\";\n        msg.command = cmd;\n    }else{\n        cmd = \"python ../scripts/point_filtering.py \" +project_path+ \"/snapshot.obj \"+project_path +\"/filtered_pcd.ply --do_poisson\";\n        msg.command = cmd;\n    }\n    \n}\nelse{\n    //msg.payload = \"Reconstruction completed, and saved under \" +project_path +\" with the name \" +\"snapshot.ply\"\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -9651,7 +9762,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2220,
+        "x": 2230,
         "y": 500,
         "wires": [
             [
@@ -9683,7 +9794,7 @@
         "id": "174d535476d959fd",
         "type": "switch",
         "z": "f11166a80e40d7b6",
-        "name": "If extract_surface",
+        "name": "If refine_mesh",
         "property": "refine_mesh",
         "propertyType": "flow",
         "rules": [
@@ -9697,7 +9808,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 2430,
+        "x": 2420,
         "y": 500,
         "wires": [
             [
@@ -9720,8 +9831,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "refine_mesh",
-        "x": 2650,
-        "y": 480,
+        "x": 2670,
+        "y": 500,
         "wires": [
             [
                 "ab3d335fc2c980c9",
@@ -9776,6 +9887,107 @@
         "wires": []
     },
     {
+        "id": "60c98f04b535d14a",
+        "type": "function",
+        "z": "f11166a80e40d7b6",
+        "g": "e6812c157a022f7a",
+        "name": "Set global_folder",
+        "func": "// Retrieve the folder path from a global variable in Node-RED\nvar folder = global.get('filebrowser_default_folder');\nvar project = msg.payload;\n\n// Construct the desired path\nvar selected_folder_path = folder + project + \"/\";\n\n// Prepare the payload as a JSON object with the required structure\nmsg.payload = { \"selected_folder\": selected_folder_path };\n\n// Optionally store selected folder path in a global variable\nglobal.set(\"selected_project\", project);\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1750,
+        "y": 180,
+        "wires": [
+            [
+                "82e35819ede10259",
+                "1f21093d7f876a07"
+            ]
+        ]
+    },
+    {
+        "id": "82e35819ede10259",
+        "type": "http request",
+        "z": "f11166a80e40d7b6",
+        "g": "e6812c157a022f7a",
+        "name": "POST to Flask Server",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:5001/config/current_work",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "Content-Type",
+                "valueType": "other",
+                "valueValue": "application/json"
+            }
+        ],
+        "x": 1720,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "48b85358d2e6637b",
+        "type": "function",
+        "z": "f11166a80e40d7b6",
+        "name": "clear_logging",
+        "func": "msg.payload = \"clear\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 660,
+        "wires": [
+            [
+                "6cd9e8c01a95afd6"
+            ]
+        ]
+    },
+    {
+        "id": "6cd9e8c01a95afd6",
+        "type": "link out",
+        "z": "f11166a80e40d7b6",
+        "name": "clear loggign out",
+        "mode": "link",
+        "links": [
+            "e141b20fa90d5b39"
+        ],
+        "x": 505,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "e141b20fa90d5b39",
+        "type": "link in",
+        "z": "f11166a80e40d7b6",
+        "name": "ingp logging in",
+        "links": [
+            "6cd9e8c01a95afd6"
+        ],
+        "x": 2665,
+        "y": 720,
+        "wires": [
+            [
+                "ab3d335fc2c980c9"
+            ]
+        ]
+    },
+    {
         "id": "572ab1316025d42c",
         "type": "ui_template",
         "z": "cd35db7d9440e826",
@@ -9784,7 +9996,7 @@
         "order": 9,
         "width": 23,
         "height": 22,
-        "format": "<iframe id=\"myIframe\" src=\"http://localhost:5000\" style=\"width: 100%; height: 800px;\">\n</iframe>",
+        "format": "<iframe id=\"myIframe\" src=\"http://localhost:5000\" style=\"width: 100%; height: 1000px;\">\n</iframe>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
@@ -9801,18 +10013,19 @@
         "type": "function",
         "z": "c0273576f864fea6",
         "name": "function 10",
-        "func": "\nvar cmd = \".\\\\CloudComPy310\\\\envCloudComPy.bat\"//+filename;\nmsg.payload = cmd;\nreturn msg;",
+        "func": "\nvar default_folder = global.get(\"filebrowser_default_folder\")\nlet project_path = default_folder + global.get(\"selected_project\");\n\nvar cmd = \"python ../scripts/compare_surface.py --pcd_source \" + project_path + \"/filtered_pcd.ply \" + \"--pcd_target \" +project_path +\"/aligned_pcd.ply\"\nmsg.payload = cmd;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 700,
+        "x": 730,
         "y": 780,
         "wires": [
             [
-                "a26435bd6401d4fa"
+                "a26435bd6401d4fa",
+                "3cc267623caa6150"
             ]
         ]
     },
@@ -9823,16 +10036,17 @@
         "command": "",
         "addpay": "payload",
         "append": "",
-        "useSpawn": "false",
+        "useSpawn": "true",
         "timer": "",
         "winHide": false,
         "oldrc": false,
         "name": "",
         "x": 930,
-        "y": 800,
+        "y": 780,
         "wires": [
             [
-                "fdabff8dd193ee69"
+                "fdabff8dd193ee69",
+                "7814354030b8abaa"
             ],
             [
                 "fdabff8dd193ee69"
@@ -9847,6 +10061,230 @@
         "type": "debug",
         "z": "c0273576f864fea6",
         "name": "debug 44",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1320,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "53ef27deb0f14696",
+        "type": "ui_button",
+        "z": "c0273576f864fea6",
+        "name": "",
+        "group": "bbcac8f35b0ea650",
+        "order": 5,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Run Comparison",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 490,
+        "y": 700,
+        "wires": [
+            [
+                "58f4f425e9b543ca"
+            ]
+        ]
+    },
+    {
+        "id": "41d44316103e492c",
+        "type": "ui_template",
+        "z": "c0273576f864fea6",
+        "group": "bbcac8f35b0ea650",
+        "name": "",
+        "order": 7,
+        "width": 22,
+        "height": 27,
+        "format": "<script>\n(function(scope) {\n    scope.$watch('msg', function(msg) {\n        if (msg) {\n            let object = document.getElementById(\"myIframe\");\n            if (msg.payload === \"show\") {\n                object.style.display = \"block\"; // Shows the iframe\n                \n                // Reload iframe by resetting the src\n                setTimeout(() => {\n                    object.src = \"\"; // Clear the src\n                    setTimeout(() => {\n                        object.src = \"http://localhost:5454\"; // Reset the src to reload\n                    }, 100); // Short delay before resetting src to trigger reload\n                }, 1000); // Delay before reload\n            } else {\n                object.style.display = \"none\"; // Hides the iframe\n                object.src = \"\"; // Clear the src when hiding\n            }\n        }\n    });\n})(scope);\n</script>\n\n<iframe id=\"myIframe\" src=\"http://localhost:5454\" style=\"width: 100%; height: 100%; display: none;\">\n</iframe>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1760,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "20376754978b6dbd",
+        "type": "ui_text",
+        "z": "c0273576f864fea6",
+        "group": "bbcac8f35b0ea650",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "name": "Select Project",
+        "label": "Select a project where to initialize charuco camera pose extraction",
+        "format": "",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 460,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "e921c83c7d1b6871",
+        "type": "ui_dropdown",
+        "z": "c0273576f864fea6",
+        "g": "e2e624193a86d3b9",
+        "name": "comparison project dropdown",
+        "label": "",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "bbcac8f35b0ea650",
+        "order": 3,
+        "width": 8,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 1170,
+        "y": 340,
+        "wires": [
+            [
+                "559faaaff15c078d",
+                "09f392d65d1f4059"
+            ]
+        ]
+    },
+    {
+        "id": "93c090cf3a7bccc7",
+        "type": "function",
+        "z": "c0273576f864fea6",
+        "g": "e2e624193a86d3b9",
+        "name": "Folder handling",
+        "func": "let folder = global.get(\"filebrowser_default_folder\");\nlet project_name = global.get(\"selected_project\")\n//console.log(project_name);\n\nif (folder===undefined) {\n    folder=\"./projects/\";\n    context.set(\"folder\", folder);\n}\n\n\nmsg.project_name = project_name;\nmsg.payload = {\"start\":folder};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fs",
+                "module": "fs"
+            }
+        ],
+        "x": 560,
+        "y": 340,
+        "wires": [
+            [
+                "d11f03a9cf9216c1"
+            ]
+        ]
+    },
+    {
+        "id": "d11f03a9cf9216c1",
+        "type": "fs-file-lister",
+        "z": "c0273576f864fea6",
+        "g": "e2e624193a86d3b9",
+        "name": "Files",
+        "start": "./projects/",
+        "pattern": "*.*",
+        "folders": "*",
+        "hidden": false,
+        "lstype": "directories",
+        "path": true,
+        "single": true,
+        "depth": 0,
+        "stat": true,
+        "showWarnings": false,
+        "x": 750,
+        "y": 340,
+        "wires": [
+            [
+                "95875027e0f1854f"
+            ]
+        ]
+    },
+    {
+        "id": "95875027e0f1854f",
+        "type": "function",
+        "z": "c0273576f864fea6",
+        "g": "e2e624193a86d3b9",
+        "name": "Prep Data",
+        "func": "function convertDate(local) {\n    let d = new Date(local);\n    d.setTime(d.getTime()+3600*1000);\n    return d.toISOString().slice(0, 19).replace('T', ' ');\n}\n\nvar newmsg = msg;\nnewmsg.options = [];\n\nfor (var i=0; i<msg.payload.length; i++) {\n\n    msg.payload[i].fname = msg.payload[i].name.replace(/^.*(\\\\|\\/|\\:)/, '');\n    if (msg.payload[i].stat.isDirectory) {\n        msg.payload[i].ext = \"folder\";\n        newmsg.options[i] = msg.payload[i].fname;\n    }\n}\nif (global.get(\"selected_project\") !== \"\") {\n    // Find the index of the selected project\n    var project_name = global.get(\"selected_project\").split(\"/\").filter(Boolean).pop();\n    newmsg.payload = project_name\n}\nflow.set(\"currentfolder\",msg.payload);\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 340,
+        "wires": [
+            [
+                "e921c83c7d1b6871",
+                "d182d22217881571"
+            ]
+        ]
+    },
+    {
+        "id": "d182d22217881571",
+        "type": "debug",
+        "z": "c0273576f864fea6",
+        "g": "e2e624193a86d3b9",
+        "name": "debug 69",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "b91f80df53529646",
+        "type": "link in",
+        "z": "c0273576f864fea6",
+        "g": "e2e624193a86d3b9",
+        "name": "Charuco global folder in",
+        "links": [
+            "4819a5fb717ddca6"
+        ],
+        "x": 395,
+        "y": 440,
+        "wires": [
+            [
+                "93c090cf3a7bccc7"
+            ]
+        ]
+    },
+    {
+        "id": "559faaaff15c078d",
+        "type": "debug",
+        "z": "c0273576f864fea6",
+        "g": "e2e624193a86d3b9",
+        "name": "debug 70",
         "active": false,
         "tosidebar": true,
         "console": false,
@@ -9854,17 +10292,83 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1200,
-        "y": 780,
+        "x": 1250,
+        "y": 520,
         "wires": []
     },
     {
-        "id": "a39c20fa82e98f71",
+        "id": "b6296ab6f8faa47c",
+        "type": "link out",
+        "z": "c0273576f864fea6",
+        "g": "e2e624193a86d3b9",
+        "name": "link out 2",
+        "mode": "link",
+        "links": [
+            "95ea35cbfef53422"
+        ],
+        "x": 1515,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "09f392d65d1f4059",
+        "type": "function",
+        "z": "c0273576f864fea6",
+        "g": "5b33861cacd40f7d",
+        "name": "Set global_folder",
+        "func": "// Retrieve the folder path from a global variable in Node-RED\nvar folder = global.get('filebrowser_default_folder');\nvar project = msg.payload;\n\n// Construct the desired path\nvar selected_folder_path = folder + project + \"/\";\n\n// Prepare the payload as a JSON object with the required structure\nmsg.payload = { \"selected_folder\": selected_folder_path };\n\n// Optionally store selected folder path in a global variable\nglobal.set(\"selected_project\", project);\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1350,
+        "y": 400,
+        "wires": [
+            [
+                "1d6c1f982a3f410b",
+                "b6296ab6f8faa47c"
+            ]
+        ]
+    },
+    {
+        "id": "1d6c1f982a3f410b",
+        "type": "http request",
+        "z": "c0273576f864fea6",
+        "g": "5b33861cacd40f7d",
+        "name": "POST to Flask Server",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:5001/config/current_work",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "Content-Type",
+                "valueType": "other",
+                "valueValue": "application/json"
+            }
+        ],
+        "x": 1340,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7814354030b8abaa",
         "type": "delay",
         "z": "c0273576f864fea6",
         "name": "",
         "pauseType": "delay",
-        "timeout": "3",
+        "timeout": "1",
         "timeoutUnits": "seconds",
         "rate": "1",
         "nbRateUnits": "1",
@@ -9875,8 +10379,28 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 890,
-        "y": 640,
+        "x": 1100,
+        "y": 900,
+        "wires": [
+            [
+                "29913cea44af4fae"
+            ]
+        ]
+    },
+    {
+        "id": "29913cea44af4fae",
+        "type": "function",
+        "z": "c0273576f864fea6",
+        "name": "get_suface cmd",
+        "func": "msg.payload = \"show\"\nflow.set(\"output_shown\", true)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1520,
+        "y": 1020,
         "wires": [
             [
                 "41d44316103e492c"
@@ -9884,93 +10408,69 @@
         ]
     },
     {
-        "id": "a9270599221108f3",
-        "type": "pythonshell in",
-        "z": "c0273576f864fea6",
-        "d": true,
-        "name": "compare_surface",
-        "pyfile": "C:\\Users\\zlukich\\Desktop\\lehre\\sose23\\Bachelorarbeit\\node-red\\CloudComPy310/compare_surface.py",
-        "virtualenv": "C:\\zlukich\\anaconda3\\envs\\CloudComPy310",
-        "continuous": false,
-        "stdInData": false,
-        "x": 930,
-        "y": 900,
-        "wires": [
-            [
-                "fdabff8dd193ee69"
-            ]
-        ]
-    },
-    {
-        "id": "53ef27deb0f14696",
-        "type": "ui_button",
+        "id": "3da48deae4d70738",
+        "type": "inject",
         "z": "c0273576f864fea6",
         "name": "",
-        "group": "bbcac8f35b0ea650",
-        "order": 2,
-        "width": 6,
-        "height": 1,
-        "passthru": false,
-        "label": "Run Visualizer",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "true",
-        "payloadType": "bool",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 480,
-        "y": 700,
-        "wires": [
-            [
-                "a39c20fa82e98f71",
-                "58f4f425e9b543ca"
-            ]
-        ]
-    },
-    {
-        "id": "b5409114c7c5149d",
-        "type": "ui_text",
-        "z": "c0273576f864fea6",
-        "group": "bbcac8f35b0ea650",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "text",
-        "format": "Code to be implemented",
-        "layout": "row-spread",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 510,
-        "y": 300,
-        "wires": []
-    },
-    {
-        "id": "41d44316103e492c",
-        "type": "ui_template",
-        "z": "c0273576f864fea6",
-        "group": "bbcac8f35b0ea650",
-        "name": "",
-        "order": 4,
-        "width": 22,
-        "height": "18",
-        "format": "<iframe id=\"myIframe\" src=\"http://localhost:5454\" style=\"display: {{msg.payload ? 'block' : 'none'}};width: 100%; height: 100%;\">\n</iframe>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 1180,
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1310,
         "y": 680,
         "wires": [
-            []
+            [
+                "101f804152794544"
+            ]
         ]
+    },
+    {
+        "id": "101f804152794544",
+        "type": "function",
+        "z": "c0273576f864fea6",
+        "name": "get_suface cmd",
+        "func": "msg.payload = \"none\"\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1540,
+        "y": 680,
+        "wires": [
+            [
+                "41d44316103e492c"
+            ]
+        ]
+    },
+    {
+        "id": "3cc267623caa6150",
+        "type": "debug",
+        "z": "c0273576f864fea6",
+        "name": "debug 71",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 1020,
+        "wires": []
     },
     {
         "id": "eb5989747efe7bc0",
@@ -10258,5 +10758,243 @@
         "x": 800,
         "y": 640,
         "wires": []
+    },
+    {
+        "id": "d5e6f7a8b9c0",
+        "type": "http request",
+        "z": "4b77236584df4d0f",
+        "name": "Get Config",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:5001/config/",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 910,
+        "y": 380,
+        "wires": [
+            [
+                "d1f0b5e3.ef9e68"
+            ]
+        ]
+    },
+    {
+        "id": "d1f0b5e3.ef9e68",
+        "type": "function",
+        "z": "4b77236584df4d0f",
+        "name": "Prepare Data",
+        "func": "// Retrieve the configuration data from msg.payload\nlet config = msg.payload || {};\n\n// Get the selected project name from global context\nlet selected_project = global.get('selected_project') || '';\n\n// Get the 'current_work' object\nlet current_work = config.current_work || {};\n\n// Get the selected project's data\nlet project_data = config[selected_project] || {};\n\n// Prepare the message payload\nmsg.payload = {\n    current_work: current_work,\n    project_name: selected_project,\n    project_data: project_data\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1110,
+        "y": 380,
+        "wires": [
+            [
+                "a2f4c8b4.c8f538"
+            ]
+        ]
+    },
+    {
+        "id": "a2f4c8b4.c8f538",
+        "type": "ui_template",
+        "z": "4b77236584df4d0f",
+        "group": "6c2e3428a6c52ed8",
+        "name": "Config Display COLMAP",
+        "order": 6,
+        "width": 11,
+        "height": 6,
+        "format": "<div style=\"border: 2px solid white; padding: 20px; border-radius: 10px;\">\n    <h2>Current Work</h2>\n    <div ng-if=\"isObjectEmpty(msg.payload.current_work)\">\n        <p>Current session is empty yet, perform some work first.</p>\n    </div>\n    <div ng-if=\"!isObjectEmpty(msg.payload.current_work)\">\n        <pre>{{msg.payload.current_work | json}}</pre>\n    </div>\n\n    <h2>Selected Project: {{msg.payload.project_name}}</h2>\n    <table style=\"width: 100%; border-collapse: collapse;\">\n        <tr ng-repeat=\"(key, value) in msg.payload.project_data\">\n            <td style=\"border: 1px solid #ccc; padding: 8px;\"><strong>{{key}}</strong></td>\n            <td style=\"border: 1px solid #ccc; padding: 8px;\" ng-if=\"value === true\">\n                <span style=\"color: green;\">{{value}}</span>\n            </td>\n            <td style=\"border: 1px solid #ccc; padding: 8px;\" ng-if=\"value === false\">\n                <span style=\"color: red;\">{{value}}</span>\n            </td>\n            <td style=\"border: 1px solid #ccc; padding: 8px;\" ng-if=\"value !== true && value !== false\">\n                <span>{{value}}</span>\n            </td>\n        </tr>\n    </table>\n</div>\n\n<script>\n    (function(scope) {\n    scope.isObjectEmpty = function(obj) {\n        // Check if the object is null or undefined\n        if (!obj) return true;\n        // Check if the object has any own properties\n        return Object.keys(obj).length === 0;\n    };\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1350,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fa6f54d95580fe30",
+        "type": "link in",
+        "z": "4b77236584df4d0f",
+        "name": "Update config in COLMAP",
+        "links": [
+            "b6dbdbefdc1b2ff0"
+        ],
+        "x": 445,
+        "y": 440,
+        "wires": [
+            [
+                "d5e6f7a8b9c0"
+            ]
+        ]
+    },
+    {
+        "id": "0cf4b0cc6f369842",
+        "type": "http request",
+        "z": "4b77236584df4d0f",
+        "name": "Get Config",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:5001/config/",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 890,
+        "y": 740,
+        "wires": [
+            [
+                "cb5112b1cf567faa"
+            ]
+        ]
+    },
+    {
+        "id": "cb5112b1cf567faa",
+        "type": "function",
+        "z": "4b77236584df4d0f",
+        "name": "Prepare Data",
+        "func": "// Retrieve the configuration data from msg.payload\nlet config = msg.payload || {};\n\n// Get the selected project name from global context\nlet selected_project = global.get('selected_project') || '';\n\n// Get the 'current_work' object\nlet current_work = config.current_work || {};\n\n// Get the selected project's data\nlet project_data = config[selected_project] || {};\n\n// Prepare the message payload\nmsg.payload = {\n    current_work: current_work,\n    project_name: selected_project,\n    project_data: project_data\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 740,
+        "wires": [
+            [
+                "96c41cfd63d924ec"
+            ]
+        ]
+    },
+    {
+        "id": "96c41cfd63d924ec",
+        "type": "ui_template",
+        "z": "4b77236584df4d0f",
+        "group": "94b2d8d9e77fa636",
+        "name": "Config Display Charuco",
+        "order": 5,
+        "width": 10,
+        "height": 6,
+        "format": "<div style=\"border: 2px solid white; padding: 20px; border-radius: 10px;\">\n    <h2>Current Work</h2>\n    <div ng-if=\"isObjectEmpty(msg.payload.current_work)\">\n        <p>Current session is empty yet, perform some work first.</p>\n    </div>\n    <div ng-if=\"!isObjectEmpty(msg.payload.current_work)\">\n        <pre>{{msg.payload.current_work | json}}</pre>\n    </div>\n\n    <h2>Selected Project: {{msg.payload.project_name}}</h2>\n    <table style=\"width: 100%; border-collapse: collapse;\">\n        <tr ng-repeat=\"(key, value) in msg.payload.project_data\">\n            <td style=\"border: 1px solid #ccc; padding: 8px;\"><strong>{{key}}</strong></td>\n            <td style=\"border: 1px solid #ccc; padding: 8px;\" ng-if=\"value === true\">\n                <span style=\"color: green;\">{{value}}</span>\n            </td>\n            <td style=\"border: 1px solid #ccc; padding: 8px;\" ng-if=\"value === false\">\n                <span style=\"color: red;\">{{value}}</span>\n            </td>\n            <td style=\"border: 1px solid #ccc; padding: 8px;\" ng-if=\"value !== true && value !== false\">\n                <span>{{value}}</span>\n            </td>\n        </tr>\n    </table>\n</div>\n\n<script>\n    (function(scope) {\n    scope.isObjectEmpty = function(obj) {\n        // Check if the object is null or undefined\n        if (!obj) return true;\n        // Check if the object has any own properties\n        return Object.keys(obj).length === 0;\n    };\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1330,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "95ea35cbfef53422",
+        "type": "link in",
+        "z": "4b77236584df4d0f",
+        "name": "Update config in CHARUCO",
+        "links": [
+            "26c7c6d054bad91c",
+            "b6296ab6f8faa47c"
+        ],
+        "x": 435,
+        "y": 760,
+        "wires": [
+            [
+                "0cf4b0cc6f369842"
+            ]
+        ]
+    },
+    {
+        "id": "5c680f2c65482ee7",
+        "type": "http request",
+        "z": "4b77236584df4d0f",
+        "name": "Get Config",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:5001/config/",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 930,
+        "y": 1040,
+        "wires": [
+            [
+                "8c3102a6b22d022f"
+            ]
+        ]
+    },
+    {
+        "id": "8c3102a6b22d022f",
+        "type": "function",
+        "z": "4b77236584df4d0f",
+        "name": "Prepare Data",
+        "func": "// Retrieve the configuration data from msg.payload\nlet config = msg.payload || {};\n\n// Get the selected project name from global context\nlet selected_project = global.get('selected_project') || '';\n\n// Get the 'current_work' object\nlet current_work = config.current_work || {};\n\n// Get the selected project's data\nlet project_data = config[selected_project] || {};\n\n// Prepare the message payload\nmsg.payload = {\n    current_work: current_work,\n    project_name: selected_project,\n    project_data: project_data\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1130,
+        "y": 1040,
+        "wires": [
+            [
+                "fccc230a2f088304"
+            ]
+        ]
+    },
+    {
+        "id": "fccc230a2f088304",
+        "type": "ui_template",
+        "z": "4b77236584df4d0f",
+        "group": "919860c8b411c539",
+        "name": "Config Display INGP",
+        "order": 6,
+        "width": 11,
+        "height": "6",
+        "format": "<div style=\"border: 2px solid white; padding: 20px; border-radius: 10px;\">\n    <h2>Current Work</h2>\n    <div ng-if=\"isObjectEmpty(msg.payload.current_work)\">\n        <p>Current session is empty yet, perform some work first.</p>\n    </div>\n    <div ng-if=\"!isObjectEmpty(msg.payload.current_work)\">\n        <pre>{{msg.payload.current_work | json}}</pre>\n    </div>\n\n    <h2>Selected Project: {{msg.payload.project_name}}</h2>\n    <table style=\"width: 100%; border-collapse: collapse;\">\n        <tr ng-repeat=\"(key, value) in msg.payload.project_data\">\n            <td style=\"border: 1px solid #ccc; padding: 8px;\"><strong>{{key}}</strong></td>\n            <td style=\"border: 1px solid #ccc; padding: 8px;\" ng-if=\"value === true\">\n                <span style=\"color: green;\">{{value}}</span>\n            </td>\n            <td style=\"border: 1px solid #ccc; padding: 8px;\" ng-if=\"value === false\">\n                <span style=\"color: red;\">{{value}}</span>\n            </td>\n            <td style=\"border: 1px solid #ccc; padding: 8px;\" ng-if=\"value !== true && value !== false\">\n                <span>{{value}}</span>\n            </td>\n        </tr>\n    </table>\n</div>\n\n<script>\n    (function(scope) {\n    scope.isObjectEmpty = function(obj) {\n        // Check if the object is null or undefined\n        if (!obj) return true;\n        // Check if the object has any own properties\n        return Object.keys(obj).length === 0;\n    };\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1360,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5e5981fb6bf20e28",
+        "type": "link in",
+        "z": "4b77236584df4d0f",
+        "name": "Update config in INGP",
+        "links": [
+            "1f21093d7f876a07"
+        ],
+        "x": 445,
+        "y": 1060,
+        "wires": [
+            [
+                "5c680f2c65482ee7"
+            ]
+        ]
     }
 ]

@@ -4,6 +4,18 @@ import open3d as o3d
 from flask import Flask, request, jsonify, send_file, render_template, after_this_request
 import tempfile
 import copy
+import sys
+sys.path.append(os.path.abspath(os.path.join("..",'lib')))
+
+# Import the necessary modules
+from calibration.cv2api.calibrate import read_chessboards, calibrate_camera
+from calibration.cv2api.detect import detect_pose
+from config.ConfigManagerServer import ConfigManagerAPI
+from calibration.json_utils.json_functions import generate_json_for_images
+
+print("Starting a calibration", flush=True)
+
+config_manager = ConfigManagerAPI("http://127.0.0.1:5001")
 
 # Get the absolute path of the directory where app.py is located
 app_dir = os.path.abspath(os.path.dirname(__file__))
@@ -142,12 +154,27 @@ def download_transformed_pcd():
         return jsonify({'error': 'Transformed point cloud not available'}), 400
 
     try:
+        # Save the transofmed point cloud on server
+        
+        current_work = config_manager.get_current_work()
+        print(current_work)
+        selected_project = current_work["selected_folder"]
+        
+        if(selected_project is not None):
+            complete_path_node_red = os.path.join("../node-red/",selected_project, "aligned_pcd.ply")
+            #
+            o3d.io.write_point_cloud(complete_path_node_red, transformed_pcd)
+            
+            print(f"Saved under {complete_path_node_red}")
+        else:
+            print(f"Something went wrong while saving transformed pcd under selected_project")
+        
         # Save the transformed point cloud to a temporary file
         temp_file = tempfile.NamedTemporaryFile(suffix='.ply', delete=False)
         temp_filename = temp_file.name
         temp_file.close()  # Close the file so Open3D can write to it
         o3d.io.write_point_cloud(temp_filename, transformed_pcd)
-
+        
         @after_this_request
         def remove_file(response):
             try:

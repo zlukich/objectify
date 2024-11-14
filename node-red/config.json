@@ -1,5 +1,7 @@
 {
-    "current_work": {},
+    "current_work": {
+        "selected_folder": "./projects/undefined/"
+    },
     "test_project": {
         "images": "/home/iat/Documents/BA_Oleksandr/objectify/node-red/projects/board_4x4_freehand",
         "calibrated": true,
@@ -1037,6 +1039,141 @@
         "transforms_path": "./projects/bfrog_silver_1110/transforms_centered.json"
     },
     "5x5placube.complete_images": {
-        "images": "./projects/5x5placube.complete_images"
+        "images": "./projects/5x5placube.complete_images",
+        "transforms_path": "./projects/5x5placube.complete_images/transforms_centered.json"
+    },
+    "calib1": {
+        "images": "./projects/calib1",
+        "calibrated": true,
+        "camera_matrix": [
+            [
+                5198.329279507721,
+                0.0,
+                2066.0560785776793
+            ],
+            [
+                0.0,
+                5206.778445744112,
+                929.2434634864424
+            ],
+            [
+                0.0,
+                0.0,
+                1.0
+            ]
+        ],
+        "dist_coeff": [
+            [
+                -0.05264300613524354
+            ],
+            [
+                0.09636234530169552
+            ],
+            [
+                -0.002316264227233578
+            ],
+            [
+                -0.000977780577625821
+            ],
+            [
+                -8.563261610295736
+            ],
+            [
+                0.03723665876345298
+            ],
+            [
+                0.08659661452919021
+            ],
+            [
+                -9.079126388400777
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ]
+        ],
+        "transforms_path": "./projects/calib1/transforms_centered.json"
+    },
+    "calib2": {
+        "images": "./projects/calib2",
+        "calibrated": true,
+        "camera_matrix": [
+            [
+                5163.520018884583,
+                0.0,
+                918.7864054181508
+            ],
+            [
+                0.0,
+                5142.552199769963,
+                821.7336400967306
+            ],
+            [
+                0.0,
+                0.0,
+                1.0
+            ]
+        ],
+        "dist_coeff": [
+            [
+                -0.0434694785208089
+            ],
+            [
+                0.2204454458874079
+            ],
+            [
+                0.007570920193385472
+            ],
+            [
+                -0.007586620961751339
+            ],
+            [
+                -1.5007715728202995
+            ],
+            [
+                0.04891571027683305
+            ],
+            [
+                -0.8766257428035101
+            ],
+            [
+                5.248571953479054
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ]
+        ]
+    },
+    "blue_frog.calib2": {
+        "transforms_path": "./projects/blue_frog.calib2/transforms_centered.json"
     }
 }

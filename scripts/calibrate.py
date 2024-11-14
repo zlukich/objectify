@@ -19,7 +19,7 @@ config_manager = ConfigManagerAPI("http://127.0.0.1:5001")
 
 def calibrate_and_write(project_name, output_folder, config_manager, board):
 
-    image_files = [os.path.join(output_folder, f) for f in os.listdir(output_folder) if f.endswith(".jpg") or f.endswith(".png")]
+    image_files = [os.path.join(output_folder, f) for f in os.listdir(output_folder) if f.endswith(".jpg") or f.endswith(".png") or f.endswith(".bmp")]
     image_files.sort()  # Ensure files are in order
 
     allCorners, allIds, imsize, num_of_detected_markers = read_chessboards(image_files, board)
@@ -31,6 +31,8 @@ def calibrate_and_write(project_name, output_folder, config_manager, board):
         np.save(os.path.join(output_folder, "camera_matrix.npy"), mtx)
         np.save(os.path.join(output_folder, "camera_dist_coeff.npy"), dist)
         config_manager.update_project(project_name, {"calibrated": True, "camera_matrix": mtx.tolist(),
+                                                     "dist_coeff": dist.tolist()})
+        config_manager.update_current_work({"calibrated": True, "camera_matrix": mtx.tolist(),
                                                      "dist_coeff": dist.tolist()})
     else:
         print("No calibration data were found")

@@ -1,6 +1,58 @@
 import open3d as o3d
 import numpy as np
 import argparse
+import trimesh
+import igraph as ig
+import os
+def load_mesh(path):
+    mesh = trimesh.load_mesh(path)
+    vertices = np.array(mesh.vertices)
+    faces = np.array(mesh.faces)
+    return vertices, faces
+
+def find_largest_connected_component(vertices, faces):
+    # Step 1: Convert faces into edge pairs
+    edges = set()
+    for face in faces:
+        for i in range(3):
+            v1, v2 = face[i], face[(i + 1) % 3]
+            edges.add((min(v1, v2), max(v1, v2)))  # Ensure unique edges
+    
+    # Step 2: Build graph using igraph
+    graph = ig.Graph()
+    graph.add_vertices(len(vertices))
+    graph.add_edges(list(edges))
+
+    # Step 3: Identify the largest component
+    components = graph.connected_components()
+    largest_component = max(components, key=len)
+
+    # Step 4: Filter vertices and faces for the largest component
+    vertex_map = {v: i for i, v in enumerate(largest_component)}
+    largest_component_vertices = vertices[largest_component]
+    
+    largest_component_faces = []
+    for face in faces:
+        if all(v in vertex_map for v in face):
+            mapped_face = [vertex_map[v] for v in face]
+            largest_component_faces.append(mapped_face)
+    
+    largest_component_faces = np.array(largest_component_faces)
+    return largest_component_vertices, largest_component_faces
+
+def save_mesh(vertices, faces, filename="largest_component_mesh.obj"):
+    mesh = trimesh.Trimesh(vertices=vertices, faces=faces)
+    mesh.export(filename)
+    print(f"Mesh saved to {filename}")
+
+def process_mesh(path, output_path="filtered_pcd_igraph.ply"):
+    vertices, faces = load_mesh(path)
+    largest_vertices, largest_faces = find_largest_connected_component(vertices, faces)
+    save_mesh(largest_vertices, largest_faces, output_path)
+
+# Usage:
+
+
 
 def main():
     parser = argparse.ArgumentParser(description='Filter outliers and extract largest connected component from a mesh.')
@@ -23,7 +75,11 @@ def main():
     print("Input mesh has {} vertices and {} triangles.".format(len(mesh.vertices), len(mesh.triangles)),flush = True)
 
     # Convert mesh to point cloud
-    pcd = mesh.sample_points_uniformly(number_of_points=len(mesh.vertices))
+    if(len(mesh.vertices)>500000):
+        pcd = mesh.sample_points_uniformly(number_of_points=500000)
+    else:
+        pcd = mesh.sample_points_uniformly(number_of_points=len(mesh.vertices))
+    
     print("Converted to point cloud with {} points.".format(len(pcd.points)),flush = True)
 
     # Optional downsampling
@@ -77,7 +133,10 @@ def main():
         # Save the output pcd
         o3d.io.write_point_cloud(args.output_mesh, pcd_cluster)
         print("Saved output point_cloud to {}.".format(args.output_mesh),flush = True)
-
+    print("Trying also alternative approach of selecting largest component via igraph", flush = True)
+    
+    dirname = os.path.dirname(args.input_mesh)
+    process_mesh(args.input_mesh,output_path=os.path.join(dirname, "filtered_mesh_igraph.ply"))
     
     
 

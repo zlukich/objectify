@@ -111,7 +111,7 @@ def compute_scaling_factor(data_json):
     return scaling_factor
 
 
-def generate_json_for_images(folder_path,output_json_path , camera_matrix,dist_coeff,board,scale = 3,colmap = False):
+def generate_json_for_images(folder_path,output_json_path , camera_matrix,dist_coeff,board,scale = 3,colmap = False,append_rembg = False):
     """Generate JSON for a folder of images with given rvecs and tvecs."""
 
     # Example usage:
@@ -139,7 +139,8 @@ def generate_json_for_images(folder_path,output_json_path , camera_matrix,dist_c
         "h": image.shape[0],
         "aabb_scale": 1,
         "scale": scale,
-        "poses_from": "charuco"
+        "poses_from": "charuco",
+        "rembg": append_rembg
     }
 
     data = {
@@ -161,6 +162,7 @@ def generate_json_for_images(folder_path,output_json_path , camera_matrix,dist_c
         "aabb_scale": camera_params["aabb_scale"],
         "scale": camera_params["scale"],
         "poses_from": camera_params["poses_from"],
+        "rembg": camera_params["rembg"],
         "frames": []
     }
 
@@ -189,7 +191,7 @@ def generate_json_for_images(folder_path,output_json_path , camera_matrix,dist_c
                     c2w = create_transform_matrix(rvec, tvec)
                     up += c2w[0:3,1]
                     frame_data = {
-                        "file_path": os.path.join("./",image_file),
+                        "file_path": os.path.join( "./rembg/" if append_rembg else"./" ,os.path.splitext(image_file)[0]+'.png' if append_rembg else image_file),
                         "sharpness": sharpness(image), 
                         "transform_matrix": c2w
                     }

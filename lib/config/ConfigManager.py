@@ -78,7 +78,7 @@ class ConfigManager:
     def update_current_work(self, data):
         """Update 'current_work' section with new data."""
         try:
-            self.config_data['current_work'] = data
+            self.config_data['current_work'].update(data)  
             self._save_config()
         except Exception as e:
             logging.error(f"Error updating 'current_work': {e}")
