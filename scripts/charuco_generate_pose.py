@@ -44,7 +44,7 @@ parser.add_argument('--mtx', nargs=9,type = float, default = None, required=True
 parser.add_argument('--dist',  nargs=14,type = float, default = None, required=True,help='Path to the calibration camera distortion coefficients')
 
 parser.add_argument("--remove_background", action="store_true", help="Perform background removal before acquiring poses. Model to use specify in bg_model")
-parser.add_argument("--bg_model", default="isnet-general-use",choices=["sam", "isnet-general-use","u2net","birefnet-general","birefnet-general-lite"], help="Model that will be used for removing background. Sam(object point in center of image) or isnet-general")
+parser.add_argument("--bg_model", default="birefnet-general",choices=["sam", "isnet-general-use","u2net","birefnet-general","birefnet-general-lite"], help="Model that will be used for removing background. Sam(object point in center of image) or isnet-general")
 
 args = parser.parse_args()
 
@@ -54,10 +54,19 @@ append_rembg = False
 
 if(args.remove_background):
     append_rembg = True
+    
+
+selected_proj_conf = config_manager.get_project(project_name)
 
 if args.remove_background:
-		do_system(f"python ../scripts/backremover.py --model {args.bg_model} --input_dir {input_path}")
+	do_system(f"python ../scripts/backremover.py --model {args.bg_model} --input_dir {input_path}")
+	config_manager.update_project(project_name,{"bg_model" : args.bg_model})
+else:
+	print("No background removal is required")
 
+  
+config_manager.update_project(project_name,{"rembg" : append_rembg})
+config_manager.update_project(project_name,{"poses_from" : "charuco"})
 mtx  = np.array(args.mtx).reshape(3, 3)
 
 dist = np.array(args.dist)

@@ -31,8 +31,8 @@
         <button id="clear-selections-button">Clear Selections</button>
     </div>
     <div id="buttons">
-        <input type="file" id="source-file" accept=".ply" />
-        <input type="file" id="target-file" accept=".ply" />
+        <input type="file" id="source-file" accept=".ply,.obj" />
+        <input type="file" id="target-file" accept=".ply,.obj" />
         <button id="clear-pointclouds-button">Clear Point Clouds</button>
         <button id="align-button" disabled>Align Point Clouds</button>
         <button id="download-button" disabled>Download Transformed Point Cloud</button>
@@ -43,13 +43,12 @@
     <div id="selection-mode">
         Currently Selecting: Source Points
     </div>
-    <!-- Include Three.js and related scripts -->
-    <script src="{{ url_for('static', filename='js/three.min.js') }}"></script>
-    <!-- Include OrbitControls -->
-    <script src="{{ url_for('static', filename='js/OrbitControls.js') }}"></script>
-    <!-- Include PLYLoader -->
-    <script src="{{ url_for('static', filename='js/PLYLoader.js') }}"></script>
-    <!-- Include the main JavaScript code -->
-    <script src="{{ url_for('static', filename='main.js') }}"></script>
+    <script src="js/three.min.js"></script>
+    <script src="js/OrbitControls.js"></script>
+    <script src="js/PLYLoader.js"></script>
+    <script src="js/OBJLoader.js"></script>
+    <script src="main.js"></script>
+
+
 </body>
 </html>

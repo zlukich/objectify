@@ -1,6 +1,6 @@
 {
     "current_work": {
-        "selected_folder": "./projects/undefined/"
+        "selected_folder": "./projects/bluefrog2.calib5_complete/"
     },
     "test_project": {
         "images": "/home/iat/Documents/BA_Oleksandr/objectify/node-red/projects/board_4x4_freehand",
@@ -1175,5 +1175,298 @@
     },
     "blue_frog.calib2": {
         "transforms_path": "./projects/blue_frog.calib2/transforms_centered.json"
+    },
+    "calib4": {
+        "images": "./projects/calib4",
+        "calibrated": true,
+        "camera_matrix": [
+            [
+                5140.043393334148,
+                0.0,
+                1261.795198670464
+            ],
+            [
+                0.0,
+                5326.656683270951,
+                883.7185714551853
+            ],
+            [
+                0.0,
+                0.0,
+                1.0
+            ]
+        ],
+        "dist_coeff": [
+            [
+                0.0843904857493962
+            ],
+            [
+                -0.2181703044068345
+            ],
+            [
+                -0.016234568461852242
+            ],
+            [
+                -6.135909833610058e-06
+            ],
+            [
+                62.99402216575745
+            ],
+            [
+                -0.039740536334349506
+            ],
+            [
+                6.246295116706708
+            ],
+            [
+                6.681761212371699
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ]
+        ],
+        "transforms_path": "./projects/calib4/transforms_centered.json",
+        "rembg": false,
+        "poses_from": "charuco"
+    },
+    "calib4test": {
+        "images": "./projects/calib4test",
+        "calibrated": true,
+        "camera_matrix": [
+            [
+                5140.043393334148,
+                0.0,
+                1261.795198670464
+            ],
+            [
+                0.0,
+                5326.656683270951,
+                883.7185714551853
+            ],
+            [
+                0.0,
+                0.0,
+                1.0
+            ]
+        ],
+        "dist_coeff": [
+            [
+                0.0843904857493962
+            ],
+            [
+                -0.2181703044068345
+            ],
+            [
+                -0.016234568461852242
+            ],
+            [
+                -6.135909833610058e-06
+            ],
+            [
+                62.99402216575745
+            ],
+            [
+                -0.039740536334349506
+            ],
+            [
+                6.246295116706708
+            ],
+            [
+                6.681761212371699
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ]
+        ],
+        "transforms_path": "./projects/calib4test/transforms_centered.json"
+    },
+    "benchmark2.calib4_complete": {
+        "transforms_path": "./projects/benchmark2.calib4_complete/transforms_centered.json"
+    },
+    "silverfrog2.calib4_complete": {
+        "transforms_path": "./projects/silverfrog2.calib4_complete/transforms_centered.json",
+        "rembg": true,
+        "poses_from": "charuco"
+    },
+    "ringholder2.calib4_complete": {
+        "transforms_path": "./projects/ringholder2.calib4_complete/transforms_centered.json",
+        "rembg": true,
+        "poses_from": "colmap"
+    },
+    "rechnercase.calib5_complete": {
+        "images": "./projects/rechnercase.calib5_complete",
+        "calibrated": true,
+        "camera_matrix": [
+            [
+                5629.272185345823,
+                0.0,
+                1145.135284675221
+            ],
+            [
+                0.0,
+                6391.392132111434,
+                2061.6401156368015
+            ],
+            [
+                0.0,
+                0.0,
+                1.0
+            ]
+        ],
+        "dist_coeff": [
+            [
+                -0.07533824179563442
+            ],
+            [
+                0.9909285807415613
+            ],
+            [
+                -0.003523843514894546
+            ],
+            [
+                -0.023815359822770655
+            ],
+            [
+                -13.101110332530556
+            ],
+            [
+                0.6068805734671296
+            ],
+            [
+                -1.7631441981081672
+            ],
+            [
+                -9.655682003986968
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ]
+        ],
+        "rembg": false,
+        "poses_from": "charuco",
+        "transforms_path": "./projects/rechnercase.calib5_complete/transforms_centered.json",
+        "bg_model": "birefnet-general"
+    },
+    "calib5": {
+        "images": "./projects/calib5",
+        "calibrated": true,
+        "camera_matrix": [
+            [
+                5111.9117202035,
+                0.0,
+                1199.4674167660141
+            ],
+            [
+                0.0,
+                5184.875878730926,
+                849.7913329300177
+            ],
+            [
+                0.0,
+                0.0,
+                1.0
+            ]
+        ],
+        "dist_coeff": [
+            [
+                -0.07597095111118246
+            ],
+            [
+                -2.413743238703006
+            ],
+            [
+                -0.012243018729162313
+            ],
+            [
+                -0.0011138210758785112
+            ],
+            [
+                23.847241028419074
+            ],
+            [
+                -0.07083715501921971
+            ],
+            [
+                0.7557952035842421
+            ],
+            [
+                -8.513346056086892
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ]
+        ]
+    },
+    "5x5cube2.calib5_complete": {
+        "rembg": true,
+        "poses_from": "charuco",
+        "transforms_path": "./projects/5x5cube2.calib5_complete/transforms_centered.json",
+        "bg_model": "birefnet-general"
+    },
+    "bluefrog2.calib5_complete": {
+        "rembg": true,
+        "poses_from": "colmap",
+        "transforms_path": "./projects/bluefrog2.calib5_complete/transforms_centered.json",
+        "bg_model": "birefnet-general-lite"
     }
 }

@@ -297,63 +297,96 @@ function loadPointCloud(file, isSource) {
     const reader = new FileReader();
     reader.onload = function(e) {
         const contents = e.target.result;
-        const loader = new THREE.PLYLoader();
-        const geometry = loader.parse(contents);
+        const extension = file.name.split('.').pop().toLowerCase();
 
-        // Compute bounding box to get object size
-        geometry.computeBoundingBox();
-        const bbox = geometry.boundingBox;
-        const size = new THREE.Vector3();
-        bbox.getSize(size);
-        const maxDimension = Math.max(size.x, size.y, size.z);
+        let geometry;
 
-        // Adjust point size based on object size
-        const basePointSize = 0.05; // You can adjust this value
-        const scalingFactor = 10; // You can adjust this value
-        const pointSize = basePointSize * (maxDimension / scalingFactor);
+        if (extension === 'ply') {
+            const loader = new THREE.PLYLoader();
+            geometry = loader.parse(contents);
+        } else if (extension === 'obj') {
+            const loader = new THREE.OBJLoader();
+            const obj = loader.parse(contents);
 
-        // Assign a single color to all points
-        const color = new THREE.Color(isSource ? 0xff0000 : 0x0000ff); // Red for source, blue for target
+            // Extract vertices from the OBJ object
+            geometry = new THREE.BufferGeometry();
 
-        const colors = new Float32Array(geometry.attributes.position.count * 3);
-        const originalColors = new Float32Array(geometry.attributes.position.count * 3);
-        for (let i = 0; i < geometry.attributes.position.count; i++) {
-            colors[i * 3] = color.r;
-            colors[i * 3 + 1] = color.g;
-            colors[i * 3 + 2] = color.b;
+            let positions = [];
 
-            // Store original colors for resetting later
-            originalColors[i * 3] = color.r;
-            originalColors[i * 3 + 1] = color.g;
-            originalColors[i * 3 + 2] = color.b;
-        }
-        geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
-        geometry.setAttribute('originalColor', new THREE.BufferAttribute(originalColors, 3));
+            obj.traverse(function(child) {
+                if (child.isMesh) {
+                    const positionAttribute = child.geometry.attributes.position;
+                    positions.push(...positionAttribute.array);
+                }
+            });
 
-        // Create PointsMaterial
-        const material = new THREE.PointsMaterial({
-            size: pointSize,
-            vertexColors: true,
-            sizeAttenuation: true
-        });
-
-        const pointCloud = new THREE.Points(geometry, material);
-
-        if (isSource) {
-            if (sourcePointCloud) scene.remove(sourcePointCloud);
-            sourcePointCloud = pointCloud;
-            scene.add(sourcePointCloud);
+            positions = new Float32Array(positions);
+            geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
         } else {
-            if (targetPointCloud) scene.remove(targetPointCloud);
-            targetPointCloud = pointCloud;
-            scene.add(targetPointCloud);
+            alert('Unsupported file format. Please select a PLY or OBJ file.');
+            return;
         }
 
-        // Upload point cloud to backend
-        uploadPointClouds();
+        // Proceed with the rest of your code to process the geometry
+        processLoadedGeometry(geometry, isSource);
     };
     reader.readAsArrayBuffer(file);
 }
+
+function processLoadedGeometry(geometry, isSource) {
+    // Compute bounding box to get object size
+    geometry.computeBoundingBox();
+    const bbox = geometry.boundingBox;
+    const size = new THREE.Vector3();
+    bbox.getSize(size);
+    const maxDimension = Math.max(size.x, size.y, size.z);
+
+    // Adjust point size based on object size
+    const basePointSize = 0.05; // You can adjust this value
+    const scalingFactor = 10; // You can adjust this value
+    const pointSize = basePointSize * (maxDimension / scalingFactor);
+
+    // Assign a single color to all points
+    const color = new THREE.Color(isSource ? 0xff0000 : 0x0000ff); // Red for source, blue for target
+
+    const colors = new Float32Array(geometry.attributes.position.count * 3);
+    const originalColors = new Float32Array(geometry.attributes.position.count * 3);
+    for (let i = 0; i < geometry.attributes.position.count; i++) {
+        colors[i * 3] = color.r;
+        colors[i * 3 + 1] = color.g;
+        colors[i * 3 + 2] = color.b;
+
+        // Store original colors for resetting later
+        originalColors[i * 3] = color.r;
+        originalColors[i * 3 + 1] = color.g;
+        originalColors[i * 3 + 2] = color.b;
+    }
+    geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+    geometry.setAttribute('originalColor', new THREE.BufferAttribute(originalColors, 3));
+
+    // Create PointsMaterial
+    const material = new THREE.PointsMaterial({
+        size: pointSize,
+        vertexColors: true,
+        sizeAttenuation: true
+    });
+
+    const pointCloud = new THREE.Points(geometry, material);
+
+    if (isSource) {
+        if (sourcePointCloud) scene.remove(sourcePointCloud);
+        sourcePointCloud = pointCloud;
+        scene.add(sourcePointCloud);
+    } else {
+        if (targetPointCloud) scene.remove(targetPointCloud);
+        targetPointCloud = pointCloud;
+        scene.add(targetPointCloud);
+    }
+
+    // Upload point cloud to backend
+    uploadPointClouds();
+}
+
 
 function uploadPointClouds() {
     const sourceFile = document.getElementById('source-file').files[0];

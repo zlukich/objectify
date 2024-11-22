@@ -92,51 +92,52 @@ def main():
     pcd_filtered = pcd.select_by_index(ind)
     print("Point cloud after outlier removal has {} points.".format(len(pcd_filtered.points)),flush = True)
 
-    # Find clusters using DBSCAN
-    labels = np.array(pcd_filtered.cluster_dbscan(eps=args.eps, min_points=args.min_points, print_progress=True))
-    max_label = labels.max()
-    print("Point cloud has {} clusters.".format(max_label + 1),flush = True)
+    # # Find clusters using DBSCAN
+    # labels = np.array(pcd_filtered.cluster_dbscan(eps=args.eps, min_points=args.min_points, print_progress=True))
+    # max_label = labels.max()
+    # print("Point cloud has {} clusters.".format(max_label + 1),flush = True)
 
-    if max_label < 0:
-        print("No clusters found.",flush = True)
-        return
+    # if max_label < 0:
+    #     print("No clusters found.",flush = True)
+    #     return
 
-    # Select the largest cluster
-    counts = np.bincount(labels[labels >= 0])
-    largest_cluster_idx = np.argmax(counts)
-    indices = np.where(labels == largest_cluster_idx)[0]
-    pcd_cluster = pcd_filtered.select_by_index(indices)
-    print("Largest cluster has {} points.".format(len(pcd_cluster.points)),flush = True)
+    # # Select the largest cluster
+    # counts = np.bincount(labels[labels >= 0])
+    # largest_cluster_idx = np.argmax(counts)
+    # indices = np.where(labels == largest_cluster_idx)[0]
+    # pcd_cluster = pcd_filtered.select_by_index(indices)
+    # print("Largest cluster has {} points.".format(len(pcd_cluster.points)),flush = True)
 
-    # Ensure normals are estimated
-    pcd_cluster.estimate_normals()
-    pcd_cluster.orient_normals_consistent_tangent_plane(100)
-    print("Normals estimated and oriented.",flush = True)
+    # # Ensure normals are estimated
+    # pcd_cluster.estimate_normals()
+    # pcd_cluster.orient_normals_consistent_tangent_plane(100)
+    # print("Normals estimated and oriented.",flush = True)
 
-    # Optionally perform Poisson reconstruction
-    if args.do_poisson:
-        print("Performing Poisson reconstruction.")
-        mesh_out, densities = o3d.geometry.TriangleMesh.create_from_point_cloud_poisson(
-            pcd_cluster, depth=args.poisson_depth, linear_fit=True)
-        print("Poisson reconstruction completed.")
+    # # Optionally perform Poisson reconstruction
+    # if args.do_poisson:
+    #     print("Performing Poisson reconstruction.")
+    #     mesh_out, densities = o3d.geometry.TriangleMesh.create_from_point_cloud_poisson(
+    #         pcd_cluster, depth=args.poisson_depth, linear_fit=True)
+    #     print("Poisson reconstruction completed.")
 
-        # Remove low-density vertices to eliminate spurious faces
-        densities = np.asarray(densities)
-        density_threshold = np.quantile(densities, 0.01)
-        vertices_to_remove = densities < density_threshold
-        mesh_out.remove_vertices_by_mask(vertices_to_remove)
-        print("Removed low-density vertices.",flush = True)
-        # Save the output mesh
-        o3d.io.write_triangle_mesh(args.output_mesh, mesh_out)
-        print("Saved output mesh to {}.".format(args.output_mesh),flush = True)
-    else:
-        # Save the output pcd
-        o3d.io.write_point_cloud(args.output_mesh, pcd_cluster)
-        print("Saved output point_cloud to {}.".format(args.output_mesh),flush = True)
+    #     # Remove low-density vertices to eliminate spurious faces
+    #     densities = np.asarray(densities)
+    #     density_threshold = np.quantile(densities, 0.01)
+    #     vertices_to_remove = densities < density_threshold
+    #     mesh_out.remove_vertices_by_mask(vertices_to_remove)
+    #     print("Removed low-density vertices.",flush = True)
+    #     # Save the output mesh
+    #     o3d.io.write_triangle_mesh(args.output_mesh, mesh_out)
+    #     print("Saved output mesh to {}.".format(args.output_mesh),flush = True)
+    # else:
+    #     # Save the output pcd
+    #     o3d.io.write_point_cloud(args.output_mesh, pcd_cluster)
+    #     print("Saved output point_cloud to {}.".format(args.output_mesh),flush = True)
     print("Trying also alternative approach of selecting largest component via igraph", flush = True)
     
     dirname = os.path.dirname(args.input_mesh)
-    process_mesh(args.input_mesh,output_path=os.path.join(dirname, "filtered_mesh_igraph.ply"))
+    
+    process_mesh(args.input_mesh,output_path=args.output_mesh)
     
     
 

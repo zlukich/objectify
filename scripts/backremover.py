@@ -57,9 +57,9 @@ for file in image_files:
             input_data = i.read()
             
             if model_name == "sam":
-                output = remove(input_data, session=session, sam_prompt=[{"type": "point", "data": center_point, "label": 1}], post_process_mask=True)
+                output = remove(input_data, session=session, sam_prompt=[{"type": "point", "data": center_point, "label": 1}], post_process_mask=False)
             else:
-                output = remove(input_data, session=session, post_process_mask=True)
+                output = remove(input_data, session=session, post_process_mask=True, alpha_matting= True)
 
             o.write(output)
 
