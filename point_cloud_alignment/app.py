@@ -32,6 +32,28 @@ source_pcd = None
 target_pcd = None
 transformed_pcd = None
 
+
+def align_point_clouds_with_icp(source, target, trans_init):
+    """
+    Perform ICP refinement with proper convergence criteria.
+    """
+    threshold = 10  # Adjust based on the data scale
+    convergence_criteria = o3d.pipelines.registration.ICPConvergenceCriteria(
+        max_iteration=1000,  # Increase iterations for tighter convergence
+        relative_fitness=1e-7,  # Lower for finer adjustments
+        relative_rmse=1e-7  # Lower for better accuracy
+    )
+    
+    reg_p2p = o3d.pipelines.registration.registration_icp(
+        source, 
+        target, 
+        threshold, 
+        trans_init, 
+        o3d.pipelines.registration.TransformationEstimationPointToPoint(with_scaling=False), 
+        convergence_criteria
+    )
+    return reg_p2p.transformation
+
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -129,15 +151,12 @@ def align_pointclouds():
 
         # Apply the initial transformation to the source point cloud
         transformed_pcd = copy.deepcopy(source_pcd)
-        transformed_pcd.transform(trans_init)
+        #transformed_pcd.transform(trans_init)
 
         # Optionally, perform ICP refinement
-        threshold = 1.0  # Adjust based on your data scale
-        reg_p2p = o3d.pipelines.registration.registration_icp(
-            transformed_pcd, target_pcd, threshold, trans_init,
-            o3d.pipelines.registration.TransformationEstimationPointToPoint()
-        )
-        transformed_pcd.transform(reg_p2p.transformation)
+        # Perform ICP refinement
+        final_transformation = align_point_clouds_with_icp(transformed_pcd, target_pcd, trans_init)
+        transformed_pcd.transform(final_transformation)
 
         # Convert transformed point cloud to list for JSON response
         transformed_points = np.asarray(transformed_pcd.points).tolist()

@@ -1,3 +1,5 @@
+
+
 // Variables to store scene, camera, renderer
 let scene, camera, renderer, controls;
 let sourcePoints = [], targetPoints = [];
@@ -10,6 +12,10 @@ let highlightPointCloud = null;
 let previousHoverIndex = null;
 let previousHoverPointCloud = null;
 
+
+
+//const loader = new OBJLoader();
+
 document.addEventListener('DOMContentLoaded', function() {
     init();
     animate();
@@ -19,7 +25,7 @@ function init() {
     scene = new THREE.Scene();
 
     camera = new THREE.PerspectiveCamera(70, window.innerWidth/window.innerHeight, 0.01, 1000);
-    camera.position.z = 5;
+    camera.position.set(0, 0, 30); // Bring the camera closer
 
     renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
@@ -39,7 +45,8 @@ function init() {
         MIDDLE: THREE.MOUSE.MIDDLE, // Zoom
         RIGHT: THREE.MOUSE.RIGHT   // Pan
     };
-
+    const axesHelper = new THREE.AxesHelper(10);
+    scene.add(axesHelper);
     controls.keyPanSpeed = 7.0; // Increase pan speed for keyboard controls
 
     // Add event listener for Shift key to enable panning
@@ -58,7 +65,7 @@ function init() {
     }, false);
 
     // Adjust raycaster threshold
-    raycaster.params.Points.threshold = 0.05;
+    raycaster.params.Points.threshold = 0.1;
 
     // Event listeners
     window.addEventListener('resize', onWindowResize, false);
@@ -125,7 +132,23 @@ function onMouseClick(event) {
 
     if (!pointCloud) return; // If point cloud is not loaded yet
 
+
     const intersects = raycaster.intersectObject(pointCloud);
+    if (intersects.length > 0) {
+        const intersect = intersects[0];
+        const idx = intersect.index;
+
+        // Add a small sphere at the intersection point for debugging
+        const sphereGeometry = new THREE.SphereGeometry(0.1, 16, 16);
+        const sphereMaterial = new THREE.MeshBasicMaterial({ color: 0xffff00 });
+        const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
+        sphere.position.copy(intersect.point);
+        scene.add(sphere);
+
+        console.log(`Intersection found at index ${idx}:`, intersect.point);
+    } else {
+        console.warn("No intersection found!");
+    }
 
     if (intersects.length > 0) {
         const intersect = intersects[0];
@@ -141,10 +164,24 @@ function onMouseClick(event) {
             const x = positionAttribute.getX(idx);
             const y = positionAttribute.getY(idx);
             const z = positionAttribute.getZ(idx);
-            points.push([x, y, z]);
+
+
+            const localPoint = new THREE.Vector3(
+                positionAttribute.getX(idx),
+                positionAttribute.getY(idx),
+                positionAttribute.getZ(idx)
+            );
+
+            // Convert local point to global coordinates
+            const globalPoint = localPoint.clone().applyMatrix4(pointCloud.matrixWorld);
+            points.push([globalPoint.x, globalPoint.y, globalPoint.z]);
+            //points.push([x, y, z]);
 
             // Change color to selection color (yellow)
             pointCloud.geometry.attributes.color.setXYZ(idx, 1, 1, 0); // Yellow
+        
+            
+            //pointCloud.geometry.attributes.size.setSize(5)
         } else {
             // Deselect point
             const selIndex = selections.indexOf(idx);
@@ -226,7 +263,7 @@ function highlightPoint(pointCloud, idx) {
 
     // Create a material with a larger size
     const material = new THREE.PointsMaterial({
-        size: pointCloud.material.size * 2, // Increase size by a factor (e.g., 2)
+        size: pointCloud.material.size * 5, // Increase size by a factor (e.g., 2)
         color: 0xffff00, // Highlight color (yellow)
         sizeAttenuation: true
     });
@@ -293,6 +330,7 @@ function onTargetFileSelected(event) {
     }
 }
 
+
 function loadPointCloud(file, isSource) {
     const reader = new FileReader();
     reader.onload = function(e) {
@@ -326,14 +364,43 @@ function loadPointCloud(file, isSource) {
             alert('Unsupported file format. Please select a PLY or OBJ file.');
             return;
         }
+        //alignToGlobalFrame(geometry);
 
+        //console.log('Source Points:', sourcePointCloud.geometry.attributes.position.array);
+        //console.log('Target Points:', targetPointCloud.geometry.attributes.position.array);
+
+
+        
         // Proceed with the rest of your code to process the geometry
         processLoadedGeometry(geometry, isSource);
+
+
     };
     reader.readAsArrayBuffer(file);
 }
 
 function processLoadedGeometry(geometry, isSource) {
+
+    if (!geometry || !geometry.attributes || !geometry.attributes.position) {
+        console.error('Invalid geometry:', geometry);
+        return;
+    }
+    console.log(geometry.attributes.position.array);
+    //alignToGlobalFrame(geometry);
+    geometry.computeBoundingBox();
+    const positions = geometry.attributes.position.array;
+    console.log('First 10 Aligned Points:', positions.slice(0, 30));
+    console.log('Aligned Bounding Box:', geometry.boundingBox);
+
+    if (!geometry || !geometry.attributes.position || geometry.attributes.position.count === 0) {
+        console.error('Geometry is empty or corrupted.');
+        return;
+    }
+
+    // const testGeometry = new THREE.BoxGeometry(1, 1, 1);
+    // alignToGlobalFrame(testGeometry);
+    // console.log('Test Geometry Aligned Bounding Box:', testGeometry.boundingBox);
+    
     // Compute bounding box to get object size
     geometry.computeBoundingBox();
     const bbox = geometry.boundingBox;
@@ -372,7 +439,10 @@ function processLoadedGeometry(geometry, isSource) {
     });
 
     const pointCloud = new THREE.Points(geometry, material);
-
+    pointCloud.renderOrder = isSource ? 1 : 2; // Source will render first, Target will render second
+    if (!isSource) {
+        material.depthTest = false; // Ensures target points are always interactive
+    }
     if (isSource) {
         if (sourcePointCloud) scene.remove(sourcePointCloud);
         sourcePointCloud = pointCloud;
@@ -516,6 +586,77 @@ function clearSelections() {
     }
 }
 
+function alignToGlobalFrame(geometry) {
+    const positions = geometry.attributes.position.array;
+    const points = [];
+
+    // Extract points from the geometry and filter out invalid ones
+    for (let i = 0; i < positions.length; i += 3) {
+        const x = positions[i];
+        const y = positions[i + 1];
+        const z = positions[i + 2];
+
+        if (isNaN(x) || isNaN(y) || isNaN(z) || !isFinite(x) || !isFinite(y) || !isFinite(z)) {
+            console.warn(`Corrupted point detected: (${x}, ${y}, ${z})`);
+            continue;
+        }
+        points.push([x, y, z]);
+    }
+
+    // Compute mean of the points
+    const mean = [0, 0, 0];
+    for (const point of points) {
+        mean[0] += point[0];
+        mean[1] += point[1];
+        mean[2] += point[2];
+    }
+    mean[0] /= points.length;
+    mean[1] /= points.length;
+    mean[2] /= points.length;
+
+    // Center the points around the mean
+    const centeredPoints = points.map(([x, y, z]) => [x - mean[0], y - mean[1], z - mean[2]]);
+
+    // Compute covariance matrix
+    const covariance = [[0, 0, 0], [0, 0, 0], [0, 0, 0]];
+    for (const [x, y, z] of centeredPoints) {
+        covariance[0][0] += x * x;
+        covariance[0][1] += x * y;
+        covariance[0][2] += x * z;
+        covariance[1][0] += y * x;
+        covariance[1][1] += y * y;
+        covariance[1][2] += y * z;
+        covariance[2][0] += z * x;
+        covariance[2][1] += z * y;
+        covariance[2][2] += z * z;
+    }
+
+    // Normalize covariance matrix
+    for (let i = 0; i < 3; i++) {
+        for (let j = 0; j < 3; j++) {
+            covariance[i][j] /= points.length;
+        }
+    }
+
+    // Compute eigenvalues and eigenvectors
+    const eigenResult = math.eigs(covariance);
+    const eigenvectors = eigenResult.vectors;
+
+    // Rotate the point cloud to align with the global frame
+    for (let i = 0; i < positions.length; i += 3) {
+        const point = [positions[i] - mean[0], positions[i + 1] - mean[1], positions[i + 2] - mean[2]];
+        const alignedPoint = math.multiply(eigenvectors, point);
+        positions[i] = alignedPoint[0];
+        positions[i + 1] = alignedPoint[1];
+        positions[i + 2] = alignedPoint[2];
+    }
+
+    geometry.attributes.position.needsUpdate = true;
+}
+
+
+
+
 function alignPointClouds() {
     if (sourcePoints.length !== targetPoints.length) {
         alert('The number of selected source points and target points must be the same.');
@@ -526,6 +667,12 @@ function alignPointClouds() {
         target_points: targetPoints
     };
     
+
+    console.log('Source Points:', sourcePoints);
+    console.log('Target Points:', targetPoints);
+
+    console.log('Source Bounding Box:', sourcePointCloud.geometry.boundingBox);
+    console.log('Target Bounding Box:', targetPointCloud.geometry.boundingBox);
 
     fetch('/align_pointclouds', {
         method: 'POST',
@@ -600,13 +747,24 @@ function alignPointClouds() {
         alert('Error aligning point clouds: ' + error.message);
     });
 }
-
+function getGlobalPoint(localPoint, object) {
+    const globalPoint = new THREE.Vector3(localPoint.x, localPoint.y, localPoint.z);
+    globalPoint.applyMatrix4(object.matrixWorld); // Convert to global coordinates
+    return globalPoint;
+}
 function downloadTransformedPCD() {
     window.location.href = '/download_transformed_pcd';
 }
 
 function toggleSelectionMode() {
     selectingSource = !selectingSource;
+    // if (selectingSource) {
+    //     if (sourcePointCloud) sourcePointCloud.visible = true; // Show source
+    //     if (targetPointCloud) targetPointCloud.visible = false; // Hide target
+    // } else {
+    //     if (sourcePointCloud) sourcePointCloud.visible = false; // Hide source
+    //     if (targetPointCloud) targetPointCloud.visible = true; // Show target
+    // }
     updateSelectionModeIndicator();
 }
 

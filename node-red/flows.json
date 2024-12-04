@@ -270,12 +270,16 @@
             "ffde0486357075d1",
             "174d535476d959fd",
             "cdf5698441f271b5",
-            "6034fdfb1fe159ca"
+            "6034fdfb1fe159ca",
+            "90c383b53f825ea2",
+            "4132d04fce7cff84",
+            "16208214cfe6fd82",
+            "a726c3d37df2c0fa"
         ],
         "x": 1174,
         "y": 879,
         "w": 892,
-        "h": 162
+        "h": 182
     },
     {
         "id": "ebe64e9c6e1db2d6",
@@ -294,12 +298,15 @@
             "33ed466f90fd0c96",
             "d6258becfac91573",
             "f4f28669f1f743fb",
-            "5efd905d83e9dcdf"
+            "5efd905d83e9dcdf",
+            "b80ebe646c6e5259",
+            "32551da97fa15944",
+            "0c230cb93b8a0fef"
         ],
         "x": 2154,
-        "y": 919,
-        "w": 732,
-        "h": 162
+        "y": 899,
+        "w": 752,
+        "h": 182
     },
     {
         "id": "80f0e37eedd4ac4c",
@@ -856,76 +863,6 @@
         "height": 1
     },
     {
-        "id": "343306f666946f42",
-        "type": "ui_spacer",
-        "z": "3669868b19b1582f",
-        "name": "spacer",
-        "group": "6c2e3428a6c52ed8",
-        "order": 2,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "2664dbdcfe65d42c",
-        "type": "ui_spacer",
-        "z": "3669868b19b1582f",
-        "name": "spacer",
-        "group": "6c2e3428a6c52ed8",
-        "order": 4,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "cae503d1953158dc",
-        "type": "ui_spacer",
-        "z": "3669868b19b1582f",
-        "name": "spacer",
-        "group": "6c2e3428a6c52ed8",
-        "order": 5,
-        "width": 11,
-        "height": 1
-    },
-    {
-        "id": "aa740effea8bdbe7",
-        "type": "ui_spacer",
-        "z": "3669868b19b1582f",
-        "name": "spacer",
-        "group": "53646539ec83fa85",
-        "order": 8,
-        "width": 6,
-        "height": 1
-    },
-    {
-        "id": "fe511ad450db0b0d",
-        "type": "ui_spacer",
-        "z": "3669868b19b1582f",
-        "name": "spacer",
-        "group": "53646539ec83fa85",
-        "order": 10,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "75d038d652b57c38",
-        "type": "ui_spacer",
-        "z": "3669868b19b1582f",
-        "name": "spacer",
-        "group": "45c6e5c68f9384b7",
-        "order": 3,
-        "width": 9,
-        "height": 1
-    },
-    {
-        "id": "ebca928474497ca2",
-        "type": "ui_spacer",
-        "z": "3669868b19b1582f",
-        "name": "spacer",
-        "group": "45c6e5c68f9384b7",
-        "order": 5,
-        "width": 6,
-        "height": 1
-    },
-    {
         "id": "4fcf98e2f0fe814c",
         "type": "ui_spacer",
         "z": "cd35db7d9440e826",
@@ -1183,6 +1120,76 @@
         "group": "bbcac8f35b0ea650",
         "order": 6,
         "width": 16,
+        "height": 1
+    },
+    {
+        "id": "7fa3113eaf2db9a4",
+        "type": "ui_spacer",
+        "z": "3669868b19b1582f",
+        "name": "spacer",
+        "group": "6c2e3428a6c52ed8",
+        "order": 2,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "3fbe711aa093a949",
+        "type": "ui_spacer",
+        "z": "3669868b19b1582f",
+        "name": "spacer",
+        "group": "6c2e3428a6c52ed8",
+        "order": 4,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "ea0e1a3146376ef0",
+        "type": "ui_spacer",
+        "z": "3669868b19b1582f",
+        "name": "spacer",
+        "group": "6c2e3428a6c52ed8",
+        "order": 5,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "6fc3279f2dbc453e",
+        "type": "ui_spacer",
+        "z": "3669868b19b1582f",
+        "name": "spacer",
+        "group": "53646539ec83fa85",
+        "order": 8,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "9b868ded6b758430",
+        "type": "ui_spacer",
+        "z": "3669868b19b1582f",
+        "name": "spacer",
+        "group": "53646539ec83fa85",
+        "order": 10,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "fe560b1b43864d7c",
+        "type": "ui_spacer",
+        "z": "3669868b19b1582f",
+        "name": "spacer",
+        "group": "45c6e5c68f9384b7",
+        "order": 2,
+        "width": 13,
+        "height": 1
+    },
+    {
+        "id": "5db209276bb44451",
+        "type": "ui_spacer",
+        "z": "3669868b19b1582f",
+        "name": "spacer",
+        "group": "45c6e5c68f9384b7",
+        "order": 4,
+        "width": 6,
         "height": 1
     },
     {
@@ -1524,7 +1531,7 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 1430,
+        "x": 1510,
         "y": 400,
         "wires": [
             [
@@ -1761,7 +1768,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2080,
+        "x": 2140,
         "y": 400,
         "wires": []
     },
@@ -2949,7 +2956,7 @@
         "oldrc": false,
         "name": "",
         "x": 2040,
-        "y": 880,
+        "y": 860,
         "wires": [
             [
                 "0e3188356bf30267"
@@ -7275,7 +7282,7 @@
         "winHide": false,
         "oldrc": false,
         "name": "run colmap2nerf.py",
-        "x": 2170,
+        "x": 2150,
         "y": 480,
         "wires": [
             [
@@ -7628,7 +7635,8 @@
         "y": 500,
         "wires": [
             [
-                "29225ee6a99b5b10"
+                "29225ee6a99b5b10",
+                "dd8ff1d96226afb0"
             ]
         ]
     },
@@ -7833,8 +7841,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 2730,
-        "y": 460,
+        "x": 2790,
+        "y": 420,
         "wires": [
             []
         ]
@@ -8136,7 +8144,7 @@
         "z": "3669868b19b1582f",
         "group": "45c6e5c68f9384b7",
         "name": "Cameras Iframe",
-        "order": 6,
+        "order": 5,
         "width": 13,
         "height": 12,
         "format": "\n<div  ng-if=\"msg.showImage\" height=\"100%\" style=\"height: 100%;\">\n    <iframe src=\"/get-html?file=cameras.html\" width=\"100%\" height=\"600px\"></iframe>\n    <br/>\n</div>",
@@ -8446,7 +8454,7 @@
         "z": "3669868b19b1582f",
         "group": "45c6e5c68f9384b7",
         "name": "Toggle Button",
-        "order": 4,
+        "order": 3,
         "width": 7,
         "height": 1,
         "format": "<div class=\"toggle-container\">\n  <button class=\"toggle-button\" ng-class=\"{'on': state}\" ng-click=\"toggle()\">\n    {{state ? 'Cameras ON' : 'Cameras OFF'}}\n  </button>\n</div>\n\n<script>\n  (function(scope) {\n    scope.state = scope.state || false;\n\n    scope.toggle = function() {\n        scope.state = !scope.state;\n        scope.send({payload: scope.state});\n    };\n})(scope);\n</script>\n\n<style>\n  .toggle-container {\n    text-align: left;\n  }\n\n  .toggle-container .toggle-button {\n    background-color: red;\n    color: white;\n    border: none;\n    padding: 15px 32px;\n    font-size: 16px;\n    cursor: pointer;\n  }\n\n  .toggle-container .toggle-button.on {\n    background-color: green;\n  }\n</style>",
@@ -8529,6 +8537,58 @@
         ]
     },
     {
+        "id": "46bfa1bc67221936",
+        "type": "link out",
+        "z": "3669868b19b1582f",
+        "name": "link out turn off cameras",
+        "mode": "link",
+        "links": [],
+        "x": 1415,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "cd899d93a8f9a2f4",
+        "type": "link in",
+        "z": "3669868b19b1582f",
+        "name": "link in turn off cameras",
+        "links": [],
+        "x": 2865,
+        "y": 500,
+        "wires": [
+            [
+                "e53b8b2a.7e5748"
+            ]
+        ]
+    },
+    {
+        "id": "dd8ff1d96226afb0",
+        "type": "change",
+        "z": "3669868b19b1582f",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1240,
+        "y": 600,
+        "wires": [
+            [
+                "46bfa1bc67221936"
+            ]
+        ]
+    },
+    {
         "id": "cdf08e1fa0f798cf",
         "type": "comment",
         "z": "f11166a80e40d7b6",
@@ -8576,7 +8636,7 @@
         "wires": [
             [],
             [
-                "ab3d335fc2c980c9"
+                "cf031c746faf3251"
             ],
             [
                 "b81d7e0595fb09de"
@@ -8935,7 +8995,7 @@
         "outs": "all",
         "topic": "topic",
         "topicType": "msg",
-        "min": "1",
+        "min": "100",
         "max": "20000",
         "step": 1,
         "className": "",
@@ -9005,8 +9065,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 3040,
-        "y": 620,
+        "x": 3240,
+        "y": 580,
         "wires": [
             []
         ]
@@ -9585,7 +9645,7 @@
         "finalize": "",
         "libs": [],
         "x": 2260,
-        "y": 960,
+        "y": 940,
         "wires": [
             [
                 "f4f28669f1f743fb"
@@ -9609,7 +9669,7 @@
         "y": 1040,
         "wires": [
             [
-                "ab3d335fc2c980c9"
+                "637ee26ad68ac2f9"
             ]
         ]
     },
@@ -9636,10 +9696,11 @@
         "y": 980,
         "wires": [
             [
-                "5efd905d83e9dcdf"
+                "5efd905d83e9dcdf",
+                "0c230cb93b8a0fef"
             ],
             [
-                "ab3d335fc2c980c9"
+                "b80ebe646c6e5259"
             ]
         ]
     },
@@ -9656,14 +9717,16 @@
         "winHide": false,
         "oldrc": false,
         "name": "get_sutface",
-        "x": 2790,
+        "x": 2750,
         "y": 980,
         "wires": [
             [],
             [
-                "ab3d335fc2c980c9"
+                "32551da97fa15944"
             ],
-            []
+            [
+                "3befd57af6a20c43"
+            ]
         ]
     },
     {
@@ -9736,7 +9799,7 @@
         "y": 1000,
         "wires": [
             [
-                "ab3d335fc2c980c9"
+                "4132d04fce7cff84"
             ]
         ]
     },
@@ -9763,10 +9826,11 @@
         "y": 920,
         "wires": [
             [
-                "cdf5698441f271b5"
+                "cdf5698441f271b5",
+                "a726c3d37df2c0fa"
             ],
             [
-                "ab3d335fc2c980c9"
+                "33ed466f90fd0c96"
             ]
         ]
     },
@@ -9787,12 +9851,11 @@
         "y": 960,
         "wires": [
             [
-                "ab3d335fc2c980c9",
                 "3740b7fd873bc9e8"
             ],
             [
-                "ab3d335fc2c980c9",
-                "3740b7fd873bc9e8"
+                "3740b7fd873bc9e8",
+                "90c383b53f825ea2"
             ],
             [
                 "6034fdfb1fe159ca"
@@ -9836,7 +9899,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2980,
+        "x": 1940,
         "y": 820,
         "wires": []
     },
@@ -9931,13 +9994,413 @@
         "z": "f11166a80e40d7b6",
         "name": "ingp logging in",
         "links": [
-            "6cd9e8c01a95afd6"
+            "4132d04fce7cff84",
+            "637ee26ad68ac2f9",
+            "6cd9e8c01a95afd6",
+            "6dee6bf79a384272",
+            "90c383b53f825ea2",
+            "b80ebe646c6e5259",
+            "32551da97fa15944",
+            "cf031c746faf3251",
+            "f5be57112636450c",
+            "a30a0d6c0f0fc31d",
+            "c89abd991c053a20",
+            "88760ce059264784",
+            "16208214cfe6fd82"
         ],
-        "x": 2665,
-        "y": 740,
+        "x": 2585,
+        "y": 640,
         "wires": [
             [
                 "ab3d335fc2c980c9"
+            ]
+        ]
+    },
+    {
+        "id": "3befd57af6a20c43",
+        "type": "switch",
+        "z": "f11166a80e40d7b6",
+        "name": "Programm returned 0?",
+        "property": "payload.code",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 2980,
+        "y": 980,
+        "wires": [
+            [
+                "dd011fdc76044496"
+            ],
+            [
+                "9760eb827f533765"
+            ]
+        ]
+    },
+    {
+        "id": "dd011fdc76044496",
+        "type": "function",
+        "z": "f11166a80e40d7b6",
+        "name": "scale recovery",
+        "func": "\nlet extract_surface = flow.get(\"extract_surface\");\nlet refine_mesh = flow.get(\"refine_mesh\");\n\nvar cmd = \"\";\nvar steps = flow.get(\"steps\")\nconsole.log(flow.get(\"transforms_found\"));\nvar default_folder = global.get(\"filebrowser_default_folder\")\nlet project_path = default_folder + global.get(\"selected_project\");\nvar ingp_root = global.get(\"ingp_root\")\nvar mc_resolution = flow.get(\"resolution\");\n\n\nif (extract_surface) {\n    \n    msg.payload = \"Recovery of scale after surface extraction\"\n    cmd = \"python \" + \"../scripts/recover_scale.py\" +\n        \" \" + project_path + \"/snapshot_filtered.obj \" +\n        project_path + \"/surface_snapshot.ply\" +\n        \" --output \" + project_path + \"/rescaled_target_mesh.ply\" +\n        \" --to-millimeters\";\n    msg.command = cmd;\n}\nelse {\n    msg.payload = \"Reconstruction completed, and saved under \" + project_path + \" with the name \" + \"snapshot.ply\"\n}\n\n\n//msg.command = \"python \" + \"../scripts/get_surface.py\" + \"--mesh_path \" + ./ data / meshes / charuco_rembg.ply +\" --num_points \" +12000000 +\" --out_name \" +\"./ data / meshes / charucosurface.obj\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3200,
+        "y": 920,
+        "wires": [
+            [
+                "cf8e899c4220843e",
+                "a9c0e1676a27bc95"
+            ]
+        ]
+    },
+    {
+        "id": "9760eb827f533765",
+        "type": "function",
+        "z": "f11166a80e40d7b6",
+        "name": "scale recovery failed",
+        "func": "msg.payload = \"Something went wrong in surface extraction. System returned code 1\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3220,
+        "y": 1020,
+        "wires": [
+            [
+                "f5be57112636450c"
+            ]
+        ]
+    },
+    {
+        "id": "90c383b53f825ea2",
+        "type": "link out",
+        "z": "f11166a80e40d7b6",
+        "g": "41d5aef5eafe5e1e",
+        "name": "clear loggign out",
+        "mode": "link",
+        "links": [
+            "e141b20fa90d5b39"
+        ],
+        "x": 1845,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "4132d04fce7cff84",
+        "type": "link out",
+        "z": "f11166a80e40d7b6",
+        "g": "41d5aef5eafe5e1e",
+        "name": "clear loggign out",
+        "mode": "link",
+        "links": [
+            "e141b20fa90d5b39"
+        ],
+        "x": 1445,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "637ee26ad68ac2f9",
+        "type": "link out",
+        "z": "f11166a80e40d7b6",
+        "name": "clear loggign out",
+        "mode": "link",
+        "links": [
+            "e141b20fa90d5b39"
+        ],
+        "x": 2455,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "b80ebe646c6e5259",
+        "type": "link out",
+        "z": "f11166a80e40d7b6",
+        "g": "ebe64e9c6e1db2d6",
+        "name": "clear loggign out",
+        "mode": "link",
+        "links": [
+            "e141b20fa90d5b39"
+        ],
+        "x": 2735,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "32551da97fa15944",
+        "type": "link out",
+        "z": "f11166a80e40d7b6",
+        "g": "ebe64e9c6e1db2d6",
+        "name": "clear loggign out",
+        "mode": "link",
+        "links": [
+            "e141b20fa90d5b39"
+        ],
+        "x": 2865,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "cf031c746faf3251",
+        "type": "link out",
+        "z": "f11166a80e40d7b6",
+        "name": "clear loggign out",
+        "mode": "link",
+        "links": [
+            "e141b20fa90d5b39"
+        ],
+        "x": 1045,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "f5be57112636450c",
+        "type": "link out",
+        "z": "f11166a80e40d7b6",
+        "name": "clear loggign out",
+        "mode": "link",
+        "links": [
+            "e141b20fa90d5b39"
+        ],
+        "x": 3295,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "cf8e899c4220843e",
+        "type": "exec",
+        "z": "f11166a80e40d7b6",
+        "command": "",
+        "addpay": "command",
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 3370,
+        "y": 880,
+        "wires": [
+            [],
+            [
+                "a30a0d6c0f0fc31d"
+            ],
+            [
+                "e548265a9d62d3b7"
+            ]
+        ]
+    },
+    {
+        "id": "a30a0d6c0f0fc31d",
+        "type": "link out",
+        "z": "f11166a80e40d7b6",
+        "name": "clear loggign out",
+        "mode": "link",
+        "links": [
+            "e141b20fa90d5b39"
+        ],
+        "x": 3545,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "e548265a9d62d3b7",
+        "type": "switch",
+        "z": "f11166a80e40d7b6",
+        "name": "Programm returned 0?",
+        "property": "payload.code",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 3520,
+        "y": 1020,
+        "wires": [
+            [
+                "a30dde9dabc5fdd6"
+            ],
+            [
+                "b04b8fa9226b8f2a"
+            ]
+        ]
+    },
+    {
+        "id": "a30dde9dabc5fdd6",
+        "type": "function",
+        "z": "f11166a80e40d7b6",
+        "name": "Final correct message",
+        "func": "msg.payload = \"Scale recovery finished. Overall reconstruction has ended\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3720,
+        "y": 960,
+        "wires": [
+            [
+                "c89abd991c053a20"
+            ]
+        ]
+    },
+    {
+        "id": "c89abd991c053a20",
+        "type": "link out",
+        "z": "f11166a80e40d7b6",
+        "name": "clear loggign out",
+        "mode": "link",
+        "links": [
+            "e141b20fa90d5b39"
+        ],
+        "x": 3855,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "b04b8fa9226b8f2a",
+        "type": "function",
+        "z": "f11166a80e40d7b6",
+        "name": "Final false message",
+        "func": "msg.payload = \"Something went wrong in scale recovery.\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3720,
+        "y": 1100,
+        "wires": [
+            [
+                "88760ce059264784"
+            ]
+        ]
+    },
+    {
+        "id": "88760ce059264784",
+        "type": "link out",
+        "z": "f11166a80e40d7b6",
+        "name": "clear loggign out",
+        "mode": "link",
+        "links": [
+            "e141b20fa90d5b39"
+        ],
+        "x": 3865,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "a9c0e1676a27bc95",
+        "type": "debug",
+        "z": "f11166a80e40d7b6",
+        "name": "debug 72",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "command",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3310,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "16208214cfe6fd82",
+        "type": "link out",
+        "z": "f11166a80e40d7b6",
+        "g": "41d5aef5eafe5e1e",
+        "name": "clear loggign out",
+        "mode": "link",
+        "links": [
+            "e141b20fa90d5b39"
+        ],
+        "x": 1715,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "a726c3d37df2c0fa",
+        "type": "change",
+        "z": "f11166a80e40d7b6",
+        "g": "41d5aef5eafe5e1e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Start of refining mesh",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1600,
+        "y": 1020,
+        "wires": [
+            [
+                "16208214cfe6fd82"
+            ]
+        ]
+    },
+    {
+        "id": "0c230cb93b8a0fef",
+        "type": "change",
+        "z": "f11166a80e40d7b6",
+        "g": "ebe64e9c6e1db2d6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Start of surface extraction",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2580,
+        "y": 1040,
+        "wires": [
+            [
+                "b80ebe646c6e5259"
             ]
         ]
     },
@@ -9967,7 +10430,7 @@
         "type": "function",
         "z": "c0273576f864fea6",
         "name": "function 10",
-        "func": "\nvar default_folder = global.get(\"filebrowser_default_folder\")\nlet project_path = default_folder + global.get(\"selected_project\");\n\nvar cmd = \"python ../scripts/compare_surface.py --pcd_source \" + project_path + \"/filtered_pcd.obj \" + \"--pcd_target \" +project_path +\"/rescaled_target_mesh.obj\"\nmsg.payload = cmd;\nreturn msg;",
+        "func": "\nvar default_folder = global.get(\"filebrowser_default_folder\")\nlet project_path = default_folder + global.get(\"selected_project\");\n\nvar cmd = \"python ../scripts/compare_surface.py --pcd_source \" + project_path + \"/aligned_pcd.ply \" + \"--pcd_target \" +project_path +\"/rescaled_target_mesh.ply\"\nmsg.payload = cmd;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -10085,7 +10548,7 @@
         "width": 6,
         "height": 1,
         "name": "Select Project",
-        "label": "Select a project where to initialize charuco camera pose extraction",
+        "label": "Select a project where to start comparison script (2 files required, aligned_pcd.ply and ground_truth.ply)",
         "format": "",
         "layout": "row-center",
         "className": "",
@@ -10765,7 +11228,7 @@
         "name": "Config Display COLMAP",
         "order": 6,
         "width": 11,
-        "height": 6,
+        "height": 11,
         "format": "\n\n<div  style=\"border: 2px solid white; padding: 20px; border-radius: 10px;height:auto; overflow:auto\">\n    <h2>Current Work</h2>\n    <div ng-if=\"isObjectEmpty(msg.payload.current_work)\">\n        <p>Current session is empty yet, perform some work first.</p>\n    </div>\n    <div ng-if=\"!isObjectEmpty(msg.payload.current_work)\">\n        <table style=\"width: 100%; border-collapse: collapse;\">\n            <tr ng-repeat=\"(key, value) in msg.payload.current_work\">\n                <td style=\"border: 1px solid #ccc; padding: 8px;\"><strong>{{key}}</strong></td>\n                <td style=\"border: 1px solid #ccc; padding: 8px;\" ng-if=\"value === true\">\n                    <span style=\"color: green;\">{{value}}</span>\n                </td>\n                <td style=\"border: 1px solid #ccc; padding: 8px;\" ng-if=\"value === false\">\n                    <span style=\"color: red;\">{{value}}</span>\n                </td>\n                <td style=\"border: 1px solid #ccc; padding: 8px;\" ng-if=\"value !== true && value !== false\">\n                    <span>{{value}}</span>\n                </td>\n            </tr>\n        </table>\n    </div>\n\n    <h2>Selected Project: {{msg.payload.project_name}}</h2>\n    <table style=\"width: 100%; border-collapse: collapse;\">\n        <tr ng-repeat=\"(key, value) in msg.payload.project_data\">\n            <td style=\"border: 1px solid #ccc; padding: 8px;\"><strong>{{key}}</strong></td>\n            <td style=\"border: 1px solid #ccc; padding: 8px;\" ng-if=\"value === true\">\n                <span style=\"color: green;\">{{value}}</span>\n            </td>\n            <td style=\"border: 1px solid #ccc; padding: 8px;\" ng-if=\"value === false\">\n                <span style=\"color: red;\">{{value}}</span>\n            </td>\n            <td style=\"border: 1px solid #ccc; padding: 8px;\" ng-if=\"value !== true && value !== false\">\n                <span>{{value}}</span>\n            </td>\n        </tr>\n    </table>\n</div>\n\n<script>\n    (function(scope) {\n    \n    \n    scope.isObjectEmpty = function(obj) {\n        // Check if the object is null or undefined\n        if (!obj) return true;\n        // Check if the object has any own properties\n        return Object.keys(obj).length === 0;\n    };\n\n    \n})(scope);\n</script>",
         "storeOutMessages": true,
         "fwdInMessages": true,

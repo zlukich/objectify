@@ -50,7 +50,7 @@ transformation_init = np.identity(4)  # Initial alignment guess
 # Run ICP
 reg_p2p = o3d.pipelines.registration.registration_icp(
     pcd1, pcd2, threshold, transformation_init,
-    o3d.pipelines.registration.TransformationEstimationPointToPoint()
+    o3d.pipelines.registration.TransformationEstimationPointToPoint(with_scaling = False)
 )
 
 icp_fitness = reg_p2p.fitness
