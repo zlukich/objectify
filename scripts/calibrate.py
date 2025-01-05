@@ -60,8 +60,8 @@ num_of_images = args.num_of_images
 ARUCO_DICT = cv2.aruco.DICT_6X6_250
 SQUARES_VERTICALLY = 13
 SQUARES_HORIZONTALLY = 9
-SQUARE_LENGTH = 0.03
-MARKER_LENGTH = 0.02
+SQUARE_LENGTH = 0.03135
+MARKER_LENGTH = 0.02105
 
 dictionary = cv2.aruco.getPredefinedDictionary(ARUCO_DICT)
 board = cv2.aruco.CharucoBoard((SQUARES_VERTICALLY, SQUARES_HORIZONTALLY), SQUARE_LENGTH, MARKER_LENGTH, dictionary)

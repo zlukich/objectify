@@ -1093,36 +1093,6 @@
         "height": 1
     },
     {
-        "id": "754d5e88c2950cfc",
-        "type": "ui_spacer",
-        "z": "c0273576f864fea6",
-        "name": "spacer",
-        "group": "bbcac8f35b0ea650",
-        "order": 2,
-        "width": 16,
-        "height": 1
-    },
-    {
-        "id": "342d9e5a68ef744b",
-        "type": "ui_spacer",
-        "z": "c0273576f864fea6",
-        "name": "spacer",
-        "group": "bbcac8f35b0ea650",
-        "order": 4,
-        "width": 14,
-        "height": 1
-    },
-    {
-        "id": "f8636c6701f97825",
-        "type": "ui_spacer",
-        "z": "c0273576f864fea6",
-        "name": "spacer",
-        "group": "bbcac8f35b0ea650",
-        "order": 6,
-        "width": 16,
-        "height": 1
-    },
-    {
         "id": "7fa3113eaf2db9a4",
         "type": "ui_spacer",
         "z": "3669868b19b1582f",
@@ -1190,6 +1160,36 @@
         "group": "45c6e5c68f9384b7",
         "order": 4,
         "width": 6,
+        "height": 1
+    },
+    {
+        "id": "64eb6248149cfff0",
+        "type": "ui_spacer",
+        "z": "c0273576f864fea6",
+        "name": "spacer",
+        "group": "bbcac8f35b0ea650",
+        "order": 2,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "18e134e624a140a7",
+        "type": "ui_spacer",
+        "z": "c0273576f864fea6",
+        "name": "spacer",
+        "group": "bbcac8f35b0ea650",
+        "order": 4,
+        "width": 14,
+        "height": 1
+    },
+    {
+        "id": "4e07dea6060f65ec",
+        "type": "ui_spacer",
+        "z": "c0273576f864fea6",
+        "name": "spacer",
+        "group": "bbcac8f35b0ea650",
+        "order": 7,
+        "width": 12,
         "height": 1
     },
     {
@@ -8110,8 +8110,8 @@
         "topic": "",
         "payload": "false",
         "payloadType": "bool",
-        "x": 3100,
-        "y": 420,
+        "x": 3120,
+        "y": 380,
         "wires": [
             [
                 "e53b8b2a.7e5748"
@@ -8417,7 +8417,7 @@
         "type": "function",
         "z": "3669868b19b1582f",
         "name": "PINHOLE MODEL",
-        "func": "//construct command\nvar cmd = \"\";\nvar ingp_root = global.get(\"ingp_root\")\ncmd = cmd + \"python \" + ingp_root +\"colmap2nerf_nodered.py --colmap_matcher exhaustive --colmap_camera_model PINHOLE\"\n\nvar folder = global.get(\"selected_project\");\n\nif(flow.get(\"video\")==true){\n cmd += \"--video_in \";\n cmd += folder +\" \";\n}else{\n    cmd+= \" --images \";\n    var initial_folder = global.get(\"filebrowser_default_folder\") ;\n    cmd+= initial_folder+folder+ \" \";\n}\nif(flow.get(\"run_colmap\")==true){\n    cmd += \" --run_colmap \";\n}\nif(flow.get(\"single_camera\")==true){\n    cmd += \" --single_camera 1\";\n}else{\n    cmd += \" --single_camera 0\";\n}\nif(flow.get(\"remove_background\")!= \"None\"){\n    cmd += \" --remove_background --bg_model \" + flow.get(\"remove_background\");\n}\n// if(flow.get(\"use_gpu\")==true){\n//     cmd += \" --use_gpu 1 \";\n// }\nmsg.payload = cmd;\nmsg.errorcode = 0;\nmsg.code = 1;\nreturn msg;",
+        "func": "//construct command\nvar cmd = \"\";\nvar ingp_root = global.get(\"ingp_root\")\ncmd = cmd + \"python \" + ingp_root +\"colmap2nerf_nodered.py --colmap_matcher exhaustive --colmap_camera_model PINHOLE --out transforms_centered.json\"\n\nvar folder = global.get(\"selected_project\");\n\nif(flow.get(\"video\")==true){\n cmd += \"--video_in \";\n cmd += folder +\" \";\n}else{\n    cmd+= \" --images \";\n    var initial_folder = global.get(\"filebrowser_default_folder\") ;\n    cmd+= initial_folder+folder+ \" \";\n}\nif(flow.get(\"run_colmap\")==true){\n    cmd += \" --run_colmap \";\n}\nif(flow.get(\"single_camera\")==true){\n    cmd += \" --single_camera 1\";\n}else{\n    cmd += \" --single_camera 0\";\n}\nif(flow.get(\"remove_background\")!= \"None\"){\n    cmd += \" --remove_background --bg_model \" + flow.get(\"remove_background\");\n}\n// if(flow.get(\"use_gpu\")==true){\n//     cmd += \" --use_gpu 1 \";\n// }\nmsg.payload = cmd;\nmsg.errorcode = 0;\nmsg.code = 1;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8603,7 +8603,7 @@
         "type": "function",
         "z": "f11166a80e40d7b6",
         "name": "Building ingp run command",
-        "func": "\n\nvar cmd = \"\";\nvar steps = flow.get(\"steps\")\nconsole.log(flow.get(\"transforms_found\"));\nvar default_folder = global.get(\"filebrowser_default_folder\") \nlet project_path =default_folder+ global.get(\"selected_project\");\nvar ingp_root = global.get(\"ingp_root\")\nvar mc_resolution = flow.get(\"resolution\");\ncmd = \"python \" + ingp_root + \"run.py\" + \" --scene \" + project_path + \n    \"/transforms_centered.json --save_snapshot \" + project_path + \"/snapshot.ingp --save_mesh \" + project_path \n    + \"/snapshot.obj --n_steps \" + steps + \n    \" --marching_cubes_res \" + mc_resolution + \n    \" --marching_cubes_density_thresh 2.8\";\ncmd += \nmsg.payload = cmd;\n\nreturn msg;",
+        "func": "\n\nvar cmd = \"\";\nvar steps = flow.get(\"steps\")\nconsole.log(flow.get(\"transforms_found\"));\nvar default_folder = global.get(\"filebrowser_default_folder\") \nlet project_path =default_folder+ global.get(\"selected_project\");\nvar ingp_root = global.get(\"ingp_root\")\nvar mc_resolution = flow.get(\"resolution\");\ncmd = \"python \" + ingp_root + \"run.py\" + \" --scene \" + project_path + \n    \"/transforms_centered.json --save_snapshot \" + project_path + \"/snapshot.ingp --save_mesh \" + project_path \n    + \"/snapshot.obj --n_steps \" + steps + \n    \" --marching_cubes_res \" + mc_resolution + \n    \" --marching_cubes_density_thresh 2.5\";\ncmd += \nmsg.payload = cmd;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -9065,8 +9065,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 3240,
-        "y": 580,
+        "x": 3200,
+        "y": 560,
         "wires": [
             []
         ]
@@ -9431,7 +9431,7 @@
         "once": true,
         "onceDelay": "0.1",
         "topic": "",
-        "payload": "666",
+        "payload": "700",
         "payloadType": "num",
         "x": 210,
         "y": 1400,
@@ -9456,7 +9456,7 @@
         "once": true,
         "onceDelay": "0.1",
         "topic": "",
-        "payload": "10000",
+        "payload": "3000",
         "payloadType": "num",
         "x": 160,
         "y": 1160,
@@ -9637,7 +9637,7 @@
         "z": "f11166a80e40d7b6",
         "g": "ebe64e9c6e1db2d6",
         "name": "get_suface cmd",
-        "func": "let extract_surface = flow.get(\"extract_surface\");\nlet refine_mesh = flow.get(\"refine_mesh\");\n\nvar cmd = \"\";\nvar steps = flow.get(\"steps\")\nconsole.log(flow.get(\"transforms_found\"));\nvar default_folder = global.get(\"filebrowser_default_folder\")\nlet project_path = default_folder + global.get(\"selected_project\");\nvar ingp_root = global.get(\"ingp_root\")\nvar mc_resolution = flow.get(\"resolution\");\n\n\nif(extract_surface){\n\n    msg.payload = \"Starting of extracting the surface\"\n    cmd = \"python \" + ingp_root + \"run.py\" + \n    \" --scene \" + project_path + \"/snapshot_filtered.obj --save_surface --save_mesh \" + \n    project_path + \"/surface_snapshot.ply --n_steps 2000\" + \n    \" --marching_cubes_res \" + \"255\" + \" --marching_cubes_density_thresh 0.0\";\n    msg.command = cmd;\n}\nelse{\n    msg.payload = \"Reconstruction completed, and saved under \" +project_path +\" with the name \" +\"snapshot.ply\"\n}\n\n\n//msg.command = \"python \" + \"../scripts/get_surface.py\" + \"--mesh_path \" + ./ data / meshes / charuco_rembg.ply +\" --num_points \" +12000000 +\" --out_name \" +\"./ data / meshes / charucosurface.obj\";\nreturn msg;",
+        "func": "let extract_surface = flow.get(\"extract_surface\");\nlet refine_mesh = flow.get(\"refine_mesh\");\n\nvar cmd = \"\";\nvar steps = flow.get(\"steps\")\nconsole.log(flow.get(\"transforms_found\"));\nvar default_folder = global.get(\"filebrowser_default_folder\")\nlet project_path = default_folder + global.get(\"selected_project\");\nvar ingp_root = global.get(\"ingp_root\")\nvar mc_resolution = flow.get(\"resolution\");\n\n\nif(extract_surface){\n\n    msg.payload = \"Starting of extracting the surface\"\n    cmd = \"python \" + ingp_root + \"run.py\" + \n    \" --scene \" + project_path + \"/snapshot_filtered.obj --save_surface --save_mesh \" + \n    project_path + \"/surface_snapshot.ply --n_steps 3000\" + \n    \" --marching_cubes_res \" + \"700\" + \" --marching_cubes_density_thresh 0.0\";\n    msg.command = cmd;\n}\nelse{\n    msg.payload = \"Reconstruction completed, and saved under \" +project_path +\" with the name \" +\"snapshot.ply\"\n}\n\n\n//msg.command = \"python \" + \"../scripts/get_surface.py\" + \"--mesh_path \" + ./ data / meshes / charuco_rembg.ply +\" --num_points \" +12000000 +\" --out_name \" +\"./ data / meshes / charucosurface.obj\";\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -9899,8 +9899,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1940,
-        "y": 820,
+        "x": 2000,
+        "y": 760,
         "wires": []
     },
     {
@@ -10430,7 +10430,7 @@
         "type": "function",
         "z": "c0273576f864fea6",
         "name": "function 10",
-        "func": "\nvar default_folder = global.get(\"filebrowser_default_folder\")\nlet project_path = default_folder + global.get(\"selected_project\");\n\nvar cmd = \"python ../scripts/compare_surface.py --pcd_source \" + project_path + \"/aligned_pcd.ply \" + \"--pcd_target \" +project_path +\"/rescaled_target_mesh.ply\"\nmsg.payload = cmd;\nreturn msg;",
+        "func": "\nvar default_folder = global.get(\"filebrowser_default_folder\")\nlet project_path = default_folder + global.get(\"selected_project\");\nvar cmd = \"\";\nif(flow.get(\"ground_truth\")){\n    cmd = \"python ../scripts/compare_surface.py --pcd_source \" + project_path + \"/aligned_pcd.ply \" + \"--pcd_target \" + project_path + \"/rescaled_target_mesh.ply\"\n} else{\n    cmd = \"python ../scripts/compare_surface.py --pcd_source \" + project_path + \"/rescaled_target_mesh.ply \" + \"--pcd_target \" + project_path + \"/aligned_pcd.ply \"\n}\n\n\nmsg.payload = cmd;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -10496,7 +10496,7 @@
         "z": "c0273576f864fea6",
         "name": "",
         "group": "bbcac8f35b0ea650",
-        "order": 5,
+        "order": 6,
         "width": 6,
         "height": 1,
         "passthru": false,
@@ -10524,7 +10524,7 @@
         "z": "c0273576f864fea6",
         "group": "bbcac8f35b0ea650",
         "name": "",
-        "order": 7,
+        "order": 8,
         "width": 22,
         "height": 27,
         "format": "<script>\n(function(scope) {\n    scope.$watch('msg', function(msg) {\n        if (msg) {\n            let object = document.getElementById(\"myIframe\");\n            if (msg.payload === \"show\") {\n                object.style.display = \"block\"; // Shows the iframe\n                \n                // Reload iframe by resetting the src\n                setTimeout(() => {\n                    object.src = \"\"; // Clear the src\n                    setTimeout(() => {\n                        object.src = \"http://localhost:5454\"; // Reset the src to reload\n                    }, 100); // Short delay before resetting src to trigger reload\n                }, 1000); // Delay before reload\n            } else {\n                object.style.display = \"none\"; // Hides the iframe\n                object.src = \"\"; // Clear the src when hiding\n            }\n        }\n    });\n})(scope);\n</script>\n\n<iframe id=\"myIframe\" src=\"http://localhost:5454\" style=\"width: 100%; height: 100%; display: none;\">\n</iframe>\n",
@@ -10533,7 +10533,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1780,
+        "x": 1860,
         "y": 840,
         "wires": [
             []
@@ -10865,8 +10865,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1540,
-        "y": 680,
+        "x": 1520,
+        "y": 700,
         "wires": [
             [
                 "41d44316103e492c"
@@ -10888,6 +10888,90 @@
         "x": 850,
         "y": 1020,
         "wires": []
+    },
+    {
+        "id": "1471733b3c9f9d68",
+        "type": "ui_switch",
+        "z": "c0273576f864fea6",
+        "name": "",
+        "label": "Show ground truth or reconstructed",
+        "tooltip": "",
+        "group": "bbcac8f35b0ea650",
+        "order": 5,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 400,
+        "y": 920,
+        "wires": [
+            [
+                "77e8f04f6cd9befe"
+            ]
+        ]
+    },
+    {
+        "id": "77e8f04f6cd9befe",
+        "type": "change",
+        "z": "c0273576f864fea6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ground_truth",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7421590ee64fe409",
+        "type": "inject",
+        "z": "c0273576f864fea6",
+        "name": "Show ground_truth on startup",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 150,
+        "y": 1040,
+        "wires": [
+            [
+                "1471733b3c9f9d68"
+            ]
+        ]
     },
     {
         "id": "eb5989747efe7bc0",

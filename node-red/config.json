@@ -1,7 +1,5 @@
 {
-    "current_work": {
-        "selected_folder": "./projects/bluefrog2.calib5_complete/"
-    },
+    "current_work": {},
     "test_project": {
         "images": "/home/iat/Documents/BA_Oleksandr/objectify/node-red/projects/board_4x4_freehand",
         "calibrated": true,
@@ -1397,14 +1395,14 @@
         "calibrated": true,
         "camera_matrix": [
             [
-                5111.9117202035,
+                5111.886022797005,
                 0.0,
-                1199.4674167660141
+                1199.4785431867076
             ],
             [
                 0.0,
-                5184.875878730926,
-                849.7913329300177
+                5184.868751389055,
+                849.8354663730953
             ],
             [
                 0.0,
@@ -1414,28 +1412,28 @@
         ],
         "dist_coeff": [
             [
-                -0.07597095111118246
+                -0.07609369148143488
             ],
             [
-                -2.413743238703006
+                -2.3721261903116075
             ],
             [
-                -0.012243018729162313
+                -0.012244034102383235
             ],
             [
-                -0.0011138210758785112
+                -0.001113341527326459
             ],
             [
-                23.847241028419074
+                25.912533759820423
             ],
             [
-                -0.07083715501921971
+                -0.07092459881306898
             ],
             [
-                0.7557952035842421
+                0.7955637308168988
             ],
             [
-                -8.513346056086892
+                -6.412545910439276
             ],
             [
                 0.0
@@ -1464,7 +1462,7 @@
         "bg_model": "birefnet-general"
     },
     "bluefrog2.calib5_complete": {
-        "rembg": true,
+        "rembg": false,
         "poses_from": "charuco",
         "transforms_path": "./projects/bluefrog2.calib5_complete/transforms_centered.json",
         "bg_model": "birefnet-general-lite"
@@ -1631,6 +1629,334 @@
         "transforms_path": "./projects/silverhandle.calib7/transforms_centered.json"
     },
     "scan_all": {
+        "rembg": true,
+        "poses_from": "colmap"
+    },
+    "calib8": {
+        "images": "./projects/calib8",
+        "calibrated": true,
+        "camera_matrix": [
+            [
+                5178.7360463256355,
+                0.0,
+                1183.0486041869397
+            ],
+            [
+                0.0,
+                5239.739447814145,
+                838.8374178646877
+            ],
+            [
+                0.0,
+                0.0,
+                1.0
+            ]
+        ],
+        "dist_coeff": [
+            [
+                -0.1475000190174733
+            ],
+            [
+                -5.831905845606336
+            ],
+            [
+                -0.007150227327895496
+            ],
+            [
+                -0.0017122143277170814
+            ],
+            [
+                -27.769448475622067
+            ],
+            [
+                -0.06737345303949274
+            ],
+            [
+                -6.567179282593918
+            ],
+            [
+                -13.96830986689604
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ]
+        ],
+        "rembg": false,
+        "poses_from": "charuco",
+        "transforms_path": "./projects/calib8/transforms_centered.json"
+    },
+    "new_transparent.calib8": {
+        "bg_model": "birefnet-general",
+        "rembg": false,
+        "poses_from": "charuco",
+        "transforms_path": "./projects/new_transparent.calib8/transforms_centered.json"
+    },
+    "number_cube.calib8": {
+        "bg_model": "birefnet-general",
+        "rembg": true,
+        "poses_from": "charuco",
+        "transforms_path": "./projects/number_cube.calib8/transforms_centered.json",
+        "images": "./projects/number_cube.calib8",
+        "calibrated": true,
+        "camera_matrix": [
+            [
+                5130.934655572402,
+                0.0,
+                893.6701624675223
+            ],
+            [
+                0.0,
+                5780.0784116233,
+                1213.892029114204
+            ],
+            [
+                0.0,
+                0.0,
+                1.0
+            ]
+        ],
+        "dist_coeff": [
+            [
+                0.11729595804217836
+            ],
+            [
+                0.7627215871053559
+            ],
+            [
+                -0.012141046840455768
+            ],
+            [
+                -0.015028258164742719
+            ],
+            [
+                6.453694345472755
+            ],
+            [
+                0.09701465186549543
+            ],
+            [
+                3.093712533722923
+            ],
+            [
+                -6.630745371227301
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ]
+        ]
+    },
+    "new_silver.calib8": {
+        "rembg": false,
+        "poses_from": "charuco",
+        "transforms_path": "./projects/new_silver.calib8/transforms_centered.json",
+        "bg_model": "birefnet-general"
+    },
+    "new_black.calib8": {
+        "bg_model": "birefnet-general",
+        "rembg": false,
+        "poses_from": "charuco",
+        "transforms_path": "./projects/new_black.calib8/transforms_centered.json"
+    },
+    "new_white.calib8": {
+        "bg_model": "birefnet-general",
+        "rembg": false,
+        "poses_from": "charuco",
+        "transforms_path": "./projects/new_white.calib8/transforms_centered.json",
+        "images": "./projects/new_white.calib8",
+        "calibrated": true,
+        "camera_matrix": [
+            [
+                5683.051119311839,
+                0.0,
+                793.2024373781867
+            ],
+            [
+                0.0,
+                14735.40401029711,
+                1386.5172489712222
+            ],
+            [
+                0.0,
+                0.0,
+                1.0
+            ]
+        ],
+        "dist_coeff": [
+            [
+                162.15435338457846
+            ],
+            [
+                -10.131352153369605
+            ],
+            [
+                -0.009458135050688625
+            ],
+            [
+                0.0063815289821958455
+            ],
+            [
+                94.97058003912863
+            ],
+            [
+                159.97739048555007
+            ],
+            [
+                50.13683022910582
+            ],
+            [
+                -102.81450729596767
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ]
+        ]
+    },
+    "calib9": {
+        "images": "./projects/calib9",
+        "calibrated": true,
+        "camera_matrix": [
+            [
+                4941.889862977553,
+                0.0,
+                1836.448223969582
+            ],
+            [
+                0.0,
+                5327.383847525797,
+                1624.1777164862008
+            ],
+            [
+                0.0,
+                0.0,
+                1.0
+            ]
+        ],
+        "dist_coeff": [
+            [
+                0.00845769166991887
+            ],
+            [
+                -0.002669873251198069
+            ],
+            [
+                -0.013158443203039629
+            ],
+            [
+                -0.009926870224106248
+            ],
+            [
+                -0.2830877656561305
+            ],
+            [
+                0.04291651972346346
+            ],
+            [
+                0.24504938616593108
+            ],
+            [
+                -0.6513578102424286
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ]
+        ],
+        "rembg": false,
+        "poses_from": "charuco",
+        "transforms_path": "./projects/calib9/transforms_centered.json"
+    },
+    "new_black.calib8.rembg": {
+        "rembg": false,
+        "poses_from": "colmap"
+    },
+    "number_cube.calib8.rembg": {
+        "rembg": false,
+        "poses_from": "colmap"
+    },
+    "new_silver.calib8.rembg": {
+        "rembg": false,
+        "poses_from": "colmap"
+    },
+    "new_transparent.calib8.rembg": {
+        "rembg": false,
+        "poses_from": "colmap"
+    },
+    "new_white.calib8.rembg": {
+        "rembg": false,
+        "poses_from": "colmap"
+    },
+    "number_cube.calib8_sharpnesstest": {
+        "rembg": false,
+        "poses_from": "colmap"
+    },
+    "rembg_blackfrog": {
+        "rembg": false,
+        "poses_from": "colmap"
+    },
+    "scan65-68": {
+        "rembg": true,
+        "poses_from": "colmap"
+    },
+    "scan69-73": {
         "rembg": true,
         "poses_from": "colmap"
     }

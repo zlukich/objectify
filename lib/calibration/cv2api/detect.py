@@ -11,8 +11,8 @@ from matplotlib import pyplot as plt
 ARUCO_DICT = cv2.aruco.DICT_4X4_50
 SQUARES_VERTICALLY = 7
 SQUARES_HORIZONTALLY = 5
-SQUARE_LENGTH = 0.056
-MARKER_LENGTH = 0.042
+SQUARE_LENGTH = 0.03105
+MARKER_LENGTH = 0.02105
 
 # def detect_pose(image, camera_matrix, dist_coeffs):
 #     # Undistort the image

@@ -69,28 +69,28 @@ def main():
     args = parser.parse_args()
 
     # Read the input mesh
-    mesh = o3d.io.read_triangle_mesh(args.input_mesh)
-    if not mesh.has_vertex_normals():
-        mesh.compute_vertex_normals()
-    print("Input mesh has {} vertices and {} triangles.".format(len(mesh.vertices), len(mesh.triangles)),flush = True)
+    # mesh = o3d.io.read_triangle_mesh(args.input_mesh)
+    # if not mesh.has_vertex_normals():
+    #     mesh.compute_vertex_normals()
+    # print("Input mesh has {} vertices and {} triangles.".format(len(mesh.vertices), len(mesh.triangles)),flush = True)
 
-    # Convert mesh to point cloud
-    if(len(mesh.vertices)>500000):
-        pcd = mesh.sample_points_uniformly(number_of_points=500000)
-    else:
-        pcd = mesh.sample_points_uniformly(number_of_points=len(mesh.vertices))
+    # # Convert mesh to point cloud
+    # if(len(mesh.vertices)>500000):
+    #     pcd = mesh.sample_points_uniformly(number_of_points=500000)
+    # else:
+    #     pcd = mesh.sample_points_uniformly(number_of_points=len(mesh.vertices))
     
-    print("Converted to point cloud with {} points.".format(len(pcd.points)),flush = True)
+    # print("Converted to point cloud with {} points.".format(len(pcd.points)),flush = True)
 
-    # Optional downsampling
-    if args.voxel_size is not None:
-        pcd = pcd.voxel_down_sample(voxel_size=args.voxel_size)
-        print("Downsampled point cloud to {} points.".format(len(pcd.points)),flush = True)
+    # # Optional downsampling
+    # if args.voxel_size is not None:
+    #     pcd = pcd.voxel_down_sample(voxel_size=args.voxel_size)
+    #     print("Downsampled point cloud to {} points.".format(len(pcd.points)),flush = True)
 
     # Remove outliers
-    cl, ind = pcd.remove_statistical_outlier(nb_neighbors=args.nb_neighbors, std_ratio=args.std_ratio)
-    pcd_filtered = pcd.select_by_index(ind)
-    print("Point cloud after outlier removal has {} points.".format(len(pcd_filtered.points)),flush = True)
+    #cl, ind = pcd.remove_statistical_outlier(nb_neighbors=args.nb_neighbors, std_ratio=args.std_ratio)
+    #pcd_filtered = pcd.select_by_index(ind)
+    #print("Point cloud after outlier removal has {} points.".format(len(pcd_filtered.points)),flush = True)
 
     # # Find clusters using DBSCAN
     # labels = np.array(pcd_filtered.cluster_dbscan(eps=args.eps, min_points=args.min_points, print_progress=True))

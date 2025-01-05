@@ -61,7 +61,7 @@ def closest_point_2_lines(oa, da, ob, db): # returns point closest to both rays 
 		tb = 0
 	return (oa+ta*da+ob+tb*db) * 0.5, denom
 
-def correct_to_center(rvec, tvec, cols =7,rows =5,square_size = 0.056):
+def correct_to_center(rvec, tvec, cols =13,rows =9,square_size = 0.03135):
     center_x = (cols - 1) * square_size / 2.0
     center_y = (rows - 1) * square_size / 2.0
 
