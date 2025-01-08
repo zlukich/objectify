@@ -32,7 +32,6 @@ optimize and automate quality assurance processes.
 
 This repository is organized into several key folders:
 
-- **src**: Contains the main codebase for reconstruction, including modules for preprocessing, pose estimation, and integration with NeRF and Colmap.
 - **lib**: Includes utility functions for:
   - **Calibration**: Functions for handling Charuco board calibration.
   - **JSON Generation**: Scripts for creating and manipulating JSON files for camera poses and other metadata.
@@ -107,7 +106,7 @@ The workflow for obtaining and processing data:
    - Use Colmap or Charuco tab for generating camera poses.
 
 4. **Mesh Extraction**:
-   - Run the reconstruction using API for instant-ngp algorithm algorithms with specified parameters.
+   - Run the reconstruction using API for instant-ngp algorithms with specified parameters.
     
 
 ---
@@ -130,5 +129,3 @@ The validation dataset used in this project can be downloaded [here](<insert-dow
    - **Mesh Extraction Artifacts**: Fine-tune the `mc_resolution` and `mc_threshold` parameters to improve mesh quality.
 
 ---
-
-Feel free to adapt this template further! Let me know if you need additional edits or adjustments.
