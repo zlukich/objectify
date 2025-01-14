@@ -2955,8 +2955,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 2040,
-        "y": 860,
+        "x": 2060,
+        "y": 880,
         "wires": [
             [
                 "0e3188356bf30267"
@@ -3190,8 +3190,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 2000,
-        "y": 1340,
+        "x": 2020,
+        "y": 1360,
         "wires": [
             [
                 "fa9a2e51168ded58"
@@ -8417,7 +8417,7 @@
         "type": "function",
         "z": "3669868b19b1582f",
         "name": "PINHOLE MODEL",
-        "func": "//construct command\nvar cmd = \"\";\nvar ingp_root = global.get(\"ingp_root\")\ncmd = cmd + \"python \" + ingp_root +\"colmap2nerf_nodered.py --colmap_matcher exhaustive --colmap_camera_model PINHOLE --out transforms_colmap.json\"\n\nvar folder = global.get(\"selected_project\");\n\nif(flow.get(\"video\")==true){\n cmd += \"--video_in \";\n cmd += folder +\" \";\n}else{\n    cmd+= \" --images \";\n    var initial_folder = global.get(\"filebrowser_default_folder\") ;\n    cmd+= initial_folder+folder+ \" \";\n}\nif(flow.get(\"run_colmap\")==true){\n    cmd += \" --run_colmap \";\n}\nif(flow.get(\"single_camera\")==true){\n    cmd += \" --single_camera 1\";\n}else{\n    cmd += \" --single_camera 0\";\n}\nif(flow.get(\"remove_background\")!= \"None\"){\n    cmd += \" --remove_background --bg_model \" + flow.get(\"remove_background\");\n}\n// if(flow.get(\"use_gpu\")==true){\n//     cmd += \" --use_gpu 1 \";\n// }\nmsg.payload = cmd;\nmsg.errorcode = 0;\nmsg.code = 1;\nreturn msg;",
+        "func": "//construct command\nvar cmd = \"\";\nvar ingp_root = global.get(\"ingp_root\")\ncmd = cmd + \"python \" + ingp_root +\"colmap2nerf_nodered.py --colmap_matcher exhaustive --colmap_camera_model PINHOLE --out transforms_centered.json\"\n\nvar folder = global.get(\"selected_project\");\n\nif(flow.get(\"video\")==true){\n cmd += \"--video_in \";\n cmd += folder +\" \";\n}else{\n    cmd+= \" --images \";\n    var initial_folder = global.get(\"filebrowser_default_folder\") ;\n    cmd+= initial_folder+folder+ \" \";\n}\nif(flow.get(\"run_colmap\")==true){\n    cmd += \" --run_colmap \";\n}\nif(flow.get(\"single_camera\")==true){\n    cmd += \" --single_camera 1\";\n}else{\n    cmd += \" --single_camera 0\";\n}\nif(flow.get(\"remove_background\")!= \"None\"){\n    cmd += \" --remove_background --bg_model \" + flow.get(\"remove_background\");\n}\n// if(flow.get(\"use_gpu\")==true){\n//     cmd += \" --use_gpu 1 \";\n// }\nmsg.payload = cmd;\nmsg.errorcode = 0;\nmsg.code = 1;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,

@@ -2694,7 +2694,7 @@
             {
                 "p": "ingp_root",
                 "pt": "global",
-                "to": "../../instant-ngp/scripts/",
+                "to": "../instant-ngp/scripts/",
                 "tot": "str"
             }
         ],
@@ -2955,8 +2955,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 2040,
-        "y": 860,
+        "x": 2060,
+        "y": 880,
         "wires": [
             [
                 "0e3188356bf30267"
@@ -3190,8 +3190,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 2000,
-        "y": 1340,
+        "x": 2020,
+        "y": 1360,
         "wires": [
             [
                 "fa9a2e51168ded58"

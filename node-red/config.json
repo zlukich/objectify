@@ -1,5 +1,7 @@
 {
-    "current_work": {},
+    "current_work": {
+        "selected_folder": "./projects/bluefrog2.calib5_complete/"
+    },
     "test_project": {
         "images": "/home/iat/Documents/BA_Oleksandr/objectify/node-red/projects/board_4x4_freehand",
         "calibrated": true,
