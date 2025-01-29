@@ -1,4 +1,3 @@
-Here's a draft for your README file based on the provided structure and additional information:
 
 ---
 
