@@ -71,7 +71,7 @@ mtx  = np.array(args.mtx).reshape(3, 3)
 
 dist = np.array(args.dist)
 
-out_path = os.path.join(input_path, "transforms_centered.json")
+out_path = os.path.join(input_path, "transforms_centered_demo.json")
 
 print("Starting pose generation ...",flush = True)
 generate_json_for_images(input_path, out_path, mtx, dist, board = board ,scale = 8,append_rembg = append_rembg,colmap=True)

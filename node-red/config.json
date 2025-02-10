@@ -1,6 +1,68 @@
 {
     "current_work": {
-        "selected_folder": "./projects/bluefrog2.calib5_complete/"
+        "selected_folder": "./projects/white_skull/",
+        "calibrated": true,
+        "camera_matrix": [
+            [
+                5178.7360463256355,
+                0.0,
+                1183.0486041869397
+            ],
+            [
+                0.0,
+                5239.739447814145,
+                838.8374178646877
+            ],
+            [
+                0.0,
+                0.0,
+                1.0
+            ]
+        ],
+        "dist_coeff": [
+            [
+                -0.1475000190174733
+            ],
+            [
+                -5.831905845606336
+            ],
+            [
+                -0.007150227327895496
+            ],
+            [
+                -0.0017122143277170814
+            ],
+            [
+                -27.769448475622067
+            ],
+            [
+                -0.06737345303949274
+            ],
+            [
+                -6.567179282593918
+            ],
+            [
+                -13.96830986689604
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ],
+            [
+                0.0
+            ]
+        ]
     },
     "test_project": {
         "images": "/home/iat/Documents/BA_Oleksandr/objectify/node-red/projects/board_4x4_freehand",
@@ -1780,14 +1842,14 @@
     "new_silver.calib8": {
         "rembg": false,
         "poses_from": "charuco",
-        "transforms_path": "./projects/new_silver.calib8/transforms_centered.json",
+        "transforms_path": "./projects/new_silver.calib8/transforms_centered_demo.json",
         "bg_model": "birefnet-general"
     },
     "new_black.calib8": {
         "bg_model": "birefnet-general",
         "rembg": false,
         "poses_from": "charuco",
-        "transforms_path": "./projects/new_black.calib8/transforms_centered.json"
+        "transforms_path": "./projects/new_black.calib8/transforms_centered_demo.json"
     },
     "new_white.calib8": {
         "bg_model": "birefnet-general",
@@ -1940,7 +2002,7 @@
     },
     "new_transparent.calib8.rembg": {
         "rembg": false,
-        "poses_from": "colmap"
+        "poses_from": "charuco"
     },
     "new_white.calib8.rembg": {
         "rembg": false,
@@ -1961,5 +2023,8 @@
     "scan69-73": {
         "rembg": true,
         "poses_from": "colmap"
+    },
+    "white_skull": {
+        "images": "./projects/white_skull"
     }
 }

@@ -40,6 +40,14 @@
         "env": []
     },
     {
+        "id": "f11166a80e40d7b6",
+        "type": "tab",
+        "label": "Instant-NGP",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "cd35db7d9440e826",
         "type": "tab",
         "label": "Save and Viz",
@@ -51,14 +59,6 @@
         "id": "c0273576f864fea6",
         "type": "tab",
         "label": "Comparison",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "f11166a80e40d7b6",
-        "type": "tab",
-        "label": "Instant-NGP",
         "disabled": false,
         "info": "",
         "env": []
@@ -145,6 +145,32 @@
         "y": 113,
         "w": 1942,
         "h": 248
+    },
+    {
+        "id": "a97981e2e8c1f13e",
+        "type": "group",
+        "z": "ce11a1573af9dae5",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "529b44651e96af74",
+            "99a1eb025cd521ab",
+            "d84bb53e6f53b33e",
+            "59087407bde0886a",
+            "a2f6ee2a8fab4c4e",
+            "5eeb4bf58301947d"
+        ],
+        "x": 674,
+        "y": 699,
+        "w": 792,
+        "h": 182
     },
     {
         "id": "16e9549a3ea706bc",
@@ -283,35 +309,6 @@
         "h": 182
     },
     {
-        "id": "9b0e6419204a0256",
-        "type": "group",
-        "z": "ce11a1573af9dae5",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "e63860d485b1ec1e",
-            "ebd52399cf612490",
-            "788f1c086505d7b4",
-            "4dcbbe794ee8b7ae",
-            "cfc320bb204dc46d",
-            "75dde250afeaeda0",
-            "5d34c736cdb06acd",
-            "2f85e5693195ce97",
-            "d7cb2c4672cd8e6b"
-        ],
-        "x": 444,
-        "y": 693,
-        "w": 1108,
-        "h": 248
-    },
-    {
         "id": "80f0e37eedd4ac4c",
         "type": "group",
         "z": "3669868b19b1582f",
@@ -410,29 +407,6 @@
         "h": 162
     },
     {
-        "id": "d7cb2c4672cd8e6b",
-        "type": "group",
-        "z": "ce11a1573af9dae5",
-        "g": "9b0e6419204a0256",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "addca606bae3bdfd",
-            "25b9ff0cb5d9248b"
-        ],
-        "x": 1274,
-        "y": 719,
-        "w": 252,
-        "h": 162
-    },
-    {
         "id": "25f3c5600f2539f4",
         "type": "group",
         "z": "3669868b19b1582f",
@@ -459,10 +433,10 @@
         "id": "d6a9b08dd46babd7",
         "type": "ui_base",
         "theme": {
-            "name": "theme-light",
+            "name": "theme-dark",
             "lightTheme": {
                 "default": "#0094CE",
-                "baseColor": "#177335",
+                "baseColor": "#0094CE",
                 "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
                 "edited": true,
                 "reset": false
@@ -483,44 +457,44 @@
             },
             "themeState": {
                 "base-color": {
-                    "default": "#0094CE",
-                    "value": "#177335",
-                    "edited": true
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
                 },
                 "page-titlebar-backgroundColor": {
-                    "value": "#177335",
+                    "value": "#097479",
                     "edited": false
                 },
                 "page-backgroundColor": {
-                    "value": "#fafafa",
-                    "edited": true
-                },
-                "page-sidebar-backgroundColor": {
-                    "value": "#333333",
-                    "edited": true
-                },
-                "group-textColor": {
-                    "value": "#24b352",
-                    "edited": false
-                },
-                "group-borderColor": {
-                    "value": "#ffffff",
-                    "edited": true
-                },
-                "group-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": true
-                },
-                "widget-textColor": {
                     "value": "#111111",
                     "edited": false
                 },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
                 "widget-backgroundColor": {
-                    "value": "#177335",
+                    "value": "#097479",
                     "edited": false
                 },
                 "widget-borderColor": {
-                    "value": "#ffffff",
+                    "value": "#333333",
                     "edited": false
                 },
                 "base-font": {
@@ -728,11 +702,11 @@
     {
         "id": "acabc51978b41c5b",
         "type": "ui_group",
-        "name": "1. Pose Generation",
+        "name": "Default",
         "tab": "a7be7e0c24eb1f61",
-        "order": 2,
+        "order": 1,
         "disp": true,
-        "width": "9",
+        "width": "6",
         "collapse": false,
         "className": ""
     },
@@ -794,11 +768,11 @@
     {
         "id": "40495299a6187faf",
         "type": "ui_group",
-        "name": "save_viz",
+        "name": "Viz FS",
         "tab": "1f362802086f4d96",
-        "order": 4,
+        "order": 3,
         "disp": true,
-        "width": "23",
+        "width": 23,
         "collapse": false,
         "className": ""
     },
@@ -816,11 +790,11 @@
     {
         "id": "2fdbed4902a7b60d",
         "type": "ui_group",
-        "name": "Project Folder",
+        "name": "Project folder",
         "tab": "a7be7e0c24eb1f61",
-        "order": 1,
+        "order": 2,
         "disp": true,
-        "width": "40",
+        "width": "6",
         "collapse": false,
         "className": ""
     },
@@ -886,6 +860,36 @@
         "group": "919860c8b411c539",
         "order": 4,
         "width": 1,
+        "height": 1
+    },
+    {
+        "id": "4fcf98e2f0fe814c",
+        "type": "ui_spacer",
+        "z": "cd35db7d9440e826",
+        "name": "spacer",
+        "group": "40495299a6187faf",
+        "order": 3,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "affce94b05c11261",
+        "type": "ui_spacer",
+        "z": "cd35db7d9440e826",
+        "name": "spacer",
+        "group": "40495299a6187faf",
+        "order": 5,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "2407246269339721",
+        "type": "ui_spacer",
+        "z": "cd35db7d9440e826",
+        "name": "spacer",
+        "group": "40495299a6187faf",
+        "order": 7,
+        "width": 8,
         "height": 1
     },
     {
@@ -1186,140 +1190,6 @@
         "group": "bbcac8f35b0ea650",
         "order": 7,
         "width": 12,
-        "height": 1
-    },
-    {
-        "id": "a04fd86afdafc697",
-        "type": "ui_group",
-        "name": "2. Instant NGP",
-        "tab": "a7be7e0c24eb1f61",
-        "order": 3,
-        "disp": true,
-        "width": "7",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "883fca87ae743d78",
-        "type": "ui_group",
-        "name": "4. Comparison Module",
-        "tab": "a7be7e0c24eb1f61",
-        "order": 5,
-        "disp": true,
-        "width": "12",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "9cd5a505e067c2ae",
-        "type": "ui_group",
-        "name": "Logging",
-        "tab": "a7be7e0c24eb1f61",
-        "order": 6,
-        "disp": true,
-        "width": 40,
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "d0cde46e88dabbab",
-        "type": "ui_group",
-        "name": "3. Alignment Tool",
-        "tab": "a7be7e0c24eb1f61",
-        "order": 4,
-        "disp": true,
-        "width": "13",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "8e11f4af4dae2303",
-        "type": "ui_spacer",
-        "z": "cd35db7d9440e826",
-        "name": "spacer",
-        "group": "2fdbed4902a7b60d",
-        "order": 3,
-        "width": 28,
-        "height": 1
-    },
-    {
-        "id": "a2528f5bc609b23a",
-        "type": "ui_spacer",
-        "z": "cd35db7d9440e826",
-        "name": "spacer",
-        "group": "acabc51978b41c5b",
-        "order": 4,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "024013735cba600e",
-        "type": "ui_spacer",
-        "z": "cd35db7d9440e826",
-        "name": "spacer",
-        "group": "a04fd86afdafc697",
-        "order": 1,
-        "width": 7,
-        "height": 1
-    },
-    {
-        "id": "4426f28da2d7ac6f",
-        "type": "ui_spacer",
-        "z": "cd35db7d9440e826",
-        "name": "spacer",
-        "group": "a04fd86afdafc697",
-        "order": 7,
-        "width": 7,
-        "height": 1
-    },
-    {
-        "id": "2b8e8987499fd08c",
-        "type": "ui_spacer",
-        "z": "cd35db7d9440e826",
-        "name": "spacer",
-        "group": "a04fd86afdafc697",
-        "order": 10,
-        "width": 7,
-        "height": 1
-    },
-    {
-        "id": "92365d017dbc8a9e",
-        "type": "ui_spacer",
-        "z": "cd35db7d9440e826",
-        "name": "spacer",
-        "group": "a04fd86afdafc697",
-        "order": 11,
-        "width": 7,
-        "height": 1
-    },
-    {
-        "id": "b2213d0ff2685dc6",
-        "type": "ui_spacer",
-        "z": "cd35db7d9440e826",
-        "name": "spacer",
-        "group": "a04fd86afdafc697",
-        "order": 13,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "ed96c00ff17fde29",
-        "type": "ui_spacer",
-        "z": "cd35db7d9440e826",
-        "name": "spacer",
-        "group": "d0cde46e88dabbab",
-        "order": 2,
-        "width": 11,
-        "height": 1
-    },
-    {
-        "id": "cd85d79f1ce735f3",
-        "type": "ui_spacer",
-        "z": "cd35db7d9440e826",
-        "name": "spacer",
-        "group": "883fca87ae743d78",
-        "order": 3,
-        "width": 2,
         "height": 1
     },
     {
@@ -2067,7 +1937,7 @@
         "type": "function",
         "z": "fccae755c2f8e1fe",
         "name": "Folder handling",
-        "func": "let folder = global.get(\"filebrowser_default_folder\");\nlet project_name = flow.get(\"project_name\")\n//console.log(project_name);\nif(project_name!==\"\"){\n\nvar dir = folder+project_name;\n\nif (!fs.existsSync(dir)){\n    fs.mkdirSync(dir, { recursive: true });\n}\n\n}\nif (folder===undefined) {\n    folder=\"./projects/\";\n    context.set(\"folder\", folder);\n}\n\n\nmsg.project_name = project_name;\nmsg.payload = {\"start\":folder};\nreturn msg;",
+        "func": "let folder = global.get(\"filebrowser_default_folder\");\nlet project_name = global.get(\"selected_project\")\n//console.log(project_name);\nif(project_name!==\"\"){\n\nvar dir = folder+project_name;\n\nif (!fs.existsSync(dir)){\n    fs.mkdirSync(dir, { recursive: true });\n}\n\n}\nif (folder===undefined) {\n    folder=\"./projects/\";\n    context.set(\"folder\", folder);\n}\n\n\nmsg.project_name = project_name;\nmsg.payload = {\"start\":folder};\nreturn msg;",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -2265,7 +2135,7 @@
         "z": "fccae755c2f8e1fe",
         "name": "",
         "label": "",
-        "tooltip": "All the projects available on server",
+        "tooltip": "",
         "place": "Select option",
         "group": "740f8e0483a46aa2",
         "order": 5,
@@ -2738,8 +2608,7 @@
         "y": 940,
         "wires": [
             [
-                "bf6a0bfd35f6ec1f",
-                "12a3df5d4a9d6544"
+                "bf6a0bfd35f6ec1f"
             ]
         ]
     },
@@ -2787,7 +2656,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 880,
+        "x": 940,
         "y": 980,
         "wires": []
     },
@@ -2795,6 +2664,7 @@
         "id": "a7f80355e5046908",
         "type": "ui_iframe",
         "z": "fccae755c2f8e1fe",
+        "d": true,
         "group": "740f8e0483a46aa2",
         "name": "",
         "order": 2,
@@ -2824,7 +2694,7 @@
             {
                 "p": "ingp_root",
                 "pt": "global",
-                "to": "../../instant-ngp/scripts/",
+                "to": "../instant-ngp/scripts/",
                 "tot": "str"
             }
         ],
@@ -3025,8 +2895,7 @@
         "name": "INGP global folder out",
         "mode": "link",
         "links": [
-            "9cd6126067c8d457",
-            "75dde250afeaeda0"
+            "9cd6126067c8d457"
         ],
         "x": 1505,
         "y": 1180,
@@ -3086,8 +2955,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 2020,
-        "y": 860,
+        "x": 2060,
+        "y": 880,
         "wires": [
             [
                 "0e3188356bf30267"
@@ -3321,8 +3190,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 2000,
-        "y": 1340,
+        "x": 2020,
+        "y": 1360,
         "wires": [
             [
                 "fa9a2e51168ded58"
@@ -3354,22 +3223,6 @@
         "wires": [
             []
         ]
-    },
-    {
-        "id": "12a3df5d4a9d6544",
-        "type": "debug",
-        "z": "fccae755c2f8e1fe",
-        "name": "debug 89",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 590,
-        "y": 880,
-        "wires": []
     },
     {
         "id": "8071265587d0b45a",
@@ -4494,7 +4347,7 @@
             },
             {
                 "t": "eq",
-                "v": "bmp",
+                "v": "jpeg",
                 "vt": "str"
             },
             {
@@ -4619,7 +4472,7 @@
         "type": "function",
         "z": "a08ae145f2d5cb38",
         "name": "Get the file name",
-        "func": "if (msg.payload.stat.size < 20000000) {\n    msg.filename = msg.payload.name;\n    return [msg, null];\n} else {\n    return [null, msg];\n}\n",
+        "func": "if (msg.payload.stat.size < 2000000) {\n    msg.filename = msg.payload.name;\n    return [msg, null];\n} else {\n    return [null, msg];\n}\n",
         "outputs": 2,
         "timeout": "",
         "noerr": 0,
@@ -6674,8 +6527,8 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 2210,
-        "y": 1200,
+        "x": 2230,
+        "y": 1160,
         "wires": [
             []
         ]
@@ -8736,576 +8589,6 @@
         ]
     },
     {
-        "id": "572ab1316025d42c",
-        "type": "ui_template",
-        "z": "cd35db7d9440e826",
-        "group": "40495299a6187faf",
-        "name": "",
-        "order": 1,
-        "width": 2,
-        "height": 1,
-        "format": "<iframe id=\"myIframe\" src=\"http://localhost:4321\" style=\"width: 100%; height: 1000px;\">\n</iframe>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 940,
-        "y": 660,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "58f4f425e9b543ca",
-        "type": "function",
-        "z": "c0273576f864fea6",
-        "name": "function 10",
-        "func": "\nvar default_folder = global.get(\"filebrowser_default_folder\")\nlet project_path = default_folder + global.get(\"selected_project\");\nvar cmd = \"\";\nif(flow.get(\"ground_truth\")){\n    cmd = \"python ../scripts/compare_surface.py --pcd_source \" + project_path + \"/aligned_pcd.ply \" + \"--pcd_target \" + project_path + \"/rescaled_target_mesh.ply\"\n} else{\n    cmd = \"python ../scripts/compare_surface.py --pcd_source \" + project_path + \"/rescaled_target_mesh.ply \" + \"--pcd_target \" + project_path + \"/aligned_pcd.ply \"\n}\n\n\nmsg.payload = cmd;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 732,
-        "y": 778,
-        "wires": [
-            [
-                "a26435bd6401d4fa",
-                "3cc267623caa6150"
-            ]
-        ]
-    },
-    {
-        "id": "a26435bd6401d4fa",
-        "type": "exec",
-        "z": "c0273576f864fea6",
-        "command": "",
-        "addpay": "payload",
-        "append": "",
-        "useSpawn": "true",
-        "timer": "",
-        "winHide": false,
-        "oldrc": false,
-        "name": "",
-        "x": 932,
-        "y": 778,
-        "wires": [
-            [
-                "fdabff8dd193ee69",
-                "7814354030b8abaa"
-            ],
-            [
-                "fdabff8dd193ee69"
-            ],
-            [
-                "fdabff8dd193ee69"
-            ]
-        ]
-    },
-    {
-        "id": "fdabff8dd193ee69",
-        "type": "debug",
-        "z": "c0273576f864fea6",
-        "name": "debug 44",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1322,
-        "y": 818,
-        "wires": []
-    },
-    {
-        "id": "53ef27deb0f14696",
-        "type": "ui_button",
-        "z": "c0273576f864fea6",
-        "name": "",
-        "group": "bbcac8f35b0ea650",
-        "order": 6,
-        "width": 6,
-        "height": 1,
-        "passthru": false,
-        "label": "Run Comparison",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "true",
-        "payloadType": "bool",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 492,
-        "y": 698,
-        "wires": [
-            [
-                "58f4f425e9b543ca"
-            ]
-        ]
-    },
-    {
-        "id": "41d44316103e492c",
-        "type": "ui_template",
-        "z": "c0273576f864fea6",
-        "group": "bbcac8f35b0ea650",
-        "name": "",
-        "order": 4,
-        "width": 1,
-        "height": 1,
-        "format": "<script>\n(function(scope) {\n    scope.$watch('msg', function(msg) {\n        if (msg) {\n            let object = document.getElementById(\"test\");\n            if (msg.payload === \"show\") {\n                object.style.display = \"block\"; // Shows the iframe\n                \n                // Reload iframe by resetting the src\n                setTimeout(() => {\n                    object.src = \"\"; // Clear the src\n                    setTimeout(() => {\n                        object.src = \"http://localhost:5454\"; // Reset the src to reload\n                    }, 100); // Short delay before resetting src to trigger reload\n                }, 1000); // Delay before reload\n            } else {\n                object.style.display = \"none\"; // Hides the iframe\n                object.src = \"\"; // Clear the src when hiding\n            }\n        }\n    });\n})(scope);\n</script>\n\n<iframe id=\"test\" src=\"http://localhost:1234\" style=\"width: 100%; height: 100%; display: none;\">\n</iframe>\n",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 1862,
-        "y": 838,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "20376754978b6dbd",
-        "type": "ui_text",
-        "z": "c0273576f864fea6",
-        "group": "bbcac8f35b0ea650",
-        "order": 1,
-        "width": 6,
-        "height": 1,
-        "name": "Select Project",
-        "label": "Select a project where to start comparison script (2 files required, aligned_pcd.ply and ground_truth.ply)",
-        "format": "",
-        "layout": "row-center",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 460,
-        "y": 240,
-        "wires": []
-    },
-    {
-        "id": "e921c83c7d1b6871",
-        "type": "ui_dropdown",
-        "z": "c0273576f864fea6",
-        "g": "e2e624193a86d3b9",
-        "name": "comparison project dropdown",
-        "label": "",
-        "tooltip": "",
-        "place": "Select option",
-        "group": "bbcac8f35b0ea650",
-        "order": 3,
-        "width": 8,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [],
-        "payload": "",
-        "topic": "topic",
-        "topicType": "msg",
-        "className": "",
-        "x": 1170,
-        "y": 340,
-        "wires": [
-            [
-                "559faaaff15c078d",
-                "09f392d65d1f4059"
-            ]
-        ]
-    },
-    {
-        "id": "93c090cf3a7bccc7",
-        "type": "function",
-        "z": "c0273576f864fea6",
-        "g": "e2e624193a86d3b9",
-        "name": "Folder handling",
-        "func": "let folder = global.get(\"filebrowser_default_folder\");\nlet project_name = global.get(\"selected_project\")\n//console.log(project_name);\n\nif (folder===undefined) {\n    folder=\"./projects/\";\n    context.set(\"folder\", folder);\n}\n\n\nmsg.project_name = project_name;\nmsg.payload = {\"start\":folder};\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "fs",
-                "module": "fs"
-            }
-        ],
-        "x": 560,
-        "y": 340,
-        "wires": [
-            [
-                "d11f03a9cf9216c1"
-            ]
-        ]
-    },
-    {
-        "id": "d11f03a9cf9216c1",
-        "type": "fs-file-lister",
-        "z": "c0273576f864fea6",
-        "g": "e2e624193a86d3b9",
-        "name": "Files",
-        "start": "./projects/",
-        "pattern": "*.*",
-        "folders": "*",
-        "hidden": false,
-        "lstype": "directories",
-        "path": true,
-        "single": true,
-        "depth": 0,
-        "stat": true,
-        "showWarnings": false,
-        "x": 750,
-        "y": 340,
-        "wires": [
-            [
-                "95875027e0f1854f"
-            ]
-        ]
-    },
-    {
-        "id": "95875027e0f1854f",
-        "type": "function",
-        "z": "c0273576f864fea6",
-        "g": "e2e624193a86d3b9",
-        "name": "Prep Data",
-        "func": "function convertDate(local) {\n    let d = new Date(local);\n    d.setTime(d.getTime()+3600*1000);\n    return d.toISOString().slice(0, 19).replace('T', ' ');\n}\n\nvar newmsg = msg;\nnewmsg.options = [];\n\nfor (var i=0; i<msg.payload.length; i++) {\n\n    msg.payload[i].fname = msg.payload[i].name.replace(/^.*(\\\\|\\/|\\:)/, '');\n    if (msg.payload[i].stat.isDirectory) {\n        msg.payload[i].ext = \"folder\";\n        newmsg.options[i] = msg.payload[i].fname;\n    }\n}\nif (global.get(\"selected_project\") !== \"\") {\n    // Find the index of the selected project\n    var project_name = global.get(\"selected_project\").split(\"/\").filter(Boolean).pop();\n    newmsg.payload = project_name\n}\nflow.set(\"currentfolder\",msg.payload);\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 900,
-        "y": 340,
-        "wires": [
-            [
-                "e921c83c7d1b6871",
-                "d182d22217881571"
-            ]
-        ]
-    },
-    {
-        "id": "d182d22217881571",
-        "type": "debug",
-        "z": "c0273576f864fea6",
-        "g": "e2e624193a86d3b9",
-        "name": "debug 69",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 970,
-        "y": 440,
-        "wires": []
-    },
-    {
-        "id": "b91f80df53529646",
-        "type": "link in",
-        "z": "c0273576f864fea6",
-        "g": "e2e624193a86d3b9",
-        "name": "Charuco global folder in",
-        "links": [
-            "4819a5fb717ddca6"
-        ],
-        "x": 395,
-        "y": 440,
-        "wires": [
-            [
-                "93c090cf3a7bccc7"
-            ]
-        ]
-    },
-    {
-        "id": "559faaaff15c078d",
-        "type": "debug",
-        "z": "c0273576f864fea6",
-        "g": "e2e624193a86d3b9",
-        "name": "debug 70",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1250,
-        "y": 520,
-        "wires": []
-    },
-    {
-        "id": "b6296ab6f8faa47c",
-        "type": "link out",
-        "z": "c0273576f864fea6",
-        "g": "e2e624193a86d3b9",
-        "name": "link out 2",
-        "mode": "link",
-        "links": [
-            "95ea35cbfef53422"
-        ],
-        "x": 1515,
-        "y": 420,
-        "wires": []
-    },
-    {
-        "id": "09f392d65d1f4059",
-        "type": "function",
-        "z": "c0273576f864fea6",
-        "g": "5b33861cacd40f7d",
-        "name": "Set global_folder",
-        "func": "// Retrieve the folder path from a global variable in Node-RED\nvar folder = global.get('filebrowser_default_folder');\nvar project = msg.payload;\n\n// Construct the desired path\nvar selected_folder_path = folder + project + \"/\";\n\n// Prepare the payload as a JSON object with the required structure\nmsg.payload = { \"selected_folder\": selected_folder_path };\n\n// Optionally store selected folder path in a global variable\nglobal.set(\"selected_project\", project);\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1350,
-        "y": 400,
-        "wires": [
-            [
-                "1d6c1f982a3f410b",
-                "b6296ab6f8faa47c"
-            ]
-        ]
-    },
-    {
-        "id": "1d6c1f982a3f410b",
-        "type": "http request",
-        "z": "c0273576f864fea6",
-        "g": "5b33861cacd40f7d",
-        "name": "POST to Flask Server",
-        "method": "POST",
-        "ret": "obj",
-        "paytoqs": "ignore",
-        "url": "http://127.0.0.1:5001/config/current_work",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [
-            {
-                "keyType": "other",
-                "keyValue": "Content-Type",
-                "valueType": "other",
-                "valueValue": "application/json"
-            }
-        ],
-        "x": 1340,
-        "y": 480,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7814354030b8abaa",
-        "type": "delay",
-        "z": "c0273576f864fea6",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "1",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 1102,
-        "y": 898,
-        "wires": [
-            [
-                "29913cea44af4fae"
-            ]
-        ]
-    },
-    {
-        "id": "29913cea44af4fae",
-        "type": "function",
-        "z": "c0273576f864fea6",
-        "name": "get_suface cmd",
-        "func": "msg.payload = \"show\"\nflow.set(\"output_shown\", true)\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1522,
-        "y": 1018,
-        "wires": [
-            [
-                "41d44316103e492c"
-            ]
-        ]
-    },
-    {
-        "id": "3da48deae4d70738",
-        "type": "inject",
-        "z": "c0273576f864fea6",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1312,
-        "y": 678,
-        "wires": [
-            [
-                "101f804152794544"
-            ]
-        ]
-    },
-    {
-        "id": "101f804152794544",
-        "type": "function",
-        "z": "c0273576f864fea6",
-        "name": "get_suface cmd",
-        "func": "msg.payload = \"none\"\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1520,
-        "y": 720,
-        "wires": [
-            [
-                "41d44316103e492c"
-            ]
-        ]
-    },
-    {
-        "id": "3cc267623caa6150",
-        "type": "debug",
-        "z": "c0273576f864fea6",
-        "name": "debug 71",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 920,
-        "y": 1020,
-        "wires": []
-    },
-    {
-        "id": "1471733b3c9f9d68",
-        "type": "ui_switch",
-        "z": "c0273576f864fea6",
-        "name": "",
-        "label": "Show ground truth or reconstructed",
-        "tooltip": "",
-        "group": "bbcac8f35b0ea650",
-        "order": 5,
-        "width": 4,
-        "height": 1,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "topic",
-        "topicType": "msg",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "animate": false,
-        "className": "",
-        "x": 402,
-        "y": 918,
-        "wires": [
-            [
-                "77e8f04f6cd9befe"
-            ]
-        ]
-    },
-    {
-        "id": "77e8f04f6cd9befe",
-        "type": "change",
-        "z": "c0273576f864fea6",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "ground_truth",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 682,
-        "y": 938,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7421590ee64fe409",
-        "type": "inject",
-        "z": "c0273576f864fea6",
-        "name": "Show ground_truth on startup",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "0.1",
-        "topic": "",
-        "payload": "true",
-        "payloadType": "bool",
-        "x": 152,
-        "y": 1038,
-        "wires": [
-            [
-                "1471733b3c9f9d68"
-            ]
-        ]
-    },
-    {
         "id": "cdf08e1fa0f798cf",
         "type": "comment",
         "z": "f11166a80e40d7b6",
@@ -11122,312 +10405,51 @@
         ]
     },
     {
-        "id": "eb5989747efe7bc0",
-        "type": "comment",
-        "z": "ce11a1573af9dae5",
-        "name": "New File Browser",
-        "info": "",
-        "x": 720,
+        "id": "572ab1316025d42c",
+        "type": "ui_template",
+        "z": "cd35db7d9440e826",
+        "group": "40495299a6187faf",
+        "name": "",
+        "order": 9,
+        "width": 23,
+        "height": 22,
+        "format": "<iframe id=\"myIframe\" src=\"http://localhost:5000\" style=\"width: 100%; height: 1000px;\">\n</iframe>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 940,
         "y": 660,
-        "wires": []
-    },
-    {
-        "id": "a964bc52ec1049a5",
-        "type": "comment",
-        "z": "ce11a1573af9dae5",
-        "name": "Column1",
-        "info": "",
-        "x": 600,
-        "y": 960,
-        "wires": []
-    },
-    {
-        "id": "c8e45811cabc9db2",
-        "type": "comment",
-        "z": "ce11a1573af9dae5",
-        "name": "Column2",
-        "info": "",
-        "x": 620,
-        "y": 1980,
-        "wires": []
-    },
-    {
-        "id": "87e4d89b5665057b",
-        "type": "comment",
-        "z": "ce11a1573af9dae5",
-        "name": "Column3",
-        "info": "",
-        "x": 840,
-        "y": 3340,
-        "wires": []
-    },
-    {
-        "id": "de7291f3643cd610",
-        "type": "comment",
-        "z": "ce11a1573af9dae5",
-        "name": "Column4",
-        "info": "",
-        "x": 860,
-        "y": 3600,
-        "wires": []
-    },
-    {
-        "id": "41cae29c6f224b7f",
-        "type": "debug",
-        "z": "ce11a1573af9dae5",
-        "name": "debug 73",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 3320,
-        "y": 1540,
-        "wires": []
-    },
-    {
-        "id": "a3f53c36f8fc2a8b",
-        "type": "function",
-        "z": "ce11a1573af9dae5",
-        "name": "function 29",
-        "func": "let initial_folder = global.get(\"filebrowser_default_folder\");\nlet folder = global.get(\"selected_project\");\nlet full_path = initial_folder + folder;\n\n//msg.payload = \"/home/iat/Documents/BA_Oleksandr/objectify/node-red/projects/benchmark_4x4_freehand/cameras.html\";//full_path + '/cameras.html';\nif(msg.payload == true){\n    msg.showImage = true;\n}else if(msg.payload.code == 0){\n    msg.showImage = true;\n}else{\n    msg.showImage = false;\n}\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2570,
-        "y": 1500,
-        "wires": [
-            [
-                "3387171736d4574c",
-                "41cae29c6f224b7f"
-            ]
-        ]
-    },
-    {
-        "id": "7f3396345f58d9da",
-        "type": "ui_switch",
-        "z": "ce11a1573af9dae5",
-        "d": true,
-        "name": "show_cameras",
-        "label": "Show cameras",
-        "tooltip": "",
-        "group": "40324dcc41601167",
-        "order": 4,
-        "width": 4,
-        "height": 1,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "topic",
-        "topicType": "msg",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "animate": false,
-        "className": "",
-        "x": 2360,
-        "y": 1480,
-        "wires": [
-            [
-                "a3f53c36f8fc2a8b"
-            ]
-        ]
-    },
-    {
-        "id": "5a537c84e6b3085b",
-        "type": "ui_template",
-        "z": "ce11a1573af9dae5",
-        "group": "acabc51978b41c5b",
-        "name": "Toggle Button",
-        "order": 7,
-        "width": 4,
-        "height": 1,
-        "format": "<div class=\"toggle-container\">\n  <button class=\"toggle-button\" ng-class=\"{'on': state}\" ng-click=\"toggle()\">\n    {{state ? 'Cameras ON' : 'Cameras OFF'}}\n  </button>\n</div>\n\n<script>\n  (function(scope) {\n    scope.state = scope.state || false;\n\n    scope.toggle = function() {\n        scope.state = !scope.state;\n        scope.send({payload: scope.state});\n    };\n})(scope);\n</script>\n\n<style>\n  .toggle-container {\n    text-align: left;\n  }\n\n  .toggle-container .toggle-button {\n    background-color: red;\n    color: white;\n    border: none;\n    padding: 15px 32px;\n    font-size: 16px;\n    cursor: pointer;\n  }\n\n  .toggle-container .toggle-button.on {\n    background-color: green;\n  }\n</style>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 2380,
-        "y": 1420,
-        "wires": [
-            [
-                "a3f53c36f8fc2a8b"
-            ]
-        ]
-    },
-    {
-        "id": "3387171736d4574c",
-        "type": "ui_template",
-        "z": "ce11a1573af9dae5",
-        "group": "acabc51978b41c5b",
-        "name": "Cameras Iframe",
-        "order": 8,
-        "width": 9,
-        "height": 9,
-        "format": "\n<div  ng-if=\"msg.showImage\" height=\"100%\" style=\"height: 100%;\">\n    <iframe src=\"/get-html?file=cameras.html\" width=\"100%\" height=\"600px\"></iframe>\n    <br/>\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": false,
-        "templateScope": "local",
-        "className": "",
-        "x": 3340,
-        "y": 1420,
         "wires": [
             []
         ]
     },
     {
-        "id": "0be00e99c1a39e3e",
-        "type": "inject",
-        "z": "ce11a1573af9dae5",
-        "name": "Turn off cameras on startup",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "0.1",
-        "topic": "",
-        "payload": "false",
-        "payloadType": "bool",
-        "x": 2020,
-        "y": 1420,
-        "wires": [
-            [
-                "7f3396345f58d9da",
-                "5a537c84e6b3085b"
-            ]
-        ]
-    },
-    {
-        "id": "9f0fcba749758b26",
+        "id": "58f4f425e9b543ca",
         "type": "function",
-        "z": "ce11a1573af9dae5",
-        "name": "function 30",
-        "func": "msg.payload = true;\nreturn msg;",
+        "z": "c0273576f864fea6",
+        "name": "function 10",
+        "func": "\nvar default_folder = global.get(\"filebrowser_default_folder\")\nlet project_path = default_folder + global.get(\"selected_project\");\nvar cmd = \"\";\nif(flow.get(\"ground_truth\")){\n    cmd = \"python ../scripts/compare_surface.py --pcd_source \" + project_path + \"/aligned_pcd.ply \" + \"--pcd_target \" + project_path + \"/rescaled_target_mesh.ply\"\n} else{\n    cmd = \"python ../scripts/compare_surface.py --pcd_source \" + project_path + \"/rescaled_target_mesh.ply \" + \"--pcd_target \" + project_path + \"/aligned_pcd.ply \"\n}\n\n\nmsg.payload = cmd;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2190,
-        "y": 1540,
+        "x": 730,
+        "y": 780,
         "wires": [
             [
-                "7f3396345f58d9da",
-                "5a537c84e6b3085b"
+                "a26435bd6401d4fa",
+                "3cc267623caa6150"
             ]
         ]
     },
     {
-        "id": "81f8fa030df53a44",
-        "type": "change",
-        "z": "ce11a1573af9dae5",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "false",
-                "tot": "bool"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 890,
-        "y": 1440,
-        "wires": [
-            [
-                "5a537c84e6b3085b"
-            ]
-        ]
-    },
-    {
-        "id": "8969964ce32ae2c4",
-        "type": "switch",
-        "z": "ce11a1573af9dae5",
-        "name": "Success?",
-        "property": "payload.code",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "0",
-                "vt": "num"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 2040,
-        "y": 1640,
-        "wires": [
-            [
-                "6087dda49e9f47ac",
-                "77c3616f8c84fbf0",
-                "9f0fcba749758b26"
-            ],
-            [
-                "4e3d4b8052b89845",
-                "6233eb6233f7c335"
-            ]
-        ]
-    },
-    {
-        "id": "dd7415425d38d8ca",
-        "type": "ui_button",
-        "z": "ce11a1573af9dae5",
-        "name": "Charuco Generate Pose",
-        "group": "acabc51978b41c5b",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Generate Pose",
-        "tooltip": "If camera is calibrated you can initialize charuco board camera pose estimation. After executing this, camera poses will be visualized below.",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 670,
-        "y": 1540,
-        "wires": [
-            [
-                "3ea31c56704b782b",
-                "81f8fa030df53a44"
-            ]
-        ]
-    },
-    {
-        "id": "2ce6fa912dc659c9",
+        "id": "a26435bd6401d4fa",
         "type": "exec",
-        "z": "ce11a1573af9dae5",
+        "z": "c0273576f864fea6",
         "command": "",
         "addpay": "payload",
         "append": "",
@@ -11435,28 +10457,27 @@
         "timer": "",
         "winHide": false,
         "oldrc": false,
-        "name": "Execute generate_poses",
-        "x": 1750,
-        "y": 1580,
+        "name": "",
+        "x": 930,
+        "y": 780,
         "wires": [
             [
-                "963755327dac41b5"
+                "fdabff8dd193ee69",
+                "7814354030b8abaa"
             ],
             [
-                "8198dfb48a6b049e",
-                "8ca782b159c2908f",
-                "963755327dac41b5"
+                "fdabff8dd193ee69"
             ],
             [
-                "8969964ce32ae2c4"
+                "fdabff8dd193ee69"
             ]
         ]
     },
     {
-        "id": "6087dda49e9f47ac",
+        "id": "fdabff8dd193ee69",
         "type": "debug",
-        "z": "ce11a1573af9dae5",
-        "name": "Generating cool",
+        "z": "c0273576f864fea6",
+        "name": "debug 44",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -11465,547 +10486,17 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2540,
-        "y": 1800,
+        "x": 1320,
+        "y": 820,
         "wires": []
     },
     {
-        "id": "77c3616f8c84fbf0",
-        "type": "change",
-        "z": "ce11a1573af9dae5",
+        "id": "53ef27deb0f14696",
+        "type": "ui_button",
+        "z": "c0273576f864fea6",
         "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "text",
-                "pt": "msg",
-                "to": "Poses are generated under transforms.json",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "color",
-                "pt": "msg",
-                "to": "green",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 2400,
-        "y": 1580,
-        "wires": [
-            [
-                "9cbaa3e78c7fab51"
-            ]
-        ]
-    },
-    {
-        "id": "4e3d4b8052b89845",
-        "type": "debug",
-        "z": "ce11a1573af9dae5",
-        "name": "Generating failed",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2550,
-        "y": 1880,
-        "wires": []
-    },
-    {
-        "id": "6233eb6233f7c335",
-        "type": "change",
-        "z": "ce11a1573af9dae5",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "Error occured poses are not generated",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "color",
-                "pt": "msg",
-                "to": "red",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 2400,
-        "y": 1640,
-        "wires": [
-            [
-                "9cbaa3e78c7fab51"
-            ]
-        ]
-    },
-    {
-        "id": "3ea31c56704b782b",
-        "type": "http request",
-        "z": "ce11a1573af9dae5",
-        "name": "get_current_work",
-        "method": "GET",
-        "ret": "obj",
-        "paytoqs": "ignore",
-        "url": "http://127.0.0.1:5001/config/current_work",
-        "tls": "c84c35e6e9992f9a",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 920,
-        "y": 1500,
-        "wires": [
-            [
-                "e770abb81048122e",
-                "053ae7ab95a5427a"
-            ]
-        ]
-    },
-    {
-        "id": "ae46e44fe20d7f70",
-        "type": "function",
-        "z": "ce11a1573af9dae5",
-        "name": "generate_pose_signature",
-        "func": "let initial_folder = global.get(\"filebrowser_default_folder\");\nlet folder = global.get(\"selected_project\");\nlet full_path = initial_folder + folder;\n\nvar camera_matrix = msg.payload[\"camera_matrix\"];\n\nvar dist_coeff = msg.payload[\"dist_coeff\"];\n\nvar remove_background = flow.get(\"remove_background\")\n\nconst flattened_camera_matrix = camera_matrix.flat();\n\n// Convert to a space-separated string\nconst string_camera_matrix = flattened_camera_matrix.join(' ');\n\nconst flattened_dist_coeff = dist_coeff.flat();\n\n// Convert to a space-separated string\nconst string_dist_coeff = flattened_dist_coeff.join(' ');\n\n\nmsg.payload = \"python ../scripts/charuco_generate_pose.py\" +\n    \" --project_name \" + folder +\n    \" --input \" + full_path +\n    \" --mtx \" + string_camera_matrix +\n    \" --dist \" + string_dist_coeff;\nif(remove_background === \"None\"){\n    return msg;\n}else{\n    msg.payload = msg.payload + \" --remove_background --bg_model \" + remove_background;\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1490,
-        "y": 1540,
-        "wires": [
-            [
-                "2ce6fa912dc659c9",
-                "ae9f836077800fa9"
-            ]
-        ]
-    },
-    {
-        "id": "8198dfb48a6b049e",
-        "type": "debug",
-        "z": "ce11a1573af9dae5",
-        "name": "debug 74",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1980,
-        "y": 1800,
-        "wires": []
-    },
-    {
-        "id": "8ca782b159c2908f",
-        "type": "function",
-        "z": "ce11a1573af9dae5",
-        "name": "function 31",
-        "func": "node.warn(msg.payload);\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1710,
-        "y": 2040,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "9cbaa3e78c7fab51",
-        "type": "ui_template",
-        "z": "ce11a1573af9dae5",
-        "group": "acabc51978b41c5b",
-        "name": "Generating poses result",
+        "group": "bbcac8f35b0ea650",
         "order": 6,
-        "width": 5,
-        "height": 1,
-        "format": "<div style=\"color:{{msg.color}};font-size:20px;\">{{msg.text}}</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": false,
-        "templateScope": "local",
-        "className": "",
-        "x": 2770,
-        "y": 1620,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e770abb81048122e",
-        "type": "debug",
-        "z": "ce11a1573af9dae5",
-        "name": "debug 75",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1230,
-        "y": 1740,
-        "wires": []
-    },
-    {
-        "id": "053ae7ab95a5427a",
-        "type": "function",
-        "z": "ce11a1573af9dae5",
-        "name": "function 32",
-        "func": "if (msg.payload == null) {\n    msg.code = 1;\n} else {\n    msg.code = 0;\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1130,
-        "y": 1500,
-        "wires": [
-            [
-                "70ec0e307c1a398d",
-                "9be5e75f87fc2994"
-            ]
-        ]
-    },
-    {
-        "id": "70ec0e307c1a398d",
-        "type": "switch",
-        "z": "ce11a1573af9dae5",
-        "name": "",
-        "property": "code",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "0",
-                "vt": "num"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 1290,
-        "y": 1500,
-        "wires": [
-            [
-                "ae46e44fe20d7f70"
-            ],
-            [
-                "36315dcdb03b62e0"
-            ]
-        ]
-    },
-    {
-        "id": "ae9f836077800fa9",
-        "type": "debug",
-        "z": "ce11a1573af9dae5",
-        "name": "Generating_script",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1490,
-        "y": 1740,
-        "wires": []
-    },
-    {
-        "id": "95a35d8279bb5992",
-        "type": "exec",
-        "z": "ce11a1573af9dae5",
-        "command": "",
-        "addpay": "payload",
-        "append": "",
-        "useSpawn": "true",
-        "timer": "",
-        "winHide": false,
-        "oldrc": false,
-        "name": "Execute calibration",
-        "x": 1170,
-        "y": 1080,
-        "wires": [
-            [
-                "963755327dac41b5"
-            ],
-            [
-                "3ff6b866f8a1f85d",
-                "963755327dac41b5"
-            ],
-            [
-                "68b4cd36e16e76f6"
-            ]
-        ]
-    },
-    {
-        "id": "8ce0f9fe4c0bbf4e",
-        "type": "inject",
-        "z": "ce11a1573af9dae5",
-        "name": "Clear Log on Startup",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "1",
-        "topic": "",
-        "payload": "clear",
-        "payloadType": "str",
-        "x": 2000,
-        "y": 1080,
-        "wires": [
-            [
-                "963755327dac41b5"
-            ]
-        ]
-    },
-    {
-        "id": "36315dcdb03b62e0",
-        "type": "function",
-        "z": "ce11a1573af9dae5",
-        "name": "write_to_log",
-        "func": "msg.payload = \"Camera is not calibrated, you can't run generate pose <br> firstly you need to press calibrate <br>\"\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1670,
-        "y": 1440,
-        "wires": [
-            [
-                "963755327dac41b5"
-            ]
-        ]
-    },
-    {
-        "id": "9be5e75f87fc2994",
-        "type": "debug",
-        "z": "ce11a1573af9dae5",
-        "name": "debug 76",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "code",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1230,
-        "y": 1600,
-        "wires": []
-    },
-    {
-        "id": "530f47f702ab9899",
-        "type": "function",
-        "z": "ce11a1573af9dae5",
-        "name": "function 33",
-        "func": "let initial_folder = global.get(\"filebrowser_default_folder\");\nlet folder = global.get(\"selected_project\");\nlet full_path = initial_folder + folder;\n\nmsg.payload = \"python ../scripts/calibrate.py --project_name \"+folder +\" --input \" + full_path +\" --output_folder \"+full_path+\" --config_file './config.json' --num_of_images 40\";\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 910,
-        "y": 1080,
-        "wires": [
-            [
-                "95a35d8279bb5992",
-                "f057882224cf8da9"
-            ]
-        ]
-    },
-    {
-        "id": "3ff6b866f8a1f85d",
-        "type": "debug",
-        "z": "ce11a1573af9dae5",
-        "name": "debug 77",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1450,
-        "y": 1340,
-        "wires": []
-    },
-    {
-        "id": "68b4cd36e16e76f6",
-        "type": "switch",
-        "z": "ce11a1573af9dae5",
-        "name": "Success?",
-        "property": "payload.code",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "0",
-                "vt": "num"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 1460,
-        "y": 1160,
-        "wires": [
-            [
-                "57c1b7496a8c862b"
-            ],
-            [
-                "65c10d0229e47a26"
-            ]
-        ]
-    },
-    {
-        "id": "edc70da21beff538",
-        "type": "ui_button",
-        "z": "ce11a1573af9dae5",
-        "name": "",
-        "group": "acabc51978b41c5b",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Calibrate",
-        "tooltip": "To generate camera pose you firstly need calibrate your camera using charuco boards",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 720,
-        "y": 1080,
-        "wires": [
-            [
-                "530f47f702ab9899"
-            ]
-        ]
-    },
-    {
-        "id": "f057882224cf8da9",
-        "type": "debug",
-        "z": "ce11a1573af9dae5",
-        "name": "calibration_script",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1140,
-        "y": 1180,
-        "wires": []
-    },
-    {
-        "id": "57c1b7496a8c862b",
-        "type": "debug",
-        "z": "ce11a1573af9dae5",
-        "name": "Calibration cool",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1720,
-        "y": 1200,
-        "wires": []
-    },
-    {
-        "id": "65c10d0229e47a26",
-        "type": "debug",
-        "z": "ce11a1573af9dae5",
-        "name": "Calibration failed",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1730,
-        "y": 1260,
-        "wires": []
-    },
-    {
-        "id": "d788335f8623a104",
-        "type": "ui_template",
-        "z": "ce11a1573af9dae5",
-        "group": "d0cde46e88dabbab",
-        "name": "",
-        "order": 3,
-        "width": 13,
-        "height": 13,
-        "format": "<iframe id=\"alignment_frame\" src=\"http://localhost:5000\" style=\"width: 100%; height: 1000px;\">\n</iframe>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 860,
-        "y": 3500,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f929abd59bb8723e",
-        "type": "ui_button",
-        "z": "ce11a1573af9dae5",
-        "name": "",
-        "group": "883fca87ae743d78",
-        "order": 2,
         "width": 6,
         "height": 1,
         "passthru": false,
@@ -12019,1919 +10510,68 @@
         "payloadType": "bool",
         "topic": "topic",
         "topicType": "msg",
-        "x": 1070,
-        "y": 3740,
+        "x": 490,
+        "y": 700,
         "wires": [
             [
-                "7aee07274f67dca3"
+                "58f4f425e9b543ca"
             ]
         ]
     },
     {
-        "id": "7aee07274f67dca3",
-        "type": "function",
-        "z": "ce11a1573af9dae5",
-        "name": "function 39",
-        "func": "\nvar default_folder = global.get(\"filebrowser_default_folder\")\nlet project_path = default_folder + global.get(\"selected_project\");\nvar cmd = \"\";\nif(flow.get(\"ground_truth\")){\n    cmd = \"python ../scripts/compare_surface.py --pcd_source \" + project_path + \"/aligned_pcd.ply \" + \"--pcd_target \" + project_path + \"/rescaled_target_mesh.ply\"\n} else{\n    cmd = \"python ../scripts/compare_surface.py --pcd_source \" + project_path + \"/rescaled_target_mesh.ply \" + \"--pcd_target \" + project_path + \"/aligned_pcd.ply \"\n}\n\n\nmsg.payload = cmd;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1350,
-        "y": 3780,
-        "wires": [
-            [
-                "1b5edaa28c38d846",
-                "93bee2a3837d8a53"
-            ]
-        ]
-    },
-    {
-        "id": "1b5edaa28c38d846",
-        "type": "exec",
-        "z": "ce11a1573af9dae5",
-        "command": "",
-        "addpay": "payload",
-        "append": "",
-        "useSpawn": "true",
-        "timer": "",
-        "winHide": false,
-        "oldrc": false,
-        "name": "",
-        "x": 1710,
-        "y": 3800,
-        "wires": [
-            [
-                "e154384f6822dac4",
-                "bca3cd1895837db0",
-                "e9f478daaac2a5ee"
-            ],
-            [
-                "e154384f6822dac4",
-                "bca3cd1895837db0"
-            ],
-            [
-                "e154384f6822dac4",
-                "bca3cd1895837db0"
-            ]
-        ]
-    },
-    {
-        "id": "e154384f6822dac4",
-        "type": "debug",
-        "z": "ce11a1573af9dae5",
-        "name": "debug 83",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2100,
-        "y": 3840,
-        "wires": []
-    },
-    {
-        "id": "cfa4c1128458a068",
+        "id": "41d44316103e492c",
         "type": "ui_template",
-        "z": "ce11a1573af9dae5",
-        "group": "883fca87ae743d78",
+        "z": "c0273576f864fea6",
+        "group": "bbcac8f35b0ea650",
         "name": "",
-        "order": 4,
-        "width": 12,
-        "height": 13,
-        "format": "<script>\n(function(scope) {\n    scope.$watch('msg', function(msg) {\n        if (msg) {\n            let object = document.getElementById(\"comparison_frame\");\n            if (msg.payload === \"show\") {\n                object.style.display = \"block\"; // Shows the iframe\n                \n                // Reload iframe by resetting the src\n                setTimeout(() => {\n                    object.src = \"\"; // Clear the src\n                    setTimeout(() => {\n                        object.src = \"http://localhost:5454\"; // Reset the src to reload\n                    }, 100); // Short delay before resetting src to trigger reload\n                }, 1000); // Delay before reload\n            } else {\n                object.style.display = \"none\"; // Hides the iframe\n                object.src = \"\"; // Clear the src when hiding\n            }\n        }\n    });\n})(scope);\n</script>\n\n<iframe id=\"comparison_frame\" src=\"http://localhost:5454\" style=\"width: 100%; height: 100%; display: none;\">\n</iframe>\n",
+        "order": 8,
+        "width": 22,
+        "height": 27,
+        "format": "<script>\n(function(scope) {\n    scope.$watch('msg', function(msg) {\n        if (msg) {\n            let object = document.getElementById(\"myIframe\");\n            if (msg.payload === \"show\") {\n                object.style.display = \"block\"; // Shows the iframe\n                \n                // Reload iframe by resetting the src\n                setTimeout(() => {\n                    object.src = \"\"; // Clear the src\n                    setTimeout(() => {\n                        object.src = \"http://localhost:5454\"; // Reset the src to reload\n                    }, 100); // Short delay before resetting src to trigger reload\n                }, 1000); // Delay before reload\n            } else {\n                object.style.display = \"none\"; // Hides the iframe\n                object.src = \"\"; // Clear the src when hiding\n            }\n        }\n    });\n})(scope);\n</script>\n\n<iframe id=\"myIframe\" src=\"http://localhost:5454\" style=\"width: 100%; height: 100%; display: none;\">\n</iframe>\n",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 2680,
-        "y": 3900,
+        "x": 1860,
+        "y": 840,
         "wires": [
             []
         ]
     },
     {
-        "id": "62836e27ed570489",
-        "type": "delay",
-        "z": "ce11a1573af9dae5",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "2",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 2060,
-        "y": 3960,
-        "wires": [
-            [
-                "9bd929d06178370a"
-            ]
-        ]
-    },
-    {
-        "id": "9bd929d06178370a",
-        "type": "function",
-        "z": "ce11a1573af9dae5",
-        "name": "get_suface cmd",
-        "func": "msg.payload = \"show\"\nflow.set(\"output_shown\", true)\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2300,
-        "y": 4040,
-        "wires": [
-            [
-                "cfa4c1128458a068"
-            ]
-        ]
-    },
-    {
-        "id": "93bee2a3837d8a53",
-        "type": "debug",
-        "z": "ce11a1573af9dae5",
-        "name": "debug 84",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1700,
-        "y": 3940,
-        "wires": []
-    },
-    {
-        "id": "e73d636f5810415c",
-        "type": "ui_switch",
-        "z": "ce11a1573af9dae5",
-        "name": "",
-        "label": "Show ground truth or reconstructed",
-        "tooltip": "",
-        "group": "883fca87ae743d78",
+        "id": "20376754978b6dbd",
+        "type": "ui_text",
+        "z": "c0273576f864fea6",
+        "group": "bbcac8f35b0ea650",
         "order": 1,
-        "width": 4,
-        "height": 1,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "topic",
-        "topicType": "msg",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "animate": false,
-        "className": "",
-        "x": 1180,
-        "y": 3940,
-        "wires": [
-            [
-                "f8319d4de49961c4"
-            ]
-        ]
-    },
-    {
-        "id": "f8319d4de49961c4",
-        "type": "change",
-        "z": "ce11a1573af9dae5",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "ground_truth",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1460,
-        "y": 3960,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "2d59a51ac5b4f097",
-        "type": "inject",
-        "z": "ce11a1573af9dae5",
-        "name": "Show ground_truth on startup",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "0.1",
-        "topic": "",
-        "payload": "true",
-        "payloadType": "bool",
-        "x": 930,
-        "y": 4060,
-        "wires": [
-            [
-                "e73d636f5810415c"
-            ]
-        ]
-    },
-    {
-        "id": "cd8349a7e5cb15c1",
-        "type": "function",
-        "z": "ce11a1573af9dae5",
-        "name": "get_suface cmd",
-        "func": "msg.payload = \"none\"\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2360,
-        "y": 3720,
-        "wires": [
-            [
-                "cfa4c1128458a068"
-            ]
-        ]
-    },
-    {
-        "id": "5f52ca73aed9f908",
-        "type": "inject",
-        "z": "ce11a1573af9dae5",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 2070,
-        "y": 3680,
-        "wires": [
-            [
-                "cd8349a7e5cb15c1"
-            ]
-        ]
-    },
-    {
-        "id": "963755327dac41b5",
-        "type": "link out",
-        "z": "ce11a1573af9dae5",
-        "name": "link out 3",
-        "mode": "link",
-        "links": [
-            "abc8a0372d8bd4f5"
-        ],
-        "x": 2635,
-        "y": 1300,
-        "wires": []
-    },
-    {
-        "id": "243dd480a5288eb0",
-        "type": "ui_template",
-        "z": "ce11a1573af9dae5",
-        "group": "9cd5a505e067c2ae",
-        "name": "Logging template",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "format": "<div style=\"height: 250px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px;\" id=\"logWindow\"></div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var logWindow = document.getElementById(\"logWindow\");\n            if (payload === \"clear\") {\n                logWindow.innerHTML = \"\";  // Clear the log window\n            } else {\n                logWindow.innerHTML += payload + \"<br/>\" +\"<br/>\" + \"<br/>\";\n                logWindow.scrollTop = logWindow.scrollHeight;  // Auto-scroll to the bottom\n            }\n        });\n    })(scope);\n</script>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 4350,
-        "y": 1880,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d81a743d29ab7c3f",
-        "type": "comment",
-        "z": "ce11a1573af9dae5",
-        "name": "Logging",
-        "info": "",
-        "x": 4250,
-        "y": 1780,
-        "wires": []
-    },
-    {
-        "id": "abc8a0372d8bd4f5",
-        "type": "link in",
-        "z": "ce11a1573af9dae5",
-        "name": "link in 1",
-        "links": [
-            "963755327dac41b5",
-            "da20265b35bb0a72"
-        ],
-        "x": 4145,
-        "y": 1840,
-        "wires": [
-            [
-                "243dd480a5288eb0"
-            ]
-        ]
-    },
-    {
-        "id": "afbd8381b210a09a",
-        "type": "exec",
-        "z": "ce11a1573af9dae5",
-        "command": "",
-        "addpay": "payload",
-        "append": "",
-        "useSpawn": "true",
-        "timer": "",
-        "winHide": false,
-        "oldrc": false,
-        "name": "instant-ngp/run.py",
-        "x": 1350,
-        "y": 2300,
-        "wires": [
-            [
-                "e2889a5cf46b7645"
-            ],
-            [
-                "e2889a5cf46b7645"
-            ],
-            [
-                "678a80ea5ff48522"
-            ]
-        ]
-    },
-    {
-        "id": "283514f09975159f",
-        "type": "function",
-        "z": "ce11a1573af9dae5",
-        "name": "Building ingp run command",
-        "func": "\n\nvar cmd = \"\";\nvar steps = flow.get(\"steps\")\nconsole.log(flow.get(\"transforms_found\"));\nvar default_folder = global.get(\"filebrowser_default_folder\") \nlet project_path =default_folder+ global.get(\"selected_project\");\nvar ingp_root = global.get(\"ingp_root\")\nvar mc_resolution = flow.get(\"resolution\");\ncmd = \"python \" + ingp_root + \"run.py\" + \" --scene \" + project_path + \n    \"/transforms_centered.json --save_snapshot \" + project_path + \"/snapshot.ingp --save_mesh \" + project_path \n    + \"/snapshot.obj --n_steps \" + steps + \n    \" --marching_cubes_res \" + mc_resolution + \n    \" --marching_cubes_density_thresh 2.5\";\ncmd += \nmsg.payload = cmd;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1080,
-        "y": 2360,
-        "wires": [
-            [
-                "afbd8381b210a09a",
-                "65d664d32046e9f0"
-            ]
-        ]
-    },
-    {
-        "id": "e2889a5cf46b7645",
-        "type": "link out",
-        "z": "ce11a1573af9dae5",
-        "name": "clear loggign out",
-        "mode": "link",
-        "links": [
-            "7301c608469d1c72"
-        ],
-        "x": 1505,
-        "y": 2300,
-        "wires": []
-    },
-    {
-        "id": "678a80ea5ff48522",
-        "type": "delay",
-        "z": "ce11a1573af9dae5",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "1",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 1420,
-        "y": 2380,
-        "wires": [
-            [
-                "e56a69d1599d2cf5"
-            ]
-        ]
-    },
-    {
-        "id": "78bf9b54f9597dea",
-        "type": "ui_button",
-        "z": "ce11a1573af9dae5",
-        "name": "",
-        "group": "a04fd86afdafc697",
-        "order": 12,
         "width": 6,
         "height": 1,
-        "passthru": false,
-        "label": "run_reconstruction",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 590,
-        "y": 2360,
-        "wires": [
-            [
-                "283514f09975159f",
-                "7379b21831019112"
-            ]
-        ]
-    },
-    {
-        "id": "65d664d32046e9f0",
-        "type": "debug",
-        "z": "ce11a1573af9dae5",
-        "name": "debug 85",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1420,
-        "y": 2460,
-        "wires": []
-    },
-    {
-        "id": "e56a69d1599d2cf5",
-        "type": "switch",
-        "z": "ce11a1573af9dae5",
-        "name": "Programm returned 0?",
-        "property": "payload.code",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "0",
-                "vt": "str"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 1620,
-        "y": 2380,
-        "wires": [
-            [
-                "d79d9e8b0718b4b9"
-            ],
-            [
-                "dc4246a235900681"
-            ]
-        ]
-    },
-    {
-        "id": "7379b21831019112",
-        "type": "function",
-        "z": "ce11a1573af9dae5",
-        "name": "clear_logging",
-        "func": "msg.payload = \"clear\";\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 850,
-        "y": 2280,
-        "wires": [
-            [
-                "b3a1eaa1be66be49"
-            ]
-        ]
-    },
-    {
-        "id": "d79d9e8b0718b4b9",
-        "type": "function",
-        "z": "ce11a1573af9dae5",
-        "name": "refine_mesh cmd",
-        "func": "let refine_mesh = flow.get(\"refine_mesh\");\nlet extract_surface = flow.get(\"extract_surface\")\n\nvar cmd = \"\";\nvar steps = flow.get(\"steps\")\nconsole.log(flow.get(\"transforms_found\"));\nvar default_folder = global.get(\"filebrowser_default_folder\")\nlet project_path = default_folder + global.get(\"selected_project\");\nvar ingp_root = global.get(\"ingp_root\")\nvar mc_resolution = flow.get(\"resolution\");\n\n\nif(refine_mesh){\n    msg.payload = \"Starting of refining the surface\"\n    cmd = \"python ../scripts/point_filtering.py \" + project_path + \"/snapshot.obj \" + project_path + \"/snapshot_filtered.obj\";\n    msg.command = cmd;\n    \n}\nelse{\n    //msg.payload = \"Reconstruction completed, and saved under \" +project_path +\" with the name \" +\"snapshot.ply\"\n}\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1750,
-        "y": 2580,
-        "wires": [
-            [
-                "232ebc6129e8f1f1"
-            ]
-        ]
-    },
-    {
-        "id": "dc4246a235900681",
-        "type": "function",
-        "z": "ce11a1573af9dae5",
-        "name": "programm failed",
-        "func": "msg.payload = \"Something went wrong in surface extraction. System returned code 1\"\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1740,
-        "y": 2620,
-        "wires": [
-            [
-                "652520a9324ad8cb"
-            ]
-        ]
-    },
-    {
-        "id": "b3a1eaa1be66be49",
-        "type": "link out",
-        "z": "ce11a1573af9dae5",
-        "name": "clear loggign out",
-        "mode": "link",
-        "links": [
-            "7301c608469d1c72"
-        ],
-        "x": 965,
-        "y": 2280,
-        "wires": []
-    },
-    {
-        "id": "232ebc6129e8f1f1",
-        "type": "switch",
-        "z": "ce11a1573af9dae5",
-        "name": "If refine_mesh",
-        "property": "refine_mesh",
-        "propertyType": "flow",
-        "rules": [
-            {
-                "t": "true"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 1960,
-        "y": 2540,
-        "wires": [
-            [
-                "ee662947a478fc90",
-                "074f2756e318a8b7"
-            ],
-            [
-                "6fa3a27e9c4e6c95"
-            ]
-        ]
-    },
-    {
-        "id": "652520a9324ad8cb",
-        "type": "link out",
-        "z": "ce11a1573af9dae5",
-        "name": "clear loggign out",
-        "mode": "link",
-        "links": [
-            "7301c608469d1c72"
-        ],
-        "x": 1905,
-        "y": 2640,
-        "wires": []
-    },
-    {
-        "id": "ee662947a478fc90",
-        "type": "exec",
-        "z": "ce11a1573af9dae5",
-        "command": "",
-        "addpay": "command",
-        "append": "",
-        "useSpawn": "true",
-        "timer": "",
-        "winHide": false,
-        "oldrc": false,
-        "name": "refine_mesh",
-        "x": 2170,
-        "y": 2580,
-        "wires": [
-            [
-                "5081d2a662b0e43a",
-                "4f1eb017cc6a2255"
-            ],
-            [
-                "5081d2a662b0e43a",
-                "4f1eb017cc6a2255"
-            ],
-            [
-                "6e10885566b7863c"
-            ]
-        ]
-    },
-    {
-        "id": "074f2756e318a8b7",
-        "type": "change",
-        "z": "ce11a1573af9dae5",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "Start of refining mesh",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 2060,
-        "y": 2640,
-        "wires": [
-            [
-                "84959e1f795fb034"
-            ]
-        ]
-    },
-    {
-        "id": "6fa3a27e9c4e6c95",
-        "type": "function",
-        "z": "ce11a1573af9dae5",
-        "name": "get_suface cmd",
-        "func": "let extract_surface = flow.get(\"extract_surface\");\nlet refine_mesh = flow.get(\"refine_mesh\");\n\nvar cmd = \"\";\nvar steps = flow.get(\"steps\")\nconsole.log(flow.get(\"transforms_found\"));\nvar default_folder = global.get(\"filebrowser_default_folder\")\nlet project_path = default_folder + global.get(\"selected_project\");\nvar ingp_root = global.get(\"ingp_root\")\nvar mc_resolution = flow.get(\"resolution\");\n\n\nif(extract_surface){\n\n    msg.payload = \"Starting of extracting the surface\"\n    cmd = \"python \" + ingp_root + \"run.py\" + \n    \" --scene \" + project_path + \"/snapshot_filtered.obj --save_surface --save_mesh \" + \n    project_path + \"/surface_snapshot.ply --n_steps 3000\" + \n    \" --marching_cubes_res \" + \"700\" + \" --marching_cubes_density_thresh 0.0\";\n    msg.command = cmd;\n}\nelse{\n    msg.payload = \"Reconstruction completed, and saved under \" +project_path +\" with the name \" +\"snapshot.ply\"\n}\n\n\n//msg.command = \"python \" + \"../scripts/get_surface.py\" + \"--mesh_path \" + ./ data / meshes / charuco_rembg.ply +\" --num_points \" +12000000 +\" --out_name \" +\"./ data / meshes / charucosurface.obj\";\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2720,
-        "y": 2560,
-        "wires": [
-            [
-                "d2e1008f4a59c39f"
-            ]
-        ]
-    },
-    {
-        "id": "5081d2a662b0e43a",
-        "type": "debug",
-        "z": "ce11a1573af9dae5",
-        "name": "debug 86",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2460,
-        "y": 2380,
-        "wires": []
-    },
-    {
-        "id": "4f1eb017cc6a2255",
-        "type": "link out",
-        "z": "ce11a1573af9dae5",
-        "name": "clear loggign out",
-        "mode": "link",
-        "links": [
-            "7301c608469d1c72"
-        ],
-        "x": 2305,
-        "y": 2640,
-        "wires": []
-    },
-    {
-        "id": "6e10885566b7863c",
-        "type": "switch",
-        "z": "ce11a1573af9dae5",
-        "name": "Programm returned 0?",
-        "property": "payload.code",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "0",
-                "vt": "str"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 2400,
-        "y": 2580,
-        "wires": [
-            [
-                "6fa3a27e9c4e6c95"
-            ],
-            [
-                "94ca9354314172bf"
-            ]
-        ]
-    },
-    {
-        "id": "84959e1f795fb034",
-        "type": "link out",
-        "z": "ce11a1573af9dae5",
-        "name": "clear loggign out",
-        "mode": "link",
-        "links": [
-            "7301c608469d1c72"
-        ],
-        "x": 2175,
-        "y": 2640,
-        "wires": []
-    },
-    {
-        "id": "d2e1008f4a59c39f",
-        "type": "switch",
-        "z": "ce11a1573af9dae5",
-        "name": "If extract_surface",
-        "property": "extract_surface",
-        "propertyType": "flow",
-        "rules": [
-            {
-                "t": "true"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 2990,
-        "y": 2600,
-        "wires": [
-            [
-                "6bc1913f5626d0b8",
-                "4dbac23d2fed139b"
-            ],
-            [
-                "3ad1d9acef223c6b"
-            ]
-        ]
-    },
-    {
-        "id": "94ca9354314172bf",
-        "type": "function",
-        "z": "ce11a1573af9dae5",
-        "name": "programm failed",
-        "func": "msg.payload = \"Something went wrong in reconstruction. System returned code 1\"\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 2720,
-        "y": 2660,
-        "wires": [
-            [
-                "5bc6169520cdf6dc"
-            ]
-        ]
-    },
-    {
-        "id": "6bc1913f5626d0b8",
-        "type": "exec",
-        "z": "ce11a1573af9dae5",
-        "command": "",
-        "addpay": "command",
-        "append": "",
-        "useSpawn": "true",
-        "timer": "",
-        "winHide": false,
-        "oldrc": false,
-        "name": "get_sutface",
-        "x": 3210,
-        "y": 2600,
-        "wires": [
-            [
-                "0235e533abb0deb3"
-            ],
-            [
-                "0235e533abb0deb3"
-            ],
-            [
-                "a76a47a49a73917e"
-            ]
-        ]
-    },
-    {
-        "id": "4dbac23d2fed139b",
-        "type": "change",
-        "z": "ce11a1573af9dae5",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "Start of surface extraction",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 3040,
-        "y": 2660,
-        "wires": [
-            [
-                "3ad1d9acef223c6b"
-            ]
-        ]
-    },
-    {
-        "id": "3ad1d9acef223c6b",
-        "type": "link out",
-        "z": "ce11a1573af9dae5",
-        "name": "clear loggign out",
-        "mode": "link",
-        "links": [
-            "7301c608469d1c72"
-        ],
-        "x": 3195,
-        "y": 2660,
-        "wires": []
-    },
-    {
-        "id": "5bc6169520cdf6dc",
-        "type": "link out",
-        "z": "ce11a1573af9dae5",
-        "name": "clear loggign out",
-        "mode": "link",
-        "links": [
-            "7301c608469d1c72"
-        ],
-        "x": 2915,
-        "y": 2660,
-        "wires": []
-    },
-    {
-        "id": "0235e533abb0deb3",
-        "type": "link out",
-        "z": "ce11a1573af9dae5",
-        "name": "clear loggign out",
-        "mode": "link",
-        "links": [
-            "7301c608469d1c72"
-        ],
-        "x": 3325,
-        "y": 2560,
-        "wires": []
-    },
-    {
-        "id": "a76a47a49a73917e",
-        "type": "switch",
-        "z": "ce11a1573af9dae5",
-        "name": "Programm returned 0?",
-        "property": "payload.code",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "0",
-                "vt": "str"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 3440,
-        "y": 2600,
-        "wires": [
-            [
-                "ecac79854ff23924"
-            ],
-            [
-                "f66370a92efaf511"
-            ]
-        ]
-    },
-    {
-        "id": "ecac79854ff23924",
-        "type": "function",
-        "z": "ce11a1573af9dae5",
-        "name": "scale recovery",
-        "func": "\nlet extract_surface = flow.get(\"extract_surface\");\nlet refine_mesh = flow.get(\"refine_mesh\");\n\nvar cmd = \"\";\nvar steps = flow.get(\"steps\")\nconsole.log(flow.get(\"transforms_found\"));\nvar default_folder = global.get(\"filebrowser_default_folder\")\nlet project_path = default_folder + global.get(\"selected_project\");\nvar ingp_root = global.get(\"ingp_root\")\nvar mc_resolution = flow.get(\"resolution\");\n\n\nif (extract_surface) {\n    \n    msg.payload = \"Recovery of scale after surface extraction\"\n    cmd = \"python \" + \"../scripts/recover_scale.py\" +\n        \" \" + project_path + \"/snapshot_filtered.obj \" +\n        project_path + \"/surface_snapshot.ply\" +\n        \" --output \" + project_path + \"/rescaled_target_mesh.ply\" +\n        \" --to-millimeters\";\n    msg.command = cmd;\n}\nelse {\n    msg.payload = \"Reconstruction completed, and saved under \" + project_path + \" with the name \" + \"snapshot.ply\"\n}\n\n\n//msg.command = \"python \" + \"../scripts/get_surface.py\" + \"--mesh_path \" + ./ data / meshes / charuco_rembg.ply +\" --num_points \" +12000000 +\" --out_name \" +\"./ data / meshes / charucosurface.obj\";\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 3660,
-        "y": 2540,
-        "wires": [
-            [
-                "9aca0924bb97eb63",
-                "2e80ad58b75e3711"
-            ]
-        ]
-    },
-    {
-        "id": "f66370a92efaf511",
-        "type": "function",
-        "z": "ce11a1573af9dae5",
-        "name": "scale recovery failed",
-        "func": "msg.payload = \"Something went wrong in surface extraction. System returned code 1\"\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 3680,
-        "y": 2640,
-        "wires": [
-            [
-                "8c7eda4517154a22"
-            ]
-        ]
-    },
-    {
-        "id": "9aca0924bb97eb63",
-        "type": "exec",
-        "z": "ce11a1573af9dae5",
-        "command": "",
-        "addpay": "command",
-        "append": "",
-        "useSpawn": "true",
-        "timer": "",
-        "winHide": false,
-        "oldrc": false,
-        "name": "",
-        "x": 3830,
-        "y": 2500,
-        "wires": [
-            [
-                "d0105a3a5b1e8ef2"
-            ],
-            [
-                "d0105a3a5b1e8ef2"
-            ],
-            [
-                "36a21172fcebeb85"
-            ]
-        ]
-    },
-    {
-        "id": "2e80ad58b75e3711",
-        "type": "debug",
-        "z": "ce11a1573af9dae5",
-        "name": "debug 87",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "command",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 3740,
-        "y": 2440,
-        "wires": []
-    },
-    {
-        "id": "8c7eda4517154a22",
-        "type": "link out",
-        "z": "ce11a1573af9dae5",
-        "name": "clear loggign out",
-        "mode": "link",
-        "links": [
-            "7301c608469d1c72"
-        ],
-        "x": 3755,
-        "y": 2700,
-        "wires": []
-    },
-    {
-        "id": "d0105a3a5b1e8ef2",
-        "type": "link out",
-        "z": "ce11a1573af9dae5",
-        "name": "clear loggign out",
-        "mode": "link",
-        "links": [
-            "7301c608469d1c72"
-        ],
-        "x": 4005,
-        "y": 2540,
-        "wires": []
-    },
-    {
-        "id": "36a21172fcebeb85",
-        "type": "switch",
-        "z": "ce11a1573af9dae5",
-        "name": "Programm returned 0?",
-        "property": "payload.code",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "0",
-                "vt": "str"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 3980,
-        "y": 2640,
-        "wires": [
-            [
-                "26d6d83a1d5ebcc3"
-            ],
-            [
-                "40fd0334a5a742c2"
-            ]
-        ]
-    },
-    {
-        "id": "26d6d83a1d5ebcc3",
-        "type": "function",
-        "z": "ce11a1573af9dae5",
-        "name": "Final correct message",
-        "func": "msg.payload = \"Scale recovery finished. Overall reconstruction has ended\"\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 4180,
-        "y": 2580,
-        "wires": [
-            [
-                "5021e37e71c57ba0"
-            ]
-        ]
-    },
-    {
-        "id": "40fd0334a5a742c2",
-        "type": "function",
-        "z": "ce11a1573af9dae5",
-        "name": "Final false message",
-        "func": "msg.payload = \"Something went wrong in scale recovery.\"\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 4180,
-        "y": 2720,
-        "wires": [
-            [
-                "6e8d0628533898d4"
-            ]
-        ]
-    },
-    {
-        "id": "5021e37e71c57ba0",
-        "type": "link out",
-        "z": "ce11a1573af9dae5",
-        "name": "clear loggign out",
-        "mode": "link",
-        "links": [
-            "7301c608469d1c72"
-        ],
-        "x": 4315,
-        "y": 2580,
-        "wires": []
-    },
-    {
-        "id": "6e8d0628533898d4",
-        "type": "link out",
-        "z": "ce11a1573af9dae5",
-        "name": "clear loggign out",
-        "mode": "link",
-        "links": [
-            "7301c608469d1c72"
-        ],
-        "x": 4325,
-        "y": 2720,
-        "wires": []
-    },
-    {
-        "id": "f39f302f95cc66f5",
-        "type": "change",
-        "z": "ce11a1573af9dae5",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "out",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1140,
-        "y": 2460,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d2625243ff98f64b",
-        "type": "ui_text_input",
-        "z": "ce11a1573af9dae5",
-        "name": "Save output as",
-        "label": "Save output as",
-        "tooltip": "",
-        "group": "23c5588908fde9b8",
-        "order": 2,
-        "width": 7,
-        "height": 1,
-        "passthru": true,
-        "mode": "text",
-        "delay": 300,
-        "topic": "topic",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "msg",
-        "x": 880,
-        "y": 2460,
-        "wires": [
-            [
-                "f39f302f95cc66f5"
-            ]
-        ]
-    },
-    {
-        "id": "cade3eb144114123",
-        "type": "change",
-        "z": "ce11a1573af9dae5",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "video",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1140,
-        "y": 2540,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "aec0c1c15c0a3957",
-        "type": "ui_switch",
-        "z": "ce11a1573af9dae5",
-        "name": "Save ingp model",
-        "label": "Save ingp model",
-        "tooltip": "",
-        "group": "a04fd86afdafc697",
-        "order": 2,
-        "width": 7,
-        "height": 1,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "video",
-        "topicType": "str",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "animate": false,
-        "className": "",
-        "x": 890,
-        "y": 2540,
-        "wires": [
-            [
-                "cade3eb144114123"
-            ]
-        ]
-    },
-    {
-        "id": "399f31f1aeecd9ea",
-        "type": "inject",
-        "z": "ce11a1573af9dae5",
-        "name": "Remove ingp selection on Startup",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "0.1",
-        "topic": "",
-        "payload": "false",
-        "payloadType": "bool",
-        "x": 640,
-        "y": 2540,
-        "wires": [
-            [
-                "aec0c1c15c0a3957"
-            ]
-        ]
-    },
-    {
-        "id": "271331ba25d0e91a",
-        "type": "change",
-        "z": "ce11a1573af9dae5",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "refine_mesh",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1160,
-        "y": 2620,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "1873eaba541cd990",
-        "type": "ui_switch",
-        "z": "ce11a1573af9dae5",
-        "name": "Refine mesh",
-        "label": "Refine mesh",
-        "tooltip": "",
-        "group": "a04fd86afdafc697",
-        "order": 9,
-        "width": 7,
-        "height": 1,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "topic",
-        "topicType": "msg",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "animate": false,
-        "className": "",
-        "x": 870,
-        "y": 2620,
-        "wires": [
-            [
-                "271331ba25d0e91a"
-            ]
-        ]
-    },
-    {
-        "id": "97b4127c5407fa94",
-        "type": "inject",
-        "z": "ce11a1573af9dae5",
-        "name": "Refine mesh on Startup",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "0.1",
-        "topic": "",
-        "payload": "false",
-        "payloadType": "bool",
-        "x": 610,
-        "y": 2620,
-        "wires": [
-            [
-                "1873eaba541cd990"
-            ]
-        ]
-    },
-    {
-        "id": "eb0739499cf136e9",
-        "type": "change",
-        "z": "ce11a1573af9dae5",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "extract_surface",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1170,
-        "y": 2680,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5131adf75b545ae8",
-        "type": "ui_switch",
-        "z": "ce11a1573af9dae5",
-        "name": "Extract mesh surface",
-        "label": "Extract mesh surface",
-        "tooltip": "",
-        "group": "a04fd86afdafc697",
-        "order": 8,
-        "width": 7,
-        "height": 1,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "topic",
-        "topicType": "msg",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "animate": false,
-        "className": "",
-        "x": 900,
-        "y": 2680,
-        "wires": [
-            [
-                "eb0739499cf136e9"
-            ]
-        ]
-    },
-    {
-        "id": "c8f77dcfc77164e2",
-        "type": "inject",
-        "z": "ce11a1573af9dae5",
-        "name": "Extract mesh Sufrace on Startup",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "0.1",
-        "topic": "",
-        "payload": "false",
-        "payloadType": "bool",
-        "x": 640,
-        "y": 2680,
-        "wires": [
-            [
-                "5131adf75b545ae8"
-            ]
-        ]
-    },
-    {
-        "id": "e027b9801dbc6a62",
-        "type": "change",
-        "z": "ce11a1573af9dae5",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "steps",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1140,
-        "y": 2720,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "438b2cf9428c7945",
-        "type": "ui_slider",
-        "z": "ce11a1573af9dae5",
-        "name": "",
-        "label": "Steps",
-        "tooltip": "",
-        "group": "a04fd86afdafc697",
-        "order": 3,
-        "width": 5,
-        "height": 1,
-        "passthru": true,
-        "outs": "all",
-        "topic": "topic",
-        "topicType": "msg",
-        "min": "100",
-        "max": "20000",
-        "step": 1,
-        "className": "",
-        "x": 850,
-        "y": 2780,
-        "wires": [
-            [
-                "e027b9801dbc6a62",
-                "0e2608aac97b7f74"
-            ]
-        ]
-    },
-    {
-        "id": "b50da3b21ad9762d",
-        "type": "inject",
-        "z": "ce11a1573af9dae5",
-        "name": "Set steps on Startup",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "0.1",
-        "topic": "",
-        "payload": "3000",
-        "payloadType": "num",
-        "x": 620,
-        "y": 2780,
-        "wires": [
-            [
-                "438b2cf9428c7945"
-            ]
-        ]
-    },
-    {
-        "id": "0e2608aac97b7f74",
-        "type": "ui_text",
-        "z": "ce11a1573af9dae5",
-        "group": "a04fd86afdafc697",
-        "order": 4,
-        "width": 2,
-        "height": 1,
-        "name": "Show steps",
-        "label": "",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
+        "name": "Select Project",
+        "label": "Select a project where to start comparison script (2 files required, aligned_pcd.ply and ground_truth.ply)",
+        "format": "",
+        "layout": "row-center",
         "className": "",
         "style": false,
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 1150,
-        "y": 2800,
+        "x": 460,
+        "y": 240,
         "wires": []
     },
     {
-        "id": "b9a164460ac4c022",
-        "type": "change",
-        "z": "ce11a1573af9dae5",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "resolution",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1170,
-        "y": 2960,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "277f8fdaa86d115a",
-        "type": "ui_slider",
-        "z": "ce11a1573af9dae5",
-        "name": "",
-        "label": "MC Resolution",
-        "tooltip": "",
-        "group": "a04fd86afdafc697",
-        "order": 5,
-        "width": 5,
-        "height": 1,
-        "passthru": true,
-        "outs": "all",
-        "topic": "topic",
-        "topicType": "msg",
-        "min": "128",
-        "max": "1000",
-        "step": "2",
-        "className": "",
-        "x": 900,
-        "y": 3020,
-        "wires": [
-            [
-                "b9a164460ac4c022",
-                "a78496fd29063480"
-            ]
-        ]
-    },
-    {
-        "id": "eff47f24caa94765",
-        "type": "inject",
-        "z": "ce11a1573af9dae5",
-        "name": "Set resolution on Startup",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "0.1",
-        "topic": "",
-        "payload": "700",
-        "payloadType": "num",
-        "x": 670,
-        "y": 3020,
-        "wires": [
-            [
-                "277f8fdaa86d115a"
-            ]
-        ]
-    },
-    {
-        "id": "a78496fd29063480",
-        "type": "ui_text",
-        "z": "ce11a1573af9dae5",
-        "group": "a04fd86afdafc697",
-        "order": 6,
-        "width": 2,
-        "height": 1,
-        "name": "Show resolution",
-        "label": "",
-        "format": "{{msg.payload}}x{{msg.payload}}x{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 1180,
-        "y": 3040,
-        "wires": []
-    },
-    {
-        "id": "7301c608469d1c72",
-        "type": "link in",
-        "z": "ce11a1573af9dae5",
-        "name": "ingp logging in",
-        "links": [
-            "652520a9324ad8cb",
-            "5bc6169520cdf6dc",
-            "b3a1eaa1be66be49",
-            "6dee6bf79a384272",
-            "4f1eb017cc6a2255",
-            "3ad1d9acef223c6b",
-            "0235e533abb0deb3",
-            "e2889a5cf46b7645",
-            "8c7eda4517154a22",
-            "d0105a3a5b1e8ef2",
-            "5021e37e71c57ba0",
-            "6e8d0628533898d4",
-            "84959e1f795fb034",
-            "bca3cd1895837db0"
-        ],
-        "x": 4155,
-        "y": 1960,
-        "wires": [
-            [
-                "243dd480a5288eb0"
-            ]
-        ]
-    },
-    {
-        "id": "1b43c1d4777364fd",
-        "type": "inject",
-        "z": "ce11a1573af9dae5",
-        "name": "Clear Log on Startup",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "1",
-        "topic": "",
-        "payload": "clear",
-        "payloadType": "str",
-        "x": 1800,
-        "y": 2120,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "6a8cfac673321e19",
-        "type": "http request",
-        "z": "ce11a1573af9dae5",
-        "name": "get_current_work",
-        "method": "GET",
-        "ret": "obj",
-        "paytoqs": "ignore",
-        "url": "http://127.0.0.1:5001/config/current_work",
-        "tls": "c84c35e6e9992f9a",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 3230,
-        "y": 1220,
-        "wires": [
-            [
-                "5efedd61b391ebdd",
-                "127d1025c6c0ce42"
-            ]
-        ]
-    },
-    {
-        "id": "cb586670b4df243d",
-        "type": "inject",
-        "z": "ce11a1573af9dae5",
-        "name": "Every 5 seconds",
-        "props": [],
-        "repeat": "1",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "0.2",
-        "topic": "",
-        "x": 2990,
-        "y": 1280,
-        "wires": [
-            [
-                "6a8cfac673321e19"
-            ]
-        ]
-    },
-    {
-        "id": "de0e2eb66a73674e",
-        "type": "switch",
-        "z": "ce11a1573af9dae5",
-        "name": "Check current_work",
-        "property": "camera_calibrated",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "true"
-            },
-            {
-                "t": "false"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 3630,
-        "y": 1160,
-        "wires": [
-            [
-                "4b5a3d2adfed09bb"
-            ],
-            [
-                "76d7803b243d5266"
-            ]
-        ]
-    },
-    {
-        "id": "5efedd61b391ebdd",
-        "type": "debug",
-        "z": "ce11a1573af9dae5",
-        "d": true,
-        "name": "Check calibration json",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 3530,
-        "y": 1300,
-        "wires": []
-    },
-    {
-        "id": "4b5a3d2adfed09bb",
-        "type": "change",
-        "z": "ce11a1573af9dae5",
-        "name": "Set Green HTML",
-        "rules": [
-            {
-                "t": "set",
-                "p": "text",
-                "pt": "msg",
-                "to": "Camera is calibrated; You can press generate poses on folder with images, that have the same camera setup",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "color",
-                "pt": "msg",
-                "to": "green",
-                "tot": "str"
-            }
-        ],
-        "x": 3960,
-        "y": 1140,
-        "wires": [
-            [
-                "7b4d6755db731278"
-            ]
-        ]
-    },
-    {
-        "id": "76d7803b243d5266",
-        "type": "change",
-        "z": "ce11a1573af9dae5",
-        "name": "Set Red HTML",
-        "rules": [
-            {
-                "t": "set",
-                "p": "text",
-                "pt": "msg",
-                "to": "Camera isn't calibrated; You need to first calibrate camera on calibration folder. E.g. board_4x4_freehand",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "color",
-                "pt": "msg",
-                "to": "red",
-                "tot": "str"
-            }
-        ],
-        "x": 3960,
-        "y": 1180,
-        "wires": [
-            [
-                "7b4d6755db731278"
-            ]
-        ]
-    },
-    {
-        "id": "7b4d6755db731278",
-        "type": "ui_template",
-        "z": "ce11a1573af9dae5",
-        "group": "acabc51978b41c5b",
-        "name": "Dynamic Text",
-        "order": 1,
-        "width": 9,
-        "height": 1,
-        "format": "<div style=\"color:{{msg.color}};font-size:20px;\">{{msg.text}}</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": false,
-        "templateScope": "local",
-        "className": "",
-        "x": 4320,
-        "y": 1200,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "127d1025c6c0ce42",
-        "type": "function",
-        "z": "ce11a1573af9dae5",
-        "name": "function 40",
-        "func": "var camera_calibrated = false;\n//node.warn(msg.payload[\"camera_matrix\"])\nif(msg.payload[\"camera_matrix\"] == undefined){\n    camera_calibrated = false;\n    //node.warn(\"no calibration\")\n} else{\n    camera_calibrated = true;\n    //node.warn(\"yes calibration\")\n}\nmsg.camera_calibrated = camera_calibrated;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 3410,
-        "y": 1180,
-        "wires": [
-            [
-                "de0e2eb66a73674e"
-            ]
-        ]
-    },
-    {
-        "id": "e63860d485b1ec1e",
+        "id": "e921c83c7d1b6871",
         "type": "ui_dropdown",
-        "z": "ce11a1573af9dae5",
-        "g": "9b0e6419204a0256",
-        "name": "ingp project dropdown",
+        "z": "c0273576f864fea6",
+        "g": "e2e624193a86d3b9",
+        "name": "comparison project dropdown",
         "label": "",
         "tooltip": "",
         "place": "Select option",
-        "group": "2fdbed4902a7b60d",
-        "order": 2,
-        "width": 4,
+        "group": "bbcac8f35b0ea650",
+        "order": 3,
+        "width": 8,
         "height": 1,
         "passthru": true,
         "multiple": false,
@@ -13940,21 +10580,22 @@
         "topic": "topic",
         "topicType": "msg",
         "className": "",
-        "x": 1200,
-        "y": 760,
+        "x": 1170,
+        "y": 340,
         "wires": [
             [
-                "addca606bae3bdfd"
+                "559faaaff15c078d",
+                "09f392d65d1f4059"
             ]
         ]
     },
     {
-        "id": "ebd52399cf612490",
+        "id": "93c090cf3a7bccc7",
         "type": "function",
-        "z": "ce11a1573af9dae5",
-        "g": "9b0e6419204a0256",
+        "z": "c0273576f864fea6",
+        "g": "e2e624193a86d3b9",
         "name": "Folder handling",
-        "func": "let folder = global.get(\"filebrowser_default_folder\");\nlet project_name = global.get(\"selected_project\");\nflow.set(\"transforms_found\", false);\nconsole.log(flow.get(\"transforms_found\"));\n\nif (folder===undefined) {\n    folder=\"./projects/\";\n    context.set(\"folder\", folder);\n}\n\n\nmsg.project_name = project_name;\nmsg.payload = {\"start\":folder};\nreturn msg;",
+        "func": "let folder = global.get(\"filebrowser_default_folder\");\nlet project_name = global.get(\"selected_project\")\n//console.log(project_name);\n\nif (folder===undefined) {\n    folder=\"./projects/\";\n    context.set(\"folder\", folder);\n}\n\n\nmsg.project_name = project_name;\nmsg.payload = {\"start\":folder};\nreturn msg;",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -13966,19 +10607,19 @@
                 "module": "fs"
             }
         ],
-        "x": 640,
-        "y": 800,
+        "x": 560,
+        "y": 340,
         "wires": [
             [
-                "788f1c086505d7b4"
+                "d11f03a9cf9216c1"
             ]
         ]
     },
     {
-        "id": "788f1c086505d7b4",
+        "id": "d11f03a9cf9216c1",
         "type": "fs-file-lister",
-        "z": "ce11a1573af9dae5",
-        "g": "9b0e6419204a0256",
+        "z": "c0273576f864fea6",
+        "g": "e2e624193a86d3b9",
         "name": "Files",
         "start": "./projects/",
         "pattern": "*.*",
@@ -13990,19 +10631,19 @@
         "depth": 0,
         "stat": true,
         "showWarnings": false,
-        "x": 830,
-        "y": 800,
+        "x": 750,
+        "y": 340,
         "wires": [
             [
-                "4dcbbe794ee8b7ae"
+                "95875027e0f1854f"
             ]
         ]
     },
     {
-        "id": "4dcbbe794ee8b7ae",
+        "id": "95875027e0f1854f",
         "type": "function",
-        "z": "ce11a1573af9dae5",
-        "g": "9b0e6419204a0256",
+        "z": "c0273576f864fea6",
+        "g": "e2e624193a86d3b9",
         "name": "Prep Data",
         "func": "function convertDate(local) {\n    let d = new Date(local);\n    d.setTime(d.getTime()+3600*1000);\n    return d.toISOString().slice(0, 19).replace('T', ' ');\n}\n\nvar newmsg = msg;\nnewmsg.options = [];\n\nfor (var i=0; i<msg.payload.length; i++) {\n\n    msg.payload[i].fname = msg.payload[i].name.replace(/^.*(\\\\|\\/|\\:)/, '');\n    if (msg.payload[i].stat.isDirectory) {\n        msg.payload[i].ext = \"folder\";\n        newmsg.options[i] = msg.payload[i].fname;\n    }\n}\nif (global.get(\"selected_project\") !== \"\") {\n    // Find the index of the selected project\n    var project_name = global.get(\"selected_project\").split(\"/\").filter(Boolean).pop();\n    newmsg.payload = project_name\n}\nflow.set(\"currentfolder\",msg.payload);\nreturn msg;\n",
         "outputs": 1,
@@ -14011,21 +10652,21 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 980,
-        "y": 800,
+        "x": 900,
+        "y": 340,
         "wires": [
             [
-                "e63860d485b1ec1e",
-                "cfc320bb204dc46d"
+                "e921c83c7d1b6871",
+                "d182d22217881571"
             ]
         ]
     },
     {
-        "id": "cfc320bb204dc46d",
+        "id": "d182d22217881571",
         "type": "debug",
-        "z": "ce11a1573af9dae5",
-        "g": "9b0e6419204a0256",
-        "name": "debug 88",
+        "z": "c0273576f864fea6",
+        "g": "e2e624193a86d3b9",
+        "name": "debug 69",
         "active": false,
         "tosidebar": true,
         "console": false,
@@ -14034,72 +10675,63 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1050,
-        "y": 900,
+        "x": 970,
+        "y": 440,
         "wires": []
     },
     {
-        "id": "75dde250afeaeda0",
+        "id": "b91f80df53529646",
         "type": "link in",
-        "z": "ce11a1573af9dae5",
-        "g": "9b0e6419204a0256",
-        "name": "INGP global folder in",
+        "z": "c0273576f864fea6",
+        "g": "e2e624193a86d3b9",
+        "name": "Charuco global folder in",
         "links": [
-            "590c0108c7e5d026",
-            "fe0e5a3d2e1fe78b",
-            "4484b8d6a16e79f1",
-            "3a5cc637ad1c52df"
+            "4819a5fb717ddca6"
         ],
-        "x": 485,
-        "y": 880,
+        "x": 395,
+        "y": 440,
         "wires": [
             [
-                "ebd52399cf612490"
+                "93c090cf3a7bccc7"
             ]
         ]
     },
     {
-        "id": "5d34c736cdb06acd",
+        "id": "559faaaff15c078d",
+        "type": "debug",
+        "z": "c0273576f864fea6",
+        "g": "e2e624193a86d3b9",
+        "name": "debug 70",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1250,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "b6296ab6f8faa47c",
         "type": "link out",
-        "z": "ce11a1573af9dae5",
-        "g": "9b0e6419204a0256",
-        "name": "find transforms ou",
+        "z": "c0273576f864fea6",
+        "g": "e2e624193a86d3b9",
+        "name": "link out 2",
         "mode": "link",
         "links": [
-            "5e5981fb6bf20e28",
-            "e6a2a1db2cbaa647"
+            "95ea35cbfef53422"
         ],
-        "x": 1285,
-        "y": 900,
+        "x": 1515,
+        "y": 420,
         "wires": []
     },
     {
-        "id": "2f85e5693195ce97",
-        "type": "ui_text",
-        "z": "ce11a1573af9dae5",
-        "g": "9b0e6419204a0256",
-        "group": "2fdbed4902a7b60d",
-        "order": 1,
-        "width": 8,
-        "height": 1,
-        "name": "Select Project",
-        "label": "",
-        "format": "Select a project where to initialize reconstruction",
-        "layout": "row-center",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 960,
-        "y": 740,
-        "wires": []
-    },
-    {
-        "id": "addca606bae3bdfd",
+        "id": "09f392d65d1f4059",
         "type": "function",
-        "z": "ce11a1573af9dae5",
-        "g": "d7cb2c4672cd8e6b",
+        "z": "c0273576f864fea6",
+        "g": "5b33861cacd40f7d",
         "name": "Set global_folder",
         "func": "// Retrieve the folder path from a global variable in Node-RED\nvar folder = global.get('filebrowser_default_folder');\nvar project = msg.payload;\n\n// Construct the desired path\nvar selected_folder_path = folder + project + \"/\";\n\n// Prepare the payload as a JSON object with the required structure\nmsg.payload = { \"selected_folder\": selected_folder_path };\n\n// Optionally store selected folder path in a global variable\nglobal.set(\"selected_project\", project);\n\nreturn msg;\n",
         "outputs": 1,
@@ -14108,20 +10740,20 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1410,
-        "y": 760,
+        "x": 1350,
+        "y": 400,
         "wires": [
             [
-                "25b9ff0cb5d9248b",
-                "5d34c736cdb06acd"
+                "1d6c1f982a3f410b",
+                "b6296ab6f8faa47c"
             ]
         ]
     },
     {
-        "id": "25b9ff0cb5d9248b",
+        "id": "1d6c1f982a3f410b",
         "type": "http request",
-        "z": "ce11a1573af9dae5",
-        "g": "d7cb2c4672cd8e6b",
+        "z": "c0273576f864fea6",
+        "g": "5b33861cacd40f7d",
         "name": "POST to Flask Server",
         "method": "POST",
         "ret": "obj",
@@ -14141,21 +10773,165 @@
                 "valueValue": "application/json"
             }
         ],
-        "x": 1400,
-        "y": 840,
+        "x": 1340,
+        "y": 480,
         "wires": [
             []
         ]
     },
     {
-        "id": "6c6e9a6e487d3fef",
+        "id": "7814354030b8abaa",
+        "type": "delay",
+        "z": "c0273576f864fea6",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1100,
+        "y": 900,
+        "wires": [
+            [
+                "29913cea44af4fae"
+            ]
+        ]
+    },
+    {
+        "id": "29913cea44af4fae",
+        "type": "function",
+        "z": "c0273576f864fea6",
+        "name": "get_suface cmd",
+        "func": "msg.payload = \"show\"\nflow.set(\"output_shown\", true)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1520,
+        "y": 1020,
+        "wires": [
+            [
+                "41d44316103e492c"
+            ]
+        ]
+    },
+    {
+        "id": "3da48deae4d70738",
+        "type": "inject",
+        "z": "c0273576f864fea6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1310,
+        "y": 680,
+        "wires": [
+            [
+                "101f804152794544"
+            ]
+        ]
+    },
+    {
+        "id": "101f804152794544",
+        "type": "function",
+        "z": "c0273576f864fea6",
+        "name": "get_suface cmd",
+        "func": "msg.payload = \"none\"\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1520,
+        "y": 700,
+        "wires": [
+            [
+                "41d44316103e492c"
+            ]
+        ]
+    },
+    {
+        "id": "3cc267623caa6150",
+        "type": "debug",
+        "z": "c0273576f864fea6",
+        "name": "debug 71",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "1471733b3c9f9d68",
+        "type": "ui_switch",
+        "z": "c0273576f864fea6",
+        "name": "",
+        "label": "Show ground truth or reconstructed",
+        "tooltip": "",
+        "group": "bbcac8f35b0ea650",
+        "order": 5,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 400,
+        "y": 920,
+        "wires": [
+            [
+                "77e8f04f6cd9befe"
+            ]
+        ]
+    },
+    {
+        "id": "77e8f04f6cd9befe",
         "type": "change",
-        "z": "ce11a1573af9dae5",
+        "z": "c0273576f864fea6",
         "name": "",
         "rules": [
             {
                 "t": "set",
-                "p": "remove_background",
+                "p": "ground_truth",
                 "pt": "flow",
                 "to": "payload",
                 "tot": "msg"
@@ -14166,75 +10942,17 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1280,
-        "y": 1860,
+        "x": 680,
+        "y": 940,
         "wires": [
             []
         ]
     },
     {
-        "id": "7828c20d37d93350",
-        "type": "ui_dropdown",
-        "z": "ce11a1573af9dae5",
-        "name": "remove_background",
-        "label": "Background removal",
-        "tooltip": "Select a model within background will be removed (recommended birefnet-general))",
-        "place": "Select option",
-        "group": "acabc51978b41c5b",
-        "order": 3,
-        "width": 6,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "sam",
-                "value": "sam",
-                "type": "str"
-            },
-            {
-                "label": "isnet-general-use",
-                "value": "isnet-general-use",
-                "type": "str"
-            },
-            {
-                "label": "u2net",
-                "value": "u2net",
-                "type": "str"
-            },
-            {
-                "label": "birefnet-general",
-                "value": "birefnet-general",
-                "type": "str"
-            },
-            {
-                "label": "birefnet-general-lite",
-                "value": "birefnet-general-lite",
-                "type": "str"
-            },
-            {
-                "label": "None",
-                "value": "None",
-                "type": "str"
-            }
-        ],
-        "payload": "",
-        "topic": "topic",
-        "topicType": "msg",
-        "className": "",
-        "x": 1000,
-        "y": 1940,
-        "wires": [
-            [
-                "6c6e9a6e487d3fef"
-            ]
-        ]
-    },
-    {
-        "id": "e0058ff6e1a9b1b7",
+        "id": "7421590ee64fe409",
         "type": "inject",
-        "z": "ce11a1573af9dae5",
-        "name": "set charuco background removal on startup",
+        "z": "c0273576f864fea6",
+        "name": "Show ground_truth on startup",
         "props": [
             {
                 "p": "payload"
@@ -14243,73 +10961,184 @@
         "repeat": "",
         "crontab": "",
         "once": true,
-        "onceDelay": "1",
+        "onceDelay": "0.1",
         "topic": "",
-        "payload": "None",
-        "payloadType": "str",
-        "x": 710,
-        "y": 1880,
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 150,
+        "y": 1040,
         "wires": [
             [
-                "7828c20d37d93350"
+                "1471733b3c9f9d68"
             ]
         ]
     },
     {
-        "id": "bca3cd1895837db0",
-        "type": "link out",
+        "id": "eb5989747efe7bc0",
+        "type": "comment",
         "z": "ce11a1573af9dae5",
-        "name": "clear loggign out",
-        "mode": "link",
-        "links": [
-            "7301c608469d1c72"
-        ],
-        "x": 1925,
-        "y": 3760,
+        "name": "New File Browser",
+        "info": "",
+        "x": 720,
+        "y": 660,
         "wires": []
     },
     {
-        "id": "e9f478daaac2a5ee",
-        "type": "switch",
+        "id": "99a1eb025cd521ab",
+        "type": "function",
         "z": "ce11a1573af9dae5",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
+        "g": "a97981e2e8c1f13e",
+        "name": "Folder handling",
+        "func": "let folder = global.get(\"filebrowser_default_folder\");\nlet project_name = global.get(\"selected_project\")\n//console.log(project_name);\n\nif (folder===undefined) {\n    folder=\"./projects/\";\n    context.set(\"folder\", folder);\n}\n\n\nmsg.project_name = project_name;\nmsg.payload = {\"start\":folder};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
             {
-                "t": "cont",
-                "v": "KDTREE",
-                "vt": "str"
+                "var": "fs",
+                "module": "fs"
             }
         ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 1890,
-        "y": 3880,
+        "x": 880,
+        "y": 740,
         "wires": [
             [
-                "62836e27ed570489",
-                "7026049cb084817f"
+                "d84bb53e6f53b33e"
             ]
         ]
     },
     {
-        "id": "7026049cb084817f",
+        "id": "59087407bde0886a",
+        "type": "function",
+        "z": "ce11a1573af9dae5",
+        "g": "a97981e2e8c1f13e",
+        "name": "Prep Data",
+        "func": "function convertDate(local) {\n    let d = new Date(local);\n    d.setTime(d.getTime()+3600*1000);\n    return d.toISOString().slice(0, 19).replace('T', ' ');\n}\n\nvar newmsg = msg;\nnewmsg.options = [];\n\nfor (var i=0; i<msg.payload.length; i++) {\n\n    msg.payload[i].fname = msg.payload[i].name.replace(/^.*(\\\\|\\/|\\:)/, '');\n    if (msg.payload[i].stat.isDirectory) {\n        msg.payload[i].ext = \"folder\";\n        newmsg.options[i] = msg.payload[i].fname;\n    }\n}\nif (global.get(\"selected_project\") !== \"\") {\n    // Find the index of the selected project\n    var project_name = global.get(\"selected_project\").split(\"/\").filter(Boolean).pop();\n    newmsg.payload = project_name\n}\nflow.set(\"currentfolder\",msg.payload);\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1220,
+        "y": 740,
+        "wires": [
+            [
+                "529b44651e96af74",
+                "a2f6ee2a8fab4c4e"
+            ]
+        ]
+    },
+    {
+        "id": "a2f6ee2a8fab4c4e",
         "type": "debug",
         "z": "ce11a1573af9dae5",
-        "name": "debug 90",
-        "active": true,
+        "g": "a97981e2e8c1f13e",
+        "name": "debug 45",
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2070,
-        "y": 3880,
+        "x": 1290,
+        "y": 840,
         "wires": []
+    },
+    {
+        "id": "5eeb4bf58301947d",
+        "type": "link in",
+        "z": "ce11a1573af9dae5",
+        "g": "a97981e2e8c1f13e",
+        "name": "Automatic global folder in",
+        "links": [
+            "92800beeb59494a6",
+            "4484b8d6a16e79f1",
+            "fe0e5a3d2e1fe78b",
+            "067da2f1d49bc5ac"
+        ],
+        "x": 715,
+        "y": 840,
+        "wires": [
+            [
+                "99a1eb025cd521ab"
+            ]
+        ]
+    },
+    {
+        "id": "529b44651e96af74",
+        "type": "ui_dropdown",
+        "z": "ce11a1573af9dae5",
+        "g": "a97981e2e8c1f13e",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "2fdbed4902a7b60d",
+        "order": 4,
+        "width": "6",
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 1380,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f1e77e66d57a2abc",
+        "type": "ui_text",
+        "z": "ce11a1573af9dae5",
+        "group": "acabc51978b41c5b",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "text",
+        "format": "Code to be implemented",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 630,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "d84bb53e6f53b33e",
+        "type": "fs-file-lister",
+        "z": "ce11a1573af9dae5",
+        "g": "a97981e2e8c1f13e",
+        "name": "Files",
+        "start": "./projects/",
+        "pattern": "*.*",
+        "folders": "*",
+        "hidden": false,
+        "lstype": "directories",
+        "path": true,
+        "single": true,
+        "depth": 0,
+        "stat": true,
+        "showWarnings": false,
+        "x": 1070,
+        "y": 740,
+        "wires": [
+            [
+                "59087407bde0886a"
+            ]
+        ]
     },
     {
         "id": "a1ef382fba55a3a1",
@@ -14659,8 +11488,7 @@
         "z": "4b77236584df4d0f",
         "name": "Update config in INGP",
         "links": [
-            "1f21093d7f876a07",
-            "5d34c736cdb06acd"
+            "1f21093d7f876a07"
         ],
         "x": 445,
         "y": 1060,

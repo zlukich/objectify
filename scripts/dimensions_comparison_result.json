@@ -1,0 +1,116 @@
+[
+    {
+        "Ground Truth Path": "../node-red/projects/new_transparent.calib8/aligned_pcd.ply",
+        "Reconstructed Path": "../node-red/projects/new_transparent.calib8/rescaled_target_mesh.ply",
+        "Reconstructed Dimensions": [
+            45.99437069892883,
+            25.40669822692871,
+            51.4911727309227
+        ],
+        "Ground Truth Dimensions": [
+            46.79551410675049,
+            27.918421745300293,
+            51.31878289580345
+        ],
+        "Percentage Errors": [
+            -1.712008988712203,
+            -8.996652967298907,
+            0.33591957055814053
+        ]
+    },
+    {
+        "Ground Truth Path": "../node-red/projects/new_black.calib8/ground_truth_aligned.ply",
+        "Reconstructed Path": "../node-red/projects/new_black.calib8/reconstruction_aligned.ply",
+        "Reconstructed Dimensions": [
+            45.99437069892883,
+            25.40669822692871,
+            51.4911727309227
+        ],
+        "Ground Truth Dimensions": [
+            46.29114866256714,
+            27.886201858520508,
+            51.0074066221714
+        ],
+        "Percentage Errors": [
+            -0.6411116859545378,
+            -8.891507148128152,
+            0.9484232600467444
+        ]
+    },
+    {
+        "Ground Truth Path": "../node-red/projects/bluefrog2.calib5_complete/gt_aligned.ply",
+        "Reconstructed Path": "../node-red/projects/bluefrog2.calib5_complete/resconstruction_aligned.ply",
+        "Reconstructed Dimensions": [
+            71.033358335495,
+            37.95280075073242,
+            75.83074597641826
+        ],
+        "Ground Truth Dimensions": [
+            70.67083787918091,
+            42.531999588012695,
+            75.54553252458572
+        ],
+        "Percentage Errors": [
+            0.5129703668348365,
+            -10.766479078427537,
+            0.3775384755408433
+        ]
+    },
+    {
+        "Ground Truth Path": "../node-red/projects/new_silver.calib8/gt_aligned.ply",
+        "Reconstructed Path": "../node-red/projects/new_silver.calib8/reconstruction_aligned.ply",
+        "Reconstructed Dimensions": [
+            45.699119329452515,
+            25.23740005493164,
+            51.48864412307739
+        ],
+        "Ground Truth Dimensions": [
+            46.206000089645386,
+            28.45139980316162,
+            51.40646865963936
+        ],
+        "Percentage Errors": [
+            -1.0970020326569263,
+            -11.29645560663356,
+            0.15985432491407894
+        ]
+    },
+    {
+        "Ground Truth Path": "../node-red/projects/new_white.calib8/aligned_pcd.ply",
+        "Reconstructed Path": "../node-red/projects/new_white.calib8/rescaled_target_mesh.ply",
+        "Reconstructed Dimensions": [
+            45.99437069892883,
+            25.40669822692871,
+            51.4911727309227
+        ],
+        "Ground Truth Dimensions": [
+            45.75237059593201,
+            28.030967712402344,
+            51.34679067134857
+        ],
+        "Percentage Errors": [
+            0.5289345663289919,
+            -9.36203670311575,
+            0.2811900367800244
+        ]
+    },
+    {
+        "Ground Truth Path": "../node-red/projects/number_cube.calib8/ground_truth.ply",
+        "Reconstructed Path": "../node-red/projects/number_cube.calib8/rescaled_target_mesh.ply",
+        "Reconstructed Dimensions": [
+            35.85076940059662,
+            32.84812831878662,
+            35.01600170135498
+        ],
+        "Ground Truth Dimensions": [
+            35.98462897539139,
+            33.141241788864136,
+            34.875600814819336
+        ],
+        "Percentage Errors": [
+            -0.3719909822783253,
+            -0.8844371974498685,
+            0.4025762517501502
+        ]
+    }
+]

@@ -8,11 +8,10 @@ from scipy.spatial import KDTree
 from scipy.spatial import cKDTree
 import matplotlib
 import argparse
+from time import sleep
 
-def chamfer_distance(points1, points2):
+def chamfer_distance(tree1, tree2):
     # Create KD trees for efficient nearest-neighbor search
-    tree1 = cKDTree(points1)
-    tree2 = cKDTree(points2)
 
     # For each point in points1, find the closest point in points2
     distances1, _ = tree1.query(points2, k=1)
@@ -23,9 +22,7 @@ def chamfer_distance(points1, points2):
     return chamfer_dist
 
 # Function to calculate Hausdorff Distance
-def hausdorff_distance(points1, points2):
-    tree1 = cKDTree(points1)
-    tree2 = cKDTree(points2)
+def hausdorff_distance(tree1, tree2):
     distances1, _ = tree1.query(points2, k=1)
     distances2, _ = tree2.query(points1, k=1)
     hausdorff_dist = max(np.max(distances1), np.max(distances2))
@@ -40,17 +37,36 @@ args = parser.parse_args()
 try:
     pcd1 = o3d.io.read_point_cloud(args.pcd_source)
     pcd2 = o3d.io.read_point_cloud(args.pcd_target)
+    
+    # Convert point clouds to numpy arrays for further processing
+    points1 = np.asarray(pcd1.points)
+    points2 = np.asarray(pcd2.points)   
+    
+    # Subsample the point clouds randomly
+    sample_size = 10000
+    indices1 = np.random.choice(len(points1), size=min(sample_size, len(points1)), replace=False)
+    indices2 = np.random.choice(len(points2), size=min(sample_size, len(points2)), replace=False)
+    subsampled_points1 = points1[indices1]
+    subsampled_points2 = points2[indices2]
+
+    pcd1 = o3d.geometry.PointCloud()
+    pcd1.points = o3d.utility.Vector3dVector(subsampled_points1)
+
+    pcd2 = o3d.geometry.PointCloud()
+    pcd2.points = o3d.utility.Vector3dVector(subsampled_points2)
+    print("Number of points" , len(pcd1.points),flush = True)
 except:
     raise Exception("Error while reading files occurred")
-
+print('Reading of PCDs ended',flush = True)  
 # Perform ICP alignment
 threshold = 0.02  # Distance threshold for ICP
 transformation_init = np.identity(4)  # Initial alignment guess
-
+sleep(15)
 # Run ICP
 reg_p2p = o3d.pipelines.registration.registration_icp(
     pcd1, pcd2, threshold, transformation_init,
-    o3d.pipelines.registration.TransformationEstimationPointToPoint(with_scaling = False)
+    o3d.pipelines.registration.TransformationEstimationPointToPoint(with_scaling = False),
+    o3d.pipelines.registration.ICPConvergenceCriteria(max_iteration=2000)
 )
 
 icp_fitness = reg_p2p.fitness
@@ -60,32 +76,24 @@ icp_inlier_rmse = reg_p2p.inlier_rmse
 # Apply the transformation to align point clouds
 pcd1.transform(reg_p2p.transformation)
 
-# Convert point clouds to numpy arrays for further processing
-points1 = np.asarray(pcd1.points)
-points2 = np.asarray(pcd2.points)
+print('ICP alignment finisher',flush = True)
 
+tree1 = cKDTree(subsampled_points1)
+tree2 = cKDTree(subsampled_points2)
 # Calculate Chamfer Distance and Hausdorff Distance after ICP alignment
-chamfer_dist = chamfer_distance(points1, points2)
-hausdorff_dist = hausdorff_distance(points1, points2)
-
-
-# Subsample the point clouds randomly
-sample_size = 50000
-indices1 = np.random.choice(len(points1), size=min(sample_size, len(points1)), replace=False)
-indices2 = np.random.choice(len(points2), size=min(sample_size, len(points2)), replace=False)
-subsampled_points1 = points1[indices1]
-subsampled_points2 = points2[indices2]
+chamfer_dist = chamfer_distance(tree1, tree2)
+hausdorff_dist = hausdorff_distance(tree1, tree2)
 
 # Build KDTree for the second point cloud
-tree = KDTree(subsampled_points2)
+tree = cKDTree(subsampled_points2)
 
 # Compute distances
 distances, _ = tree.query(subsampled_points1, k=1)
-
+print(' Building of KDTREE finished' ,flush = True)  
 # Remove NaN and infinite distances
 valid_mask = np.isfinite(distances)
 distances = distances[valid_mask]
-subsampled_points1 = subsampled_points1[valid_mask]
+subsampled_points1 = subsampled_points1[valid_mask] 
 
 # Normalize distances for color mapping
 min_distance = np.min(distances)
@@ -112,7 +120,7 @@ scatter_fig = go.Figure(data=[
         z=z_coords,
         mode='markers',
         marker=dict(
-            size=2,
+            size=2, 
             color=colors,
             colorscale='RdYlBu_r',
             showscale=True,
